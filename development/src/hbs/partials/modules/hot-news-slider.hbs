@@ -1,0 +1,9 @@
+<ul class="hot-news-slider">{{~!}}
+			{{#with hot-news}}
+			{{#each items}}
+			<li class="hot-news-item">{{~!}}
+			{{> modules/hot-news-slide}}{{~!}}
+			</li>
+			{{/each}}
+			{{/with}}
+		</ul>

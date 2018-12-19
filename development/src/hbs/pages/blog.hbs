@@ -1,0 +1,10 @@
+{{#embed "templates/post" data=pages.blog additionalClasses="page-blog-archive"}}
+{{#content "head" mode="append"}}
+{{!-- append page specific head tags --}}
+{{/content}}
+{{#content "body" mode="append"}}{{~!}}
+{{!-- page specific body content --}}
+		<?php if (have_posts()) : while (have_posts()) : the_post();?>
+		<?php endwhile; endif; wp_reset_query(); ?>
+{{/content}}
+{{/embed}}

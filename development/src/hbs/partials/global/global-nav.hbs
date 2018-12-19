@@ -1,0 +1,12 @@
+<nav>
+			<ul>
+				{{#each nav.items}}
+				<li>
+					<a href="/{{slug}}">{{label}}</a>
+					{{#if subnav}}
+					{{> global/components/subnav}}{{~!}}
+					{{/if}}
+				</li>
+				{{/each}}
+			</ul>
+		</nav>

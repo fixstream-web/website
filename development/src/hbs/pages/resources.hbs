@@ -1,0 +1,22 @@
+{{#embed "templates/page" data=pages.resources additionalClasses="page-resources"}}
+{{#content "head" mode="append"}}
+{{!-- append page specific head tags --}}
+{{/content}}
+{{#content "body" mode="replace"}}{{~!}}
+{{!-- page specific body content --}}
+		<p>Resources intro paragraph</p>
+		{{#embed "forms/form" id="resourcesForm" submitText="Submit" primaryClass="foo" additionalClasses="bar" }}
+		{{#content "content"}}
+			{{> forms/components/labeled-input type="text" id="first-name" name="first-name" label="First Name"}}{{~!}}
+			{{> forms/components/labeled-input type="text" id="last-name" name="last-name" label="Last Name"}}{{~!}}
+			{{> forms/components/labeled-input type="email" id="email" name="email" label="Email"}}{{~!}}
+			{{> forms/components/labeled-input type="radio" id="option-1" name="options" label="Car" value="car"}}{{~!}}
+			{{> forms/components/labeled-input type="radio" id="option-2" name="options" label="Boat" value="boat"}}{{~!}}
+
+			{{!-- try to treat textarea in the same labeled-input --}}
+			{{> forms/components/label for="comments" label="Comments"}}{{~!}}
+			{{> forms/components/input-textarea name="comments"}}{{~!}}
+		{{/content}}
+		{{/embed}}
+{{/content}}
+{{/embed}}

@@ -1,0 +1,18 @@
+/* ~~~~~~~~~~~~~~~~~~~~
+UTILITIES / HELPER FUNCTIONS
+~~~~~~~~~~~~~~~~~~~~~ */
+
+@mixin show($color: red) {
+	border: 1px dashed $color;
+}
+
+@mixin flex {
+	display: -ms-flex;
+	display: flex;
+}
+
+@mixin flex-center {
+	@include flex;
+	justify-content: center;
+	align-items: center;
+}

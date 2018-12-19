@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+	{{#block "head"}}
+	<title>{{meta.name}} | {{data.meta.title}}</title>
+	<meta name="description" content="{{data.meta.description}}">
+	{{> global/global-head}}
+	{{/block}}
+</head>
+<body class="{{#if additionalClasses}}{{additionalClasses}}{{/if}}">
+{{#block "header"}}
+{{> global/global-header}}
+{{/block}}{{~!}}
+	<main>
+		{{#block "body"}}
+		{{#if data.hero}}
+		{{#with data.hero}}
+		{{> modules/hero}}{{~!}}
+		{{/with}}
+		{{/if}}
+		{{/block}}{{~!}}
+	</main>
+	{{#block "footer"}}{{> global/global-footer}}{{/block}}
+</body>
+</html>

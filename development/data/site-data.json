@@ -1,0 +1,318 @@
+{
+	"site": {
+		"meta": {
+			"name": "Fixstream",
+			"themeURI": "/wp-content/themes/fixstream"
+		},
+		"theme": {
+			"Theme Name": "Fixstream",
+			"Author": "Alex Hudson",
+			"Author URI": "http://www.alexhudsondesign.com",
+			"Description": "Custom theme for Fixstream.com",
+			"Version": "1.0",
+			"Notes": "No style belongs in this file. It is simply for theme registration. All styles are built to the /css/ directory."
+		},
+		"nav": {
+			"items": [
+				{
+					"label": "Platform",
+					"slug": "platform",
+					"subnav": {
+						"items": [
+							{
+								"label": "Agent-less Auto Discovery",
+								"slug": "agent-less-auto-discovery"
+							},
+							{
+								"label": "Transaction to Infra Correlation",
+								"slug": "transaction-to-infra-correlation"
+							},
+							{
+								"label": "Machine learning",
+								"slug": "machine-learning"
+							},
+							{
+								"label": "Architecture",
+								"slug": "architecture"
+							},
+							{
+								"label": "Ecosystem",
+								"slug": "ecosystem",
+								"subnav": {
+									"items": [
+										{
+											"label": "Oracle",
+											"slug": "oracle"
+										},
+										{
+											"label": "SAP",
+											"slug": "sap"
+										},
+										{
+											"label": "Cherwell",
+											"slug": "cherwell"
+										},
+										{
+											"label": "ServiceNow",
+											"slug": "servicenow"
+										},
+										{
+											"label": "New Relic",
+											"slug": "new-relic"
+										}
+									]
+								}
+							}
+						]
+					}
+				},
+				{
+					"label": "Solutions",
+					"slug": "solutions",
+					"subnav": {
+						"items": [
+							{
+								"label": "Auto-Discovery and CMDB update",
+								"slug": "auto-discovery-and-cmdb-update"
+							},
+							{
+								"label": "Application Mapping and Event Correlation",
+								"slug": "#"
+							},
+							{
+								"label": "Infrastructure Monitoring",
+								"slug": "#"
+							},
+							{
+								"label": "Capacity Exhausting Prediction",
+								"slug": "#"
+							},
+							{
+								"label": "Noise Reduction",
+								"slug": "#"
+							},
+							{
+								"label": "Incident Prediction",
+								"slug": "#"
+							},
+							{
+								"label": "Migration",
+								"slug": "#"
+							},
+							{
+								"label": "Oracle",
+								"slug": "#"
+							},
+							{
+								"label": "SAP",
+								"slug": "#"
+							},
+							{
+								"label": "Cherwell",
+								"slug": "#"
+							},
+							{
+								"label": "ServiceNow",
+								"slug": "#"
+							},
+							{
+								"label": "New Relic",
+								"slug": "#"
+							},
+							{
+								"label": "Managed Service Providers",
+								"slug": "#"
+							}
+						]
+					}
+				},
+				{
+					"label": "Resources",
+					"slug": "resources",
+					"subnav": {
+						"items": [
+							{
+								"label": "Dummies",
+								"slug": "dummies"
+							},
+							{
+								"label": "Videos",
+								"slug": "videos"
+							},
+							{
+								"label": "Whitepapers",
+								"slug": "whitepapers"
+							},
+							{
+								"label": "Case Studies",
+								"slug": "case-studies"
+							},
+							{
+								"label": "Tech Docs",
+								"slug": "tech-docs"
+							}
+						]
+					}
+				},
+				{
+					"label": "Customers",
+					"slug": "customers",
+					"subnav": {
+						"items": [
+							{
+								"label": "Broadcom",
+								"slug": "broadcom"
+							},
+							{
+								"label": "SPXFlow",
+								"slug": "spxflow"
+							},
+							{
+								"label": "COLV",
+								"slug": "colv"
+							},
+							{
+								"label": "BT",
+								"slug": "bt"
+							}
+						]
+					}
+				},
+				{
+					"label": "What's AIOPs",
+					"slug": "whats-aiops"
+				},
+				{
+					"label": "Company",
+					"slug": "company"
+				},
+				{
+					"label": "Blog",
+					"slug": "blog"
+				}
+			]
+		},
+		"hot-news": {
+			"items": [
+				{
+					"id": 1,
+					"name": "hot news 1",
+					"headline": "hot news 1",
+					"copy": "Lorem ipsum dolor sit amet",
+					"cta": "Click now"
+				},
+				{
+					"id": 2,
+					"name": "hot news 2",
+					"headline": "hot news 2",
+					"cta": "Learn more"
+				}
+			]
+		},
+		"pages": {
+			"index": {
+				"name": "index",
+				"meta": {
+					"title": "Home",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum."
+				},
+				"h1": "Welcome to FixStream.com",
+				"hero": {
+					"headline": "hero headline",
+					"cta": "hero cta"
+				}
+			},
+			"resources": {
+				"name": "resources",
+				"meta": {
+					"title": "Resources",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum."
+				},
+				"h1": "Resources"
+			},
+			"platform": {
+				"name": "platform",
+				"meta": {
+					"title": "Platform",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum."
+				},
+				"h1": "Platform",
+				"subpages": {
+					"agent-less-auto-discovery": {
+						"name": "agent-less-auto-discovery",
+						"meta": {
+							"title": "Agent-less Auto Discovery",
+							"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum."
+						},
+						"h1": "Agent-less Auto Discovery"
+					},
+					"ecosystem": {
+						"name": "ecosystem",
+						"meta": {
+							"title": "Ecosystem",
+							"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum."
+						},
+						"h1": "Ecosystem",
+						"subpages": {
+							"oracle": {
+								"name": "oracle",
+								"meta": {
+									"title": "Oracle",
+									"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum."
+								},
+								"h1": "Oracle"
+							}
+						}
+					}
+				}
+			},
+			"solutions": {
+				"name": "solutions",
+				"meta": {
+					"title": "Solutions",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum."
+				},
+				"h1": "Solutions"
+			},
+			"whats-aiops": {
+				"name": "whats-aiops",
+				"meta": {
+					"title": "What's AIOps?",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum."
+				},
+				"h1": "What's AIOps?"
+			},
+			"customers": {
+				"name": "customers",
+				"meta": {
+					"title": "Customers",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum."
+				},
+				"h1": "Customers"
+			},
+			"company": {
+				"name": "company",
+				"meta": {
+					"title": "Company",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum."
+				},
+				"h1": "About FixStream",
+				"hero": {
+					"headline": "hero headline",
+					"cta": "hero cta"
+				}
+			},
+			"blog": {
+				"name": "blog",
+				"meta": {
+					"title": "Blog Archive",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum."
+				},
+				"h1": "Blog Archive"
+			},
+			"single": {
+				"name": "single"
+			}
+		}
+	}
+}

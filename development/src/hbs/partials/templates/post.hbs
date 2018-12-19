@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+	{{#block "head"}}
+	{{!-- <title>{{meta.name}} | <?php the_title(); ?></title> --}}
+	{{!-- META DESCRIPTION & TITLE HANDLED WITH YOAST VIA WORDPRESS --}}
+	{{> global/global-head}}
+	{{/block}}
+</head>
+<body class="{{#if additionalClasses}}{{additionalClasses}}{{/if}}">
+		{{#block "header"}}
+		{{#embed "global/global-header"}}
+		{{#content "content" mode="replace"}}
+		{{> global/global-nav}}{{~!}}
+		{{/content}}
+		{{/embed}}
+		{{/block}}{{~!}}
+	<main>
+		{{#block "body"}}
+		{{#if data.hero}}
+		{{#with data.hero}}
+		{{> modules/hero}}{{~!}}
+		{{/with}}
+		{{/if}}
+		{{/block}}{{~!}}
+	</main>
+	{{#block "footer"}}{{> global/global-footer}}{{/block}}
+</body>
+</html>

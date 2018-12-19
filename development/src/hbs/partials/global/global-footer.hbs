@@ -1,0 +1,10 @@
+<footer>
+		<nav>
+			<ul>
+				{{#each nav.items}}
+				<li><a href="/{{slug}}">{{label}}</a></li>
+				{{/each}}
+			</ul>
+		</nav>
+	</footer>
+	<?php wp_footer(); ?> 

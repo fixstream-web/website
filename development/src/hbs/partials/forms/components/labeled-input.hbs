@@ -1,0 +1,6 @@
+{{#eq type "radio"}}
+{{> forms/components/input}}<label for="{{primaryClass}}-{{id}}">{{label}}</label>
+{{else}}
+<label for="{{name}}">{{label}}</label>
+			{{> forms/components/input}}
+{{/eq}}

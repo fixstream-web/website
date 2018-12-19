@@ -1,0 +1,37 @@
+<?php
+
+/*
+Since we're not using WordPress for pages, we have to manually handle routing to the proper template. This switch statement will need to reflect the entire catalog of pages.
+*/
+// **TODO this needs to handle nested pages (i.e. /platform/ecosystem/oracle)
+  // ideally nested depth is flexible (right now hard coded up to 3 levels deep)
+add_action('init', 'customRouter');
+function customRouter() {
+  $url_path = trim(parse_url(add_query_arg(array()), PHP_URL_PATH), '/');
+  switch ($url_path) {
+    {{#with nav}}
+    {{#each items}}
+    case "{{slug}}": $load = locate_template('{{slug}}.php', true); break;
+        {{#if subnav}}
+        {{#with subnav}}
+        {{#each items}}
+    case "{{slug}}": $load = locate_template('{{slug}}.php', true); break;
+            {{#if subnav}}
+            {{#with subnav}}
+            {{#each items}}
+    case "{{slug}}": $load = locate_template('{{slug}}.php', true); break;
+            {{/each}}
+            {{/with}}
+            {{/if}}
+        {{/each}}
+        {{/with}}
+        {{/if}}
+    {{/each}}
+    {{/with}}
+    default:
+    {{!-- Do we need a default? --}}
+  }
+  if ($load) {
+        exit();
+  }
+}
