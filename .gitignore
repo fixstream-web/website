@@ -1,2 +1,14 @@
 wordpress/wp-config.php
 development/node_modules
+.DS_Store
+development/.DS_Store
+development/src/hbs/.DS_Store
+development/src/hbs/partials/.DS_Store
+development/src/hbs/partials/forms/.DS_Store
+development/src/hbs/partials/global/.DS_Store
+development/src/hbs/partials/global/components/.DS_Store
+development/src/js/.DS_Store
+development/src/js/modules/.DS_Store
+development/src/scss/.DS_Store
+wordpress/.DS_Store
+wordpress/wp-content/themes/.DS_Store
