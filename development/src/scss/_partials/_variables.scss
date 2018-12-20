@@ -12,6 +12,11 @@ $light: 100;
 COLORS
 ~~~~~~~~~~~~~~~~~~~~~ */
 $black: #000;
+$gray-1: #282828;
+$gray-2: #505050;
+$gray-3: #909090;
+$gray-4: #C8C8C8;
+$gray-5: #F0F0F0;
 $white: #fff;
 
 
@@ -29,3 +34,10 @@ ANIMATION
 $duration-quick: 0.3s;
 $duration-normal: 0.45s;
 $duration-slow: 0.6s;
+
+
+/* ~~~~~~~~~~~~~~~~~~~~
+LAYOUT
+~~~~~~~~~~~~~~~~~~~~~ */
+$site-max-width: 1050px;
+$site-base-width: 80%;

@@ -16,3 +16,9 @@ UTILITIES / HELPER FUNCTIONS
 	justify-content: center;
 	align-items: center;
 }
+
+@mixin media($query) {
+	@media screen and (min-width: $query) {
+		@content;
+	}
+}

@@ -1,11 +1,11 @@
-	<header>
-		<a href="/">
+	<header class="globalheader">
+		{{!-- <a href="/">
 			<img src="" />
-		</a>
+		</a> --}}
 	{{#block "content"}}
 		{{> global/global-nav}}{{~!}}
-		<div class="page-header">
-			<h1 class="page-headline">{{data.h1}}</h1>
+		<div class="pageheader">
+			<h1 class="pageheader-headline">{{data.h1}}</h1>
 		</div>
 		{{/block}}{{~!}}
 	</header>

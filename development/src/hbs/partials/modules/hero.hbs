@@ -1,5 +1,5 @@
-<section class="section hero">
-			<div class="section-content">
+{{#embed "modules/section" name="hero"}}
+{{#content "contents" mode="append"}}
 			{{#if headline}}
 				<h2 class="section-headline hero-headline">{{headline}}</h2>
 				{{/if}}
@@ -7,7 +7,7 @@
 				<p class="section-intro hero-intro">{{intro}}</p>
 				{{/if}}
 				{{#if cta}}
-				<a class="section-cta hero-cta">{{cta}}</a>
+				<a class="section-cta hero-cta" href="{{cta.meta.url}}">{{cta.value}}</a>
 				{{/if}}
-			</div>
-		</section>
+{{/content}}
+{{/embed}}

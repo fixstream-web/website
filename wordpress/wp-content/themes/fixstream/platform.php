@@ -9,159 +9,156 @@
 	<script type="text/javascript" src="/wp-content/themes/fixstream/js/platform.js"></script>
 </head>
 <body class="page-platform">
-	<header>
-		<a href="/">
-			<img src="" />
-		</a>
-		<nav>
-			<ul>
-				<li>
-					<a href="/platform">Platform</a>
-					<ul>
-						<li>
-							<a href="/platform/agent-less-auto-discovery">Agent-less Auto Discovery</a>
+	<header class="globalheader">
+		<nav class="globalnav">
+			<ul class="globalnav__toplevel">
+				<li class="globalnav__toplevel-item">
+					<a class="globalnav__toplevel-link" href="/platform">Platform</a>
+					<ul class="globalnav__subnav">
+						<li class="globalnav__subnav-item">
+							<a class="globalnav__subnav-link" href="/platform/agent-less-auto-discovery">Agent-less Auto Discovery</a>
 						</li>
-						<li>
-							<a href="/platform/transaction-to-infra-correlation">Transaction to Infra Correlation</a>
+						<li class="globalnav__subnav-item">
+							<a class="globalnav__subnav-link" href="/platform/transaction-to-infra-correlation">Transaction to Infra Correlation</a>
 						</li>
-						<li>
-							<a href="/platform/machine-learning">Machine learning</a>
+						<li class="globalnav__subnav-item">
+							<a class="globalnav__subnav-link" href="/platform/machine-learning">Machine learning</a>
 						</li>
-						<li>
-							<a href="/platform/architecture">Architecture</a>
+						<li class="globalnav__subnav-item">
+							<a class="globalnav__subnav-link" href="/platform/architecture">Architecture</a>
 						</li>
-						<li>
-							<a href="/platform/ecosystem">Ecosystem</a>
-										<ul>
-						<li>
-							<a href="/ecosystem/oracle">Oracle</a>
+						<li class="globalnav__subnav-item">
+							<a class="globalnav__subnav-link" href="/platform/ecosystem">Ecosystem</a>
+										<ul class="globalnav__subnav">
+						<li class="globalnav__subnav-item">
+							<a class="globalnav__subnav-link" href="/ecosystem/oracle">Oracle</a>
 						</li>
-						<li>
-							<a href="/ecosystem/sap">SAP</a>
+						<li class="globalnav__subnav-item">
+							<a class="globalnav__subnav-link" href="/ecosystem/sap">SAP</a>
 						</li>
-						<li>
-							<a href="/ecosystem/cherwell">Cherwell</a>
+						<li class="globalnav__subnav-item">
+							<a class="globalnav__subnav-link" href="/ecosystem/cherwell">Cherwell</a>
 						</li>
-						<li>
-							<a href="/ecosystem/servicenow">ServiceNow</a>
+						<li class="globalnav__subnav-item">
+							<a class="globalnav__subnav-link" href="/ecosystem/servicenow">ServiceNow</a>
 						</li>
-						<li>
-							<a href="/ecosystem/new-relic">New Relic</a>
+						<li class="globalnav__subnav-item">
+							<a class="globalnav__subnav-link" href="/ecosystem/new-relic">New Relic</a>
 						</li>
 					</ul>
 						</li>
 					</ul>
 				</li>
-				<li>
-					<a href="/solutions">Solutions</a>
-					<ul>
-						<li>
-							<a href="/solutions/auto-discovery-and-cmdb-update">Auto-Discovery and CMDB update</a>
+				<li class="globalnav__toplevel-item">
+					<a class="globalnav__toplevel-link" href="/solutions">Solutions</a>
+					<ul class="globalnav__subnav">
+						<li class="globalnav__subnav-item">
+							<a class="globalnav__subnav-link" href="/solutions/auto-discovery-and-cmdb-update">Auto-Discovery and CMDB update</a>
 						</li>
-						<li>
-							<a href="/solutions/#">Application Mapping and Event Correlation</a>
+						<li class="globalnav__subnav-item">
+							<a class="globalnav__subnav-link" href="/solutions/#">Application Mapping and Event Correlation</a>
 						</li>
-						<li>
-							<a href="/solutions/#">Infrastructure Monitoring</a>
+						<li class="globalnav__subnav-item">
+							<a class="globalnav__subnav-link" href="/solutions/#">Infrastructure Monitoring</a>
 						</li>
-						<li>
-							<a href="/solutions/#">Capacity Exhausting Prediction</a>
+						<li class="globalnav__subnav-item">
+							<a class="globalnav__subnav-link" href="/solutions/#">Capacity Exhausting Prediction</a>
 						</li>
-						<li>
-							<a href="/solutions/#">Noise Reduction</a>
+						<li class="globalnav__subnav-item">
+							<a class="globalnav__subnav-link" href="/solutions/#">Noise Reduction</a>
 						</li>
-						<li>
-							<a href="/solutions/#">Incident Prediction</a>
+						<li class="globalnav__subnav-item">
+							<a class="globalnav__subnav-link" href="/solutions/#">Incident Prediction</a>
 						</li>
-						<li>
-							<a href="/solutions/#">Migration</a>
+						<li class="globalnav__subnav-item">
+							<a class="globalnav__subnav-link" href="/solutions/#">Migration</a>
 						</li>
-						<li>
-							<a href="/solutions/#">Oracle</a>
+						<li class="globalnav__subnav-item">
+							<a class="globalnav__subnav-link" href="/solutions/#">Oracle</a>
 						</li>
-						<li>
-							<a href="/solutions/#">SAP</a>
+						<li class="globalnav__subnav-item">
+							<a class="globalnav__subnav-link" href="/solutions/#">SAP</a>
 						</li>
-						<li>
-							<a href="/solutions/#">Cherwell</a>
+						<li class="globalnav__subnav-item">
+							<a class="globalnav__subnav-link" href="/solutions/#">Cherwell</a>
 						</li>
-						<li>
-							<a href="/solutions/#">ServiceNow</a>
+						<li class="globalnav__subnav-item">
+							<a class="globalnav__subnav-link" href="/solutions/#">ServiceNow</a>
 						</li>
-						<li>
-							<a href="/solutions/#">New Relic</a>
+						<li class="globalnav__subnav-item">
+							<a class="globalnav__subnav-link" href="/solutions/#">New Relic</a>
 						</li>
-						<li>
-							<a href="/solutions/#">Managed Service Providers</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="/resources">Resources</a>
-					<ul>
-						<li>
-							<a href="/resources/dummies">Dummies</a>
-						</li>
-						<li>
-							<a href="/resources/videos">Videos</a>
-						</li>
-						<li>
-							<a href="/resources/whitepapers">Whitepapers</a>
-						</li>
-						<li>
-							<a href="/resources/case-studies">Case Studies</a>
-						</li>
-						<li>
-							<a href="/resources/tech-docs">Tech Docs</a>
+						<li class="globalnav__subnav-item">
+							<a class="globalnav__subnav-link" href="/solutions/#">Managed Service Providers</a>
 						</li>
 					</ul>
 				</li>
-				<li>
-					<a href="/customers">Customers</a>
-					<ul>
-						<li>
-							<a href="/customers/broadcom">Broadcom</a>
+				<li class="globalnav__toplevel-item">
+					<a class="globalnav__toplevel-link" href="/resources">Resources</a>
+					<ul class="globalnav__subnav">
+						<li class="globalnav__subnav-item">
+							<a class="globalnav__subnav-link" href="/resources/dummies">Dummies</a>
 						</li>
-						<li>
-							<a href="/customers/spxflow">SPXFlow</a>
+						<li class="globalnav__subnav-item">
+							<a class="globalnav__subnav-link" href="/resources/videos">Videos</a>
 						</li>
-						<li>
-							<a href="/customers/colv">COLV</a>
+						<li class="globalnav__subnav-item">
+							<a class="globalnav__subnav-link" href="/resources/whitepapers">Whitepapers</a>
 						</li>
-						<li>
-							<a href="/customers/bt">BT</a>
+						<li class="globalnav__subnav-item">
+							<a class="globalnav__subnav-link" href="/resources/case-studies">Case Studies</a>
+						</li>
+						<li class="globalnav__subnav-item">
+							<a class="globalnav__subnav-link" href="/resources/tech-docs">Tech Docs</a>
 						</li>
 					</ul>
 				</li>
-				<li>
-					<a href="/whats-aiops">What&#x27;s AIOPs</a>
+				<li class="globalnav__toplevel-item">
+					<a class="globalnav__toplevel-link" href="/customers">Customers</a>
+					<ul class="globalnav__subnav">
+						<li class="globalnav__subnav-item">
+							<a class="globalnav__subnav-link" href="/customers/broadcom">Broadcom</a>
+						</li>
+						<li class="globalnav__subnav-item">
+							<a class="globalnav__subnav-link" href="/customers/spxflow">SPXFlow</a>
+						</li>
+						<li class="globalnav__subnav-item">
+							<a class="globalnav__subnav-link" href="/customers/colv">COLV</a>
+						</li>
+						<li class="globalnav__subnav-item">
+							<a class="globalnav__subnav-link" href="/customers/bt">BT</a>
+						</li>
+					</ul>
 				</li>
-				<li>
-					<a href="/company">Company</a>
+				<li class="globalnav__toplevel-item">
+					<a class="globalnav__toplevel-link" href="/whats-aiops">What&#x27;s AIOPs</a>
 				</li>
-				<li>
-					<a href="/blog">Blog</a>
+				<li class="globalnav__toplevel-item">
+					<a class="globalnav__toplevel-link" href="/company">Company</a>
+				</li>
+				<li class="globalnav__toplevel-item">
+					<a class="globalnav__toplevel-link" href="/blog">Blog</a>
 				</li>
 			</ul>
 		</nav>
-		<div class="page-header">
-			<h1 class="page-headline">Platform</h1>
+		<div class="pageheader">
+			<h1 class="pageheader-headline">Platform</h1>
 		</div>
 		
 	</header>
 	<main>
 		
 	</main>
-	<footer>
-		<nav>
-			<ul>
-				<li><a href="/platform">Platform</a></li>
-				<li><a href="/solutions">Solutions</a></li>
-				<li><a href="/resources">Resources</a></li>
-				<li><a href="/customers">Customers</a></li>
-				<li><a href="/whats-aiops">What&#x27;s AIOPs</a></li>
-				<li><a href="/company">Company</a></li>
-				<li><a href="/blog">Blog</a></li>
+	<footer class="globalfooter">
+		<nav class="globalfooter__nav">
+			<ul class="globalfooter__nav-list">
+				<li class="globalfooter__nav-item"><a class="globalfooter__nav-link" href="/platform">Platform</a></li>
+				<li class="globalfooter__nav-item"><a class="globalfooter__nav-link" href="/solutions">Solutions</a></li>
+				<li class="globalfooter__nav-item"><a class="globalfooter__nav-link" href="/resources">Resources</a></li>
+				<li class="globalfooter__nav-item"><a class="globalfooter__nav-link" href="/customers">Customers</a></li>
+				<li class="globalfooter__nav-item"><a class="globalfooter__nav-link" href="/whats-aiops">What&#x27;s AIOPs</a></li>
+				<li class="globalfooter__nav-item"><a class="globalfooter__nav-link" href="/company">Company</a></li>
+				<li class="globalfooter__nav-item"><a class="globalfooter__nav-link" href="/blog">Blog</a></li>
 			</ul>
 		</nav>
 	</footer>

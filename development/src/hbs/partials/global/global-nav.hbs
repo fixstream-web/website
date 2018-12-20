@@ -1,8 +1,8 @@
-<nav>
-			<ul>
+<nav class="globalnav">
+			<ul class="globalnav__toplevel">
 				{{#each nav.items}}
-				<li>
-					<a href="/{{slug}}">{{label}}</a>
+				<li class="globalnav__toplevel-item">
+					<a class="globalnav__toplevel-link" href="/{{slug}}">{{label}}</a>
 					{{#if subnav}}
 					{{> global/components/subnav}}{{~!}}
 					{{/if}}

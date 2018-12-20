@@ -1,0 +1,23 @@
+.globalnav {
+	width: $site-base-width;
+	max-width: $site-max-width;
+	margin: auto;
+	background: $gray-5;
+	&__toplevel {
+		// @include show(red);
+		&-item {
+			// @include show(green);
+		}
+		&-link {
+		}
+	}
+	&__subnav {
+		display: none;
+		// @include show(blue);
+		&-item {
+			// @include show(yellow);
+		}
+		&-link {
+		}
+	}
+}

@@ -1,10 +1,10 @@
-<ul>
+<ul class="globalnav__subnav">
 						{{#each subnav.items}}
-						<li>
+						<li class="globalnav__subnav-item">
 							{{!-- **TODO: HANDLE INFINITE NAV DEPTH --}}
 							{{!-- CURRENTLY JUST ONE LEVEL DEEP --}}
 							{{!-- This is related to how template assignments get generated in functions.hbs --}}
-							<a href="/{{../slug}}/{{slug}}">{{label}}</a>
+							<a class="globalnav__subnav-link" href="/{{../slug}}/{{slug}}">{{label}}</a>
 							{{#if subnav}}
 										{{> global/components/subnav}}{{~!}}
 										{{/if}}
