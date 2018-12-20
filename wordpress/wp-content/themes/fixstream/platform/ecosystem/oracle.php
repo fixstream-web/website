@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html class="no-js">
 <head>
-	<title>Fixstream | Home</title>
+	<title>Fixstream | Oracle</title>
 	<meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<?php wp_head(); ?>
-	<link rel="stylesheet" href="/wp-content/themes/fixstream/css/index.css">
-	<script type="text/javascript" src="/wp-content/themes/fixstream/js/index.js"></script>
+	<link rel="stylesheet" href="/wp-content/themes/fixstream/css/oracle.css">
+	<script type="text/javascript" src="/wp-content/themes/fixstream/js/oracle.js"></script>
 </head>
-<body class="page-index">
+<body class="page-platform-ecosystem page-platform-ecosystem-oracle">
 	<header class="globalheader">
 		<nav class="globalnav">
 			<ul class="globalnav__toplevel">
@@ -142,39 +142,12 @@
 			</ul>
 		</nav>
 		<div class="pageheader">
-			<h1 class="pageheader-headline">Prevent and Predict Outages</h1>
+			<h1 class="pageheader-headline">Oracle</h1>
 		</div>
 		
 	</header>
 	<main>
-		<section class="section section-hero">
-			<div class="section-content">
-				<h2 class="section-headline hero-headline">Prevent and Predict Outages</h2>
-				<p class="section-intro hero-intro">AIOps Platform to Discover, Correlate and Predict Events Across Hybrid IT</p>
-				<a class="section-cta hero-cta" href="/resources">Watch video</a>
-			</div>
-		</section>
-		<section class="section section-success-stories">
-			<div class="section-content">
-<h2>Success Stories</h2>
-			</div>
-		</section>
-<section class="section section-what-fixstream-does">
-			<div class="section-content">
-<h2>What FixStream Does</h2>
-			</div>
-		</section>
-<section class="section section-customer-testimonials">
-			<div class="section-content">
-<h2>Customer Testimonials</h2>
-			</div>
-		</section>
-<section class="section section-resources">
-			<div class="section-content">
-<h2>Resources</h2>
-			</div>
-		</section>
-
+		
 	</main>
 	<footer class="globalfooter">
 		<nav class="globalfooter__nav">

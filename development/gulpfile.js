@@ -34,7 +34,7 @@ function string_src(filename, string) {
 }
 
 gulp.task('css', function(){
-    return gulp.src(path.join(config.paths.src, '/scss/*.scss'))
+    return gulp.src(path.join(config.paths.src, '/scss/**/*.scss'))
         .pipe(sass(config.sassOptions)
             .on('error', sass.logError))
         .pipe(autoprefixer(config.autoprefixerOptions))
@@ -47,16 +47,37 @@ gulp.task('css:watch', function(){
 
 gulp.task('pages', function(){
     const pageTypes = ['scss','hbs','js'];
-    loopPageSet(data.site.pages);
+    let nestLvl = 0;
+    loopPageSet(data.site.pages, "");
 
-    function loopPageSet(set) {
+    function loopPageSet(set, parentCtx, resetCtx = false) {
         // Loop over all pages in site data
         for (var key in set) {
+            // Handle level of nesting for subpages
+            let newParentCtx;
+            if (!resetCtx || nestLvl > 0) {
+                newParentCtx = parentCtx;
+            } else {
+                newParentCtx = "";
+            }
 
             // Establish defaults
-            // Needs to be nested in object loop so we have access to key
+            let datapath = key;
+            let pageclasses = "page-" + key;
+            let classprefix;
+            if (nestLvl > 0) {
+                const slashes = new RegExp('\/', 'g');
+                const lastDash = new RegExp('\-$', 'g');
+
+                // Logic for nested datapath
+                datapath = newParentCtx.replace(slashes,'.subpages.') + key;
+
+                // Logic for nested page classes
+                classprefix = newParentCtx.replace(slashes,'-').replace(lastDash, '');
+                pageclasses = "page-" + classprefix + " page-" + classprefix + "-" + key;
+            }
             const defaultHBS =
-    `{{#embed "templates/page" data=pages.${key} additionalClasses="page-${key}"}}
+    `{{#embed "templates/page" data=pages.${datapath} additionalClasses="${pageclasses}"}}
     {{#content "head" mode="append"}}
     {{!-- append page specific head tags --}}
     {{/content}}
@@ -65,22 +86,27 @@ gulp.task('pages', function(){
     {{/content}}
     {{/embed}}`;
             const defaultJS = '/* Default JS*/';
-            const defaultSCSS = "@import '_partials/core';";
+            const defaultSCSS = "@import 'core';";
 
             pageTypes.forEach(function(type){
-                // Check if a file.[type] exists for this page                
-                // Try to access the source file by key
+                // Check if a file.[type] exists for this page by trying to access the source file by key
                 ((key, type) => {
-                    // let filepath = path.join(config.paths.src, '/' + type + '/', key + '.' + type);
-                    let filedir = (type == 'hbs' ? path.join(config.paths.src, '/' + type + '/pages/') : path.join(config.paths.src, '/' + type + '/'));
+                    let filedir = (() => {
+                        let tmpPath = config.paths.src;
+                        if (type == 'hbs') {
+                            tmpPath = path.join(tmpPath, '/' + type + '/pages/', newParentCtx);
+                        } else {
+                            tmpPath = path.join(tmpPath, '/' + type, newParentCtx);
+                        }
+                        return tmpPath;
+                    })();
                     let filename = key + '.' + type;
                     let filepath = path.join(filedir, filename);
                     return fs.access(filepath, (err) => {
                         if (err) {
                             // There is no file.[type] by that name
                             console.log('###########################################');
-                            console.log('No ' + type.toUpperCase() + ' file found for: ' + key);
-                            console.log('The build has created it');
+                            console.log('Created ' + key + '.' + type);
                             console.log('###########################################');
                             let content;
                             switch(type) {
@@ -105,14 +131,32 @@ gulp.task('pages', function(){
                     });
                 })(key, type);
             });
-            //**TODO: Handle subpage generation
-                // Place into parent folder in hbs/pages/ (?)
-            // if (set[key].subpages) {
-            //     loopPageSet(set[key].subpages);
-            // }
+
+            //if page is the last object in a set, reset parent context to "";
+            function isLastPage(){
+                if (Object.keys(set).slice(-1)[0] == key) {
+                    return true
+                } else {
+                    return false
+                }
+            }
+
+            // If this page has subpages
+            if (set[key].subpages) {
+                nestLvl++;
+                // Establish the context for the subpages
+                newParentCtx += key + "/";
+                // Run page generation on subpages
+                loopPageSet(set[key].subpages, newParentCtx, isLastPage());
+            }
+
+            if (resetCtx) {
+                nestLvl = 0;
+                newParentCtx = "";
+            }
         }
     }
-    
+
     //**TODO: Create an errCount checker for success message
         // Encountering an async issue
         // Need to wait until all looping is done before testing errCount
@@ -126,7 +170,7 @@ gulp.task('pages', function(){
 });
 
 gulp.task('hbs', function(){
-    gulp.src(path.join(config.paths.src, '/hbs/pages/*.hbs'))
+    gulp.src(path.join(config.paths.src, '/hbs/pages/**/*.hbs'))
         .pipe(compilehbs(data.site, {
                             ignorePartials: true,
                             batch: [path.join(config.paths.src, '/hbs/partials')],
@@ -148,7 +192,10 @@ gulp.task('hbs:watch', function(){
 
 gulp.task('js', function() {
     // Single entry point to browserify
-    gulp.src(path.join(config.paths.src, '/js/*.js'))
+    gulp.src([
+            path.join(config.paths.src, '/js/**/*.js'),
+            "!" + path.join(config.paths.src, '/js/_modules/*.js')
+        ])
         .pipe(browserify())
         .pipe(gulp.dest(path.join(config.paths.built, '/js')))
 });

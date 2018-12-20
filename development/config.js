@@ -18,7 +18,11 @@ exports.types = {
  * https://www.npmjs.com/package/gulp-sass
  */
 exports.sassOptions = {
-	outputStyle: 'compressed'
+	outputStyle: 'compressed',
+	includePaths: [
+		'./src/scss/_partials/',
+		'./node_modules/reset-css/sass/'
+	]
 };
 
 

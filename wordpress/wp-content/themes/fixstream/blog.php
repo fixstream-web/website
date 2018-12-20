@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="/wp-content/themes/fixstream/css/blog.css">
 	<script type="text/javascript" src="/wp-content/themes/fixstream/js/blog.js"></script>
 </head>
-<body class="page-blog-archive">
+<body class="page-blog">
 	<header class="globalheader">
 		<nav class="globalnav">
 			<ul class="globalnav__toplevel">
@@ -142,8 +142,7 @@
 
 	</header>		
 	<main>
-		
-		<?php if (have_posts()) : while (have_posts()) : the_post();?>
+		    <?php if (have_posts()) : while (have_posts()) : the_post();?>
 		<?php endwhile; endif; wp_reset_query(); ?>
 
 	</main>
