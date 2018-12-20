@@ -46,9 +46,24 @@ gulp.task('css:watch', function(){
 });
 
 gulp.task('pages', function(){
+    let errCount = 0;
+    let pageCount = 0;
+    let pagesTested = 0;
     const pageTypes = ['scss','hbs','js'];
     let nestLvl = 0;
     loopPageSet(data.site.pages, "");
+
+    countPages(data.site.pages);
+    function countPages(set){
+        for (var key in set) {
+            pageTypes.forEach(function(type){
+                pageCount++;
+            })
+            if (set[key].subpages) {
+                countPages(set[key].subpages);
+            }
+        }
+    }
 
     function loopPageSet(set, parentCtx, resetCtx = false) {
         // Loop over all pages in site data
@@ -108,6 +123,7 @@ gulp.task('pages', function(){
                     let filepath = path.join(filedir, filename);
                     return fs.access(filepath, (err) => {
                         if (err) {
+                            errCount++;
                             // There is no file.[type] by that name
                             console.log('###########################################');
                             console.log('Created ' + key + '.' + type);
@@ -132,6 +148,8 @@ gulp.task('pages', function(){
                         } else {
                             // console.log('No error on: ' + key + "." + type);
                         }
+                        pagesTested++;
+                        testSuccess();
                     });
                 })(key, type);
             });
@@ -161,16 +179,16 @@ gulp.task('pages', function(){
         }
     }
 
-    //**TODO: Create an errCount checker for success message
-        // Encountering an async issue
-        // Need to wait until all looping is done before testing errCount
-    /*
-    if (errCount <= 0) {
-         console.log('##################################################');
-         console.log('Source files are in sync with pages in site data!');
-         console.log('##################################################');
+    function testSuccess(){
+        // Mechanism to handle async page generation
+        if (pagesTested == pageCount && errCount <= 0) {
+             console.log('##################################################');
+             console.log('Congratulations!');
+             console.log('Source files are in sync with pages in site data!');
+             console.log('There are ' + pageCount / pageTypes.length + ' pages; each with ' + pageTypes.join(', ').toUpperCase());
+             console.log('##################################################');
+        }
     }
-    */
 });
 
 gulp.task('hbs', function(){
