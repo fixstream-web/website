@@ -2,6 +2,7 @@
 Development source and WordPress build for www.FixStream.com. No manual updates should be made to the /wordpress directory- all compiled in /development. We generate a unique CSS file for each page (using modular Sass imports) to minimize HTTP requests.
 
 **TODO**: Confirm JS strategy (separate a universal head JS?).
+**TODO**: Add .nvmrc (built using v8.11.3)
 
 ---
 
