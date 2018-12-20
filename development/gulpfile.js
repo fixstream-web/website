@@ -65,8 +65,10 @@ gulp.task('pages', function(){
             let datapath = key;
             let pageclasses = "page-" + key;
             let classprefix;
+            let defaultSCSS = "@import 'core';";
             if (nestLvl > 0) {
                 const slashes = new RegExp('\/', 'g');
+                const lastSlash = new RegExp('\/$', 'g');
                 const lastDash = new RegExp('\-$', 'g');
 
                 // Logic for nested datapath
@@ -75,6 +77,8 @@ gulp.task('pages', function(){
                 // Logic for nested page classes
                 classprefix = newParentCtx.replace(slashes,'-').replace(lastDash, '');
                 pageclasses = "page-" + classprefix + " page-" + classprefix + "-" + key;
+
+                defaultSCSS = `@import '../${newParentCtx.replace(lastSlash, "")}';`;
             }
             const defaultHBS =
     `{{#embed "templates/page" data=pages.${datapath} additionalClasses="${pageclasses}"}}
@@ -86,7 +90,7 @@ gulp.task('pages', function(){
     {{/content}}
     {{/embed}}`;
             const defaultJS = '/* Default JS*/';
-            const defaultSCSS = "@import 'core';";
+            // const defaultSCSS = "@import 'core';";
 
             pageTypes.forEach(function(type){
                 // Check if a file.[type] exists for this page by trying to access the source file by key
