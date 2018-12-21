@@ -18,36 +18,56 @@
 			<ul class="globalnav__toplevel">
 				<li class="globalnav__toplevel-item">
 					<a class="globalnav__toplevel-link" href="/platform">Platform</a>
-					<ul class="globalnav__subnav">
+						<ul class="globalnav__subnav">
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/platform/agent-less-auto-discovery">Agent-less Auto Discovery</a>
+							<a class="globalnav__subnav-link" href="/platform/agent-less-auto-discovery">
+								Agent-less Auto Discovery
+							</a>
 						</li>
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/platform/transaction-to-infra-correlation">Transaction to Infra Correlation</a>
+							<a class="globalnav__subnav-link" href="/platform/transaction-to-infra-correlation">
+								Transaction to Infra Correlation
+							</a>
 						</li>
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/platform/machine-learning">Machine learning</a>
+							<a class="globalnav__subnav-link" href="/platform/machine-learning">
+								Machine learning
+							</a>
 						</li>
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/platform/architecture">Architecture</a>
+							<a class="globalnav__subnav-link" href="/platform/architecture">
+								Architecture
+							</a>
 						</li>
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/platform/ecosystem">Ecosystem</a>
-										<ul class="globalnav__subnav">
+							<a class="globalnav__subnav-link" href="/platform/ecosystem">
+								Ecosystem
+							</a>
+								<ul class="globalnav__subnav">
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/ecosystem/oracle">Oracle</a>
+							<a class="globalnav__subnav-link" href="/platform/ecosystem/oracle">
+								Oracle
+							</a>
 						</li>
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/ecosystem/sap">SAP</a>
+							<a class="globalnav__subnav-link" href="/platform/ecosystem/sap">
+								SAP
+							</a>
 						</li>
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/ecosystem/cherwell">Cherwell</a>
+							<a class="globalnav__subnav-link" href="/platform/ecosystem/cherwell">
+								Cherwell
+							</a>
 						</li>
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/ecosystem/servicenow">ServiceNow</a>
+							<a class="globalnav__subnav-link" href="/platform/ecosystem/servicenow">
+								ServiceNow
+							</a>
 						</li>
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/ecosystem/new-relic">New Relic</a>
+							<a class="globalnav__subnav-link" href="/platform/ecosystem/new-relic">
+								New Relic
+							</a>
 						</li>
 					</ul>
 						</li>
@@ -55,82 +75,126 @@
 				</li>
 				<li class="globalnav__toplevel-item">
 					<a class="globalnav__toplevel-link" href="/solutions">Solutions</a>
-					<ul class="globalnav__subnav">
+						<ul class="globalnav__subnav">
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/solutions/auto-discovery-and-cmdb-update">Auto-Discovery and CMDB update</a>
+							<a class="globalnav__subnav-link" href="/solutions/auto-discovery-and-cmdb-update">
+								Auto-Discovery and CMDB update
+							</a>
 						</li>
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/solutions/#">Application Mapping and Event Correlation</a>
+							<a class="globalnav__subnav-link" href="/solutions/#">
+								Application Mapping and Event Correlation
+							</a>
 						</li>
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/solutions/#">Infrastructure Monitoring</a>
+							<a class="globalnav__subnav-link" href="/solutions/#">
+								Infrastructure Monitoring
+							</a>
 						</li>
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/solutions/#">Capacity Exhausting Prediction</a>
+							<a class="globalnav__subnav-link" href="/solutions/#">
+								Capacity Exhausting Prediction
+							</a>
 						</li>
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/solutions/#">Noise Reduction</a>
+							<a class="globalnav__subnav-link" href="/solutions/#">
+								Noise Reduction
+							</a>
 						</li>
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/solutions/#">Incident Prediction</a>
+							<a class="globalnav__subnav-link" href="/solutions/#">
+								Incident Prediction
+							</a>
 						</li>
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/solutions/#">Migration</a>
+							<a class="globalnav__subnav-link" href="/solutions/#">
+								Migration
+							</a>
 						</li>
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/solutions/#">Oracle</a>
+							<a class="globalnav__subnav-link" href="/solutions/#">
+								Oracle
+							</a>
 						</li>
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/solutions/#">SAP</a>
+							<a class="globalnav__subnav-link" href="/solutions/#">
+								SAP
+							</a>
 						</li>
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/solutions/#">Cherwell</a>
+							<a class="globalnav__subnav-link" href="/solutions/#">
+								Cherwell
+							</a>
 						</li>
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/solutions/#">ServiceNow</a>
+							<a class="globalnav__subnav-link" href="/solutions/#">
+								ServiceNow
+							</a>
 						</li>
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/solutions/#">New Relic</a>
+							<a class="globalnav__subnav-link" href="/solutions/#">
+								New Relic
+							</a>
 						</li>
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/solutions/#">Managed Service Providers</a>
+							<a class="globalnav__subnav-link" href="/solutions/#">
+								Managed Service Providers
+							</a>
 						</li>
 					</ul>
 				</li>
 				<li class="globalnav__toplevel-item">
 					<a class="globalnav__toplevel-link" href="/resources">Resources</a>
-					<ul class="globalnav__subnav">
+						<ul class="globalnav__subnav">
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/resources/dummies">Dummies</a>
+							<a class="globalnav__subnav-link" href="/resources/dummies">
+								Dummies
+							</a>
 						</li>
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/resources/videos">Videos</a>
+							<a class="globalnav__subnav-link" href="/resources/videos">
+								Videos
+							</a>
 						</li>
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/resources/whitepapers">Whitepapers</a>
+							<a class="globalnav__subnav-link" href="/resources/whitepapers">
+								Whitepapers
+							</a>
 						</li>
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/resources/case-studies">Case Studies</a>
+							<a class="globalnav__subnav-link" href="/resources/case-studies">
+								Case Studies
+							</a>
 						</li>
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/resources/tech-docs">Tech Docs</a>
+							<a class="globalnav__subnav-link" href="/resources/tech-docs">
+								Tech Docs
+							</a>
 						</li>
 					</ul>
 				</li>
 				<li class="globalnav__toplevel-item">
 					<a class="globalnav__toplevel-link" href="/customers">Customers</a>
-					<ul class="globalnav__subnav">
+						<ul class="globalnav__subnav">
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/customers/broadcom">Broadcom</a>
+							<a class="globalnav__subnav-link" href="/customers/broadcom">
+								Broadcom
+							</a>
 						</li>
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/customers/spxflow">SPXFlow</a>
+							<a class="globalnav__subnav-link" href="/customers/spxflow">
+								SPXFlow
+							</a>
 						</li>
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/customers/colv">COLV</a>
+							<a class="globalnav__subnav-link" href="/customers/colv">
+								COLV
+							</a>
 						</li>
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/customers/bt">BT</a>
+							<a class="globalnav__subnav-link" href="/customers/bt">
+								BT
+							</a>
 						</li>
 					</ul>
 				</li>

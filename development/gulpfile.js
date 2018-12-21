@@ -192,13 +192,24 @@ gulp.task('pages', function(){
 });
 
 gulp.task('hbs', function(){
-    gulp.src(path.join(config.paths.src, '/hbs/pages/**/*.hbs'))
+    gulp.src([
+        path.join(config.paths.src, '/hbs/pages/**/*.hbs'),
+        path.join(config.paths.src, 'functions.hbs')
+        ])
         .pipe(compilehbs(data.site, {
                             ignorePartials: true,
                             batch: [path.join(config.paths.src, '/hbs/partials')],
                             helpers: {
                                 eq: function(arg1, arg2, options) {
                                     return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
+                                },
+                                log: function(arg1, arg2, options) {
+                                    if (arg2) {
+                                        console.log(arg1 + " " + arg2);
+                                    } else {
+                                        console.log(arg1);
+                                    }
+                                    
                                 }
                             }
                         }))
@@ -231,18 +242,7 @@ gulp.task('js:watch', function(){
     gulp.watch(path.join(config.paths.src, '/js/*.js'), ['js']);
 });
 
-gulp.task('functions', function(){
-    // Processes any HBS in functions.php
-        // Loops site nav to assign templates
-    gulp.src(path.join(config.paths.src, 'functions.hbs'))
-        .pipe(compilehbs(data.site, {}))
-        .pipe(rename({
-            extname: config.types.ext
-        }))
-    .pipe(gulp.dest(config.paths.built));
-});
-
-gulp.task('theme', ['functions'], function(){
+gulp.task('theme', function(){
     // Generates comment string for theme registration
     let output = "/*\n";
     for (var key in data.site.theme) {

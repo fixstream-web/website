@@ -1,13 +1,14 @@
 <ul class="globalnav__subnav">
-						{{#each subnav.items}}
+						{{#each items}}
 						<li class="globalnav__subnav-item">
-							{{!-- **TODO: HANDLE INFINITE NAV DEPTH --}}
-							{{!-- CURRENTLY JUST ONE LEVEL DEEP --}}
-							{{!-- This is related to how template assignments get generated in functions.hbs --}}
-							<a class="globalnav__subnav-link" href="/{{../slug}}/{{slug}}">{{label}}</a>
+							<a class="globalnav__subnav-link" href="{{#if ../grandparent}}/{{../grandparent}}{{/if}}/{{../parent}}/{{slug}}">
+								{{label}}
+							</a>
 							{{#if subnav}}
-										{{> global/components/subnav}}{{~!}}
-										{{/if}}
+		        			{{#with subnav}}
+								{{> global/components/subnav parent=../slug grandparent=../../parent}}{{~!}}
+							{{/with}}
+							{{/if}}
 						</li>
 						{{/each}}
 					</ul>

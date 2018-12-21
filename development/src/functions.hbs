@@ -16,11 +16,11 @@ function customRouter() {
         {{#if subnav}}
         {{#with subnav}}
         {{#each items}}
-    case "{{slug}}": $load = locate_template('{{slug}}.php', true); break;
+    case "{{../../this.slug}}/{{slug}}": $load = locate_template('{{../../this.slug}}/{{slug}}.php', true); break;
             {{#if subnav}}
             {{#with subnav}}
             {{#each items}}
-    case "{{slug}}": $load = locate_template('{{slug}}.php', true); break;
+    case "{{../../../../this.slug}}/{{../../this.slug}}/{{slug}}": $load = locate_template('{{../../../../this.slug}}/{{../../this.slug}}/{{slug}}.php', true); break;
             {{/each}}
             {{/with}}
             {{/if}}

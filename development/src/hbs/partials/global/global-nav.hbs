@@ -1,12 +1,16 @@
 <nav class="globalnav">
 			<ul class="globalnav__toplevel">
-				{{#each nav.items}}
+				{{#with nav}}
+    			{{#each items}}
 				<li class="globalnav__toplevel-item">
 					<a class="globalnav__toplevel-link" href="/{{slug}}">{{label}}</a>
 					{{#if subnav}}
-					{{> global/components/subnav}}{{~!}}
+        			{{#with subnav}}
+						{{> global/components/subnav parent=../slug}}{{~!}}
+					{{/with}}
 					{{/if}}
 				</li>
 				{{/each}}
+				{{/with}}
 			</ul>
 		</nav>
