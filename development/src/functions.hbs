@@ -5,6 +5,7 @@ Since we're not using WordPress for pages, we have to manually handle routing to
 */
 // **TODO this needs to handle nested pages (i.e. /platform/ecosystem/oracle)
   // ideally nested depth is flexible (right now hard coded up to 3 levels deep)
+  // Basically just need the URL path and the locate_template source to include nesting i.e. platform/subpage
 add_action('init', 'customRouter');
 function customRouter() {
   $url_path = trim(parse_url(add_query_arg(array()), PHP_URL_PATH), '/');
