@@ -17,6 +17,8 @@ Handle static page data and content using Handlebars + Sass + vanilla JS. Builds
 
 `gulp theme`:Generates style.css from theme data in site-data.json (registers theme for WP admin to find). Also runs `gulp functions`. Builds to theme root.
 
+`gulp images`: Basically just takes images in development and duplicates/moves to built (WordPress theme).
+
 
 `gulp hbs`: Comples HBS from site-data.json as well as content within HBS templates. **_Content is not fully separated from source._**. Builds to theme root. Can be watched with `gulp hbs:watch`
 
@@ -27,7 +29,7 @@ Handle static page data and content using Handlebars + Sass + vanilla JS. Builds
 `gulp js`: **TODO:** Properly compile/bundle/lint/minify. Can be watched with `gulp js:watch`
 
 
-`gulp build`: Runs `gulp hbs` `gulp css` `gulp js` `gulp theme`
+`gulp build`: Runs `gulp hbs` `gulp images` `gulp css` `gulp js` `gulp theme`
 
 
 `gulp`: Default `gulp build`
