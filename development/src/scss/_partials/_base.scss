@@ -24,3 +24,72 @@ p {
 	font-size: 1rem;
 	line-height: 1.4;
 }
+
+.button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+    background: none;
+    border: 1px solid $black;
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer; 
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0.6rem 2rem;
+    border-radius: $radius-l;
+    &:hover {
+    	background-color: $gray-1;
+    	color: $white;
+    }
+}
+
+form {
+	width: 100%;
+}
+
+label {
+	display: block;
+	font-size: 0.8rem;
+	margin-bottom: 0.4rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea {
+	background: transparent;
+	border: 1px solid $black;
+	height: 2rem;
+	width: 100%;
+	margin-bottom: 0.4rem;
+}
+
+textarea {
+	height: auto;
+	text-indent: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

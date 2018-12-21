@@ -1,9 +1,11 @@
 	<header class="globalheader">
-		{{!-- <a href="/">
-			<img src="" />
-		</a> --}}
+		<div class="globalheader__navbar">
+		<a class="globalheader__link" href="/">
+			<img class="globalheader__logo" src="{{@root.meta.themeURI}}/img/temp-logo.png" />
+		</a>
 	{{#block "content"}}
 		{{> global/global-nav}}{{~!}}
+		</div>
 		<div class="pageheader">
 			<h1 class="pageheader-headline">{{data.h1}}</h1>
 		</div>

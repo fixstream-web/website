@@ -1,21 +1,16 @@
 .globalnav {
-	width: $site-base-width;
-	max-width: $site-max-width;
-	margin: auto;
-	background: $gray-5;
+	margin-left: auto;
 	&__toplevel {
-		// @include show(red);
+		display: flex;
 		&-item {
-			// @include show(green);
+			margin-left: 1rem;
 		}
 		&-link {
 		}
 	}
 	&__subnav {
 		display: none;
-		// @include show(blue);
 		&-item {
-			// @include show(yellow);
 		}
 		&-link {
 		}

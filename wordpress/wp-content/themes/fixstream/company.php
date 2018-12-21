@@ -10,6 +10,10 @@
 </head>
 <body class="page-company">
 	<header class="globalheader">
+		<div class="globalheader__navbar">
+		<a class="globalheader__link" href="/">
+			<img class="globalheader__logo" src="/wp-content/themes/fixstream/img/temp-logo.png" />
+		</a>
 		<nav class="globalnav">
 			<ul class="globalnav__toplevel">
 				<li class="globalnav__toplevel-item">
@@ -141,6 +145,7 @@
 				</li>
 			</ul>
 		</nav>
+		</div>
 		<div class="pageheader">
 			<h1 class="pageheader-headline">About FixStream</h1>
 		</div>
@@ -150,7 +155,7 @@
 		<section class="section section-hero">
 			<div class="section-content">
 				<h2 class="section-headline hero-headline">hero headline</h2>
-				<a class="section-cta hero-cta" href=""></a>
+				<a class="section-cta hero-cta button" href="/company">Get in touch</a>
 			</div>
 		</section>
 		

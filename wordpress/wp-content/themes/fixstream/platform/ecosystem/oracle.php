@@ -10,6 +10,10 @@
 </head>
 <body class="page-platform-ecosystem page-platform-ecosystem-oracle">
 	<header class="globalheader">
+		<div class="globalheader__navbar">
+		<a class="globalheader__link" href="/">
+			<img class="globalheader__logo" src="/wp-content/themes/fixstream/img/temp-logo.png" />
+		</a>
 		<nav class="globalnav">
 			<ul class="globalnav__toplevel">
 				<li class="globalnav__toplevel-item">
@@ -141,6 +145,7 @@
 				</li>
 			</ul>
 		</nav>
+		</div>
 		<div class="pageheader">
 			<h1 class="pageheader-headline">Oracle</h1>
 		</div>

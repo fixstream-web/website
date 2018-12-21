@@ -5,6 +5,7 @@
  */
 exports.paths = {
 	src: 'src',
+	images: 'img',
 	built: '../wordpress/wp-content/themes/fixstream'
 };
 

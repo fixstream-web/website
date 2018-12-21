@@ -10,6 +10,10 @@
 </head>
 <body class="page-index">
 	<header class="globalheader">
+		<div class="globalheader__navbar">
+		<a class="globalheader__link" href="/">
+			<img class="globalheader__logo" src="/wp-content/themes/fixstream/img/temp-logo.png" />
+		</a>
 		<nav class="globalnav">
 			<ul class="globalnav__toplevel">
 				<li class="globalnav__toplevel-item">
@@ -141,8 +145,9 @@
 				</li>
 			</ul>
 		</nav>
+		</div>
 		<div class="pageheader">
-			<h1 class="pageheader-headline">Prevent and Predict Outages</h1>
+			<h1 class="pageheader-headline">FixStream.com</h1>
 		</div>
 		
 	</header>
@@ -151,7 +156,7 @@
 			<div class="section-content">
 				<h2 class="section-headline hero-headline">Prevent and Predict Outages</h2>
 				<p class="section-intro hero-intro">AIOps Platform to Discover, Correlate and Predict Events Across Hybrid IT</p>
-				<a class="section-cta hero-cta" href="/resources">Watch video</a>
+				<a class="section-cta hero-cta button" href="/resources">Watch video</a>
 			</div>
 		</section>
 		<section class="section section-success-stories">

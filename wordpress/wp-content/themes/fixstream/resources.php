@@ -10,6 +10,10 @@
 </head>
 <body class="page-resources">
 	<header class="globalheader">
+		<div class="globalheader__navbar">
+		<a class="globalheader__link" href="/">
+			<img class="globalheader__logo" src="/wp-content/themes/fixstream/img/temp-logo.png" />
+		</a>
 		<nav class="globalnav">
 			<ul class="globalnav__toplevel">
 				<li class="globalnav__toplevel-item">
@@ -141,6 +145,7 @@
 				</li>
 			</ul>
 		</nav>
+		</div>
 		<div class="pageheader">
 			<h1 class="pageheader-headline">Resources</h1>
 		</div>
@@ -148,24 +153,29 @@
 	</header>
 	<main>
 
+		
+
+<section class="section section-resources-form">
+			<div class="section-content">
 		<p>Resources intro paragraph</p>
 		<form id="resourcesForm" class="foo-form bar">
-			<label for="first-name">First Name</label>
+				<label for="first-name">First Name</label>
 			<input type="text" id="foo-first-name" name="first-name"  />
-			<label for="last-name">Last Name</label>
+				<label for="last-name">Last Name</label>
 			<input type="text" id="foo-last-name" name="last-name"  />
-			<label for="email">Email</label>
+				<label for="email">Email</label>
 			<input type="email" id="foo-email" name="email"  />
-			<input type="radio" id="foo-option-1" name="options" value="car" /><label for="foo-option-1">Car</label>
+				<input type="radio" id="foo-option-1" name="options" value="car" /><label for="foo-option-1">Car</label>
 
-			<input type="radio" id="foo-option-2" name="options" value="boat" /><label for="foo-option-2">Boat</label>
+				<input type="radio" id="foo-option-2" name="options" value="boat" /><label for="foo-option-2">Boat</label>
 
 
-			<label for="comments">Comments</label>
-			<textarea id="foo-comments" name="comments">
+				<label for="comments">Comments</label>
+				<textarea id="foo-comments" name="comments">
 			</textarea>
 			<input type="submit" id="foo-submit" value="Submit" />
-		</form>
+		</form>			</div>
+		</section>
 	</main>
 	<footer class="globalfooter">
 		<nav class="globalfooter__nav">

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html class="no-js">
 <head>
+	<title>Fixstream | Blog Archive</title>
+	<meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<?php wp_head(); ?>
 	<link rel="stylesheet" href="/wp-content/themes/fixstream/css/blog.css">
@@ -8,6 +10,10 @@
 </head>
 <body class="page-blog">
 	<header class="globalheader">
+		<div class="globalheader__navbar">
+		<a class="globalheader__link" href="/">
+			<img class="globalheader__logo" src="/wp-content/themes/fixstream/img/temp-logo.png" />
+		</a>
 		<nav class="globalnav">
 			<ul class="globalnav__toplevel">
 				<li class="globalnav__toplevel-item">
@@ -139,8 +145,12 @@
 				</li>
 			</ul>
 		</nav>
-
-	</header>		
+		</div>
+		<div class="pageheader">
+			<h1 class="pageheader-headline">Blog Archive</h1>
+		</div>
+		
+	</header>
 	<main>
 		    <?php if (have_posts()) : while (have_posts()) : the_post();?>
 		<?php endwhile; endif; wp_reset_query(); ?>

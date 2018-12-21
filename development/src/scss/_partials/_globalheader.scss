@@ -1,0 +1,14 @@
+.globalheader {
+	background: $gray-3;
+	&__navbar {
+		@include max-width();
+		@include flex-center();
+	}
+	&__link {
+		flex-basis: 100px;
+	}
+	&__logo {
+		max-width: 100%;
+		height: auto;
+	}
+}

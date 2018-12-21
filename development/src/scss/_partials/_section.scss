@@ -1,7 +1,5 @@
 .section {
 	&-content {
-		width: $site-base-width;
-		max-width: $site-max-width;
-		margin: auto;
+		@include max-width();
 	}
 }

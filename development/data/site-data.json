@@ -216,7 +216,7 @@
 					"title": "Home",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum."
 				},
-				"h1": "Prevent and Predict Outages",
+				"h1": "FixStream.com",
 				"hero": {
 					"headline": "Prevent and Predict Outages",
 					"intro": "AIOps Platform to Discover, Correlate and Predict Events Across Hybrid IT",
@@ -305,7 +305,12 @@
 				"h1": "About FixStream",
 				"hero": {
 					"headline": "hero headline",
-					"cta": "hero cta"
+					"cta": {
+						"value": "Get in touch",
+						"meta": {
+							"url": "/company"
+						}
+					}
 				}
 			},
 			"blog": {

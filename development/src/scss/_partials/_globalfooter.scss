@@ -1,6 +1,15 @@
 .globalfooter {
-	width: $site-base-width;
-	max-width: $site-max-width;
-	margin: auto;
 	background: $gray-5;
+	min-height: 4rem;
+	@include flex-center();
+	&__nav {
+		@include max-width();
+	}
+	&__nav-list {
+		@include flex;
+		justify-content: flex-end;
+	}
+	&__nav-item {
+		margin-left: 1rem;
+	}
 }

@@ -11,6 +11,12 @@ UTILITIES / HELPER FUNCTIONS
 	display: flex;
 }
 
+@mixin max-width() {
+	width: $site-base-width;
+	max-width: $site-max-width;
+	margin: auto;
+}
+
 @mixin flex-center {
 	@include flex;
 	justify-content: center;

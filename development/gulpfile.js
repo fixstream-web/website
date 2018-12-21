@@ -212,6 +212,11 @@ gulp.task('hbs:watch', function(){
     gulp.watch(path.join(config.paths.src, '/hbs/*.hbs'), ['hbs']);
 });
 
+gulp.task('images', function(){
+    gulp.src(path.join(config.paths.images, '*.*'))
+        .pipe(gulp.dest(path.join(config.paths.built, 'img')));
+});
+
 gulp.task('js', function() {
     // Single entry point to browserify
     gulp.src([
@@ -255,7 +260,7 @@ gulp.task('clean', function(){
     del(config.paths.built, {force:true});
 });
 
-gulp.task('build', ['css', 'hbs', 'js', 'theme']);
+gulp.task('build', ['css', 'hbs', 'js', 'images', 'theme']);
 gulp.task('default', ['build']);
 
 
