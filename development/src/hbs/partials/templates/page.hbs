@@ -4,7 +4,7 @@
 	{{#block "head"}}
 	<title>{{meta.name}} | {{data.meta.title}}</title>
 	<meta name="description" content="{{data.meta.description}}">
-	{{> global/global-head}}
+	{{> global/global-head parentPath=parentPath}}
 	{{/block}}
 </head>
 <body class="{{#if additionalClasses}}{{additionalClasses}}{{/if}}">

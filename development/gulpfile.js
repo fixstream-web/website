@@ -81,10 +81,13 @@ gulp.task('pages', function(){
             let pageclasses = "page-" + key;
             let classprefix;
             let defaultSCSS = "@import 'core';";
+            let defaultHBSattrs = `data=pages.${datapath} additionalClasses="${pageclasses}`;
+            
             if (nestLvl > 0) {
                 const slashes = new RegExp('\/', 'g');
                 const lastSlash = new RegExp('\/$', 'g');
                 const lastDash = new RegExp('\-$', 'g');
+                const lastDot = new RegExp('\.$', 'g');
 
                 // Logic for nested datapath
                 datapath = newParentCtx.replace(slashes,'.subpages.') + key;
@@ -94,9 +97,11 @@ gulp.task('pages', function(){
                 pageclasses = "page-" + classprefix + " page-" + classprefix + "-" + key;
 
                 defaultSCSS = `@import '../${newParentCtx.replace(lastSlash, "")}';`;
+                defaultHBSattrs = `data=pages.${datapath} parentPath="${newParentCtx}" additionalClasses="${pageclasses}`;
             }
-            const defaultHBS =
-    `{{#embed "templates/page" data=pages.${datapath} additionalClasses="${pageclasses}"}}
+
+            const defaultHBS = 
+    `{{#embed "templates/page" ${defaultHBSattrs}"}}
     {{#content "head" mode="append"}}
     {{!-- append page specific head tags --}}
     {{/content}}
@@ -105,7 +110,6 @@ gulp.task('pages', function(){
     {{/content}}
     {{/embed}}`;
             const defaultJS = '/* Default JS*/';
-            // const defaultSCSS = "@import 'core';";
 
             pageTypes.forEach(function(type){
                 // Check if a file.[type] exists for this page by trying to access the source file by key
@@ -203,13 +207,8 @@ gulp.task('hbs', function(){
                                 eq: function(arg1, arg2, options) {
                                     return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
                                 },
-                                log: function(arg1, arg2, options) {
-                                    if (arg2) {
-                                        console.log(arg1 + " " + arg2);
-                                    } else {
-                                        console.log(arg1);
-                                    }
-                                    
+                                log: function(arg1) {
+                                    console.log(arg1);
                                 }
                             }
                         }))

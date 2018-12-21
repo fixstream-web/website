@@ -5,8 +5,8 @@
 	<meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<?php wp_head(); ?>
-	<link rel="stylesheet" href="/wp-content/themes/fixstream/css/oracle.css">
-	<script type="text/javascript" src="/wp-content/themes/fixstream/js/oracle.js"></script>
+	<link rel="stylesheet" href="/wp-content/themes/fixstream/css/platform/ecosystem/oracle.css">
+	<script type="text/javascript" src="/wp-content/themes/fixstream/js/platform/ecosystem/oracle.js"></script>
 </head>
 <body class="page-platform-ecosystem page-platform-ecosystem-oracle">
 	<header class="globalheader">

@@ -1,4 +1,4 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <?php wp_head(); ?>
-<link rel="stylesheet" href="{{@root.meta.themeURI}}/css/{{data.name}}.css">
-<script type="text/javascript" src="{{@root.meta.themeURI}}/js/{{data.name}}.js"></script>
+<link rel="stylesheet" href="{{@root.meta.themeURI}}/css/{{#if parentPath}}{{parentPath}}{{/if}}{{data.name}}.css">
+<script type="text/javascript" src="{{@root.meta.themeURI}}/js/{{#if parentPath}}{{parentPath}}{{/if}}{{data.name}}.js"></script>
