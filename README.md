@@ -9,41 +9,31 @@ Development source and WordPress build for www.FixStream.com. No manual updates 
 ## Development
 Handle static page data and content using Handlebars + Sass + vanilla JS. Builds to wordpress/wp-content/themes/fixstream
 
-```gulp pages```
+`gulp pages`: Parses through site-data.json and generates a default HBS, SCSS, and JS file for each page name. Convenient for keeping source files in line with data.
 
-Parses through site-data.json and generates a default HBS, SCSS, and JS file for each page name. Convenient for keeping source files in line with data.
 
-```gulp functions```
+`gulp functions`: Compiles any HBS found in functions.hbs.
 
-Compiles any HBS found in functions.hbs.
 
-```gulp theme```
+`gulp theme`:Generates style.css from theme data in site-data.json (registers theme for WP admin to find). Also runs `gulp functions`. Builds to theme root.
 
-Generates style.css from theme data in site-data.json (registers theme for WP admin to find). Also runs `gulp functions`. Builds to theme root.
 
-```gulp hbs```
+`gulp hbs`: Comples HBS from site-data.json as well as content within HBS templates. **_Content is not fully separated from source._**. Builds to theme root. Can be watched with `gulp hbs:watch`
 
-Comples HBS from site-data.json as well as content within HBS templates. **_Content is not fully separated from source._**. Builds to theme root. Can be watched with `gulp hbs:watch`
 
-```gulp css```
+`gulp css`: Compiles and minifies SCSS. Builds to theme's /css directory. Can be watched with `gulp css:watch`
 
-Compiles and minifies SCSS. Builds to theme's /css directory. Can be watched with `gulp css:watch`
 
-```gulp js```
+`gulp js`: **TODO:** Properly compile/bundle/lint/minify. Can be watched with `gulp js:watch`
 
-**TODO:** Properly compile/bundle/lint/minify. Can be watched with `gulp js:watch`
 
-```gulp build```
+`gulp build`: Runs `gulp hbs` `gulp css` `gulp js` `gulp theme`
 
-`gulp hbs` `gulp css` `gulp js` `gulp theme`
 
-```gulp```
+`gulp`: Default `gulp build`
 
-Default `gulp build`
 
-```gulp clean```
-
-Dumps the entire theme folder
+`gulp clean`: Dumps the entire theme folder
 
 ---
 
