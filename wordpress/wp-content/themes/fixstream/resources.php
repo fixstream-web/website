@@ -222,23 +222,17 @@
 <section class="section section-resources-form">
 			<div class="section-content">
 		<p>Resources intro paragraph</p>
-		<form id="resourcesForm" class="foo-form bar">
-				<label for="first-name">First Name</label>
-			<input type="text" id="foo-first-name" name="first-name"  />
-				<label for="last-name">Last Name</label>
-			<input type="text" id="foo-last-name" name="last-name"  />
-				<label for="email">Email</label>
-			<input type="email" id="foo-email" name="email"  />
-				<input type="radio" id="foo-option-1" name="options" value="car" /><label for="foo-option-1">Car</label>
 
-				<input type="radio" id="foo-option-2" name="options" value="boat" /><label for="foo-option-2">Boat</label>
+		<?php $args = array( 'post_type' => 'resources', 'posts_per_page' => 10 );
+		$loop = new WP_Query( $args );
+		while ( $loop->have_posts() ) : $loop->the_post(); ?>
+		
+		<h3><?php the_title(); ?></h3>
+	
+		<?php endwhile; ?>
 
 
-				<label for="comments">Comments</label>
-				<textarea id="foo-comments" name="comments">
-			</textarea>
-			<input type="submit" id="foo-submit" value="Submit" />
-		</form>			</div>
+			</div>
 		</section>
 	</main>
 	<footer class="globalfooter">

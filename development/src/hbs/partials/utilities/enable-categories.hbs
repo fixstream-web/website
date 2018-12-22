@@ -1,0 +1,24 @@
+$labels = array(
+    'name'              => _x( '{{name}}', 'taxonomy general name', 'textdomain' ),
+    'singular_name'     => _x( '{{singular}}', 'taxonomy singular name', 'textdomain' ),
+    'search_items'      => __( 'Search {{name}}', 'textdomain' ),
+    'all_items'         => __( 'All {{name}}', 'textdomain' ),
+    'parent_item'       => __( 'Parent {{singular}}', 'textdomain' ),
+    'parent_item_colon' => __( 'Parent {{singular}}:', 'textdomain' ),
+    'edit_item'         => __( 'Edit {{singular}}', 'textdomain' ),
+    'update_item'       => __( 'Update {{singular}}', 'textdomain' ),
+    'add_new_item'      => __( 'Add New {{singular}}', 'textdomain' ),
+    'new_item_name'     => __( 'New {{singular}} Name', 'textdomain' ),
+    'menu_name'         => __( '{{name}}', 'textdomain' ),
+  );
+
+  $args = array(
+    'hierarchical'      => true,
+    'labels'            => $labels,
+    'show_ui'           => true,
+    'show_admin_column' => true,
+    'query_var'         => true,
+    'rewrite'           => array( 'slug' => '{{slug}}' ),
+  );
+
+  register_taxonomy( '{{slug}}', array( '{{for-type}}' ), $args );

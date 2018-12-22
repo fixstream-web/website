@@ -9,7 +9,16 @@
 		{{#embed "modules/section" name="resources-form"}}
 		{{#content "contents" mode="append"}}
 		<p>Resources intro paragraph</p>
-			{{#embed "forms/form" id="resourcesForm" submitText="Submit" primaryClass="foo" additionalClasses="bar" }}
+
+		<?php $args = array( 'post_type' => 'resources', 'posts_per_page' => 10 );
+		$loop = new WP_Query( $args );
+		while ( $loop->have_posts() ) : $loop->the_post(); ?>
+		
+		<h3><?php the_title(); ?></h3>
+	
+		<?php endwhile; ?>
+
+			{{!-- {{#embed "forms/form" id="resourcesForm" submitText="Submit" primaryClass="foo" additionalClasses="bar" }}
 			{{#content "content"}}
 				{{> forms/components/labeled-input type="text" id="first-name" name="first-name" label="First Name"}}{{~!}}
 				{{> forms/components/labeled-input type="text" id="last-name" name="last-name" label="Last Name"}}{{~!}}
@@ -17,11 +26,11 @@
 				{{> forms/components/labeled-input type="radio" id="option-1" name="options" label="Car" value="car"}}{{~!}}
 				{{> forms/components/labeled-input type="radio" id="option-2" name="options" label="Boat" value="boat"}}{{~!}}
 
-				{{!-- try to treat textarea in the same labeled-input --}}
 				{{> forms/components/label for="comments" label="Comments"}}{{~!}}
 				{{> forms/components/input-textarea name="comments"}}{{~!}}
 			{{/content}}
-			{{/embed}}
+			{{/embed}} --}}
+
 		{{/content}}
 		{{/embed}}
 {{/content}}

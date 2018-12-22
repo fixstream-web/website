@@ -55,3 +55,86 @@ function customRouter() {
         exit();
   }
 }
+
+
+add_action( 'init', 'custom_post_types' );
+function custom_post_types() {
+  register_post_type( 'resources',
+      array(
+        'labels' => array(
+        'name' => __( 'Resources' ),
+        'singular_name' => __( 'Resource' )
+      ),
+        'public' => true,
+        'has_archive' => true,
+        'menu_icon' => 'dashicons-format-aside',
+        'supports' => array(  ),
+      )
+    );  register_post_type( 'team',
+      array(
+        'labels' => array(
+        'name' => __( 'Team' ),
+        'singular_name' => __( 'Member' )
+      ),
+        'public' => true,
+        'has_archive' => true,
+        'menu_icon' => 'dashicons-groups',
+        'supports' => array(  ),
+      )
+    );}
+
+add_action( 'init', 'resource_taxonomies', 0 );
+function resource_taxonomies() {
+  $labels = array(
+      'name'              => _x( 'Types', 'taxonomy general name', 'textdomain' ),
+      'singular_name'     => _x( 'Type', 'taxonomy singular name', 'textdomain' ),
+      'search_items'      => __( 'Search Types', 'textdomain' ),
+      'all_items'         => __( 'All Types', 'textdomain' ),
+      'parent_item'       => __( 'Parent Type', 'textdomain' ),
+      'parent_item_colon' => __( 'Parent Type:', 'textdomain' ),
+      'edit_item'         => __( 'Edit Type', 'textdomain' ),
+      'update_item'       => __( 'Update Type', 'textdomain' ),
+      'add_new_item'      => __( 'Add New Type', 'textdomain' ),
+      'new_item_name'     => __( 'New Type Name', 'textdomain' ),
+      'menu_name'         => __( 'Types', 'textdomain' ),
+    );
+  
+    $args = array(
+      'hierarchical'      => true,
+      'labels'            => $labels,
+      'show_ui'           => true,
+      'show_admin_column' => true,
+      'query_var'         => true,
+      'rewrite'           => array( 'slug' => 'type' ),
+    );
+  
+    register_taxonomy( 'type', array( 'resources' ), $args );  $labels = array(
+      'name'              => _x( 'Groups', 'taxonomy general name', 'textdomain' ),
+      'singular_name'     => _x( 'Group', 'taxonomy singular name', 'textdomain' ),
+      'search_items'      => __( 'Search Groups', 'textdomain' ),
+      'all_items'         => __( 'All Groups', 'textdomain' ),
+      'parent_item'       => __( 'Parent Group', 'textdomain' ),
+      'parent_item_colon' => __( 'Parent Group:', 'textdomain' ),
+      'edit_item'         => __( 'Edit Group', 'textdomain' ),
+      'update_item'       => __( 'Update Group', 'textdomain' ),
+      'add_new_item'      => __( 'Add New Group', 'textdomain' ),
+      'new_item_name'     => __( 'New Group Name', 'textdomain' ),
+      'menu_name'         => __( 'Groups', 'textdomain' ),
+    );
+  
+    $args = array(
+      'hierarchical'      => true,
+      'labels'            => $labels,
+      'show_ui'           => true,
+      'show_admin_column' => true,
+      'query_var'         => true,
+      'rewrite'           => array( 'slug' => 'group' ),
+    );
+  
+    register_taxonomy( 'group', array( 'team' ), $args );}
+
+add_action( 'admin_menu', 'remove_pages_from_menu' );
+function remove_pages_from_menu(){
+  remove_menu_page( 'edit.php?post_type=page' );  
+}
+
