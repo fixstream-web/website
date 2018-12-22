@@ -1,0 +1,16 @@
+.row {
+	display: flex;
+	& > * {
+		border: 1px dashed red;
+	}
+}
+
+.col-2 {
+	flex-basis: 50%;
+}
+.col-3 {
+	flex-basis: 333.333%;
+}
+.col-4 {
+	flex-basis: 25%;
+}

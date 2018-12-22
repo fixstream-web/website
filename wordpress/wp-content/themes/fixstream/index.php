@@ -226,11 +226,30 @@
 		<section class="section section-success-stories">
 			<div class="section-content">
 <h2>Success Stories</h2>
+<div class="row">
+	<div class="col-4">Broadcom</div>
+	<div class="col-4">SPXFlow</div>
+	<div class="col-4">AirBus</div>
+	<div class="col-4">BT...</div>
+</div>
 			</div>
 		</section>
 <section class="section section-what-fixstream-does">
 			<div class="section-content">
 <h2>What FixStream Does</h2>
+<div class="row">
+	<div class="col-2">Text</div>
+	<div class="col-2">Diagram</div>
+</div>
+			</div>
+		</section>
+<section class="section section-solutions">
+			<div class="section-content">
+<div class="row">
+	<div class="col-3">Discover</div>
+	<div class="col-3">Correlate</div>
+	<div class="col-3">Predict</div>
+</div>
 			</div>
 		</section>
 <section class="section section-customer-testimonials">

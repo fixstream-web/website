@@ -1,5 +1,6 @@
 .globalheader {
-	background: $gray-3;
+	background: $white;
+	@include box-shadow();
 	&__navbar {
 		@include max-width();
 		@include flex-center();
