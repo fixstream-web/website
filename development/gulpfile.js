@@ -260,6 +260,17 @@ gulp.task('clean', function(){
 });
 
 gulp.task('build', ['css', 'hbs', 'js', 'images', 'theme']);
+
+gulp.task('build:watch', function(){
+    gulp.watch([
+        path.join(config.paths.src, '/js/*.js'),
+        path.join(config.paths.src, '/hbs/pages/**/*.hbs'),
+        path.join(config.paths.src, 'functions.hbs'),
+        path.join(config.paths.src, '/scss/**/*.scss'),
+        path.join(config.paths.images, '*.*')
+        ], ['build']);
+});
+
 gulp.task('default', ['build']);
 
 
