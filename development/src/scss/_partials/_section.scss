@@ -1,4 +1,6 @@
 .section {
+	border: 1px dashed red;
+	padding: 2rem 0;
 	&-content {
 		@include max-width();
 	}

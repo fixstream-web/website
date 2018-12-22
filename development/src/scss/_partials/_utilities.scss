@@ -28,3 +28,7 @@ UTILITIES / HELPER FUNCTIONS
 		@content;
 	}
 }
+
+@mixin box-shadow(){
+	box-shadow: $shadow;
+}
