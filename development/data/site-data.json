@@ -77,51 +77,51 @@
 							},
 							{
 								"label": "Application Mapping and Event Correlation",
-								"slug": "#"
+								"slug": "application-mapping-and-event-correlation"
 							},
 							{
 								"label": "Infrastructure Monitoring",
-								"slug": "#"
+								"slug": "infrastructure-monitoring"
 							},
 							{
 								"label": "Capacity Exhausting Prediction",
-								"slug": "#"
+								"slug": "capacity-exhausting-prediction"
 							},
 							{
 								"label": "Noise Reduction",
-								"slug": "#"
+								"slug": "noise-reduction"
 							},
 							{
 								"label": "Incident Prediction",
-								"slug": "#"
+								"slug": "incident-prediction"
 							},
 							{
 								"label": "Migration",
-								"slug": "#"
+								"slug": "migration"
 							},
 							{
 								"label": "Oracle",
-								"slug": "#"
+								"slug": "oracle"
 							},
 							{
 								"label": "SAP",
-								"slug": "#"
+								"slug": "sap"
 							},
 							{
 								"label": "Cherwell",
-								"slug": "#"
+								"slug": "cherwell"
 							},
 							{
 								"label": "ServiceNow",
-								"slug": "#"
+								"slug": "servicenow"
 							},
 							{
 								"label": "New Relic",
-								"slug": "#"
+								"slug": "new-relic"
 							},
 							{
 								"label": "Managed Service Providers",
-								"slug": "#"
+								"slug": "managed-service-providers"
 							}
 						]
 					}

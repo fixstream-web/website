@@ -82,62 +82,62 @@
 							</a>
 						</li>
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/solutions/#">
+							<a class="globalnav__subnav-link" href="/solutions/application-mapping-and-event-correlation">
 								Application Mapping and Event Correlation
 							</a>
 						</li>
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/solutions/#">
+							<a class="globalnav__subnav-link" href="/solutions/infrastructure-monitoring">
 								Infrastructure Monitoring
 							</a>
 						</li>
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/solutions/#">
+							<a class="globalnav__subnav-link" href="/solutions/capacity-exhausting-prediction">
 								Capacity Exhausting Prediction
 							</a>
 						</li>
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/solutions/#">
+							<a class="globalnav__subnav-link" href="/solutions/noise-reduction">
 								Noise Reduction
 							</a>
 						</li>
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/solutions/#">
+							<a class="globalnav__subnav-link" href="/solutions/incident-prediction">
 								Incident Prediction
 							</a>
 						</li>
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/solutions/#">
+							<a class="globalnav__subnav-link" href="/solutions/migration">
 								Migration
 							</a>
 						</li>
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/solutions/#">
+							<a class="globalnav__subnav-link" href="/solutions/oracle">
 								Oracle
 							</a>
 						</li>
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/solutions/#">
+							<a class="globalnav__subnav-link" href="/solutions/sap">
 								SAP
 							</a>
 						</li>
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/solutions/#">
+							<a class="globalnav__subnav-link" href="/solutions/cherwell">
 								Cherwell
 							</a>
 						</li>
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/solutions/#">
+							<a class="globalnav__subnav-link" href="/solutions/servicenow">
 								ServiceNow
 							</a>
 						</li>
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/solutions/#">
+							<a class="globalnav__subnav-link" href="/solutions/new-relic">
 								New Relic
 							</a>
 						</li>
 						<li class="globalnav__subnav-item">
-							<a class="globalnav__subnav-link" href="/solutions/#">
+							<a class="globalnav__subnav-link" href="/solutions/managed-service-providers">
 								Managed Service Providers
 							</a>
 						</li>
