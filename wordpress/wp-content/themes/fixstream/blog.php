@@ -216,8 +216,27 @@
 		
 	</header>
 	<main>
-		    <?php if (have_posts()) : while (have_posts()) : the_post();?>
-		<?php endwhile; endif; wp_reset_query(); ?>
+		    <?php
+	    $args = array(
+	        'post_type' => 'post'
+	    );
+
+	    $post_query = new WP_Query($args);
+		if($post_query->have_posts() ) {
+		  while($post_query->have_posts() ) {
+		    $post_query->the_post();
+		    ?>
+<section class="section section-blog-archive">
+			<div class="section-content">
+				<a href="<?php echo get_permalink(); ?>">
+					<h2><?php the_title(); ?></h2>
+					<h3>By <?php echo get_the_author(); ?></h3>
+				</a>
+			</div>
+		</section>		    <?php
+		  }
+		}
+	?>
 
 	</main>
 	<footer class="globalfooter">

@@ -4,7 +4,27 @@
     {{/content}}
     {{#content "body" mode="append"}}
     {{!-- page specific body content --}}
-    <?php if (have_posts()) : while (have_posts()) : the_post();?>
-		<?php endwhile; endif; wp_reset_query(); ?>
+    <?php
+	    $args = array(
+	        'post_type' => 'post'
+	    );
+
+	    $post_query = new WP_Query($args);
+		if($post_query->have_posts() ) {
+		  while($post_query->have_posts() ) {
+		    $post_query->the_post();
+		    ?>
+			    {{#embed "modules/section" name="blog-archive"}}
+				{{#content "contents" mode="append"}}
+				<a href="<?php echo get_permalink(); ?>">
+					<h2><?php the_title(); ?></h2>
+					<h3>By <?php echo get_the_author(); ?></h3>
+				</a>
+				{{/content}}
+				{{/embed}}
+		    <?php
+		  }
+		}
+	?>
     {{/content}}
     {{/embed}}

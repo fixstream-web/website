@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js">
 <head>
-	<title>Fixstream | </title>
-	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<?php wp_head(); ?>
 	<link rel="stylesheet" href="/wp-content/themes/fixstream/css/single.css">
@@ -209,15 +207,22 @@
 				</li>
 			</ul>
 		</nav>
-		</div>
-		<div class="pageheader">
-			<h1 class="pageheader-headline"></h1>
-		</div>
+
+	</header>		
+	<article>
 		
-	</header>
-	<main>
-		
-	</main>
+<section class="section section-blog-article">
+			<div class="section-content">
+
+		<?php if (have_posts()) : while (have_posts()) : the_post();?>
+		<h1><?php the_title(); ?></h1>
+		<?php the_content(); ?>
+		<?php endwhile; endif; wp_reset_query(); ?>
+			</div>
+		</section>
+    
+
+	</article>
 	<footer class="globalfooter">
 		<nav class="globalfooter__nav">
 			<ul class="globalfooter__nav-list">

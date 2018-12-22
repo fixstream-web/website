@@ -1,8 +1,20 @@
-{{#embed "templates/page" data=pages.single additionalClasses="page-single"}}
+{{#embed "templates/post" data=pages.single additionalClasses="page-single"}}
     {{#content "head" mode="append"}}
     {{!-- append page specific head tags --}}
     {{/content}}
     {{#content "body" mode="append"}}
     {{!-- page specific body content --}}
+
+	{{#embed "modules/section" name="blog-article"}}
+	{{#content "contents" mode="append"}}
+
+		<?php if (have_posts()) : while (have_posts()) : the_post();?>
+		<h1><?php the_title(); ?></h1>
+		<?php the_content(); ?>
+		<?php endwhile; endif; wp_reset_query(); ?>
+	{{/content}}
+	{{/embed}}
+
+    
     {{/content}}
     {{/embed}}
