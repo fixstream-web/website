@@ -323,6 +323,14 @@
 			},
 			"single": {
 				"name": "single"
+			},
+			"four-oh-four": {
+				"name": "404",
+				"meta": {
+					"title": "404",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum."
+				},
+				"h1": "404 Page Not Found"
 			}
 		}
 	}

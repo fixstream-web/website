@@ -78,7 +78,7 @@ gulp.task('pages', function(){
 
             // Establish defaults
             let datapath = key;
-            let pageclasses = "page-" + key;
+            let pageclasses = "page-" + set[key].name;
             let classprefix;
             let defaultSCSS = "@import 'core';";
             let defaultHBSattrs = `data=pages.${datapath} additionalClasses="${pageclasses}`;
@@ -94,7 +94,7 @@ gulp.task('pages', function(){
 
                 // Logic for nested page classes
                 classprefix = newParentCtx.replace(slashes,'-').replace(lastDash, '');
-                pageclasses = "page-" + classprefix + " page-" + classprefix + "-" + key;
+                pageclasses = "page-" + classprefix + " page-" + classprefix + "-" + set[key].name;
 
                 defaultSCSS = `@import '../${newParentCtx.replace(lastSlash, "")}';`;
                 defaultHBSattrs = `data=pages.${datapath} parentPath="${newParentCtx}" additionalClasses="${pageclasses}`;
@@ -113,7 +113,7 @@ gulp.task('pages', function(){
 
             pageTypes.forEach(function(type){
                 // Check if a file.[type] exists for this page by trying to access the source file by key
-                ((key, type) => {
+                ((key, type, set) => {
                     let filedir = (() => {
                         let tmpPath = config.paths.src;
                         if (type == 'hbs') {
@@ -123,14 +123,14 @@ gulp.task('pages', function(){
                         }
                         return tmpPath;
                     })();
-                    let filename = key + '.' + type;
+                    let filename = set[key].name + '.' + type;
                     let filepath = path.join(filedir, filename);
                     return fs.access(filepath, (err) => {
                         if (err) {
                             errCount++;
                             // There is no file.[type] by that name
                             console.log('###########################################');
-                            console.log('Created ' + key + '.' + type);
+                            console.log('Created ' + set[key].name + '.' + type);
                             console.log('###########################################');
                             let content;
                             switch(type) {
@@ -147,7 +147,7 @@ gulp.task('pages', function(){
                                     content = 'Content undefined based on page type';
                             }
                             // Create a file.[type] for the page
-                            string_src(key + '.' + type, content)
+                            string_src(set[key].name + '.' + type, content)
                                 .pipe(gulp.dest(filedir));
                         } else {
                             // console.log('No error on: ' + key + "." + type);
@@ -155,7 +155,7 @@ gulp.task('pages', function(){
                         pagesTested++;
                         testSuccess();
                     });
-                })(key, type);
+                })(key, type, set);
             });
 
             //if page is the last object in a set, reset parent context to "";
