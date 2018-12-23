@@ -348,6 +348,9 @@
 			"single": {
 				"name": "single"
 			},
+			"single-resources" : {
+				"name": "single-resources"
+			},
 			"four-oh-four": {
 				"name": "404",
 				"meta": {

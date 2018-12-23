@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html class="no-js">
 <head>
-	<title>Fixstream | Resources</title>
-	<meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<?php wp_head(); ?>
-	<link rel="stylesheet" href="/wp-content/themes/fixstream/css/resources.css">
-	<script type="text/javascript" src="/wp-content/themes/fixstream/js/resources.js"></script>
+	<link rel="stylesheet" href="/wp-content/themes/fixstream/css/single-resources.css">
+	<script type="text/javascript" src="/wp-content/themes/fixstream/js/single-resources.js"></script>
 </head>
-<body class="page-resources">
+<body class="page-single-resources">
 	<header class="globalheader">
 		<div class="globalheader__navbar">
 		<a class="globalheader__link" href="/">
@@ -209,79 +207,20 @@
 				</li>
 			</ul>
 		</nav>
-		</div>
-		<div class="pageheader">
-			<h1 class="pageheader-headline">Resources</h1>
-		</div>
-		
-	</header>
-	<main>
 
+	</header>		
+	<article>
 		
 
-<section class="section section-resources-form">
+<section class="section section-resource">
 			<div class="section-content">
-		<h2>Videos</h2>
-
-		<?php $args = array( 'post_type' => 'resources', 'posts_per_page' => -1, 'type' => 'videos' );
-		$loop = new WP_Query( $args );
-		while ( $loop->have_posts() ) : $loop->the_post(); ?>
-		
-		<a href="<?php echo get_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
-	
-		<?php endwhile; ?>
-
-			</div>
-		</section>
-<section class="section section-resources-form">
-			<div class="section-content">
-		<h2>Whitepapers</h2>
-
-		<?php $args = array( 'post_type' => 'resources', 'posts_per_page' => -1, 'type' => 'whitepapers' );
-		$loop = new WP_Query( $args );
-		while ( $loop->have_posts() ) : $loop->the_post(); ?>
-		
-		<a href="<?php echo get_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
-	
-		<?php endwhile; ?>
-
-			</div>
-		</section>
-<section class="section section-resources-form">
-			<div class="section-content">
-		<h2>Case Studies</h2>
-
-		<?php $args = array( 'post_type' => 'resources', 'posts_per_page' => -1, 'type' => 'case-studies' );
-		$loop = new WP_Query( $args );
-		while ( $loop->have_posts() ) : $loop->the_post(); ?>
-		
-		<a href="<?php echo get_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
-	
-		<?php endwhile; ?>
-
-			</div>
-		</section>
-<section class="section section-resources-form">
-			<div class="section-content">
-		<h2>Tech Docs</h2>
-
-		<?php $args = array( 'post_type' => 'resources', 'posts_per_page' => -1, 'type' => 'tech-docs' );
-		$loop = new WP_Query( $args );
-		while ( $loop->have_posts() ) : $loop->the_post(); ?>
-		
-		<a href="<?php echo get_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
-	
-		<?php endwhile; ?>
-
+    <?php if (have_posts()) : while (have_posts()) : the_post();?>
+	<h1>Resources > <?php the_title(); ?></h1>
+	<?php endwhile; endif; wp_reset_query(); ?>
 			</div>
 		</section>
 
-
-
-
-		
-
-	</main>
+	</article>
 	<footer class="globalfooter">
 		<nav class="globalfooter__nav">
 			<ul class="globalfooter__nav-list">
