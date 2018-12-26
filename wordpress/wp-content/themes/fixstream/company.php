@@ -223,6 +223,37 @@
 			</div>
 		</section>
 		
+<section class="section section-company-press-releases">
+			<div class="section-content">
+		<h2>Press Releases</h2>
+
+		<?php $args = array( 'post_type' => 'news', 'posts_per_page' => -1, 'news-type' => 'press-releases' );
+		$loop = new WP_Query( $args );
+		while ( $loop->have_posts() ) : $loop->the_post(); ?>
+		
+		<a href="<?php echo get_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
+	
+		<?php endwhile; ?>
+
+			</div>
+		</section>
+
+<section class="section section-company-news-mentions">
+			<div class="section-content">
+		<h2>In The News</h2>
+
+		<?php $args = array( 'post_type' => 'news', 'posts_per_page' => -1, 'news-type' => 'mentions' );
+		$loop = new WP_Query( $args );
+		while ( $loop->have_posts() ) : $loop->the_post(); ?>
+		
+		<a href="<?php echo get_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
+	
+		<?php endwhile; ?>
+
+			</div>
+		</section>
+
+
 	</main>
 	<footer class="globalfooter">
 		<nav class="globalfooter__nav">

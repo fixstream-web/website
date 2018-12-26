@@ -219,11 +219,11 @@
 
 		
 
-<section class="section section-resources-form">
+<section class="section section-resources-videos">
 			<div class="section-content">
 		<h2>Videos</h2>
 
-		<?php $args = array( 'post_type' => 'resources', 'posts_per_page' => -1, 'type' => 'videos' );
+		<?php $args = array( 'post_type' => 'resources', 'posts_per_page' => -1, 'resource-type' => 'videos' );
 		$loop = new WP_Query( $args );
 		while ( $loop->have_posts() ) : $loop->the_post(); ?>
 		
@@ -233,11 +233,11 @@
 
 			</div>
 		</section>
-<section class="section section-resources-form">
+<section class="section section-resources-whitepapers">
 			<div class="section-content">
 		<h2>Whitepapers</h2>
 
-		<?php $args = array( 'post_type' => 'resources', 'posts_per_page' => -1, 'type' => 'whitepapers' );
+		<?php $args = array( 'post_type' => 'resources', 'posts_per_page' => -1, 'resource-type' => 'whitepapers' );
 		$loop = new WP_Query( $args );
 		while ( $loop->have_posts() ) : $loop->the_post(); ?>
 		
@@ -247,11 +247,11 @@
 
 			</div>
 		</section>
-<section class="section section-resources-form">
+<section class="section section-resources-case-studies">
 			<div class="section-content">
 		<h2>Case Studies</h2>
 
-		<?php $args = array( 'post_type' => 'resources', 'posts_per_page' => -1, 'type' => 'case-studies' );
+		<?php $args = array( 'post_type' => 'resources', 'posts_per_page' => -1, 'resource-type' => 'case-studies' );
 		$loop = new WP_Query( $args );
 		while ( $loop->have_posts() ) : $loop->the_post(); ?>
 		
@@ -261,11 +261,11 @@
 
 			</div>
 		</section>
-<section class="section section-resources-form">
+<section class="section section-resources-tech-docs">
 			<div class="section-content">
 		<h2>Tech Docs</h2>
 
-		<?php $args = array( 'post_type' => 'resources', 'posts_per_page' => -1, 'type' => 'tech-docs' );
+		<?php $args = array( 'post_type' => 'resources', 'posts_per_page' => -1, 'resource-type' => 'tech-docs' );
 		$loop = new WP_Query( $args );
 		while ( $loop->have_posts() ) : $loop->the_post(); ?>
 		

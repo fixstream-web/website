@@ -70,6 +70,17 @@ function custom_post_types() {
         'menu_icon' => 'dashicons-format-aside',
         'supports' => array(  ),
       )
+    );  register_post_type( 'news',
+      array(
+        'labels' => array(
+        'name' => __( 'News Items' ),
+        'singular_name' => __( 'News Item' )
+      ),
+        'public' => true,
+        'has_archive' => true,
+        'menu_icon' => 'dashicons-megaphone',
+        'supports' => array(  ),
+      )
     );  register_post_type( 'team',
       array(
         'labels' => array(
@@ -81,22 +92,33 @@ function custom_post_types() {
         'menu_icon' => 'dashicons-groups',
         'supports' => array(  ),
       )
+    );  register_post_type( 'jobs',
+      array(
+        'labels' => array(
+        'name' => __( 'Private Jobs' ),
+        'singular_name' => __( 'Private Job' )
+      ),
+        'public' => true,
+        'has_archive' => true,
+        'menu_icon' => 'dashicons-businessman',
+        'supports' => array(  ),
+      )
     );}
 
 add_action( 'init', 'resource_taxonomies', 0 );
 function resource_taxonomies() {
   $labels = array(
-      'name'              => _x( 'Types', 'taxonomy general name', 'textdomain' ),
-      'singular_name'     => _x( 'Type', 'taxonomy singular name', 'textdomain' ),
-      'search_items'      => __( 'Search Types', 'textdomain' ),
-      'all_items'         => __( 'All Types', 'textdomain' ),
-      'parent_item'       => __( 'Parent Type', 'textdomain' ),
-      'parent_item_colon' => __( 'Parent Type:', 'textdomain' ),
-      'edit_item'         => __( 'Edit Type', 'textdomain' ),
-      'update_item'       => __( 'Update Type', 'textdomain' ),
-      'add_new_item'      => __( 'Add New Type', 'textdomain' ),
-      'new_item_name'     => __( 'New Type Name', 'textdomain' ),
-      'menu_name'         => __( 'Types', 'textdomain' ),
+      'name'              => _x( 'Resource Types', 'taxonomy general name', 'textdomain' ),
+      'singular_name'     => _x( 'Resource Type', 'taxonomy singular name', 'textdomain' ),
+      'search_items'      => __( 'Search Resource Types', 'textdomain' ),
+      'all_items'         => __( 'All Resource Types', 'textdomain' ),
+      'parent_item'       => __( 'Parent Resource Type', 'textdomain' ),
+      'parent_item_colon' => __( 'Parent Resource Type:', 'textdomain' ),
+      'edit_item'         => __( 'Edit Resource Type', 'textdomain' ),
+      'update_item'       => __( 'Update Resource Type', 'textdomain' ),
+      'add_new_item'      => __( 'Add New Resource Type', 'textdomain' ),
+      'new_item_name'     => __( 'New Resource Type Name', 'textdomain' ),
+      'menu_name'         => __( 'Resource Types', 'textdomain' ),
     );
   
     $args = array(
@@ -105,10 +127,33 @@ function resource_taxonomies() {
       'show_ui'           => true,
       'show_admin_column' => true,
       'query_var'         => true,
-      'rewrite'           => array( 'slug' => 'type' ),
+      'rewrite'           => array( 'slug' => 'resource-type' ),
     );
   
-    register_taxonomy( 'type', array( 'resources' ), $args );  $labels = array(
+    register_taxonomy( 'resource-type', array( 'resources' ), $args );  $labels = array(
+      'name'              => _x( 'News Types', 'taxonomy general name', 'textdomain' ),
+      'singular_name'     => _x( 'News Type', 'taxonomy singular name', 'textdomain' ),
+      'search_items'      => __( 'Search News Types', 'textdomain' ),
+      'all_items'         => __( 'All News Types', 'textdomain' ),
+      'parent_item'       => __( 'Parent News Type', 'textdomain' ),
+      'parent_item_colon' => __( 'Parent News Type:', 'textdomain' ),
+      'edit_item'         => __( 'Edit News Type', 'textdomain' ),
+      'update_item'       => __( 'Update News Type', 'textdomain' ),
+      'add_new_item'      => __( 'Add New News Type', 'textdomain' ),
+      'new_item_name'     => __( 'New News Type Name', 'textdomain' ),
+      'menu_name'         => __( 'News Types', 'textdomain' ),
+    );
+  
+    $args = array(
+      'hierarchical'      => true,
+      'labels'            => $labels,
+      'show_ui'           => true,
+      'show_admin_column' => true,
+      'query_var'         => true,
+      'rewrite'           => array( 'slug' => 'news-type' ),
+    );
+  
+    register_taxonomy( 'news-type', array( 'news' ), $args );  $labels = array(
       'name'              => _x( 'Groups', 'taxonomy general name', 'textdomain' ),
       'singular_name'     => _x( 'Group', 'taxonomy singular name', 'textdomain' ),
       'search_items'      => __( 'Search Groups', 'textdomain' ),
@@ -135,6 +180,7 @@ function resource_taxonomies() {
 
 add_action( 'admin_menu', 'remove_pages_from_menu' );
 function remove_pages_from_menu(){
-  remove_menu_page( 'edit.php?post_type=page' );  
+  remove_menu_page( 'edit.php?post_type=page' );
+  remove_menu_page( 'edit-comments.php' );
 }
 

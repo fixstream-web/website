@@ -41,17 +41,21 @@ function customRouter() {
 add_action( 'init', 'custom_post_types' );
 function custom_post_types() {
   {{> utilities/post-type post-type="resources" name="Resources" singular="Resource" icon="dashicons-format-aside" supports="" }}
+  {{> utilities/post-type post-type="news" name="News Items" singular="News Item" icon="dashicons-megaphone" supports="" }}
   {{> utilities/post-type post-type="team" name="Team" singular="Member" icon="dashicons-groups" supports="" }}
+  {{> utilities/post-type post-type="jobs" name="Private Jobs" singular="Private Job" icon="dashicons-businessman" supports="" }}
 }
 
 add_action( 'init', 'resource_taxonomies', 0 );
 function resource_taxonomies() {
-  {{> utilities/enable-categories for-type="resources" name="Types" singular="Type" slug="type"}}
+  {{> utilities/enable-categories for-type="resources" name="Resource Types" singular="Resource Type" slug="resource-type"}}
+  {{> utilities/enable-categories for-type="news" name="News Types" singular="News Type" slug="news-type"}}
   {{> utilities/enable-categories for-type="team" name="Groups" singular="Group" slug="group"}}
 }
 
 add_action( 'admin_menu', 'remove_pages_from_menu' );
 function remove_pages_from_menu(){
-  remove_menu_page( 'edit.php?post_type=page' );  
+  remove_menu_page( 'edit.php?post_type=page' );
+  remove_menu_page( 'edit-comments.php' );
 }
 
