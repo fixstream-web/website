@@ -3,9 +3,6 @@
 /*
 Since we're not using WordPress for pages, we have to manually handle routing to the proper template. This switch statement will need to reflect the entire catalog of pages.
 */
-// **TODO this needs to handle nested pages (i.e. /platform/ecosystem/oracle)
-  // ideally nested depth is flexible (right now hard coded up to 3 levels deep)
-  // Basically just need the URL path and the locate_template source to include nesting i.e. platform/subpage
 add_action('init', 'customRouter');
 function customRouter() {
   $url_path = trim(parse_url(add_query_arg(array()), PHP_URL_PATH), '/');
@@ -179,6 +176,7 @@ function enable_taxonomies() {
   
     register_taxonomy( 'group', array( 'team' ), $args );}
 
+
 add_action( 'admin_menu', 'remove_pages_from_menu' );
 function remove_pages_from_menu(){
   remove_menu_page( 'edit.php?post_type=page' );
@@ -186,10 +184,16 @@ function remove_pages_from_menu(){
 }
 
 
-function remove_yoast_meta_desc_specific_page ( $myfilter ) {
+function remove_yoast_meta_desc_specific_page ( $removedTag ) {
     if ( is_page ( 'index' ) ) {
-        return $myfilter;
+        return $removedTag;
     }
-    
 }
 add_filter( 'wpseo_metadesc', 'remove_yoast_meta_desc_specific_page' );
+add_filter( 'wpseo_opengraph_title', 'remove_yoast_meta_desc_specific_page' );
+add_filter( 'wpseo_opengraph_url', 'remove_yoast_meta_desc_specific_page' );
+add_filter( 'wpseo_opengraph_type', 'remove_yoast_meta_desc_specific_page' );
+add_filter( 'wpseo_opengraph_site_name', 'remove_yoast_meta_desc_specific_page' );
+add_filter( 'wpseo_locale', 'remove_yoast_meta_desc_specific_page' );
+add_filter( 'wpseo_twitter_title', 'remove_yoast_meta_desc_specific_page' );
+add_filter( 'wpseo_twitter_card_type', 'remove_yoast_meta_desc_specific_page' );

@@ -3,6 +3,12 @@
 <head>
 	<title>Fixstream | Agent-less Auto Discovery</title>
 	<meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.">
+	<meta property="og:title" content="test og title">
+	<meta name="twitter:title" content="test twitter title">
+	<meta property="og:url" content="https://fixstream.com">
+	<meta property="og:site_name" content="Fixstream"/>
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="website">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<?php wp_head(); ?>
 	<link rel="stylesheet" href="/wp-content/themes/fixstream/css/platform/agent-less-auto-discovery.css">

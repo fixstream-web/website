@@ -2,6 +2,7 @@
 	"site": {
 		"meta": {
 			"name": "Fixstream",
+			"sitename": "https://fixstream.com",
 			"themeURI": "/wp-content/themes/fixstream"
 		},
 		"theme": {
@@ -214,7 +215,9 @@
 				"name": "index",
 				"meta": {
 					"title": "Home",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum."
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.",
+					"og-title": "test og title",
+					"twitter-title": "test twitter title"
 				},
 				"h1": "FixStream.com",
 				"hero": {
@@ -232,7 +235,9 @@
 				"name": "resources",
 				"meta": {
 					"title": "Resources",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum."
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.",
+					"og-title": "test og title",
+					"twitter-title": "test twitter title"
 				},
 				"h1": "Resources"
 			},
@@ -240,7 +245,9 @@
 				"name": "platform",
 				"meta": {
 					"title": "Platform",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum."
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.",
+					"og-title": "test og title",
+					"twitter-title": "test twitter title"
 				},
 				"h1": "Platform",
 				"subpages": {
@@ -248,7 +255,9 @@
 						"name": "agent-less-auto-discovery",
 						"meta": {
 							"title": "Agent-less Auto Discovery",
-							"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum."
+							"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.",
+							"og-title": "test og title",
+							"twitter-title": "test twitter title"
 						},
 						"h1": "Agent-less Auto Discovery"
 					},
@@ -256,7 +265,9 @@
 						"name": "machine-learning",
 						"meta": {
 							"title": "Machine Learning",
-							"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum."
+							"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.",
+							"og-title": "test og title",
+							"twitter-title": "test twitter title"
 						},
 						"h1": "Machine Learning"
 					},
@@ -264,7 +275,9 @@
 						"name": "transaction-to-infra-correlation",
 						"meta": {
 							"title": "Transaction To Infra Correlation",
-							"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum."
+							"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.",
+							"og-title": "test og title",
+							"twitter-title": "test twitter title"
 						},
 						"h1": "Transaction To Infra Correlation"
 					},
@@ -272,7 +285,9 @@
 						"name": "architecture",
 						"meta": {
 							"title": "Architecture",
-							"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum."
+							"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.",
+							"og-title": "test og title",
+							"twitter-title": "test twitter title"
 						},
 						"h1": "Architecture"
 					},
@@ -280,7 +295,9 @@
 						"name": "ecosystem",
 						"meta": {
 							"title": "Ecosystem",
-							"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum."
+							"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.",
+							"og-title": "test og title",
+							"twitter-title": "test twitter title"
 						},
 						"h1": "Ecosystem",
 						"subpages": {
@@ -288,7 +305,9 @@
 								"name": "oracle",
 								"meta": {
 									"title": "Oracle",
-									"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum."
+									"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.",
+									"og-title": "test og title",
+									"twitter-title": "test twitter title"
 								},
 								"h1": "Oracle"
 							}
@@ -300,7 +319,9 @@
 				"name": "solutions",
 				"meta": {
 					"title": "Solutions",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum."
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.",
+					"og-title": "test og title",
+					"twitter-title": "test twitter title"
 				},
 				"h1": "Solutions"
 			},
@@ -308,7 +329,9 @@
 				"name": "whats-aiops",
 				"meta": {
 					"title": "What's AIOps?",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum."
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.",
+					"og-title": "test og title",
+					"twitter-title": "test twitter title"
 				},
 				"h1": "What's AIOps?"
 			},
@@ -316,7 +339,9 @@
 				"name": "customers",
 				"meta": {
 					"title": "Customers",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum."
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.",
+					"og-title": "test og title",
+					"twitter-title": "test twitter title"
 				},
 				"h1": "Customers"
 			},
@@ -324,7 +349,9 @@
 				"name": "company",
 				"meta": {
 					"title": "Company",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum."
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.",
+					"og-title": "test og title",
+					"twitter-title": "test twitter title"
 				},
 				"h1": "About FixStream",
 				"hero": {
@@ -341,7 +368,9 @@
 				"name": "blog",
 				"meta": {
 					"title": "Blog Archive",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum."
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.",
+					"og-title": "test og title",
+					"twitter-title": "test twitter title"
 				},
 				"h1": "Blog Archive"
 			},
@@ -355,7 +384,9 @@
 				"name": "404",
 				"meta": {
 					"title": "404",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum."
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.",
+					"og-title": "test og title",
+					"twitter-title": "test twitter title"
 				},
 				"h1": "404 Page Not Found"
 			}

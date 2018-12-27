@@ -4,6 +4,14 @@
 	{{#block "head"}}
 	<title>{{meta.name}} | {{data.meta.title}}</title>
 	<meta name="description" content="{{data.meta.description}}">
+	{{#if data.meta.og-title}}
+	<meta property="og:title" content="{{data.meta.og-title}}">{{/if}}
+	{{#if data.meta.twitter-title}}
+	<meta name="twitter:title" content="{{data.meta.twitter-title}}">{{/if}}
+	<meta property="og:url" content="{{@root.meta.sitename}}">
+	<meta property="og:site_name" content="{{@root.meta.name}}"/>
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="website">
 	{{> global/global-head parentPath=parentPath}}
 	{{/block}}
 </head>
