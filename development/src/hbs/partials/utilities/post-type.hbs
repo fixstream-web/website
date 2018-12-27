@@ -1,12 +1,13 @@
 register_post_type( '{{post-type}}',
     array(
-      'labels' => array(
-      'name' => __( '{{name}}' ),
-      'singular_name' => __( '{{singular}}' )
+      'labels'         => array(
+      'name'           => __( '{{name}}' ),
+      'singular_name'  => __( '{{singular}}' )
     ),
-      'public' => true,
-      'has_archive' => true,
-      'menu_icon' => '{{icon}}',
-      'supports' => array( {{supports}} ),
+      'public'         => true,
+      'has_archive'    => true,
+      'menu_icon'      => '{{icon}}',
+      'supports'       => array( {{supports}} ),
+      'rewrite'        => array( 'with_front' => false ),
     )
   );

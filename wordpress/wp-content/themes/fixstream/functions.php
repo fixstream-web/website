@@ -61,47 +61,51 @@ add_action( 'init', 'custom_post_types' );
 function custom_post_types() {
   register_post_type( 'resources',
       array(
-        'labels' => array(
-        'name' => __( 'Resources' ),
-        'singular_name' => __( 'Resource' )
+        'labels'         => array(
+        'name'           => __( 'Resources' ),
+        'singular_name'  => __( 'Resource' )
       ),
-        'public' => true,
-        'has_archive' => true,
-        'menu_icon' => 'dashicons-format-aside',
-        'supports' => array(  ),
+        'public'         => true,
+        'has_archive'    => true,
+        'menu_icon'      => 'dashicons-format-aside',
+        'supports'       => array(  ),
+        'rewrite'        => array( 'with_front' => false ),
       )
     );  register_post_type( 'news',
       array(
-        'labels' => array(
-        'name' => __( 'News Items' ),
-        'singular_name' => __( 'News Item' )
+        'labels'         => array(
+        'name'           => __( 'News Items' ),
+        'singular_name'  => __( 'News Item' )
       ),
-        'public' => true,
-        'has_archive' => true,
-        'menu_icon' => 'dashicons-megaphone',
-        'supports' => array(  ),
+        'public'         => true,
+        'has_archive'    => true,
+        'menu_icon'      => 'dashicons-megaphone',
+        'supports'       => array(  ),
+        'rewrite'        => array( 'with_front' => false ),
       )
     );  register_post_type( 'team',
       array(
-        'labels' => array(
-        'name' => __( 'Team' ),
-        'singular_name' => __( 'Member' )
+        'labels'         => array(
+        'name'           => __( 'Team' ),
+        'singular_name'  => __( 'Member' )
       ),
-        'public' => true,
-        'has_archive' => true,
-        'menu_icon' => 'dashicons-groups',
-        'supports' => array(  ),
+        'public'         => true,
+        'has_archive'    => true,
+        'menu_icon'      => 'dashicons-groups',
+        'supports'       => array(  ),
+        'rewrite'        => array( 'with_front' => false ),
       )
     );  register_post_type( 'jobs',
       array(
-        'labels' => array(
-        'name' => __( 'Private Jobs' ),
-        'singular_name' => __( 'Private Job' )
+        'labels'         => array(
+        'name'           => __( 'Private Jobs' ),
+        'singular_name'  => __( 'Private Job' )
       ),
-        'public' => true,
-        'has_archive' => true,
-        'menu_icon' => 'dashicons-businessman',
-        'supports' => array(  ),
+        'public'         => true,
+        'has_archive'    => true,
+        'menu_icon'      => 'dashicons-businessman',
+        'supports'       => array(  ),
+        'rewrite'        => array( 'with_front' => false ),
       )
     );}
 
@@ -183,4 +187,3 @@ function remove_pages_from_menu(){
   remove_menu_page( 'edit.php?post_type=page' );
   remove_menu_page( 'edit-comments.php' );
 }
-
