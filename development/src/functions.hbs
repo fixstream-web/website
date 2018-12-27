@@ -46,8 +46,8 @@ function custom_post_types() {
   {{> utilities/post-type post-type="jobs" name="Private Jobs" singular="Private Job" icon="dashicons-businessman" supports="" }}
 }
 
-add_action( 'init', 'resource_taxonomies', 0 );
-function resource_taxonomies() {
+add_action( 'init', 'enable_taxonomies', 0 );
+function enable_taxonomies() {
   {{> utilities/enable-categories for-type="resources" name="Resource Types" singular="Resource Type" slug="resource-type"}}
   {{> utilities/enable-categories for-type="news" name="News Types" singular="News Type" slug="news-type"}}
   {{> utilities/enable-categories for-type="team" name="Groups" singular="Group" slug="group"}}
@@ -58,3 +58,12 @@ function remove_pages_from_menu(){
   remove_menu_page( 'edit.php?post_type=page' );
   remove_menu_page( 'edit-comments.php' );
 }
+
+
+function remove_yoast_meta_desc_specific_page ( $myfilter ) {
+    if ( is_page ( 'index' ) ) {
+        return $myfilter;
+    }
+    
+}
+add_filter( 'wpseo_metadesc', 'remove_yoast_meta_desc_specific_page' );

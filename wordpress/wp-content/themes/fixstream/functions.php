@@ -69,7 +69,7 @@ function custom_post_types() {
         'has_archive'    => true,
         'menu_icon'      => 'dashicons-format-aside',
         'supports'       => array(  ),
-        'rewrite'        => array( 'with_front' => false ),
+        'rewrite'        => array( 'with_front' => false, 'slug' => 'resources'),
       )
     );  register_post_type( 'news',
       array(
@@ -81,7 +81,7 @@ function custom_post_types() {
         'has_archive'    => true,
         'menu_icon'      => 'dashicons-megaphone',
         'supports'       => array(  ),
-        'rewrite'        => array( 'with_front' => false ),
+        'rewrite'        => array( 'with_front' => false, 'slug' => 'news'),
       )
     );  register_post_type( 'team',
       array(
@@ -93,7 +93,7 @@ function custom_post_types() {
         'has_archive'    => true,
         'menu_icon'      => 'dashicons-groups',
         'supports'       => array(  ),
-        'rewrite'        => array( 'with_front' => false ),
+        'rewrite'        => array( 'with_front' => false, 'slug' => 'team'),
       )
     );  register_post_type( 'jobs',
       array(
@@ -105,12 +105,12 @@ function custom_post_types() {
         'has_archive'    => true,
         'menu_icon'      => 'dashicons-businessman',
         'supports'       => array(  ),
-        'rewrite'        => array( 'with_front' => false ),
+        'rewrite'        => array( 'with_front' => false, 'slug' => 'jobs'),
       )
     );}
 
-add_action( 'init', 'resource_taxonomies', 0 );
-function resource_taxonomies() {
+add_action( 'init', 'enable_taxonomies', 0 );
+function enable_taxonomies() {
   $labels = array(
       'name'              => _x( 'Resource Types', 'taxonomy general name', 'textdomain' ),
       'singular_name'     => _x( 'Resource Type', 'taxonomy singular name', 'textdomain' ),
@@ -131,7 +131,6 @@ function resource_taxonomies() {
       'show_ui'           => true,
       'show_admin_column' => true,
       'query_var'         => true,
-      'rewrite'           => array( 'slug' => 'resource-type' ),
     );
   
     register_taxonomy( 'resource-type', array( 'resources' ), $args );  $labels = array(
@@ -154,7 +153,6 @@ function resource_taxonomies() {
       'show_ui'           => true,
       'show_admin_column' => true,
       'query_var'         => true,
-      'rewrite'           => array( 'slug' => 'news-type' ),
     );
   
     register_taxonomy( 'news-type', array( 'news' ), $args );  $labels = array(
@@ -177,7 +175,6 @@ function resource_taxonomies() {
       'show_ui'           => true,
       'show_admin_column' => true,
       'query_var'         => true,
-      'rewrite'           => array( 'slug' => 'group' ),
     );
   
     register_taxonomy( 'group', array( 'team' ), $args );}
@@ -187,3 +184,12 @@ function remove_pages_from_menu(){
   remove_menu_page( 'edit.php?post_type=page' );
   remove_menu_page( 'edit-comments.php' );
 }
+
+
+function remove_yoast_meta_desc_specific_page ( $myfilter ) {
+    if ( is_page ( 'index' ) ) {
+        return $myfilter;
+    }
+    
+}
+add_filter( 'wpseo_metadesc', 'remove_yoast_meta_desc_specific_page' );
