@@ -32,3 +32,12 @@ UTILITIES / HELPER FUNCTIONS
 @mixin box-shadow(){
 	box-shadow: $shadow;
 }
+
+@mixin clearfix(){
+	overflow: auto;
+	&::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+}

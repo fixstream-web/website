@@ -211,16 +211,28 @@
 	</header>		
 	<article>
 		
-<section class="section section-blog-article">
-			<div class="section-content">
-
+	<div class="section-content">
 		<?php if (have_posts()) : while (have_posts()) : the_post();?>
+		<main>
 		<h1><?php the_title(); ?></h1>
 		<?php the_content(); ?>
+		</main>
+
+		<?php $posts = get_field('attribution');
+		if( $posts ): ?>
+		<aside>
+			<h4>About the author</h4>
+			<?php foreach( $posts as $post): ?>
+			<?php setup_postdata($post); ?>
+				<?php the_title(); ?>
+			<?php endforeach; ?>
+			<?php wp_reset_postdata(); ?>
+		</aside>
+		<?php endif; ?>
+
 		<?php endwhile; endif; wp_reset_query(); ?>
-			</div>
-		</section>
-    
+	</div>
+
 
 	</article>
 	<footer class="globalfooter">

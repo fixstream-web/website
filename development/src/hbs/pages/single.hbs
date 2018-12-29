@@ -5,16 +5,27 @@
     {{#content "body" mode="append"}}
     {{!-- page specific body content --}}
 
-	{{#embed "modules/section" name="blog-article"}}
-	{{#content "contents" mode="append"}}
-
+	<div class="section-content">
 		<?php if (have_posts()) : while (have_posts()) : the_post();?>
+		<main>
 		<h1><?php the_title(); ?></h1>
 		<?php the_content(); ?>
-		<?php endwhile; endif; wp_reset_query(); ?>
-	{{/content}}
-	{{/embed}}
+		</main>
 
-    
+		<?php $posts = get_field('attribution');
+		if( $posts ): ?>
+		<aside>
+			<h4>About the author</h4>
+			<?php foreach( $posts as $post): ?>
+			<?php setup_postdata($post); ?>
+				<?php the_title(); ?>
+			<?php endforeach; ?>
+			<?php wp_reset_postdata(); ?>
+		</aside>
+		<?php endif; ?>
+
+		<?php endwhile; endif; wp_reset_query(); ?>
+	</div>
+
     {{/content}}
     {{/embed}}
