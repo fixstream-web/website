@@ -45,9 +45,14 @@ In addition to the theme itself, repo holds WordPress core as well as plugins an
 WordPress is integrated for blogging as well as custom post types including:
 * Resources
 	* Whitepapers
+	* Case Studies
+	* Tech Docs
+	* Videos
 * Team Profiles
+	* Leadership
+	* Board
+	* Employees
 * News Items
 	* External Links
 	* Press Releases
-* Customers/Affiliates
-* **TODO:** Verify Private Job Posts
+* Private Job Posts
