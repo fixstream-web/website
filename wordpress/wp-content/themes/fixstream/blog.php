@@ -237,8 +237,16 @@
 			<div class="section-content">
 				<a href="<?php echo get_permalink(); ?>">
 					<h2><?php the_title(); ?></h2>
-					<h3>By <?php echo get_the_author(); ?></h3>
 				</a>
+
+				<?php $post = get_field('attribution');
+				if( $post ): ?>
+					<?php setup_postdata($post); ?>
+					<h3>By <?php the_title(); ?></h3>
+					<?php wp_reset_postdata(); ?>
+				<?php endif; ?>
+
+				
 			</div>
 		</section>		    <?php
 		  }

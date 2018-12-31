@@ -218,14 +218,12 @@
 		<?php the_content(); ?>
 		</main>
 
-		<?php $posts = get_field('attribution');
-		if( $posts ): ?>
+		<?php $post = get_field('attribution');
+		if( $post ): ?>
 		<aside>
 			<h4>About the author</h4>
-			<?php foreach( $posts as $post): ?>
 			<?php setup_postdata($post); ?>
 				<?php the_title(); ?>
-			<?php endforeach; ?>
 			<?php wp_reset_postdata(); ?>
 		</aside>
 		<?php endif; ?>
