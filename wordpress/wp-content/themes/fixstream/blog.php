@@ -224,7 +224,8 @@
 	<main>
 		    <?php
 	    $args = array(
-	        'post_type' => 'post'
+	        'post_type' => 'post',
+	        'posts_per_page' => '-1'
 	    );
 
 	    $post_query = new WP_Query($args);
