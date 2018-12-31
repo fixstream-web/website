@@ -39,10 +39,10 @@ function customRouter() {
 {{!-- **TODO: pass an array of strings to supports to enable featured images in a given post type --}}
 add_action( 'init', 'custom_post_types' );
 function custom_post_types() {
-  {{> utilities/post-type post-type="resources" name="Resources" singular="Resource" icon="dashicons-format-aside" supports="" }}
-  {{> utilities/post-type post-type="news" name="News Items" singular="News Item" icon="dashicons-megaphone" supports="" }}
-  {{> utilities/post-type post-type="team" name="Team" singular="Member" icon="dashicons-groups" supports="" }}
-  {{> utilities/post-type post-type="jobs" name="Private Jobs" singular="Private Job" icon="dashicons-businessman" supports="" }}
+  {{> utilities/post-type post-type="resources" name="Resources" singular="Resource" icon="dashicons-format-aside" supports=(arry "'excerpt'") }}
+  {{> utilities/post-type post-type="news" name="News Items" singular="News Item" icon="dashicons-megaphone" supports=(arry "'excerpt'") }}
+  {{> utilities/post-type post-type="team" name="Team" singular="Member" icon="dashicons-groups" }}
+  {{> utilities/post-type post-type="jobs" name="Private Jobs" singular="Private Job" icon="dashicons-businessman" }}
 }
 
 add_action( 'init', 'enable_taxonomies', 0 );

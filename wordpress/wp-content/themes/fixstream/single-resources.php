@@ -211,14 +211,40 @@
 	</header>		
 	<article>
 		
+    <?php if (have_posts()) : while (have_posts()) : the_post();
+    $terms = get_the_terms( $post->ID, 'resource-type' );
+    $termName = $terms[0]->name;
+    $singular;
+    switch ($termName) {
+        case 'Case Studies':
+            $singular = 'Case Study';
+            break;
+        case 'Whitepapers':
+            $singular = 'Whitepaper';
+            break;
+        case 'Videos':
+            $singular = 'Video';
+            break;
+        case 'Tech Docs':
+            $singular = 'Tech Doc';
+            break;
+        default:
+            $singular = 'Resource';
+            break;
+    }
+    ?>
 
 <section class="section section-resource">
 			<div class="section-content">
-    <?php if (have_posts()) : while (have_posts()) : the_post();?>
 	<h1>Resources > <?php the_title(); ?></h1>
-	<?php endwhile; endif; wp_reset_query(); ?>
 			</div>
 		</section>
+<section class="section section-resource">
+			<div class="section-content">
+    <button class="resources-cta"><?php if ($termName == 'Video'): ?>Watch<?php else: ?>Download<?php endif ?> this <?php echo $singular; ?></button>
+			</div>
+		</section>     <?php endwhile; endif; wp_reset_query(); ?>
+
 
 	</article>
 	<footer class="globalfooter">

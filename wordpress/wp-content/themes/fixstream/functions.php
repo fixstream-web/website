@@ -65,7 +65,7 @@ function custom_post_types() {
         'public'         => true,
         'has_archive'    => true,
         'menu_icon'      => 'dashicons-format-aside',
-        'supports'       => array(  ),
+        'supports'       => array('excerpt'),
         'rewrite'        => array( 'with_front' => false, 'slug' => 'resources'),
       )
     );  register_post_type( 'news',
@@ -77,7 +77,7 @@ function custom_post_types() {
         'public'         => true,
         'has_archive'    => true,
         'menu_icon'      => 'dashicons-megaphone',
-        'supports'       => array(  ),
+        'supports'       => array('excerpt'),
         'rewrite'        => array( 'with_front' => false, 'slug' => 'news'),
       )
     );  register_post_type( 'team',
@@ -89,7 +89,7 @@ function custom_post_types() {
         'public'         => true,
         'has_archive'    => true,
         'menu_icon'      => 'dashicons-groups',
-        'supports'       => array(  ),
+        
         'rewrite'        => array( 'with_front' => false, 'slug' => 'team'),
       )
     );  register_post_type( 'jobs',
@@ -101,7 +101,7 @@ function custom_post_types() {
         'public'         => true,
         'has_archive'    => true,
         'menu_icon'      => 'dashicons-businessman',
-        'supports'       => array(  ),
+        
         'rewrite'        => array( 'with_front' => false, 'slug' => 'jobs'),
       )
     );}

@@ -5,14 +5,41 @@
     {{#content "body" mode="append"}}
     {{!-- page specific body content --}}
 
+    <?php if (have_posts()) : while (have_posts()) : the_post();
+    $terms = get_the_terms( $post->ID, 'resource-type' );
+    $termName = $terms[0]->name;
+    $singular;
+    switch ($termName) {
+        case 'Case Studies':
+            $singular = 'Case Study';
+            break;
+        case 'Whitepapers':
+            $singular = 'Whitepaper';
+            break;
+        case 'Videos':
+            $singular = 'Video';
+            break;
+        case 'Tech Docs':
+            $singular = 'Tech Doc';
+            break;
+        default:
+            $singular = 'Resource';
+            break;
+    }
+    ?>
 
     {{#embed "modules/section" name="resource"}}
 	{{#content "contents" mode="append"}}
-    <?php if (have_posts()) : while (have_posts()) : the_post();?>
 	<h1>Resources > <?php the_title(); ?></h1>
-	<?php endwhile; endif; wp_reset_query(); ?>
 	{{/content}}
 	{{/embed}}
+
+    {{#embed "modules/section" name="resource"}}
+    {{#content "contents" mode="append"}}
+    <button class="resources-cta"><?php if ($termName == 'Video'): ?>Watch<?php else: ?>Download<?php endif ?> this <?php echo $singular; ?></button>
+    {{/content}}
+    {{/embed}}
+     <?php endwhile; endif; wp_reset_query(); ?>
 
     {{/content}}
     {{/embed}}
