@@ -232,7 +232,10 @@
 		$loop = new WP_Query( $args );
 		while ( $loop->have_posts() ) : $loop->the_post(); ?>
 		
+		<div class="resource-row">
 		<a href="<?php echo get_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
+		<a class="button resource-link">Download</a>
+		</div>
 	
 		<?php endwhile; ?>
 
@@ -246,7 +249,10 @@
 		$loop = new WP_Query( $args );
 		while ( $loop->have_posts() ) : $loop->the_post(); ?>
 		
+		<div class="resource-row">
 		<a href="<?php echo get_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
+		<a class="button resource-link">Download</a>
+		</div>
 	
 		<?php endwhile; ?>
 
@@ -260,7 +266,10 @@
 		$loop = new WP_Query( $args );
 		while ( $loop->have_posts() ) : $loop->the_post(); ?>
 		
+		<div class="resource-row">
 		<a href="<?php echo get_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
+		<a class="button resource-link">Download</a>
+		</div>
 	
 		<?php endwhile; ?>
 
@@ -275,13 +284,39 @@
 		$loop = new WP_Query( $args );
 		while ( $loop->have_posts() ) : $loop->the_post(); ?>
 		
+		<div class="resource-row">
 		<a href="<?php echo get_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
+		<a class="button resource-link">Watch</a>
+		</div>
 	
 		<?php endwhile; ?>
 
 			</div>
 		</section>
 
+
+<section class="section section-resources-form">
+			<div class="section-content">
+
+		<form id="resourcesForm" class="resource-gate-form">
+				<label for="first-name">First Name</label>
+			<input type="text" id="resource-gate-first-name" name="first-name"  />
+				<label for="last-name">Last Name</label>
+			<input type="text" id="resource-gate-last-name" name="last-name"  />
+				<label for="email">Email</label>
+			<input type="email" id="resource-gate-email" name="email"  />
+				<label for="company">Company</label>
+			<input type="text" id="resource-gate-company" name="company"  />
+				<label for="job-title">Job Title</label>
+			<input type="text" id="resource-gate-job-title" name="job-title"  />
+				<label for="phone">Phone</label>
+			<input type="tel" id="resource-gate-phone" name="phone"  />
+			<input type="submit" id="resource-gate-submit" value="Submit" />
+		</form>
+			</div>
+		</section>
+
+		
 
 		
 

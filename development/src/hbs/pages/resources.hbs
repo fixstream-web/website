@@ -13,7 +13,10 @@
 		$loop = new WP_Query( $args );
 		while ( $loop->have_posts() ) : $loop->the_post(); ?>
 		
+		<div class="resource-row">
 		<a href="<?php echo get_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
+		<a class="button resource-link">Download</a>
+		</div>
 	
 		<?php endwhile; ?>
 
@@ -28,7 +31,10 @@
 		$loop = new WP_Query( $args );
 		while ( $loop->have_posts() ) : $loop->the_post(); ?>
 		
+		<div class="resource-row">
 		<a href="<?php echo get_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
+		<a class="button resource-link">Download</a>
+		</div>
 	
 		<?php endwhile; ?>
 
@@ -43,7 +49,10 @@
 		$loop = new WP_Query( $args );
 		while ( $loop->have_posts() ) : $loop->the_post(); ?>
 		
+		<div class="resource-row">
 		<a href="<?php echo get_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
+		<a class="button resource-link">Download</a>
+		</div>
 	
 		<?php endwhile; ?>
 
@@ -59,7 +68,10 @@
 		$loop = new WP_Query( $args );
 		while ( $loop->have_posts() ) : $loop->the_post(); ?>
 		
+		<div class="resource-row">
 		<a href="<?php echo get_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
+		<a class="button resource-link">Watch</a>
+		</div>
 	
 		<?php endwhile; ?>
 
@@ -67,18 +79,26 @@
 		{{/embed}}
 
 
-			{{!-- {{#embed "forms/form" id="resourcesForm" submitText="Submit" primaryClass="foo" additionalClasses="bar" }}
+
+	{{#embed "modules/section" name="resources-form"}}
+		{{#content "contents" mode="append"}}
+
+	{{#embed "forms/form" id="resourcesForm" submitText="Submit" primaryClass="resource-gate" additionalClasses="" }}
 			{{#content "content"}}
 				{{> forms/components/labeled-input type="text" id="first-name" name="first-name" label="First Name"}}{{~!}}
 				{{> forms/components/labeled-input type="text" id="last-name" name="last-name" label="Last Name"}}{{~!}}
 				{{> forms/components/labeled-input type="email" id="email" name="email" label="Email"}}{{~!}}
-				{{> forms/components/labeled-input type="radio" id="option-1" name="options" label="Car" value="car"}}{{~!}}
-				{{> forms/components/labeled-input type="radio" id="option-2" name="options" label="Boat" value="boat"}}{{~!}}
-
-				{{> forms/components/label for="comments" label="Comments"}}{{~!}}
-				{{> forms/components/input-textarea name="comments"}}{{~!}}
+				{{> forms/components/labeled-input type="text" id="company" name="company" label="Company"}}{{~!}}
+				{{> forms/components/labeled-input type="text" id="job-title" name="job-title" label="Job Title"}}{{~!}}
+				{{> forms/components/labeled-input type="tel" id="phone" name="phone" label="Phone"}}{{~!}}
 			{{/content}}
-			{{/embed}} --}}
+			{{/embed}}
+
+	{{/content}}
+		{{/embed}}
+
+
+		
 
 		
 {{/content}}
