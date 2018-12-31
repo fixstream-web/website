@@ -4,22 +4,6 @@
 {{/content}}
 {{#content "body" mode="replace"}}{{~!}}
 {{!-- page specific body content --}}
-		
-
-		{{#embed "modules/section" name="resources-videos"}}
-		{{#content "contents" mode="append"}}
-		<h2>Videos</h2>
-
-		<?php $args = array( 'post_type' => 'resources', 'posts_per_page' => -1, 'resource-type' => 'videos' );
-		$loop = new WP_Query( $args );
-		while ( $loop->have_posts() ) : $loop->the_post(); ?>
-		
-		<a href="<?php echo get_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
-	
-		<?php endwhile; ?>
-
-		{{/content}}
-		{{/embed}}
 
 		{{#embed "modules/section" name="resources-whitepapers"}}
 		{{#content "contents" mode="append"}}
@@ -67,6 +51,20 @@
 		{{/embed}}
 
 
+		{{#embed "modules/section" name="resources-videos"}}
+		{{#content "contents" mode="append"}}
+		<h2>Videos</h2>
+
+		<?php $args = array( 'post_type' => 'resources', 'posts_per_page' => -1, 'resource-type' => 'videos' );
+		$loop = new WP_Query( $args );
+		while ( $loop->have_posts() ) : $loop->the_post(); ?>
+		
+		<a href="<?php echo get_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
+	
+		<?php endwhile; ?>
+
+		{{/content}}
+		{{/embed}}
 
 
 			{{!-- {{#embed "forms/form" id="resourcesForm" submitText="Submit" primaryClass="foo" additionalClasses="bar" }}

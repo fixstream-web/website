@@ -223,22 +223,7 @@
 	</header>
 	<main>
 
-		
 
-<section class="section section-resources-videos">
-			<div class="section-content">
-		<h2>Videos</h2>
-
-		<?php $args = array( 'post_type' => 'resources', 'posts_per_page' => -1, 'resource-type' => 'videos' );
-		$loop = new WP_Query( $args );
-		while ( $loop->have_posts() ) : $loop->the_post(); ?>
-		
-		<a href="<?php echo get_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
-	
-		<?php endwhile; ?>
-
-			</div>
-		</section>
 <section class="section section-resources-whitepapers">
 			<div class="section-content">
 		<h2>Whitepapers</h2>
@@ -282,7 +267,20 @@
 			</div>
 		</section>
 
+<section class="section section-resources-videos">
+			<div class="section-content">
+		<h2>Videos</h2>
 
+		<?php $args = array( 'post_type' => 'resources', 'posts_per_page' => -1, 'resource-type' => 'videos' );
+		$loop = new WP_Query( $args );
+		while ( $loop->have_posts() ) : $loop->the_post(); ?>
+		
+		<a href="<?php echo get_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
+	
+		<?php endwhile; ?>
+
+			</div>
+		</section>
 
 
 		

@@ -229,18 +229,68 @@
 			</div>
 		</section>
 		
+<section class="section section-company-leardership">
+			<div class="section-content">
+		<div class="row">
+			<div class="col-2">
+				<h2>Leadership</h2>
+				<?php $args = array( 'post_type' => 'team', 'posts_per_page' => -1, 'group' => 'leadership', 'order' => 'ASC' );
+				$loop = new WP_Query( $args );
+				if ($loop->have_posts() ) : ?>
+				<ul class="leadership-list">
+					<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+					<li class="leadership-item">
+						<a class="leadership-link" href="<?php echo get_permalink(); ?>">
+							<h3 class="leadership-header"><?php the_title(); ?></h3>
+						</a>
+						<span class="leadership-title"><?php the_field('job_title'); ?></span>
+					</li>
+					<?php endwhile;?>
+				</ul>
+				<?php endif; ?>
+			</div>
+			<div class="col-2">
+				<h2>Board</h2>
+				<?php $args = array( 'post_type' => 'team', 'posts_per_page' => -1, 'group' => 'board', 'order' => 'ASC' );
+				$loop = new WP_Query( $args );
+				if ($loop->have_posts() ) : ?>
+				<ul class="leadership-list">
+					<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+					<li class="leadership-item">
+						<a class="leadership-link" href="<?php echo get_permalink(); ?>">
+							<h3 class="leadership-header"><?php the_title(); ?></h3>
+						</a>
+						<span class="leadership-title"><?php the_field('job_title'); ?></span>
+						<?php if( get_field('company') ): ?>
+						<span class="leadership-company">at <?php the_field('company'); ?></span>
+						<?php endif; ?>
+					</li>
+					<?php endwhile;?>
+				</ul>
+				<?php endif; ?>
+			</div>
+		</div>
+		
+			</div>
+		</section>
+
 <section class="section section-company-press-releases">
 			<div class="section-content">
 		<h2>Press Releases</h2>
 
 		<?php $args = array( 'post_type' => 'news', 'posts_per_page' => -1, 'news-type' => 'press-releases' );
 		$loop = new WP_Query( $args );
-		while ( $loop->have_posts() ) : $loop->the_post(); ?>
-		
-		<a href="<?php echo get_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
-	
-		<?php endwhile; ?>
-
+		if ($loop->have_posts() ) : ?>
+		<ul class="press-releases-list">
+			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+			<li class="press-releases-item">
+				<a class="press-releases-link" href="<?php echo get_permalink(); ?>">
+					<h3 class="press-releases-header"><?php the_title(); ?></h3>
+				</a>
+			</li>
+			<?php endwhile;?>
+		</ul>
+		<?php endif; ?>
 			</div>
 		</section>
 
@@ -250,11 +300,25 @@
 
 		<?php $args = array( 'post_type' => 'news', 'posts_per_page' => -1, 'news-type' => 'mentions' );
 		$loop = new WP_Query( $args );
-		while ( $loop->have_posts() ) : $loop->the_post(); ?>
-		
-		<a href="<?php echo get_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
-	
-		<?php endwhile; ?>
+		if ($loop->have_posts() ) : ?>
+		<ul class="news-mentions-list">
+			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+			<li class="news-mentions-item">
+				<span class="news-mention-publisher"><?php echo the_field('publisher_name') ?></span>
+				<a class="news-mentions-link" href="<?php echo the_field('source'); ?>" target="_blank">
+					<h3 class="news-mentions-header"><?php the_title(); ?></h3>
+				</a>
+
+				<?php if( get_field('show_date') ): ?>
+					
+				<span class="news-mention-date"><?php echo get_the_date('F n, Y') ?></span>
+					
+				<?php endif; ?>
+				
+			</li>
+			<?php endwhile;?>
+		</ul>
+		<?php endif; ?>
 
 			</div>
 		</section>
