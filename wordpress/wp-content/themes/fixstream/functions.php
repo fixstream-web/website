@@ -65,7 +65,7 @@ function custom_post_types() {
         'public'         => true,
         'has_archive'    => true,
         'menu_icon'      => 'dashicons-format-aside',
-        'supports'       => array('excerpt'),
+        'supports'       => array('excerpt', 'title'),
         'rewrite'        => array( 'with_front' => false, 'slug' => 'resources'),
       )
     );  register_post_type( 'news',

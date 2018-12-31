@@ -236,12 +236,16 @@
 
 <section class="section section-resource">
 			<div class="section-content">
-	<h1>Resources > <?php the_title(); ?></h1>
+    <span>Resources > <?php echo $termName ?></span>
+	<h1><?php the_title(); ?></h1>
+    <?php if (get_the_excerpt()): ?>
+    <p><?php echo get_the_excerpt() ?></p>
+     <?php endif; ?>
 			</div>
 		</section>
 <section class="section section-resource">
 			<div class="section-content">
-    <button class="resources-cta"><?php if ($termName == 'Video'): ?>Watch<?php else: ?>Download<?php endif ?> this <?php echo $singular; ?></button>
+    <button class="resources-cta"><?php if ($termName == 'Videos'): ?>Watch<?php else: ?>Download<?php endif ?> this <?php echo $singular; ?></button>
 			</div>
 		</section>     <?php endwhile; endif; wp_reset_query(); ?>
 
