@@ -7,7 +7,7 @@ register_post_type( '{{post-type}}',
       'public'         => true,
       'has_archive'    => true,
       'menu_icon'      => '{{icon}}',
-      {{#if supports}}'supports'       => {{supports}},{{/if}}
+      'supports'       => array({{supports}}),
       'rewrite'        => array( 'with_front' => false, 'slug' => '{{post-type}}'),
     )
   );

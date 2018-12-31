@@ -210,18 +210,8 @@ gulp.task('hbs', function(){
                                 log: function(arg1) {
                                     console.log(arg1);
                                 },
-                                arry: function(arry){
-                                    let phpArry = 'array(';
-                                    arry.split(', ').forEach(function(val, key, arr){
-                                        phpArry+= val;
-                                        if (Object.is(arr.length - 1, key)) {
-                                            //this is the last item of the array
-                                          } else {
-                                            phpArry+= ', ';
-                                          }
-                                    });
-                                    phpArry+= ')'
-                                    return new handlebars.SafeString(phpArry);
+                                safe: function(string){
+                                    return new handlebars.SafeString(string);
                                 }
                             }
                         }))
