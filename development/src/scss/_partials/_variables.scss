@@ -26,12 +26,14 @@ GLOBAL
 $radius-s: 4px;
 $radius-l: 7px;
 $shadow: 0 0 10px rgba($black, 0.4);
+$globalheader-navbar-height-s: 8vh;
+$globalnav-max-height-s: #{100vh - $globalheader-navbar-height-s};
 
 
 /* ~~~~~~~~~~~~~~~~~~~~
 ANIMATION
 ~~~~~~~~~~~~~~~~~~~~~ */
-$duration-quick: 0.3s;
+$duration-quick: 0.1s;
 $duration-normal: 0.45s;
 $duration-slow: 0.6s;
 

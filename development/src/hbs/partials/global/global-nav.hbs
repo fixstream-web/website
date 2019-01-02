@@ -1,12 +1,16 @@
+<label class="globalnav-button button button-small" for="menuToggle-1">#</label>
+<input id="menuToggle-1" class="globalnav-toggle hidden" type="checkbox" />
 <nav class="globalnav">
 			<ul class="globalnav__toplevel">
 				{{#with nav}}
     			{{#each items}}
-				<li class="globalnav__toplevel-item">
-					<a class="globalnav__toplevel-link" href="/{{slug}}">{{label}}</a>
+				<li class="globalnav__item{{#if subnav}} with-subnav{{/if}}">
+					<a class="globalnav__link" href="/{{slug}}">{{label}}</a>
 					{{#if subnav}}
         			{{#with subnav}}
-						{{> global/components/subnav parent=../slug}}{{~!}}
+        			<input id="subnavToggle-{{@index}}" class="globalnav__subnav-toggle hidden" type="checkbox" />
+						<label class="globalnav__subnav-button" for="subnavToggle-{{@index}}">+</label>
+						{{> global/components/subnav parent=../slug index=@index}}{{~!}}
 					{{/with}}
 					{{/if}}
 				</li>

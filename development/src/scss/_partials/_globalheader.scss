@@ -4,12 +4,15 @@
 	position: sticky;
 	top: 0;
 	&__navbar {
-		@include max-width();
 		@include flex-center();
 		padding: 1rem 0;
+		flex-wrap: wrap;
+		position: relative;
+		height: $globalheader-navbar-height-s;
 	}
 	&__link {
 		flex-basis: 100px;
+		margin-left: 1rem;
 	}
 	&__logo {
 		max-width: 100%;
