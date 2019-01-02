@@ -209,7 +209,7 @@
 <section class="section section-company-leardership">
 			<div class="section-content">
 		<div class="row">
-			<div class="col-2">
+			<div class="leadership-leaders col-x">
 				<h2>Leadership</h2>
 				<?php $args = array( 'post_type' => 'team', 'posts_per_page' => -1, 'group' => 'leadership', 'order' => 'ASC' );
 				$loop = new WP_Query( $args );
@@ -226,7 +226,7 @@
 				</ul>
 				<?php endif; ?>
 			</div>
-			<div class="col-2">
+			<div class="leadership-board  col-x">
 				<h2>Board</h2>
 				<?php $args = array( 'post_type' => 'team', 'posts_per_page' => -1, 'group' => 'board', 'order' => 'ASC' );
 				$loop = new WP_Query( $args );

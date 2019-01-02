@@ -6,19 +6,14 @@ UTILITIES / HELPER FUNCTIONS
 	border: 1px dashed $color;
 }
 
-@mixin flex {
-	display: -ms-flex;
-	display: flex;
-}
-
-@mixin max-width() {
+@mixin max-width {
 	width: $site-base-width;
 	max-width: $site-max-width;
 	margin: auto;
 }
 
 @mixin flex-center {
-	@include flex;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 }
@@ -29,15 +24,16 @@ UTILITIES / HELPER FUNCTIONS
 	}
 }
 
-@mixin box-shadow(){
+@mixin box-shadow {
 	box-shadow: $shadow;
 }
 
-@mixin clearfix(){
-	overflow: auto;
-	&::after {
-		content: "";
-		clear: both;
-		display: table;
-	}
-}
+// Hopefully won't need this...
+// @mixin clearfix {
+// 	overflow: auto;
+// 	&::after {
+// 		content: "";
+// 		clear: both;
+// 		display: table;
+// 	}
+// }

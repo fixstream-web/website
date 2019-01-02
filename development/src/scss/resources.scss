@@ -2,9 +2,9 @@
 
 .resource {
 	&-row {
-		@include flex();
-		align-items: center;
+		display: flex;
 		justify-content: flex-end;
+		flex-direction: column;
 		margin-bottom: 1.2rem;
 		padding-bottom: 1.2rem;
 		border-bottom: 1px solid $gray-3;
@@ -12,7 +12,7 @@
 	&-title {
 		margin-right: auto;
 	}
-	&-link {
-		margin-left: 1rem;
+	&-options {
+		margin-top: 1rem;
 	}
 }

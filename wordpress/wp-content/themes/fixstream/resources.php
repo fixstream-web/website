@@ -211,9 +211,11 @@
 		$loop = new WP_Query( $args );
 		while ( $loop->have_posts() ) : $loop->the_post(); ?>
 		<div class="resource-row">
-		<h3 class="resource-title"><?php the_title(); ?></h3>
-		<a class="button button-small resource-link" href="<?php echo get_permalink(); ?>">More</a>
-		<a class="button button-small resource-link">Download</a>
+			<h3 class="resource-title"><?php the_title(); ?></h3>
+			<div class="resource-options">
+				<a class="button button-small resource-link" href="<?php echo get_permalink(); ?>">More</a>
+				<a class="button button-small resource-link">Download</a>
+			</div>
 		</div>
 		<?php endwhile; ?>
 			</div>
@@ -225,9 +227,11 @@
 		$loop = new WP_Query( $args );
 		while ( $loop->have_posts() ) : $loop->the_post(); ?>
 		<div class="resource-row">
-		<h3 class="resource-title"><?php the_title(); ?></h3>
-		<a class="button button-small resource-link" href="<?php echo get_permalink(); ?>">More</a>
-		<a class="button button-small resource-link">Download</a>
+			<h3 class="resource-title"><?php the_title(); ?></h3>
+			<div class="resource-options">
+				<a class="button button-small resource-link" href="<?php echo get_permalink(); ?>">More</a>
+				<a class="button button-small resource-link">Download</a>
+			</div>
 		</div>
 		<?php endwhile; ?>
 			</div>
@@ -239,9 +243,11 @@
 		$loop = new WP_Query( $args );
 		while ( $loop->have_posts() ) : $loop->the_post(); ?>
 		<div class="resource-row">
-		<h3 class="resource-title"><?php the_title(); ?></h3>
-		<a class="button button-small resource-link" href="<?php echo get_permalink(); ?>">More</a>
-		<a class="button button-small resource-link">Download</a>
+			<h3 class="resource-title"><?php the_title(); ?></h3>
+			<div class="resource-options">
+				<a class="button button-small resource-link" href="<?php echo get_permalink(); ?>">More</a>
+				<a class="button button-small resource-link">Download</a>
+			</div>
 		</div>
 		<?php endwhile; ?>
 			</div>
@@ -254,8 +260,10 @@
 		$loop = new WP_Query( $args );
 		while ( $loop->have_posts() ) : $loop->the_post(); ?>
 		<div class="resource-row">
-		<h3 class="resource-title"><?php the_title(); ?></h3>
-		<a class="button button-small resource-link" href="<?php echo get_permalink(); ?>">Watch</a>
+			<h3 class="resource-title"><?php the_title(); ?></h3>
+			<div class="resource-options">
+				<a class="button button-small resource-link" href="<?php echo get_permalink(); ?>">Watch</a>
+			</div>
 		</div>
 		<?php endwhile; ?>
 			</div>

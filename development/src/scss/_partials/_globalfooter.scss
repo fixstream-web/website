@@ -2,13 +2,13 @@
 	background: $gray-5;
 	min-height: 4rem;
 	padding: 2rem 0;
-	@include flex;
+	display: flex;
 	justify-content: space-between;
 	&__nav {
 		flex-basis: 48%;
 	}
 	&__nav-list {
-		@include flex;
+		display: flex;
 		justify-content: flex-end;
 		flex-direction: column;
 	}
