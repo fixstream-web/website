@@ -205,6 +205,11 @@
 		
 	</main>
 	<footer class="globalfooter">
+		<ul class="globalfooter__social">
+			<li class="globalfooter__social-item">TW</li>
+			<li class="globalfooter__social-item">LI</li>
+			<li class="globalfooter__social-item">YT</li>
+		</ul>
 		<nav class="globalfooter__nav">
 			<ul class="globalfooter__nav-list">
 				<li class="globalfooter__nav-item"><a class="globalfooter__nav-link" href="/platform">Platform</a></li>

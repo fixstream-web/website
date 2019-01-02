@@ -1,15 +1,38 @@
 .globalfooter {
 	background: $gray-5;
 	min-height: 4rem;
-	@include flex-center();
+	padding: 2rem 0;
+	@include flex;
+	justify-content: space-between;
 	&__nav {
-		@include max-width();
+		flex-basis: 48%;
 	}
 	&__nav-list {
 		@include flex;
 		justify-content: flex-end;
+		flex-direction: column;
 	}
 	&__nav-item {
-		margin-left: 1rem;
+		margin-bottom: 1rem;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&__social {
+		position: relative;
+		@include flex-center;
+		flex-direction: column;
+		flex-basis: 48%;
+	}
+	&__social-item {
+		margin-bottom: 1rem;
+		border: 1px solid $gray-4;
+		height: 44px;
+		width: 44px;
+		border-radius: $radius-s;
+		@include flex-center;
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 }
