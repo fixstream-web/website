@@ -227,6 +227,7 @@
 				<h2 class="section-headline hero-headline">Prevent and Predict Outages</h2>
 				<p class="section-intro hero-intro">AIOps Platform to Discover, Correlate and Predict Events Across Hybrid IT</p>
 				<a class="section-cta hero-cta button" href="/resources">Watch video</a>
+				<a class="section-cta hero-cta button" href="#">Learn more</a>
 			</div>
 		</section>
 		<section class="section section-success-stories">

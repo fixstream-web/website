@@ -4,11 +4,15 @@
 	&-row {
 		@include flex();
 		align-items: center;
+		justify-content: flex-end;
 		margin-bottom: 1.2rem;
 		padding-bottom: 1.2rem;
 		border-bottom: 1px solid $gray-3;
 	}
+	&-title {
+		margin-right: auto;
+	}
 	&-link {
-		margin-left: auto;
+		margin-left: 1rem;
 	}
 }

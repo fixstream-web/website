@@ -38,9 +38,21 @@
 	{{/content}}
 	{{/embed}}
 
+
     {{#embed "modules/section" name="resource"}}
     {{#content "contents" mode="append"}}
-    <button class="resources-cta"><?php if ($termName == 'Videos'): ?>Watch<?php else: ?>Download<?php endif ?> this <?php echo $singular; ?></button>
+
+    {{#embed "forms/form" id="resourcesForm" submitText=(safe "<?php if ($termName == 'Videos'): ?>Watch<?php else: ?>Download<?php endif ?> this <?php echo $singular; ?>") primaryClass="resource-gate" additionalClasses="" }}
+    {{#content "content"}}
+        {{> forms/components/labeled-input type="text" id="first-name" name="first-name" label="First Name"}}{{~!}}
+        {{> forms/components/labeled-input type="text" id="last-name" name="last-name" label="Last Name"}}{{~!}}
+        {{> forms/components/labeled-input type="email" id="email" name="email" label="Email"}}{{~!}}
+        {{> forms/components/labeled-input type="text" id="company" name="company" label="Company"}}{{~!}}
+        {{> forms/components/labeled-input type="text" id="job-title" name="job-title" label="Job Title"}}{{~!}}
+        {{> forms/components/labeled-input type="tel" id="phone" name="phone" label="Phone"}}{{~!}}
+    {{/content}}
+    {{/embed}}
+
     {{/content}}
     {{/embed}}
      <?php endwhile; endif; wp_reset_query(); ?>

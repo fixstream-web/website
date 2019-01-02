@@ -1,6 +1,8 @@
 .globalheader {
 	background: $white;
 	@include box-shadow();
+	position: sticky;
+	top: 0;
 	&__navbar {
 		@include max-width();
 		@include flex-center();

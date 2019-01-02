@@ -228,6 +228,12 @@
 						"meta": {
 							"url": "/resources"
 						}
+					},
+					"cta2": {
+						"value": "Learn more",
+						"meta": {
+							"url": "#"
+						}
 					}
 				}
 			},

@@ -243,9 +243,25 @@
      <?php endif; ?>
 			</div>
 		</section>
+
 <section class="section section-resource">
 			<div class="section-content">
-    <button class="resources-cta"><?php if ($termName == 'Videos'): ?>Watch<?php else: ?>Download<?php endif ?> this <?php echo $singular; ?></button>
+
+		<form id="resourcesForm" class="resource-gate-form">
+        <label for="first-name">First Name</label>
+			<input type="text" id="resource-gate-first-name" name="first-name"  />
+        <label for="last-name">Last Name</label>
+			<input type="text" id="resource-gate-last-name" name="last-name"  />
+        <label for="email">Email</label>
+			<input type="email" id="resource-gate-email" name="email"  />
+        <label for="company">Company</label>
+			<input type="text" id="resource-gate-company" name="company"  />
+        <label for="job-title">Job Title</label>
+			<input type="text" id="resource-gate-job-title" name="job-title"  />
+        <label for="phone">Phone</label>
+			<input type="tel" id="resource-gate-phone" name="phone"  />
+			<input type="submit" id="resource-gate-submit" value="<?php if ($termName == 'Videos'): ?>Watch<?php else: ?>Download<?php endif ?> this <?php echo $singular; ?>" />
+		</form>
 			</div>
 		</section>     <?php endwhile; endif; wp_reset_query(); ?>
 
