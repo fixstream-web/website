@@ -6,8 +6,11 @@
 	{{#block "content"}}
 		{{> global/global-nav}}{{~!}}
 		</div>
+		{{#if data.hero}}
+		{{else}}
 		<div class="pageheader">
 			<h1 class="pageheader-headline">{{data.h1}}</h1>
 		</div>
+		{{/if}}
 		{{/block}}{{~!}}
 	</header>

@@ -219,9 +219,8 @@
 					"og-title": "test og title",
 					"twitter-title": "test twitter title"
 				},
-				"h1": "FixStream.com",
 				"hero": {
-					"headline": "Prevent and Predict Outages",
+					"h1": "Prevent and Predict Outages",
 					"intro": "AIOps Platform to Discover, Correlate and Predict Events Across Hybrid IT",
 					"cta": {
 						"value": "Watch video",
@@ -359,9 +358,8 @@
 					"og-title": "test og title",
 					"twitter-title": "test twitter title"
 				},
-				"h1": "About FixStream",
 				"hero": {
-					"headline": "hero headline",
+					"h1": "About FixStream",
 					"cta": {
 						"value": "Get in touch",
 						"meta": {

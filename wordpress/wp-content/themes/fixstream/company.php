@@ -196,15 +196,12 @@
 			</ul>
 		</nav>
 		</div>
-		<div class="pageheader">
-			<h1 class="pageheader-headline">About FixStream</h1>
-		</div>
 		
 	</header>
 	<main>
 		<section class="section section-hero">
 			<div class="section-content">
-				<h2 class="section-headline hero-headline">hero headline</h2>
+				<h1 class="section-headline hero-headline">About FixStream</h1>
 				<a class="section-cta hero-cta button" href="/company">Get in touch</a>
 			</div>
 		</section>

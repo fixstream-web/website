@@ -196,15 +196,12 @@
 			</ul>
 		</nav>
 		</div>
-		<div class="pageheader">
-			<h1 class="pageheader-headline">FixStream.com</h1>
-		</div>
 		
 	</header>
 	<main>
 		<section class="section section-hero">
 			<div class="section-content">
-				<h2 class="section-headline hero-headline">Prevent and Predict Outages</h2>
+				<h1 class="section-headline hero-headline">Prevent and Predict Outages</h1>
 				<p class="section-intro hero-intro">AIOps Platform to Discover, Correlate and Predict Events Across Hybrid IT</p>
 				<a class="section-cta hero-cta button" href="/resources">Watch video</a>
 				<a class="section-cta hero-cta button" href="#">Learn more</a>
