@@ -26,9 +26,7 @@
 			<ul class="globalnav__toplevel">
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/platform">Platform</a>
-        			<input id="subnavToggle-0" class="globalnav__subnav-toggle hidden" type="checkbox" />
-						<label class="globalnav__subnav-button" for="subnavToggle-0">+</label>
-						<ul class="globalnav__subnav">
+							<input type="checkbox" id="subnavToggle-0" class="globalnav__subnav-toggle hidden"   /><label class="globalnav__subnav-button" for="subnavToggle-0">+</label>							<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/agent-less-auto-discovery">- Agent-less Auto Discovery
 							</a>
@@ -48,9 +46,7 @@
 						<li class="globalnav__item with-subnav">
 							<a class="globalnav__link" href="/platform/ecosystem">- Ecosystem
 							</a>
-		        			<input id="subnavToggle-4" class="globalnav__subnav-toggle hidden" type="checkbox" />
-									<label class="globalnav__subnav-button" for="subnavToggle-4">+</label>
-								<ul class="globalnav__subnav">
+		        			<input type="checkbox" id="subnavToggle-4" class="globalnav__subnav-toggle hidden"   /><label class="globalnav__subnav-button" for="subnavToggle-4">+</label>								<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/ecosystem/oracle">- Oracle
 							</a>
@@ -77,9 +73,7 @@
 				</li>
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/solutions">Solutions</a>
-        			<input id="subnavToggle-1" class="globalnav__subnav-toggle hidden" type="checkbox" />
-						<label class="globalnav__subnav-button" for="subnavToggle-1">+</label>
-						<ul class="globalnav__subnav">
+							<input type="checkbox" id="subnavToggle-1" class="globalnav__subnav-toggle hidden"   /><label class="globalnav__subnav-button" for="subnavToggle-1">+</label>							<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/solutions/auto-discovery-and-cmdb-update">- Auto-Discovery and CMDB update
 							</a>
@@ -136,9 +130,7 @@
 				</li>
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/resources">Resources</a>
-        			<input id="subnavToggle-2" class="globalnav__subnav-toggle hidden" type="checkbox" />
-						<label class="globalnav__subnav-button" for="subnavToggle-2">+</label>
-						<ul class="globalnav__subnav">
+							<input type="checkbox" id="subnavToggle-2" class="globalnav__subnav-toggle hidden"   /><label class="globalnav__subnav-button" for="subnavToggle-2">+</label>							<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/resources/dummies">- Dummies
 							</a>
@@ -163,9 +155,7 @@
 				</li>
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/customers">Customers</a>
-        			<input id="subnavToggle-3" class="globalnav__subnav-toggle hidden" type="checkbox" />
-						<label class="globalnav__subnav-button" for="subnavToggle-3">+</label>
-						<ul class="globalnav__subnav">
+							<input type="checkbox" id="subnavToggle-3" class="globalnav__subnav-toggle hidden"   /><label class="globalnav__subnav-button" for="subnavToggle-3">+</label>							<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/customers/broadcom">- Broadcom
 							</a>
@@ -300,17 +290,17 @@
 
 		<form id="companyForm" class="company-form-form">
 				<label for="first-name">First Name</label>
-			<input type="text" id="company-form-first-name" name="first-name"  />
+			<input type="text" id="company-form-first-name"  name="first-name"  />
 				<label for="last-name">Last Name</label>
-			<input type="text" id="company-form-last-name" name="last-name"  />
+			<input type="text" id="company-form-last-name"  name="last-name"  />
 				<label for="email">Email</label>
-			<input type="email" id="company-form-email" name="email"  />
+			<input type="email" id="company-form-email"  name="email"  />
 				<label for="company">Company</label>
-			<input type="text" id="company-form-company" name="company"  />
+			<input type="text" id="company-form-company"  name="company"  />
 				<label for="job-title">Job Title</label>
-			<input type="text" id="company-form-job-title" name="job-title"  />
+			<input type="text" id="company-form-job-title"  name="job-title"  />
 				<label for="phone">Phone</label>
-			<input type="tel" id="company-form-phone" name="phone"  />
+			<input type="tel" id="company-form-phone"  name="phone"  />
 			<input type="submit" id="company-form-submit" value="Submit" />
 		</form>
 			</div>

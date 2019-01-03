@@ -18,9 +18,7 @@
 			<ul class="globalnav__toplevel">
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/platform">Platform</a>
-        			<input id="subnavToggle-0" class="globalnav__subnav-toggle hidden" type="checkbox" />
-						<label class="globalnav__subnav-button" for="subnavToggle-0">+</label>
-						<ul class="globalnav__subnav">
+							<input type="checkbox" id="subnavToggle-0" class="globalnav__subnav-toggle hidden"   /><label class="globalnav__subnav-button" for="subnavToggle-0">+</label>							<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/agent-less-auto-discovery">- Agent-less Auto Discovery
 							</a>
@@ -40,9 +38,7 @@
 						<li class="globalnav__item with-subnav">
 							<a class="globalnav__link" href="/platform/ecosystem">- Ecosystem
 							</a>
-		        			<input id="subnavToggle-4" class="globalnav__subnav-toggle hidden" type="checkbox" />
-									<label class="globalnav__subnav-button" for="subnavToggle-4">+</label>
-								<ul class="globalnav__subnav">
+		        			<input type="checkbox" id="subnavToggle-4" class="globalnav__subnav-toggle hidden"   /><label class="globalnav__subnav-button" for="subnavToggle-4">+</label>								<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/ecosystem/oracle">- Oracle
 							</a>
@@ -69,9 +65,7 @@
 				</li>
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/solutions">Solutions</a>
-        			<input id="subnavToggle-1" class="globalnav__subnav-toggle hidden" type="checkbox" />
-						<label class="globalnav__subnav-button" for="subnavToggle-1">+</label>
-						<ul class="globalnav__subnav">
+							<input type="checkbox" id="subnavToggle-1" class="globalnav__subnav-toggle hidden"   /><label class="globalnav__subnav-button" for="subnavToggle-1">+</label>							<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/solutions/auto-discovery-and-cmdb-update">- Auto-Discovery and CMDB update
 							</a>
@@ -128,9 +122,7 @@
 				</li>
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/resources">Resources</a>
-        			<input id="subnavToggle-2" class="globalnav__subnav-toggle hidden" type="checkbox" />
-						<label class="globalnav__subnav-button" for="subnavToggle-2">+</label>
-						<ul class="globalnav__subnav">
+							<input type="checkbox" id="subnavToggle-2" class="globalnav__subnav-toggle hidden"   /><label class="globalnav__subnav-button" for="subnavToggle-2">+</label>							<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/resources/dummies">- Dummies
 							</a>
@@ -155,9 +147,7 @@
 				</li>
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/customers">Customers</a>
-        			<input id="subnavToggle-3" class="globalnav__subnav-toggle hidden" type="checkbox" />
-						<label class="globalnav__subnav-button" for="subnavToggle-3">+</label>
-						<ul class="globalnav__subnav">
+							<input type="checkbox" id="subnavToggle-3" class="globalnav__subnav-toggle hidden"   /><label class="globalnav__subnav-button" for="subnavToggle-3">+</label>							<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/customers/broadcom">- Broadcom
 							</a>
