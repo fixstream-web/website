@@ -67,7 +67,10 @@
 					"og-title": "test og title",
 					"twitter-title": "test twitter title"
 				},
-				"h1": "Platform",
+				"hero" : {
+					"intro": "Powerful Insights with Every Click."
+				},
+				"h1": "Platform Capabilities",
 				"subpages": {
 					"agent-less-auto-discovery": {
 						"name": "agent-less-auto-discovery",
