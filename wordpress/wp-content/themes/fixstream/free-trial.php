@@ -83,6 +83,7 @@
 		<section class="section section-hero">
 			<div class="section-content">
 				<h1 class="section-headline hero-headline">Free Trial</h1>
+				<a class="section-cta hero-cta button" href="#">Button text</a>
 			</div>
 		</section>
 		
@@ -95,6 +96,13 @@
 		</ul>
 		<nav class="globalfooter__nav">
 			<ul class="globalfooter__nav-list">
+				<li class="globalfooter__nav-item"><a class="globalfooter__nav-link" href="/platform">Platform</a></li>
+				<li class="globalfooter__nav-item"><a class="globalfooter__nav-link" href="/solutions">Solutions</a></li>
+				<li class="globalfooter__nav-item"><a class="globalfooter__nav-link" href="/resources">Resources</a></li>
+				<li class="globalfooter__nav-item"><a class="globalfooter__nav-link" href="/customers">Customers</a></li>
+				<li class="globalfooter__nav-item"><a class="globalfooter__nav-link" href="/whats-aiops">What&#x27;s AIOps?</a></li>
+				<li class="globalfooter__nav-item"><a class="globalfooter__nav-link" href="/company">Company</a></li>
+				<li class="globalfooter__nav-item"><a class="globalfooter__nav-link" href="/blog">Blog</a></li>
 			</ul>
 		</nav>
 	</footer>

@@ -32,6 +32,7 @@
 		},
 		"pages": {
 			"index": {
+				"type": "wp-template",
 				"name": "index",
 				"meta": {
 					"title": "Home",
@@ -40,7 +41,6 @@
 					"twitter-title": "test twitter title"
 				},
 				"hero": {
-					"h1": "Prevent and Predict Outages",
 					"intro": "AIOps Platform to Discover, Correlate and Predict Events Across Hybrid IT",
 					"cta": {
 						"value": "Watch video",
@@ -54,7 +54,8 @@
 							"url": "#"
 						}
 					}
-				}
+				},
+				"h1": "Prevent and Predict Outages"
 			},
 			"platform": {
 				"name": "platform",
@@ -203,14 +204,14 @@
 					"twitter-title": "test twitter title"
 				},
 				"hero": {
-					"h1": "About FixStream",
 					"cta": {
 						"value": "Get in touch",
 						"meta": {
 							"url": "/company"
 						}
 					}
-				}
+				},
+				"h1": "About FixStream"
 			},
 			"blog": {
 				"name": "blog",
@@ -225,12 +226,15 @@
 				"h1": "Blog Archive"
 			},
 			"single": {
+				"type": "wp-template",
 				"name": "single"
 			},
 			"single-resources" : {
+				"type": "wp-template",
 				"name": "single-resources"
 			},
 			"four-oh-four": {
+				"type": "wp-template",
 				"name": "404",
 				"meta": {
 					"title": "404",
@@ -240,7 +244,7 @@
 				},
 				"h1": "404 Page Not Found"
 			},
-			"free-trial" : {
+			"free-trial": {
 				"name": "free-trial",
 				"slug": "free-trial",
 				"meta": {
@@ -250,8 +254,14 @@
 					"twitter-title": "test twitter title"
 				},
 				"hero": {
-					"h1": "Free Trial"
-				}
+					"cta": {
+						"value": "Button text",
+						"meta": {
+							"url": "#"
+						}
+					}
+				},
+				"h1": "Free Trial"
 			}
 		}
 	}

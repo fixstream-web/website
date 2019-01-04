@@ -9,30 +9,36 @@ function customRouter() {
   $url_path = trim(parse_url(add_query_arg(array()), PHP_URL_PATH), '/');
   switch ($url_path) {
     {{#each pages}}
-    {{#if this.nav}}
-    case "{{this.slug}}": $load = locate_template('{{this.slug}}.php', true); break;
-    {{/if}}
-        {{#if subpages}}
-        {{#each subpages}}
-    case "{{../this.slug}}/{{this.slug}}": $load = locate_template('{{../this.slug}}/{{this.slug}}.php', true); break;
-            {{#if subpages}}
-            {{#each subpages}}
-    case "{{../../this.slug}}/{{../this.slug}}/{{this.slug}}": $load = locate_template('{{../../this.slug}}/{{../this.slug}}/{{this.slug}}.php', true); break;
-            {{/each}}
-            {{/if}}
-        {{/each}}
-        {{/if}}
+    {{#eq this.type 'wp-template'}}
+    {{else}}
+      case "{{this.slug}}": $load = locate_template('{{this.slug}}.php', true); break;
+    {{/eq}}
+    {{#if subpages}}
+    {{#each subpages}}
+    {{#eq this.type 'wp-template'}}
+    {{else}}
+      case "{{../this.slug}}/{{this.slug}}": $load = locate_template('{{../this.slug}}/{{this.slug}}.php', true); break;
+    {{/eq}}
+    {{#if subpages}}
+    {{#each subpages}}
+    {{#eq this.type 'wp-template'}}
+    {{else}}
+      case "{{../../this.slug}}/{{../this.slug}}/{{this.slug}}": $load = locate_template('{{../../this.slug}}/{{../this.slug}}/{{this.slug}}.php', true); break;
+    {{/eq}}
     {{/each}}
-    default:
-    {{!-- Do we need a default? --}}
+    {{/if}}
+    {{/each}}
+    {{/if}}
+    {{/each}}
+      default:
+      {{!-- Do we need a default? --}}
   }
   if ($load) {
-        exit();
+    exit();
   }
 }
 
 
-{{!-- **TODO: pass an array of strings to supports to enable featured images in a given post type --}}
 add_action( 'init', 'custom_post_types' );
 function custom_post_types() {
   {{> utilities/post-type post-type="resources" name="Resources" singular="Resource" icon="dashicons-format-aside" supports=(safe "'excerpt', 'title'") }}

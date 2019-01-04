@@ -7,23 +7,24 @@ add_action('init', 'customRouter');
 function customRouter() {
   $url_path = trim(parse_url(add_query_arg(array()), PHP_URL_PATH), '/');
   switch ($url_path) {
-    case "platform": $load = locate_template('platform.php', true); break;
-    case "platform/agent-less-auto-discovery": $load = locate_template('platform/agent-less-auto-discovery.php', true); break;
-    case "platform/machine-learning": $load = locate_template('platform/machine-learning.php', true); break;
-    case "platform/transaction-to-infra-correlation": $load = locate_template('platform/transaction-to-infra-correlation.php', true); break;
-    case "platform/architecture": $load = locate_template('platform/architecture.php', true); break;
-    case "platform/ecosystem": $load = locate_template('platform/ecosystem.php', true); break;
-    case "platform/ecosystem/oracle": $load = locate_template('platform/ecosystem/oracle.php', true); break;
-    case "solutions": $load = locate_template('solutions.php', true); break;
-    case "resources": $load = locate_template('resources.php', true); break;
-    case "customers": $load = locate_template('customers.php', true); break;
-    case "whats-aiops": $load = locate_template('whats-aiops.php', true); break;
-    case "company": $load = locate_template('company.php', true); break;
-    case "blog": $load = locate_template('blog.php', true); break;
-    default:
+      case "platform": $load = locate_template('platform.php', true); break;
+      case "platform/agent-less-auto-discovery": $load = locate_template('platform/agent-less-auto-discovery.php', true); break;
+      case "platform/machine-learning": $load = locate_template('platform/machine-learning.php', true); break;
+      case "platform/transaction-to-infra-correlation": $load = locate_template('platform/transaction-to-infra-correlation.php', true); break;
+      case "platform/architecture": $load = locate_template('platform/architecture.php', true); break;
+      case "platform/ecosystem": $load = locate_template('platform/ecosystem.php', true); break;
+      case "platform/ecosystem/oracle": $load = locate_template('platform/ecosystem/oracle.php', true); break;
+      case "solutions": $load = locate_template('solutions.php', true); break;
+      case "resources": $load = locate_template('resources.php', true); break;
+      case "customers": $load = locate_template('customers.php', true); break;
+      case "whats-aiops": $load = locate_template('whats-aiops.php', true); break;
+      case "company": $load = locate_template('company.php', true); break;
+      case "blog": $load = locate_template('blog.php', true); break;
+      case "free-trial": $load = locate_template('free-trial.php', true); break;
+      default:
   }
   if ($load) {
-        exit();
+    exit();
   }
 }
 

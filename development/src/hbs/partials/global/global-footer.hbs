@@ -6,8 +6,10 @@
 		</ul>
 		<nav class="globalfooter__nav">
 			<ul class="globalfooter__nav-list">
-				{{#each nav.items}}
-				<li class="globalfooter__nav-item"><a class="globalfooter__nav-link" href="/{{slug}}">{{label}}</a></li>
+				{{#each pages}}
+    			{{#if this.nav}}
+				<li class="globalfooter__nav-item"><a class="globalfooter__nav-link" href="/{{this.slug}}">{{this.nav}}</a></li>
+				{{/if}}
 				{{/each}}
 			</ul>
 		</nav>
