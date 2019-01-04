@@ -33,7 +33,6 @@
 		"pages": {
 			"index": {
 				"name": "index",
-				"slug": "/",
 				"meta": {
 					"title": "Home",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.",
@@ -59,7 +58,7 @@
 			},
 			"platform": {
 				"name": "platform",
-				"nav": true,
+				"nav": "Platform",
 				"slug": "platform",
 				"meta": {
 					"title": "Platform",
@@ -71,6 +70,7 @@
 				"subpages": {
 					"agent-less-auto-discovery": {
 						"name": "agent-less-auto-discovery",
+						"nav": "Agent-less Auto Discovery",
 						"slug": "agent-less-auto-discovery",
 						"meta": {
 							"title": "Agent-less Auto Discovery",
@@ -82,7 +82,7 @@
 					},
 					"machine-learning": {
 						"name": "machine-learning",
-						"nav": true,
+						"nav": "Machine Learning",
 						"slug": "machine-learning",
 						"meta": {
 							"title": "Machine Learning",
@@ -94,7 +94,7 @@
 					},
 					"transaction-to-infra-correlation": {
 						"name": "transaction-to-infra-correlation",
-						"nav": true,
+						"nav": "Transaction To Infra Correlation",
 						"slug": "transaction-to-infra-correlation",
 						"meta": {
 							"title": "Transaction To Infra Correlation",
@@ -106,7 +106,7 @@
 					},
 					"architecture": {
 						"name": "architecture",
-						"nav": true,
+						"nav": "Architecture",
 						"slug": "architecture",
 						"meta": {
 							"title": "Architecture",
@@ -118,7 +118,7 @@
 					},
 					"ecosystem": {
 						"name": "ecosystem",
-						"nav": true,
+						"nav": "Ecosystem",
 						"slug": "ecosystem",
 						"meta": {
 							"title": "Ecosystem",
@@ -130,7 +130,7 @@
 						"subpages": {
 							"oracle": {
 								"name": "oracle",
-								"nav": true,
+								"nav": "Oracle",
 								"slug": "oracle",
 								"meta": {
 									"title": "Oracle",
@@ -146,7 +146,7 @@
 			},
 			"solutions": {
 				"name": "solutions",
-				"nav": true,
+				"nav": "Solutions",
 				"slug": "solutions",
 				"meta": {
 					"title": "Solutions",
@@ -158,7 +158,7 @@
 			},
 			"resources": {
 				"name": "resources",
-				"nav": true,
+				"nav": "Resources",
 				"slug": "resources",
 				"meta": {
 					"title": "Resources",
@@ -170,7 +170,7 @@
 			},
 			"customers": {
 				"name": "customers",
-				"nav": true,
+				"nav": "Customers",
 				"slug": "customers",
 				"meta": {
 					"title": "Customers",
@@ -182,7 +182,7 @@
 			},
 			"whats-aiops": {
 				"name": "whats-aiops",
-				"nav": true,
+				"nav": "What's AIOps?",
 				"slug": "whats-aiops",
 				"meta": {
 					"title": "What's AIOps?",
@@ -194,7 +194,7 @@
 			},
 			"company": {
 				"name": "company",
-				"nav": true,
+				"nav": "Company",
 				"slug": "company",
 				"meta": {
 					"title": "Company",
@@ -214,10 +214,10 @@
 			},
 			"blog": {
 				"name": "blog",
-				"nav": true,
+				"nav": "Blog",
 				"slug": "blog",
 				"meta": {
-					"title": "Blog Archive",
+					"title": "Blog",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.",
 					"og-title": "test og title",
 					"twitter-title": "test twitter title"

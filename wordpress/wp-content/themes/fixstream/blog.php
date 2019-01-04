@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js">
 <head>
-	<title>Fixstream | Blog Archive</title>
+	<title>Fixstream | Blog</title>
 	<meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.">
 	<meta property="og:title" content="test og title">
 	<meta name="twitter:title" content="test twitter title">
@@ -71,7 +71,7 @@
 					<a class="globalnav__link" href="/company">Company</a>
 				</li>
 				<li class="globalnav__item">
-					<a class="globalnav__link" href="/blog">Blog Archive</a>
+					<a class="globalnav__link" href="/blog">Blog</a>
 				</li>
 				<li class="globalnav__free-trial"><a class="button" href="/free-trial">Free Trial</a></li>
 			</ul>

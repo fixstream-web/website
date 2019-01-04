@@ -71,7 +71,7 @@
 					<a class="globalnav__link" href="/company">Company</a>
 				</li>
 				<li class="globalnav__item">
-					<a class="globalnav__link" href="/blog">Blog Archive</a>
+					<a class="globalnav__link" href="/blog">Blog</a>
 				</li>
 				<li class="globalnav__free-trial"><a class="button" href="/free-trial">Free Trial</a></li>
 			</ul>

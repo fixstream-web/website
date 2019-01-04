@@ -5,7 +5,7 @@
     			{{#each pages}}
     			{{#if this.nav}}
 				<li class="globalnav__item{{#if this.subpages}} with-subnav{{/if}}">
-					<a class="globalnav__link" href="/{{this.slug}}">{{this.meta.title}}</a>
+					<a class="globalnav__link" href="/{{this.slug}}">{{this.nav}}</a>
 					{{#if this.subpages}}
 						{{> global/components/checkbox-toggle additionalClasses="globalnav__subnav-button" for=(concat 'subnavToggle-' @index) label="+"}}
 						{{> global/components/subnav parent=this.slug index=@index}}{{~!}}
