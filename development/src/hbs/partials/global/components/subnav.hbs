@@ -1,13 +1,11 @@
 <ul class="globalnav__subnav">
-						{{#each items}}
-						<li class="globalnav__item{{#if subnav}} with-subnav{{/if}}">
-							<a class="globalnav__link" href="{{#if ../grandparent}}/{{../grandparent}}{{/if}}/{{../parent}}/{{slug}}">- {{label}}
+						{{#each subpages}}
+						<li class="globalnav__item{{#if this.subpages}} with-subnav{{/if}}">
+							<a class="globalnav__link" href="{{#if ../grandparent}}/{{../grandparent}}{{/if}}/{{../parent}}/{{this.slug}}">- {{this.meta.title}}
 							</a>
-							{{#if subnav}}
-		        			{{#with subnav}}
-		        			{{> global/components/checkbox-toggle additionalClasses="globalnav__subnav-button" for=(concat 'subnavToggle-' @index) label="+"}}
-								{{> global/components/subnav parent=../slug grandparent=../../parent}}{{~!}}
-							{{/with}}
+							{{#if subpages}}
+		        		{{> global/components/checkbox-toggle additionalClasses="globalnav__subnav-button" for=(concat 'subnavToggle-' @index) label="+"}}
+								{{> global/components/subnav parent=this.slug grandparent=../parent}}{{~!}}
 							{{/if}}
 						</li>
 						{{/each}}

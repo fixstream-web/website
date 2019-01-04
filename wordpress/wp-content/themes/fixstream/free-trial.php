@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js">
 <head>
-	<title>Fixstream | What&#x27;s AIOps?</title>
+	<title>Fixstream | Free Trial</title>
 	<meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.">
 	<meta property="og:title" content="test og title">
 	<meta name="twitter:title" content="test twitter title">
@@ -11,10 +11,10 @@
 	<meta property="og:type" content="website">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<?php wp_head(); ?>
-	<link rel="stylesheet" href="/wp-content/themes/fixstream/css/whats-aiops.css">
-	<script type="text/javascript" src="/wp-content/themes/fixstream/js/whats-aiops.js"></script>
+	<link rel="stylesheet" href="/wp-content/themes/fixstream/css/free-trial.css">
+	<script type="text/javascript" src="/wp-content/themes/fixstream/js/free-trial.js"></script>
 </head>
-<body class="page-whats-aiops">
+<body class="page-free-trial">
 	<header class="globalheader">
 		<div class="globalheader__navbar">
 		<a class="globalheader__link" href="/">
@@ -77,12 +77,14 @@
 			</ul>
 		</nav>
 		</div>
-		<div class="pageheader">
-			<h1 class="pageheader-headline">What&#x27;s AIOps?</h1>
-		</div>
 		
 	</header>
 	<main>
+		<section class="section section-hero">
+			<div class="section-content">
+				<h1 class="section-headline hero-headline">Free Trial</h1>
+			</div>
+		</section>
 		
 	</main>
 	<footer class="globalfooter">

@@ -2,18 +2,17 @@
 <input id="menuToggle-1" class="globalnav-toggle hidden" type="checkbox" />
 <nav class="globalnav">
 			<ul class="globalnav__toplevel">
-				{{#with nav}}
-    			{{#each items}}
-				<li class="globalnav__item{{#if subnav}} with-subnav{{/if}}">
-					<a class="globalnav__link" href="/{{slug}}">{{label}}</a>
-					{{#if subnav}}
-        			{{#with subnav}}
-							{{> global/components/checkbox-toggle additionalClasses="globalnav__subnav-button" for=(concat 'subnavToggle-' @index) label="+"}}
-							{{> global/components/subnav parent=../slug index=@index}}{{~!}}
-					{{/with}}
+    			{{#each pages}}
+    			{{#if this.nav}}
+				<li class="globalnav__item{{#if this.subpages}} with-subnav{{/if}}">
+					<a class="globalnav__link" href="/{{this.slug}}">{{this.meta.title}}</a>
+					{{#if this.subpages}}
+						{{> global/components/checkbox-toggle additionalClasses="globalnav__subnav-button" for=(concat 'subnavToggle-' @index) label="+"}}
+						{{> global/components/subnav parent=this.slug index=@index}}{{~!}}
 					{{/if}}
 				</li>
+				{{/if}}
 				{{/each}}
-				{{/with}}
+				<li class="globalnav__free-trial"><a class="button" href="/free-trial">Free Trial</a></li>
 			</ul>
 		</nav>

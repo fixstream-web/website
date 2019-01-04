@@ -13,186 +13,6 @@
 			"Version": "1.0",
 			"Notes": "No style belongs in this file. It is simply for theme registration. All styles are built to the /css/ directory."
 		},
-		"nav": {
-			"items": [
-				{
-					"label": "Platform",
-					"slug": "platform",
-					"subnav": {
-						"items": [
-							{
-								"label": "Agent-less Auto Discovery",
-								"slug": "agent-less-auto-discovery"
-							},
-							{
-								"label": "Transaction to Infra Correlation",
-								"slug": "transaction-to-infra-correlation"
-							},
-							{
-								"label": "Machine learning",
-								"slug": "machine-learning"
-							},
-							{
-								"label": "Architecture",
-								"slug": "architecture"
-							},
-							{
-								"label": "Ecosystem",
-								"slug": "ecosystem",
-								"subnav": {
-									"items": [
-										{
-											"label": "Oracle",
-											"slug": "oracle"
-										},
-										{
-											"label": "SAP",
-											"slug": "sap"
-										},
-										{
-											"label": "Cherwell",
-											"slug": "cherwell"
-										},
-										{
-											"label": "ServiceNow",
-											"slug": "servicenow"
-										},
-										{
-											"label": "New Relic",
-											"slug": "new-relic"
-										}
-									]
-								}
-							}
-						]
-					}
-				},
-				{
-					"label": "Solutions",
-					"slug": "solutions",
-					"subnav": {
-						"items": [
-							{
-								"label": "Auto-Discovery and CMDB update",
-								"slug": "auto-discovery-and-cmdb-update"
-							},
-							{
-								"label": "Application Mapping and Event Correlation",
-								"slug": "application-mapping-and-event-correlation"
-							},
-							{
-								"label": "Infrastructure Monitoring",
-								"slug": "infrastructure-monitoring"
-							},
-							{
-								"label": "Capacity Exhausting Prediction",
-								"slug": "capacity-exhausting-prediction"
-							},
-							{
-								"label": "Noise Reduction",
-								"slug": "noise-reduction"
-							},
-							{
-								"label": "Incident Prediction",
-								"slug": "incident-prediction"
-							},
-							{
-								"label": "Migration",
-								"slug": "migration"
-							},
-							{
-								"label": "Oracle",
-								"slug": "oracle"
-							},
-							{
-								"label": "SAP",
-								"slug": "sap"
-							},
-							{
-								"label": "Cherwell",
-								"slug": "cherwell"
-							},
-							{
-								"label": "ServiceNow",
-								"slug": "servicenow"
-							},
-							{
-								"label": "New Relic",
-								"slug": "new-relic"
-							},
-							{
-								"label": "Managed Service Providers",
-								"slug": "managed-service-providers"
-							}
-						]
-					}
-				},
-				{
-					"label": "Resources",
-					"slug": "resources",
-					"subnav": {
-						"items": [
-							{
-								"label": "Dummies",
-								"slug": "dummies"
-							},
-							{
-								"label": "Videos",
-								"slug": "videos"
-							},
-							{
-								"label": "Whitepapers",
-								"slug": "whitepapers"
-							},
-							{
-								"label": "Case Studies",
-								"slug": "case-studies"
-							},
-							{
-								"label": "Tech Docs",
-								"slug": "tech-docs"
-							}
-						]
-					}
-				},
-				{
-					"label": "Customers",
-					"slug": "customers",
-					"subnav": {
-						"items": [
-							{
-								"label": "Broadcom",
-								"slug": "broadcom"
-							},
-							{
-								"label": "SPXFlow",
-								"slug": "spxflow"
-							},
-							{
-								"label": "COLV",
-								"slug": "colv"
-							},
-							{
-								"label": "BT",
-								"slug": "bt"
-							}
-						]
-					}
-				},
-				{
-					"label": "What's AIOPs",
-					"slug": "whats-aiops"
-				},
-				{
-					"label": "Company",
-					"slug": "company"
-				},
-				{
-					"label": "Blog",
-					"slug": "blog"
-				}
-			]
-		},
 		"hot-news": {
 			"items": [
 				{
@@ -213,6 +33,7 @@
 		"pages": {
 			"index": {
 				"name": "index",
+				"slug": "/",
 				"meta": {
 					"title": "Home",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.",
@@ -236,18 +57,10 @@
 					}
 				}
 			},
-			"resources": {
-				"name": "resources",
-				"meta": {
-					"title": "Resources",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.",
-					"og-title": "test og title",
-					"twitter-title": "test twitter title"
-				},
-				"h1": "Resources"
-			},
 			"platform": {
 				"name": "platform",
+				"nav": true,
+				"slug": "platform",
 				"meta": {
 					"title": "Platform",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.",
@@ -258,6 +71,7 @@
 				"subpages": {
 					"agent-less-auto-discovery": {
 						"name": "agent-less-auto-discovery",
+						"slug": "agent-less-auto-discovery",
 						"meta": {
 							"title": "Agent-less Auto Discovery",
 							"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.",
@@ -268,6 +82,8 @@
 					},
 					"machine-learning": {
 						"name": "machine-learning",
+						"nav": true,
+						"slug": "machine-learning",
 						"meta": {
 							"title": "Machine Learning",
 							"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.",
@@ -278,6 +94,8 @@
 					},
 					"transaction-to-infra-correlation": {
 						"name": "transaction-to-infra-correlation",
+						"nav": true,
+						"slug": "transaction-to-infra-correlation",
 						"meta": {
 							"title": "Transaction To Infra Correlation",
 							"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.",
@@ -288,6 +106,8 @@
 					},
 					"architecture": {
 						"name": "architecture",
+						"nav": true,
+						"slug": "architecture",
 						"meta": {
 							"title": "Architecture",
 							"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.",
@@ -298,6 +118,8 @@
 					},
 					"ecosystem": {
 						"name": "ecosystem",
+						"nav": true,
+						"slug": "ecosystem",
 						"meta": {
 							"title": "Ecosystem",
 							"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.",
@@ -308,6 +130,8 @@
 						"subpages": {
 							"oracle": {
 								"name": "oracle",
+								"nav": true,
+								"slug": "oracle",
 								"meta": {
 									"title": "Oracle",
 									"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.",
@@ -322,6 +146,8 @@
 			},
 			"solutions": {
 				"name": "solutions",
+				"nav": true,
+				"slug": "solutions",
 				"meta": {
 					"title": "Solutions",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.",
@@ -330,18 +156,22 @@
 				},
 				"h1": "Solutions"
 			},
-			"whats-aiops": {
-				"name": "whats-aiops",
+			"resources": {
+				"name": "resources",
+				"nav": true,
+				"slug": "resources",
 				"meta": {
-					"title": "What's AIOps?",
+					"title": "Resources",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.",
 					"og-title": "test og title",
 					"twitter-title": "test twitter title"
 				},
-				"h1": "What's AIOps?"
+				"h1": "Resources"
 			},
 			"customers": {
 				"name": "customers",
+				"nav": true,
+				"slug": "customers",
 				"meta": {
 					"title": "Customers",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.",
@@ -350,8 +180,22 @@
 				},
 				"h1": "Customers"
 			},
+			"whats-aiops": {
+				"name": "whats-aiops",
+				"nav": true,
+				"slug": "whats-aiops",
+				"meta": {
+					"title": "What's AIOps?",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.",
+					"og-title": "test og title",
+					"twitter-title": "test twitter title"
+				},
+				"h1": "What's AIOps?"
+			},
 			"company": {
 				"name": "company",
+				"nav": true,
+				"slug": "company",
 				"meta": {
 					"title": "Company",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.",
@@ -370,6 +214,8 @@
 			},
 			"blog": {
 				"name": "blog",
+				"nav": true,
+				"slug": "blog",
 				"meta": {
 					"title": "Blog Archive",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.",
@@ -393,6 +239,19 @@
 					"twitter-title": "test twitter title"
 				},
 				"h1": "404 Page Not Found"
+			},
+			"free-trial" : {
+				"name": "free-trial",
+				"slug": "free-trial",
+				"meta": {
+					"title": "Free Trial",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.",
+					"og-title": "test og title",
+					"twitter-title": "test twitter title"
+				},
+				"hero": {
+					"h1": "Free Trial"
+				}
 			}
 		}
 	}

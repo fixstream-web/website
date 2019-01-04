@@ -8,25 +8,21 @@ add_action('init', 'customRouter');
 function customRouter() {
   $url_path = trim(parse_url(add_query_arg(array()), PHP_URL_PATH), '/');
   switch ($url_path) {
-    {{#with nav}}
-    {{#each items}}
-    case "{{slug}}": $load = locate_template('{{slug}}.php', true); break;
-        {{#if subnav}}
-        {{#with subnav}}
-        {{#each items}}
-    case "{{../../this.slug}}/{{slug}}": $load = locate_template('{{../../this.slug}}/{{slug}}.php', true); break;
-            {{#if subnav}}
-            {{#with subnav}}
-            {{#each items}}
-    case "{{../../../../this.slug}}/{{../../this.slug}}/{{slug}}": $load = locate_template('{{../../../../this.slug}}/{{../../this.slug}}/{{slug}}.php', true); break;
+    {{#each pages}}
+    {{#if this.nav}}
+    case "{{this.slug}}": $load = locate_template('{{this.slug}}.php', true); break;
+    {{/if}}
+        {{#if subpages}}
+        {{#each subpages}}
+    case "{{../this.slug}}/{{this.slug}}": $load = locate_template('{{../this.slug}}/{{this.slug}}.php', true); break;
+            {{#if subpages}}
+            {{#each subpages}}
+    case "{{../../this.slug}}/{{../this.slug}}/{{this.slug}}": $load = locate_template('{{../../this.slug}}/{{../this.slug}}/{{this.slug}}.php', true); break;
             {{/each}}
-            {{/with}}
             {{/if}}
         {{/each}}
-        {{/with}}
         {{/if}}
     {{/each}}
-    {{/with}}
     default:
     {{!-- Do we need a default? --}}
   }

@@ -22,6 +22,10 @@ $mod: 'globalnav';
 		padding-right: 1rem;
 		box-decoration-break: clone;
 	}
+	&__free-trial {
+    @include flex-center;
+    padding: 1rem 0;
+	}
 	&__toplevel {
 		display: flex;
 		flex-wrap: wrap;

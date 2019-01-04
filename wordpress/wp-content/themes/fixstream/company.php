@@ -26,17 +26,17 @@
 			<ul class="globalnav__toplevel">
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/platform">Platform</a>
-							<input type="checkbox" id="subnavToggle-0" class="globalnav__subnav-toggle hidden"   /><label class="globalnav__subnav-button" for="subnavToggle-0">+</label>							<ul class="globalnav__subnav">
+						<input type="checkbox" id="subnavToggle-1" class="globalnav__subnav-toggle hidden" name="platform"  /><label class="globalnav__subnav-button" for="subnavToggle-1">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/agent-less-auto-discovery">- Agent-less Auto Discovery
 							</a>
 						</li>
 						<li class="globalnav__item">
-							<a class="globalnav__link" href="/platform/transaction-to-infra-correlation">- Transaction to Infra Correlation
+							<a class="globalnav__link" href="/platform/machine-learning">- Machine Learning
 							</a>
 						</li>
 						<li class="globalnav__item">
-							<a class="globalnav__link" href="/platform/machine-learning">- Machine learning
+							<a class="globalnav__link" href="/platform/transaction-to-infra-correlation">- Transaction To Infra Correlation
 							</a>
 						</li>
 						<li class="globalnav__item">
@@ -46,143 +46,34 @@
 						<li class="globalnav__item with-subnav">
 							<a class="globalnav__link" href="/platform/ecosystem">- Ecosystem
 							</a>
-		        			<input type="checkbox" id="subnavToggle-4" class="globalnav__subnav-toggle hidden"   /><label class="globalnav__subnav-button" for="subnavToggle-4">+</label>								<ul class="globalnav__subnav">
+		        		<input type="checkbox" id="subnavToggle-4" class="globalnav__subnav-toggle hidden" name="ecosystem"  /><label class="globalnav__subnav-button" for="subnavToggle-4">+</label>								<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/ecosystem/oracle">- Oracle
 							</a>
 						</li>
-						<li class="globalnav__item">
-							<a class="globalnav__link" href="/platform/ecosystem/sap">- SAP
-							</a>
-						</li>
-						<li class="globalnav__item">
-							<a class="globalnav__link" href="/platform/ecosystem/cherwell">- Cherwell
-							</a>
-						</li>
-						<li class="globalnav__item">
-							<a class="globalnav__link" href="/platform/ecosystem/servicenow">- ServiceNow
-							</a>
-						</li>
-						<li class="globalnav__item">
-							<a class="globalnav__link" href="/platform/ecosystem/new-relic">- New Relic
-							</a>
-						</li>
 					</ul>
-						</li>
-					</ul>
-				</li>
-				<li class="globalnav__item with-subnav">
-					<a class="globalnav__link" href="/solutions">Solutions</a>
-							<input type="checkbox" id="subnavToggle-1" class="globalnav__subnav-toggle hidden"   /><label class="globalnav__subnav-button" for="subnavToggle-1">+</label>							<ul class="globalnav__subnav">
-						<li class="globalnav__item">
-							<a class="globalnav__link" href="/solutions/auto-discovery-and-cmdb-update">- Auto-Discovery and CMDB update
-							</a>
-						</li>
-						<li class="globalnav__item">
-							<a class="globalnav__link" href="/solutions/application-mapping-and-event-correlation">- Application Mapping and Event Correlation
-							</a>
-						</li>
-						<li class="globalnav__item">
-							<a class="globalnav__link" href="/solutions/infrastructure-monitoring">- Infrastructure Monitoring
-							</a>
-						</li>
-						<li class="globalnav__item">
-							<a class="globalnav__link" href="/solutions/capacity-exhausting-prediction">- Capacity Exhausting Prediction
-							</a>
-						</li>
-						<li class="globalnav__item">
-							<a class="globalnav__link" href="/solutions/noise-reduction">- Noise Reduction
-							</a>
-						</li>
-						<li class="globalnav__item">
-							<a class="globalnav__link" href="/solutions/incident-prediction">- Incident Prediction
-							</a>
-						</li>
-						<li class="globalnav__item">
-							<a class="globalnav__link" href="/solutions/migration">- Migration
-							</a>
-						</li>
-						<li class="globalnav__item">
-							<a class="globalnav__link" href="/solutions/oracle">- Oracle
-							</a>
-						</li>
-						<li class="globalnav__item">
-							<a class="globalnav__link" href="/solutions/sap">- SAP
-							</a>
-						</li>
-						<li class="globalnav__item">
-							<a class="globalnav__link" href="/solutions/cherwell">- Cherwell
-							</a>
-						</li>
-						<li class="globalnav__item">
-							<a class="globalnav__link" href="/solutions/servicenow">- ServiceNow
-							</a>
-						</li>
-						<li class="globalnav__item">
-							<a class="globalnav__link" href="/solutions/new-relic">- New Relic
-							</a>
-						</li>
-						<li class="globalnav__item">
-							<a class="globalnav__link" href="/solutions/managed-service-providers">- Managed Service Providers
-							</a>
-						</li>
-					</ul>
-				</li>
-				<li class="globalnav__item with-subnav">
-					<a class="globalnav__link" href="/resources">Resources</a>
-							<input type="checkbox" id="subnavToggle-2" class="globalnav__subnav-toggle hidden"   /><label class="globalnav__subnav-button" for="subnavToggle-2">+</label>							<ul class="globalnav__subnav">
-						<li class="globalnav__item">
-							<a class="globalnav__link" href="/resources/dummies">- Dummies
-							</a>
-						</li>
-						<li class="globalnav__item">
-							<a class="globalnav__link" href="/resources/videos">- Videos
-							</a>
-						</li>
-						<li class="globalnav__item">
-							<a class="globalnav__link" href="/resources/whitepapers">- Whitepapers
-							</a>
-						</li>
-						<li class="globalnav__item">
-							<a class="globalnav__link" href="/resources/case-studies">- Case Studies
-							</a>
-						</li>
-						<li class="globalnav__item">
-							<a class="globalnav__link" href="/resources/tech-docs">- Tech Docs
-							</a>
-						</li>
-					</ul>
-				</li>
-				<li class="globalnav__item with-subnav">
-					<a class="globalnav__link" href="/customers">Customers</a>
-							<input type="checkbox" id="subnavToggle-3" class="globalnav__subnav-toggle hidden"   /><label class="globalnav__subnav-button" for="subnavToggle-3">+</label>							<ul class="globalnav__subnav">
-						<li class="globalnav__item">
-							<a class="globalnav__link" href="/customers/broadcom">- Broadcom
-							</a>
-						</li>
-						<li class="globalnav__item">
-							<a class="globalnav__link" href="/customers/spxflow">- SPXFlow
-							</a>
-						</li>
-						<li class="globalnav__item">
-							<a class="globalnav__link" href="/customers/colv">- COLV
-							</a>
-						</li>
-						<li class="globalnav__item">
-							<a class="globalnav__link" href="/customers/bt">- BT
-							</a>
 						</li>
 					</ul>
 				</li>
 				<li class="globalnav__item">
-					<a class="globalnav__link" href="/whats-aiops">What&#x27;s AIOPs</a>
+					<a class="globalnav__link" href="/solutions">Solutions</a>
+				</li>
+				<li class="globalnav__item">
+					<a class="globalnav__link" href="/resources">Resources</a>
+				</li>
+				<li class="globalnav__item">
+					<a class="globalnav__link" href="/customers">Customers</a>
+				</li>
+				<li class="globalnav__item">
+					<a class="globalnav__link" href="/whats-aiops">What&#x27;s AIOps?</a>
 				</li>
 				<li class="globalnav__item">
 					<a class="globalnav__link" href="/company">Company</a>
 				</li>
 				<li class="globalnav__item">
-					<a class="globalnav__link" href="/blog">Blog</a>
+					<a class="globalnav__link" href="/blog">Blog Archive</a>
 				</li>
+				<li class="globalnav__free-trial"><a class="button" href="/free-trial">Free Trial</a></li>
 			</ul>
 		</nav>
 		</div>
@@ -316,13 +207,6 @@
 		</ul>
 		<nav class="globalfooter__nav">
 			<ul class="globalfooter__nav-list">
-				<li class="globalfooter__nav-item"><a class="globalfooter__nav-link" href="/platform">Platform</a></li>
-				<li class="globalfooter__nav-item"><a class="globalfooter__nav-link" href="/solutions">Solutions</a></li>
-				<li class="globalfooter__nav-item"><a class="globalfooter__nav-link" href="/resources">Resources</a></li>
-				<li class="globalfooter__nav-item"><a class="globalfooter__nav-link" href="/customers">Customers</a></li>
-				<li class="globalfooter__nav-item"><a class="globalfooter__nav-link" href="/whats-aiops">What&#x27;s AIOPs</a></li>
-				<li class="globalfooter__nav-item"><a class="globalfooter__nav-link" href="/company">Company</a></li>
-				<li class="globalfooter__nav-item"><a class="globalfooter__nav-link" href="/blog">Blog</a></li>
 			</ul>
 		</nav>
 	</footer>
