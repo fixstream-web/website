@@ -141,9 +141,27 @@
 	</li></ul>
 			</div>
 		</section>
-<section class="section section-resources">
+<section class="section section-featured-resources">
 			<div class="section-content">
 <h2>Resources</h2>
+<ul class="featured-resources__list">
+	<li class="featured-resource__item">
+		<h3 class="featured-resource__header"><?php echo "wp title hook"; ?></h3>
+		<p class="featured-resource__blurb"><?php echo "wp blurb hook"; ?></p>
+		<a class="featured-resourc__link" href="<?php echo "wp link hook"; ?>">Learn more</a>
+	</li>	<li class="featured-resource__item">
+		<h3 class="featured-resource__header"><?php echo "wp title hook"; ?></h3>
+		<p class="featured-resource__blurb"><?php echo "wp blurb hook"; ?></p>
+		<a class="featured-resourc__link" href="<?php echo "wp link hook"; ?>">Learn more</a>
+	</li>	<li class="featured-resource__item">
+		<h3 class="featured-resource__header"><?php echo "wp title hook"; ?></h3>
+		<p class="featured-resource__blurb"><?php echo "wp blurb hook"; ?></p>
+		<a class="featured-resourc__link" href="<?php echo "wp link hook"; ?>">Learn more</a>
+	</li>	<li class="featured-resource__item">
+		<h3 class="featured-resource__header"><?php echo "wp title hook"; ?></h3>
+		<p class="featured-resource__blurb"><?php echo "wp blurb hook"; ?></p>
+		<a class="featured-resourc__link" href="<?php echo "wp link hook"; ?>">Learn more</a>
+	</li></ul>
 			</div>
 		</section>
 

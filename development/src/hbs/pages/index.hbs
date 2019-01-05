@@ -69,9 +69,27 @@
 {{/content}}
 {{/embed}}
 
-{{#embed "modules/section" name="resources"}}
+{{#embed "modules/section" name="featured-resources"}}
 {{#content "contents" mode="append"}}
 <h2>Resources</h2>
+<ul class="featured-resources__list">
+	{{> modules/homepage-resource-item
+			title=(safe '<?php echo "wp title hook"; ?>')
+			blurb=(safe '<?php echo "wp blurb hook"; ?>')
+			link=(safe '<?php echo "wp link hook"; ?>')}}
+	{{> modules/homepage-resource-item
+			title=(safe '<?php echo "wp title hook"; ?>')
+			blurb=(safe '<?php echo "wp blurb hook"; ?>')
+			link=(safe '<?php echo "wp link hook"; ?>')}}
+	{{> modules/homepage-resource-item
+			title=(safe '<?php echo "wp title hook"; ?>')
+			blurb=(safe '<?php echo "wp blurb hook"; ?>')
+			link=(safe '<?php echo "wp link hook"; ?>')}}
+	{{> modules/homepage-resource-item
+			title=(safe '<?php echo "wp title hook"; ?>')
+			blurb=(safe '<?php echo "wp blurb hook"; ?>')
+			link=(safe '<?php echo "wp link hook"; ?>')}}
+</ul>
 {{/content}}
 {{/embed}}
 
