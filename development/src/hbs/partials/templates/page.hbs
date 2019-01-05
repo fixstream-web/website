@@ -21,11 +21,11 @@
 {{/block}}{{~!}}
 	<main>
 		{{#block "body"}}
+		{{#eq data.name 'index'}}{{else}} {{!-- Custom logic to prevent default hero on index page --}}
 		{{#if data.hero}}
-		{{!-- {{#with data.hero}} --}}
 		{{> modules/hero}}{{~!}}
-		{{!-- {{/with}} --}}
 		{{/if}}
+		{{/eq}}
 		{{/block}}{{~!}}
 	</main>
 	{{#block "footer"}}{{> global/global-footer}}{{/block}}

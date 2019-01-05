@@ -80,15 +80,32 @@
 		
 	</header>
 	<main>
-		<section class="section section-hero">
+				
+<section class="section section-hero">
 			<div class="section-content">
 				<h1 class="section-headline hero-headline">Prevent and Predict Outages</h1>
 				<p class="section-intro hero-intro">AIOps Platform to Discover, Correlate and Predict Events Across Hybrid IT</p>
 				<a class="section-cta hero-cta button" href="/resources">Watch video</a>
 				<a class="section-cta hero-cta button" href="#">Learn more</a>
+				<div class="hero-solutions">
+					<ul class="hero-solutions__list">
+						<li class="hero-solutions__item">
+							<h2 class="hero-solutions__header">Discover</h2>
+							<p class="hero-solutions__blurb">Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam.</p>
+							<a class="hero-solutions__link" href="#">Learn more</a>
+						</li>						<li class="hero-solutions__item">
+							<h2 class="hero-solutions__header">Correlate</h2>
+							<p class="hero-solutions__blurb">Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam.</p>
+							<a class="hero-solutions__link" href="#">Learn more</a>
+						</li>						<li class="hero-solutions__item">
+							<h2 class="hero-solutions__header">AI</h2>
+							<p class="hero-solutions__blurb">Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam.</p>
+							<a class="hero-solutions__link" href="#">Learn more</a>
+						</li>					</ul>
+				</div>
 			</div>
 		</section>
-		<section class="section section-success-stories">
+<section class="section section-success-stories">
 			<div class="section-content">
 <h2>Success Stories</h2>
 <div class="row">
@@ -97,6 +114,7 @@
 	<div class="col-4">AirBus</div>
 	<div class="col-4">BT...</div>
 </div>
+<a class="button">More Case Studies</a>
 			</div>
 		</section>
 <section class="section section-what-fixstream-does">
@@ -108,18 +126,19 @@
 </div>
 			</div>
 		</section>
-<section class="section section-solutions">
-			<div class="section-content">
-<div class="row">
-	<div class="col-3">Discover</div>
-	<div class="col-3">Correlate</div>
-	<div class="col-3">Predict</div>
-</div>
-			</div>
-		</section>
 <section class="section section-customer-testimonials">
 			<div class="section-content">
 <h2>Customer Testimonials</h2>
+<ul class="customer-testimonials__list">
+	<li class="customer-testimonials__item">
+		<h3 class="customer-testimonials__header">Customer Name 1</h3>
+		<span class="customer-testimonials__title">Title</span>
+		<blockquote class="customer-testimonials__quote">Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at.</blockquote>
+	</li>	<li class="customer-testimonials__item">
+		<h3 class="customer-testimonials__header">Customer Name 2</h3>
+		<span class="customer-testimonials__title">Title</span>
+		<blockquote class="customer-testimonials__quote">Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at.</blockquote>
+	</li></ul>
 			</div>
 		</section>
 <section class="section section-resources">

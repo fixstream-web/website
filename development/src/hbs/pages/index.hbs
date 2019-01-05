@@ -4,6 +4,32 @@
 {{/content}}
 {{#content "body" mode="append"}}
 {{!-- page specific body content --}}
+
+{{#embed "modules/section" name="hero" extras=extras}}
+{{#content "contents" mode="append"}}
+				<h1 class="section-headline hero-headline">{{data.h1}}</h1>
+				<p class="section-intro hero-intro">{{data.hero.intro}}</p>
+				<a class="section-cta hero-cta button" href="{{data.hero.cta.meta.url}}">{{data.hero.cta.value}}</a>
+				<a class="section-cta hero-cta button" href="{{data.hero.cta2.meta.url}}">{{data.hero.cta2.value}}</a>
+				<div class="hero-solutions">
+					<ul class="hero-solutions__list">
+						{{> modules/hero-solution-item
+						category="Discover"
+						blurb="Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam."
+						link="#"}}
+						{{> modules/hero-solution-item
+						category="Correlate"
+						blurb="Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam."
+						link="#"}}
+						{{> modules/hero-solution-item
+						category="AI"
+						blurb="Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam."
+						link="#"}}
+					</ul>
+				</div>
+{{/content}}
+{{/embed}}
+
 {{#embed "modules/section" name="success-stories"}}
 {{#content "contents" mode="append"}}
 <h2>Success Stories</h2>
@@ -13,6 +39,7 @@
 	<div class="col-4">AirBus</div>
 	<div class="col-4">BT...</div>
 </div>
+<a class="button">More Case Studies</a>
 {{/content}}
 {{/embed}}
 
@@ -26,19 +53,19 @@
 {{/content}}
 {{/embed}}
 
-{{#embed "modules/section" name="solutions"}}
-{{#content "contents" mode="append"}}
-<div class="row">
-	<div class="col-3">Discover</div>
-	<div class="col-3">Correlate</div>
-	<div class="col-3">Predict</div>
-</div>
-{{/content}}
-{{/embed}}
-
 {{#embed "modules/section" name="customer-testimonials"}}
 {{#content "contents" mode="append"}}
 <h2>Customer Testimonials</h2>
+<ul class="customer-testimonials__list">
+	{{> modules/testimonial
+			name="Customer Name 1"
+			title="Title"
+			quote="Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at."}}
+	{{> modules/testimonial
+			name="Customer Name 2"
+			title="Title"
+			quote="Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at."}}
+</ul>
 {{/content}}
 {{/embed}}
 

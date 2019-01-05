@@ -80,6 +80,7 @@
 		
 	</header>
 	<main>
+		 
 		<section class="section section-hero">
 			<div class="section-content">
 				<h1 class="section-headline hero-headline">About FixStream</h1>
