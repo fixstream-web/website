@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js">
 <head>
-	<title>Fixstream | Oracle</title>
+	<title>Fixstream | BT</title>
 	<meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.">
 	<meta property="og:title" content="test og title">
 	<meta name="twitter:title" content="test twitter title">
@@ -11,10 +11,10 @@
 	<meta property="og:type" content="website">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<?php wp_head(); ?>
-	<link rel="stylesheet" href="/wp-content/themes/fixstream/css/platform/ecosystem/oracle.css">
-	<script type="text/javascript" src="/wp-content/themes/fixstream/js/platform/ecosystem/oracle.js"></script>
+	<link rel="stylesheet" href="/wp-content/themes/fixstream/css/customers/bt.css">
+	<script type="text/javascript" src="/wp-content/themes/fixstream/js/customers/bt.js"></script>
 </head>
-<body class="page-platform-ecosystem page-platform-ecosystem-oracle">
+<body class="page-customers page-customers-bt">
 	<header class="globalheader">
 		<div class="globalheader__navbar">
 		<a class="globalheader__link" href="/">
@@ -28,10 +28,10 @@
 					<a class="globalnav__link" href="/platform">Platform</a>
 						<input
 							type="checkbox"
-							id="subnavToggle-69"
+							id="subnavToggle-45"
 							class="globalnav__subnav-toggle hidden"
 							name="platform"
-						 /><label class="globalnav__subnav-button" for="subnavToggle-69">+</label>						<ul class="globalnav__subnav">
+						 /><label class="globalnav__subnav-button" for="subnavToggle-45">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/agent-less-auto-discovery">- Agent-less Auto Discovery
 							</a>
@@ -53,10 +53,10 @@
 							</a>
 		        		<input
 		        			type="checkbox"
-		        			id="subnavToggle-70"
+		        			id="subnavToggle-46"
 		        			class="globalnav__subnav-toggle hidden"
 		        			name="ecosystem"
-		        		 /><label class="globalnav__subnav-button" for="subnavToggle-70">+</label>								<ul class="globalnav__subnav">
+		        		 /><label class="globalnav__subnav-button" for="subnavToggle-46">+</label>								<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/ecosystem/oracle">- Oracle
 							</a>
@@ -75,10 +75,10 @@
 					<a class="globalnav__link" href="/customers">Customers</a>
 						<input
 							type="checkbox"
-							id="subnavToggle-71"
+							id="subnavToggle-47"
 							class="globalnav__subnav-toggle hidden"
 							name="customers"
-						 /><label class="globalnav__subnav-button" for="subnavToggle-71">+</label>						<ul class="globalnav__subnav">
+						 /><label class="globalnav__subnav-button" for="subnavToggle-47">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/customers/broadcom">- Broadcom
 							</a>
@@ -111,7 +111,7 @@
 		</nav>
 		</div>
 		<div class="pageheader">
-			<h1 class="pageheader-headline">Oracle</h1>
+			<h1 class="pageheader-headline">BT</h1>
 		</div>
 		
 	</header>

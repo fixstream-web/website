@@ -5,8 +5,13 @@
 							<a class="globalnav__link" href="{{#if ../grandparent}}/{{../grandparent}}{{/if}}/{{../parent}}/{{this.slug}}">- {{this.nav}}
 							</a>
 							{{#if subpages}}
-		        		{{> global/components/checkbox-toggle additionalClasses="globalnav__subnav-button" for=(concat 'subnavToggle-' @index) label="+"}}
-								{{> global/components/subnav parent=this.slug grandparent=../parent}}{{~!}}
+		        		{{> global/components/checkbox-toggle
+		        				additionalClasses="globalnav__subnav-button"
+		        				for=(concat 'subnavToggle-' (navCount))
+		        				label="+"}}
+								{{> global/components/subnav
+										parent=this.slug
+										grandparent=../parent}}{{~!}}
 							{{/if}}
 						</li>
 						{{/if}}

@@ -18,7 +18,12 @@
 			<ul class="globalnav__toplevel">
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/platform">Platform</a>
-						<input type="checkbox" id="subnavToggle-1" class="globalnav__subnav-toggle hidden" name="platform"  /><label class="globalnav__subnav-button" for="subnavToggle-1">+</label>						<ul class="globalnav__subnav">
+						<input
+							type="checkbox"
+							id="subnavToggle-33"
+							class="globalnav__subnav-toggle hidden"
+							name="platform"
+						 /><label class="globalnav__subnav-button" for="subnavToggle-33">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/agent-less-auto-discovery">- Agent-less Auto Discovery
 							</a>
@@ -38,7 +43,12 @@
 						<li class="globalnav__item with-subnav">
 							<a class="globalnav__link" href="/platform/ecosystem">- Ecosystem
 							</a>
-		        		<input type="checkbox" id="subnavToggle-4" class="globalnav__subnav-toggle hidden" name="ecosystem"  /><label class="globalnav__subnav-button" for="subnavToggle-4">+</label>								<ul class="globalnav__subnav">
+		        		<input
+		        			type="checkbox"
+		        			id="subnavToggle-34"
+		        			class="globalnav__subnav-toggle hidden"
+		        			name="ecosystem"
+		        		 /><label class="globalnav__subnav-button" for="subnavToggle-34">+</label>								<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/ecosystem/oracle">- Oracle
 							</a>
@@ -53,8 +63,31 @@
 				<li class="globalnav__item">
 					<a class="globalnav__link" href="/resources">Resources</a>
 				</li>
-				<li class="globalnav__item">
+				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/customers">Customers</a>
+						<input
+							type="checkbox"
+							id="subnavToggle-35"
+							class="globalnav__subnav-toggle hidden"
+							name="customers"
+						 /><label class="globalnav__subnav-button" for="subnavToggle-35">+</label>						<ul class="globalnav__subnav">
+						<li class="globalnav__item">
+							<a class="globalnav__link" href="/customers/broadcom">- Broadcom
+							</a>
+						</li>
+						<li class="globalnav__item">
+							<a class="globalnav__link" href="/customers/maxim">- Maxim
+							</a>
+						</li>
+						<li class="globalnav__item">
+							<a class="globalnav__link" href="/customers/colv">- COLV
+							</a>
+						</li>
+						<li class="globalnav__item">
+							<a class="globalnav__link" href="/customers/bt">- BT
+							</a>
+						</li>
+					</ul>
 				</li>
 				<li class="globalnav__item">
 					<a class="globalnav__link" href="/whats-aiops">What&#x27;s AIOps?</a>

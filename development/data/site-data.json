@@ -165,7 +165,57 @@
 					"og-title": "test og title",
 					"twitter-title": "test twitter title"
 				},
-				"h1": "Customers"
+				"h1": "Customers",
+				"subpages": {
+					"broadcom": {
+						"name": "broadcom",
+						"nav": "Broadcom",
+						"slug": "broadcom",
+						"meta": {
+							"title": "Broadcom",
+							"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.",
+							"og-title": "test og title",
+							"twitter-title": "test twitter title"
+						},
+						"h1": "Broadcom"
+					},
+					"maxim": {
+						"name": "maxim",
+						"nav": "Maxim",
+						"slug": "maxim",
+						"meta": {
+							"title": "Maxim",
+							"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.",
+							"og-title": "test og title",
+							"twitter-title": "test twitter title"
+						},
+						"h1": "Maxim"
+					},
+					"colv": {
+						"name": "colv",
+						"nav": "COLV",
+						"slug": "colv",
+						"meta": {
+							"title": "COLV",
+							"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.",
+							"og-title": "test og title",
+							"twitter-title": "test twitter title"
+						},
+						"h1": "COLV"
+					},
+					"bt": {
+						"name": "bt",
+						"nav": "BT",
+						"slug": "bt",
+						"meta": {
+							"title": "BT",
+							"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.",
+							"og-title": "test og title",
+							"twitter-title": "test twitter title"
+						},
+						"h1": "BT"
+					}
+				}
 			},
 			"whats-aiops": {
 				"name": "whats-aiops",

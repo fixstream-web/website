@@ -196,6 +196,7 @@ gulp.task('pages', function(){
 });
 
 gulp.task('hbs', function(){
+    let navIndex = 0;
     gulp.src([
         path.join(config.paths.src, '/hbs/pages/**/*.hbs'),
         path.join(config.paths.src, 'functions.hbs')
@@ -215,6 +216,16 @@ gulp.task('hbs', function(){
                                 },
                                 concat: function(arg1, arg2){
                                     return arg1 + arg2;
+                                },
+                                navCount: function(){
+                                    return navIndex++;
+                                },
+                                both: function(arg1, arg2, options){
+                                    if(arg1 && arg2) {
+                                    return options.fn(this);
+                                  } else {
+                                    return options.inverse(this);
+                                  }
                                 }
                             }
                         }))

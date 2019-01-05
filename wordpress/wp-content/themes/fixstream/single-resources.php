@@ -18,7 +18,12 @@
 			<ul class="globalnav__toplevel">
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/platform">Platform</a>
-						<input type="checkbox" id="subnavToggle-1" class="globalnav__subnav-toggle hidden" name="platform"  /><label class="globalnav__subnav-button" for="subnavToggle-1">+</label>						<ul class="globalnav__subnav">
+						<input
+							type="checkbox"
+							id="subnavToggle-27"
+							class="globalnav__subnav-toggle hidden"
+							name="platform"
+						 /><label class="globalnav__subnav-button" for="subnavToggle-27">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/agent-less-auto-discovery">- Agent-less Auto Discovery
 							</a>
@@ -38,7 +43,12 @@
 						<li class="globalnav__item with-subnav">
 							<a class="globalnav__link" href="/platform/ecosystem">- Ecosystem
 							</a>
-		        		<input type="checkbox" id="subnavToggle-4" class="globalnav__subnav-toggle hidden" name="ecosystem"  /><label class="globalnav__subnav-button" for="subnavToggle-4">+</label>								<ul class="globalnav__subnav">
+		        		<input
+		        			type="checkbox"
+		        			id="subnavToggle-28"
+		        			class="globalnav__subnav-toggle hidden"
+		        			name="ecosystem"
+		        		 /><label class="globalnav__subnav-button" for="subnavToggle-28">+</label>								<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/ecosystem/oracle">- Oracle
 							</a>
@@ -53,8 +63,31 @@
 				<li class="globalnav__item">
 					<a class="globalnav__link" href="/resources">Resources</a>
 				</li>
-				<li class="globalnav__item">
+				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/customers">Customers</a>
+						<input
+							type="checkbox"
+							id="subnavToggle-29"
+							class="globalnav__subnav-toggle hidden"
+							name="customers"
+						 /><label class="globalnav__subnav-button" for="subnavToggle-29">+</label>						<ul class="globalnav__subnav">
+						<li class="globalnav__item">
+							<a class="globalnav__link" href="/customers/broadcom">- Broadcom
+							</a>
+						</li>
+						<li class="globalnav__item">
+							<a class="globalnav__link" href="/customers/maxim">- Maxim
+							</a>
+						</li>
+						<li class="globalnav__item">
+							<a class="globalnav__link" href="/customers/colv">- COLV
+							</a>
+						</li>
+						<li class="globalnav__item">
+							<a class="globalnav__link" href="/customers/bt">- BT
+							</a>
+						</li>
+					</ul>
 				</li>
 				<li class="globalnav__item">
 					<a class="globalnav__link" href="/whats-aiops">What&#x27;s AIOps?</a>
@@ -110,17 +143,41 @@
 
 		<form id="resourcesForm" class="resource-gate-form">
         <label for="first-name">First Name</label>
-			<input type="text" id="resource-gate-first-name"  name="first-name"  />
+			<input
+				type="text"
+				id="resource-gate-first-name"
+				name="first-name"
+			 />
         <label for="last-name">Last Name</label>
-			<input type="text" id="resource-gate-last-name"  name="last-name"  />
+			<input
+				type="text"
+				id="resource-gate-last-name"
+				name="last-name"
+			 />
         <label for="email">Email</label>
-			<input type="email" id="resource-gate-email"  name="email"  />
+			<input
+				type="email"
+				id="resource-gate-email"
+				name="email"
+			 />
         <label for="company">Company</label>
-			<input type="text" id="resource-gate-company"  name="company"  />
+			<input
+				type="text"
+				id="resource-gate-company"
+				name="company"
+			 />
         <label for="job-title">Job Title</label>
-			<input type="text" id="resource-gate-job-title"  name="job-title"  />
+			<input
+				type="text"
+				id="resource-gate-job-title"
+				name="job-title"
+			 />
         <label for="phone">Phone</label>
-			<input type="tel" id="resource-gate-phone"  name="phone"  />
+			<input
+				type="tel"
+				id="resource-gate-phone"
+				name="phone"
+			 />
 			<input type="submit" id="resource-gate-submit" value="<?php if ($termName == 'Videos'): ?>Watch<?php else: ?>Download<?php endif ?> this <?php echo $singular; ?>" />
 		</form>
 			</div>

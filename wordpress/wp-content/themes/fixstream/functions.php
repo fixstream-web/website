@@ -17,6 +17,10 @@ function customRouter() {
       case "solutions": $load = locate_template('solutions.php', true); break;
       case "resources": $load = locate_template('resources.php', true); break;
       case "customers": $load = locate_template('customers.php', true); break;
+      case "customers/broadcom": $load = locate_template('customers/broadcom.php', true); break;
+      case "customers/maxim": $load = locate_template('customers/maxim.php', true); break;
+      case "customers/colv": $load = locate_template('customers/colv.php', true); break;
+      case "customers/bt": $load = locate_template('customers/bt.php', true); break;
       case "whats-aiops": $load = locate_template('whats-aiops.php', true); break;
       case "company": $load = locate_template('company.php', true); break;
       case "blog": $load = locate_template('blog.php', true); break;
