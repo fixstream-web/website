@@ -10,5 +10,6 @@ development/src/hbs/partials/global/components/.DS_Store
 development/src/js/.DS_Store
 development/src/js/modules/.DS_Store
 development/src/scss/.DS_Store
+development/tmp/
 wordpress/.DS_Store
 wordpress/wp-content/themes/.DS_Store

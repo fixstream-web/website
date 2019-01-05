@@ -13,7 +13,19 @@ var gulp            = require('gulp'),
     autoprefixer    = require('gulp-autoprefixer'),
     browserify      = require('gulp-browserify'),
     del             = require('del'),
-    gutil           = require('gulp-util');
+    gutil           = require('gulp-util'),
+    filelist        = require('gulp-filelist'),
+    files;
+
+try {
+  files = require('./' + config.paths.tmp + '/' + 'filelist.json');
+} catch (err) {
+    console.log('###########################################');
+    console.log(err.message);
+    console.log('Run gulp audit to generate file list');
+    console.log('###########################################');
+}
+
 
 sass.compiler = require('node-sass');
 layouts.register(handlebars);
@@ -52,8 +64,8 @@ gulp.task('pages', function(){
     const pageTypes = ['scss','hbs','js'];
     let nestLvl = 0;
     loopPageSet(data.site.pages, "");
-
     countPages(data.site.pages);
+
     function countPages(set){
         for (var key in set) {
             pageTypes.forEach(function(type){
@@ -82,7 +94,7 @@ gulp.task('pages', function(){
             let classprefix;
             let defaultSCSS = "@import 'core';";
             let defaultHBSattrs = `data=pages.${datapath} additionalClasses="${pageclasses}`;
-            
+
             if (nestLvl > 0) {
                 const slashes = new RegExp('\/', 'g');
                 const lastSlash = new RegExp('\/$', 'g');
@@ -195,6 +207,21 @@ gulp.task('pages', function(){
     }
 });
 
+gulp.task('audit', function(){
+    const pagefiles = [
+        path.join(config.paths.src, '/hbs/pages/**/*.hbs'),
+        path.join(config.paths.src, '/js/**/*.js'),
+        "!" + path.join(config.paths.src, '/js/_modules/*.js'),
+        path.join(config.paths.src, '/scss/**/*.scss'),
+        "!" + path.join(config.paths.src, '/scss/_partials/*.scss')
+    ];
+
+    gulp.src(pagefiles)
+    .pipe(filelist('filelist.json', { relative: true }))
+    .pipe(gulp.dest(config.paths.tmp));
+});
+
+
 gulp.task('hbs', function(){
     let navIndex = 0;
     gulp.src([
@@ -273,7 +300,9 @@ gulp.task('theme', function(){
 });
 
 gulp.task('clean', function(){
-    del(config.paths.built, {force:true});
+    del([config.paths.built,
+        config.paths.tmp
+        ], {force:true});
 });
 
 gulp.task('build', ['css', 'hbs', 'js', 'images', 'theme']);
