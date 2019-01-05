@@ -13,23 +13,6 @@
 			"Version": "1.0",
 			"Notes": "No style belongs in this file. It is simply for theme registration. All styles are built to the /css/ directory."
 		},
-		"hot-news": {
-			"items": [
-				{
-					"id": 1,
-					"name": "hot news 1",
-					"headline": "hot news 1",
-					"copy": "Lorem ipsum dolor sit amet",
-					"cta": "Click now"
-				},
-				{
-					"id": 2,
-					"name": "hot news 2",
-					"headline": "hot news 2",
-					"cta": "Learn more"
-				}
-			]
-		},
 		"pages": {
 			"index": {
 				"type": "wp-template",
