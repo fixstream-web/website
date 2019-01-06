@@ -118,97 +118,112 @@
 	<main>
 		 
 		
-
 <section id="solutionsDiscover" class="section section-solutions-discover">
 			<div class="section-content">
-		<h2 class="solution-section-header">Auto-Discovery</h2><ul class="solution-list__list">
-	   	 
+		<h2 class="solution-section-header">Auto-Discovery</h2>
 <div class="solutions-enterprises">
 	   	 	<h3>Enterprises</h3>
-					<li class="solution-list__item">
-							<h4 class="solution-list__item-headline">Discover #1</h4>
-							<p class="solution-list__item-blurb">Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam. Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at.</p>
-							<a class="button solution-list__item-link" href="#">Learn more</a>
-					</li>
-					<li class="solution-list__item">
-							<h4 class="solution-list__item-headline">Discover #2</h4>
-							<p class="solution-list__item-blurb">Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam. Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at.</p>
-							<a class="button solution-list__item-link" href="#">Learn more</a>
-					</li>
+
+<ul class="solution-list__list">
+			<li class="solution-list__item">
+					<h4 class="solution-list__item-headline">Discover #1</h4>
+					<p class="solution-list__item-blurb">Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam. Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at.</p>
+					<a class="button solution-list__item-link" href="#">Learn more</a>
+			</li>
+			<li class="solution-list__item">
+					<h4 class="solution-list__item-headline">Discover #2</h4>
+					<p class="solution-list__item-blurb">Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam. Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at.</p>
+					<a class="button solution-list__item-link" href="#">Learn more</a>
+			</li>
+</ul>
 </div>
 <div class="solutions-msp">
 	   	 	<h3>Managed Service Providers</h3>
-					<li class="solution-list__item">
-							<h4 class="solution-list__item-headline">Discover #2</h4>
-							<p class="solution-list__item-blurb">Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam. Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at.</p>
-							<a class="button solution-list__item-link" href="#">Learn more</a>
-					</li>
+
+<ul class="solution-list__list">
+			<li class="solution-list__item">
+					<h4 class="solution-list__item-headline">Discover #2</h4>
+					<p class="solution-list__item-blurb">Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam. Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at.</p>
+					<a class="button solution-list__item-link" href="#">Learn more</a>
+			</li>
+</ul>
 </div>
-</ul>			</div>
+			</div>
 		</section>
 <section id="solutionsCorrelate" class="section section-solutions-correlate">
 			<div class="section-content">
-		<h2 class="solution-section-header">Multidimensional Correlation</h2><ul class="solution-list__list">
-
+	<h2 class="solution-section-header">Multidimensional Correlation</h2>
 <div class="solutions-enterprises">
 	   	 	<h3>Enterprises</h3>
-					<li class="solution-list__item">
-							<h4 class="solution-list__item-headline">Correlate #1</h4>
-							<p class="solution-list__item-blurb">Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam. Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at.</p>
-							<a class="button solution-list__item-link" href="#">Learn more</a>
-					</li>
+
+<ul class="solution-list__list">
+			<li class="solution-list__item">
+					<h4 class="solution-list__item-headline">Correlate #1</h4>
+					<p class="solution-list__item-blurb">Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam. Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at.</p>
+					<a class="button solution-list__item-link" href="#">Learn more</a>
+			</li>
+</ul>
 </div>
 <div class="solutions-msp">
 	   	 	<h3>Managed Service Providers</h3>
-					<li class="solution-list__item">
-							<h4 class="solution-list__item-headline">Correlate #2</h4>
-							<p class="solution-list__item-blurb">Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam. Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at.</p>
-							<a class="button solution-list__item-link" href="#">Learn more</a>
-					</li>
-					<li class="solution-list__item">
-							<h4 class="solution-list__item-headline">Correlate #3</h4>
-							<p class="solution-list__item-blurb">Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam. Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at.</p>
-							<a class="button solution-list__item-link" href="#">Learn more</a>
-					</li>
+
+<ul class="solution-list__list">
+			<li class="solution-list__item">
+					<h4 class="solution-list__item-headline">Correlate #2</h4>
+					<p class="solution-list__item-blurb">Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam. Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at.</p>
+					<a class="button solution-list__item-link" href="#">Learn more</a>
+			</li>
+			<li class="solution-list__item">
+					<h4 class="solution-list__item-headline">Correlate #3</h4>
+					<p class="solution-list__item-blurb">Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam. Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at.</p>
+					<a class="button solution-list__item-link" href="#">Learn more</a>
+			</li>
+</ul>
 </div>
-</ul>			</div>
+			</div>
 		</section>
 <section id="solutionsAI" class="section section-solutions-ai">
 			<div class="section-content">
-		<h2 class="solution-section-header">Artificial Intelligence</h2><ul class="solution-list__list">
-
-
+	<h2 class="solution-section-header">Artificial Intelligence</h2>
 <div class="solutions-enterprises">
 	   	 	<h3>Enterprises</h3>
-				<li class="solution-list__item">
-						<h4 class="solution-list__item-headline">AI #1</h4>
-						<p class="solution-list__item-blurb">Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam. Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at.</p>
-						<a class="button solution-list__item-link" href="#">Learn more</a>
-				</li>
+
+<ul class="solution-list__list">
+			<li class="solution-list__item">
+					<h4 class="solution-list__item-headline">AI #1</h4>
+					<p class="solution-list__item-blurb">Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam. Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at.</p>
+					<a class="button solution-list__item-link" href="#">Learn more</a>
+			</li>
+</ul>
 </div>
 <div class="solutions-msp">
 	   	 	<h3>Managed Service Providers</h3>
-					<li class="solution-list__item">
-							<h4 class="solution-list__item-headline">AI #2</h4>
-							<p class="solution-list__item-blurb">Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam. Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at.</p>
-							<a class="button solution-list__item-link" href="#">Learn more</a>
-					</li>
+
+<ul class="solution-list__list">
+			<li class="solution-list__item">
+					<h4 class="solution-list__item-headline">AI #2</h4>
+					<p class="solution-list__item-blurb">Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam. Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at.</p>
+					<a class="button solution-list__item-link" href="#">Learn more</a>
+			</li>
+</ul>
 </div>
-</ul>			</div>
+			</div>
 		</section>
 <section id="solutionsOther" class="section section-solutions-other">
 			<div class="section-content">
-		<h2 class="solution-section-header">AIOps for Business Applications</h2><ul class="solution-list__list">
-
+	<h2 class="solution-section-header">AIOps for Business Applications</h2>
 <div class="solutions-enterprises">
 	   	 	<h3>Enterprises</h3>
-				<li class="solution-list__item">
-						<h4 class="solution-list__item-headline">Other #1</h4>
-						<p class="solution-list__item-blurb">Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam. Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at.</p>
-						<a class="button solution-list__item-link" href="#">Learn more</a>
-				</li>
+
+<ul class="solution-list__list">
+			<li class="solution-list__item">
+					<h4 class="solution-list__item-headline">Other #1</h4>
+					<p class="solution-list__item-blurb">Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam. Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at.</p>
+					<a class="button solution-list__item-link" href="#">Learn more</a>
+			</li>
+</ul>
 </div>
-</ul>			</div>
+			</div>
 		</section>
 
 	</main>

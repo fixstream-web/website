@@ -1,126 +1,150 @@
 {{#embed "templates/page" data=pages.solutions additionalClasses="page-solutions"}}
-    {{#content "head" mode="append"}}
-    {{!-- append page specific head tags --}}
-    {{/content}}
-    {{#content "body" mode="append"}}
-    {{!-- page specific body content --}}
+{{#content "head" mode="append"}}
+{{!-- append page specific head tags --}}
+{{/content}}
+{{#content "body" mode="append"}}
+{{!-- page specific body content --}}
 
-
-    {{#embed "modules/section" id="solutionsDiscover" name="solutions-discover"}}
-		{{#content "contents" mode="append"}}
+	{{#embed "modules/section" id="solutionsDiscover" name="solutions-discover"}}
+	{{#content "contents" mode="append"}}
 		{{> modules/solution-section-header header="Auto-Discovery"}}
+
+		{{#embed "modules/solution-category" name='Enterprises' class="enterprises"}}
+		{{#content "contents" mode="replace"}}
+
 			{{#embed "modules/solution-section-list"}}
-	    {{#content "list" mode="replace"}}
-	   	 
-	    		{{#embed "modules/solution-category" name='Enterprises' class="enterprises"}}
-	    		{{#content "contents" mode="replace"}}
-					{{> modules/solution-item
-						headline="Discover #1"
-						blurb="Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam. Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at."
-						link="#"}}
-					{{> modules/solution-item
-						headline="Discover #2"
-						blurb="Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam. Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at."
-						link="#"}}
-				{{/content}}
-				{{/embed}}
-
-				{{#embed "modules/solution-category" name='Managed Service Providers' class="msp"}}
-	    	{{#content "contents" mode="replace"}}
-					{{> modules/solution-item
-						headline="Discover #2"
-						blurb="Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam. Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at."
-						link="#"}}
-				{{/content}}
-				{{/embed}}
-
+			{{#content "list" mode="replace"}}
+			{{> modules/solution-item
+					headline="Discover #1"
+					blurb="Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam. Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at."
+					link="#"}}
+			{{> modules/solution-item
+					headline="Discover #2"
+					blurb="Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam. Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at."
+					link="#"}}
 			{{/content}}
 			{{/embed}}
+
 		{{/content}}
 		{{/embed}}
 
-		{{#embed "modules/section" id="solutionsCorrelate" name="solutions-correlate"}}
-		{{#content "contents" mode="append"}}
-		{{> modules/solution-section-header header="Multidimensional Correlation"}}
+		{{#embed "modules/solution-category" name='Managed Service Providers' class="msp"}}
+		{{#content "contents" mode="replace"}}
+
 			{{#embed "modules/solution-section-list"}}
-	    {{#content "list" mode="replace"}}
-
-	    	{{#embed "modules/solution-category" name='Enterprises' class="enterprises"}}
-	    	{{#content "contents" mode="replace"}}
-					{{> modules/solution-item
-							headline="Correlate #1"
-							blurb="Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam. Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at."
-							link="#"}}
-				{{/content}}
-				{{/embed}}
-
-				{{#embed "modules/solution-category" name='Managed Service Providers' class="msp"}}
-	    	{{#content "contents" mode="replace"}}
-					{{> modules/solution-item
-							headline="Correlate #2"
-							blurb="Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam. Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at."
-							link="#"}}
-					{{> modules/solution-item
-							headline="Correlate #3"
-							blurb="Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam. Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at."
-							link="#"}}
-					{{/content}}
-					{{/embed}}
-
+			{{#content "list" mode="replace"}}
+			{{> modules/solution-item
+					headline="Discover #2"
+					blurb="Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam. Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at."
+					link="#"}}
 			{{/content}}
 			{{/embed}}
+
 		{{/content}}
 		{{/embed}}
 
-		{{#embed "modules/section" id="solutionsAI" name="solutions-ai"}}
-		{{#content "contents" mode="append"}}
-		{{> modules/solution-section-header header="Artificial Intelligence"}}
+	{{/content}}
+	{{/embed}}
+
+	{{#embed "modules/section" id="solutionsCorrelate" name="solutions-correlate"}}
+	{{#content "contents" mode="append"}}
+	{{> modules/solution-section-header header="Multidimensional Correlation"}}
+
+		{{#embed "modules/solution-category" name='Enterprises' class="enterprises"}}
+		{{#content "contents" mode="replace"}}
+
 			{{#embed "modules/solution-section-list"}}
-	    {{#content "list" mode="replace"}}
-
-
-	    {{#embed "modules/solution-category" name='Enterprises' class="enterprises"}}
-	    {{#content "contents" mode="replace"}}
-				{{> modules/solution-item
-						headline="AI #1"
-						blurb="Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam. Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at."
-						link="#"}}
-				{{/content}}
-				{{/embed}}
-
-				{{#embed "modules/solution-category" name='Managed Service Providers' class="msp"}}
-	    	{{#content "contents" mode="replace"}}
-					{{> modules/solution-item
-							headline="AI #2"
-							blurb="Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam. Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at."
-							link="#"}}
-					{{/content}}
-					{{/embed}}
-
+			{{#content "list" mode="replace"}}
+			{{> modules/solution-item
+					headline="Correlate #1"
+					blurb="Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam. Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at."
+					link="#"}}
 			{{/content}}
 			{{/embed}}
+
 		{{/content}}
 		{{/embed}}
 
-		{{#embed "modules/section" id="solutionsOther" name="solutions-other"}}
-		{{#content "contents" mode="append"}}
-		{{> modules/solution-section-header header="AIOps for Business Applications"}}
+		{{#embed "modules/solution-category" name='Managed Service Providers' class="msp"}}
+		{{#content "contents" mode="replace"}}
+
 			{{#embed "modules/solution-section-list"}}
-	    {{#content "list" mode="replace"}}
-
-	    {{#embed "modules/solution-category" name='Enterprises' class="enterprises"}}
-	    {{#content "contents" mode="replace"}}
-				{{> modules/solution-item
-						headline="Other #1"
-						blurb="Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam. Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at."
-						link="#"}}
+			{{#content "list" mode="replace"}}
+			{{> modules/solution-item
+					headline="Correlate #2"
+					blurb="Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam. Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at."
+					link="#"}}
+			{{> modules/solution-item
+					headline="Correlate #3"
+					blurb="Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam. Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at."
+					link="#"}}
 			{{/content}}
 			{{/embed}}
 
-			{{/content}}
-			{{/embed}}
 		{{/content}}
 		{{/embed}}
 
-    {{/content}}
-    {{/embed}}
+	{{/content}}
+	{{/embed}}
+
+	{{#embed "modules/section" id="solutionsAI" name="solutions-ai"}}
+	{{#content "contents" mode="append"}}
+	{{> modules/solution-section-header header="Artificial Intelligence"}}
+
+		{{#embed "modules/solution-category" name='Enterprises' class="enterprises"}}
+		{{#content "contents" mode="replace"}}
+
+			{{#embed "modules/solution-section-list"}}
+			{{#content "list" mode="replace"}}
+			{{> modules/solution-item
+					headline="AI #1"
+					blurb="Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam. Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at."
+					link="#"}}
+			{{/content}}
+			{{/embed}}
+
+		{{/content}}
+		{{/embed}}
+
+		{{#embed "modules/solution-category" name='Managed Service Providers' class="msp"}}
+		{{#content "contents" mode="replace"}}
+
+			{{#embed "modules/solution-section-list"}}
+			{{#content "list" mode="replace"}}
+			{{> modules/solution-item
+					headline="AI #2"
+					blurb="Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam. Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at."
+					link="#"}}
+			{{/content}}
+			{{/embed}}
+
+		{{/content}}
+		{{/embed}}
+
+	{{/content}}
+	{{/embed}}
+
+	{{#embed "modules/section" id="solutionsOther" name="solutions-other"}}
+	{{#content "contents" mode="append"}}
+	{{> modules/solution-section-header header="AIOps for Business Applications"}}
+
+		{{#embed "modules/solution-category" name='Enterprises' class="enterprises"}}
+		{{#content "contents" mode="replace"}}
+
+			{{#embed "modules/solution-section-list"}}
+			{{#content "list" mode="replace"}}
+			{{> modules/solution-item
+					headline="Other #1"
+					blurb="Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam. Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at."
+					link="#"}}
+			{{/content}}
+			{{/embed}}
+
+		{{/content}}
+		{{/embed}}
+
+	{{/content}}
+	{{/embed}}
+
+{{/content}}
+{{/embed}}
