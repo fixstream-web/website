@@ -169,7 +169,7 @@
 			<div class="section-content">
 		<h2>Press Releases</h2>
 
-		<?php $args = array( 'post_type' => 'news', 'posts_per_page' => -1, 'news-type' => 'press-releases' );
+		<?php $args = array( 'post_type' => 'news', 'posts_per_page' => 4, 'news-type' => 'press-releases' );
 		$loop = new WP_Query( $args );
 		if ($loop->have_posts() ) : ?>
 		<ul class="press-releases-list">
@@ -189,7 +189,7 @@
 			<div class="section-content">
 		<h2>In The News</h2>
 
-		<?php $args = array( 'post_type' => 'news', 'posts_per_page' => -1, 'news-type' => 'mentions' );
+		<?php $args = array( 'post_type' => 'news', 'posts_per_page' => 7, 'news-type' => 'mentions' );
 		$loop = new WP_Query( $args );
 		if ($loop->have_posts() ) : ?>
 		<ul class="news-mentions-list">

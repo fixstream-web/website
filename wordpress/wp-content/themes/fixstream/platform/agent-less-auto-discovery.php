@@ -123,7 +123,8 @@
 		
 <section class="section section-platform-intro">
 			<div class="section-content">
-			<h2 class="platform-section-header">Vitae pretium vestibulum dui gravida in</h2>			<p class="platform-intro">Integer pharetra orci eu ligula gravida bibendum. Nulla ac aliquet nisi, at euismod lacus. Integer venenatis rutrum dignissim. Fusce aliquet et mauris eget porta. Donec ullamcorper tincidunt purus, sed pulvinar metus convallis.</p>
+			<h2 class="platform-section-header">Vitae pretium vestibulum dui gravida in</h2>			<p class="intro-paragraph">Integer pharetra orci eu ligula gravida bibendum. Nulla ac aliquet nisi, at euismod lacus. Integer venenatis rutrum dignissim. Fusce aliquet et mauris eget porta. Donec ullamcorper tincidunt purus, sed pulvinar metus convallis.</p>
+			<p>Integer pharetra orci eu ligula gravida bibendum. Nulla ac aliquet nisi, at euismod lacus. Integer venenatis rutrum dignissim. Fusce aliquet et mauris eget porta. Donec ullamcorper tincidunt purus, sed pulvinar metus convallis.</p>
 			<img class="platform-image" src="https://via.placeholder.com/300x700" />
 			</div>
 		</section>
