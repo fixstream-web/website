@@ -15,7 +15,7 @@
 		  while($post_query->have_posts() ) {
 		    $post_query->the_post();
 		    ?>
-			    {{#embed "modules/section" name="blog-archive"}}
+			    {{#embed "modules/section" name="blog-item"}}
 				{{#content "contents" mode="append"}}
 				<a href="<?php echo get_permalink(); ?>">
 					<h2><?php the_title(); ?></h2>

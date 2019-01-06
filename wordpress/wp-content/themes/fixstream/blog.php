@@ -128,7 +128,7 @@
 		  while($post_query->have_posts() ) {
 		    $post_query->the_post();
 		    ?>
-<section class="section section-blog-archive">
+<section class="section section-blog-item">
 			<div class="section-content">
 				<a href="<?php echo get_permalink(); ?>">
 					<h2><?php the_title(); ?></h2>
@@ -164,6 +164,7 @@
 				<li class="globalfooter__nav-item"><a class="globalfooter__nav-link" href="/whats-aiops">What&#x27;s AIOps?</a></li>
 				<li class="globalfooter__nav-item"><a class="globalfooter__nav-link" href="/company">Company</a></li>
 				<li class="globalfooter__nav-item"><a class="globalfooter__nav-link" href="/blog">Blog</a></li>
+				<li class="globalfooter__free-trial"><a class="button" href="/free-trial">Free Trial</a></li>
 			</ul>
 		</nav>
 	</footer>
