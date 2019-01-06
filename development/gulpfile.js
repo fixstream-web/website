@@ -57,7 +57,10 @@ gulp.task('css:watch', function(){
     gulp.watch(path.join(config.paths.src, '/scss/**/*.scss'), ['css']);
 });
 
-gulp.task('pages', function(){
+gulp.task('pages', ['audit'], function(){
+    console.log('###########################################');
+    console.log('Audited ' + files.length + ' files in source folders');
+    console.log('###########################################');
     let errCount = 0;
     let pageCount = 0;
     let pagesTested = 0;
@@ -216,7 +219,7 @@ gulp.task('audit', function(){
         "!" + path.join(config.paths.src, '/scss/_partials/*.scss')
     ];
 
-    gulp.src(pagefiles)
+    return gulp.src(pagefiles)
     .pipe(filelist('filelist.json', { relative: true }))
     .pipe(gulp.dest(config.paths.tmp));
 });
