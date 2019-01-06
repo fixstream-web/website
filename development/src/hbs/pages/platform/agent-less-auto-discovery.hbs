@@ -4,5 +4,50 @@
     {{/content}}
     {{#content "body" mode="append"}}
     {{!-- page specific body content --}}
+
+	    {{#embed "modules/section" name="platform-intro"}}
+			{{#content "contents" mode="append"}}
+			{{> modules/platform-section-header
+					header="Vitae pretium vestibulum dui gravida in"}}
+			<p class="platform-intro">Integer pharetra orci eu ligula gravida bibendum. Nulla ac aliquet nisi, at euismod lacus. Integer venenatis rutrum dignissim. Fusce aliquet et mauris eget porta. Donec ullamcorper tincidunt purus, sed pulvinar metus convallis.</p>
+			<img class="platform-image" src="https://via.placeholder.com/300x700" />
+			{{/content}}
+			{{/embed}}
+
+
+			{{#embed "modules/section" name="platform-resources"}}
+			{{#content "contents" mode="append"}}
+			{{> modules/platform-section-header
+					header="Additional Resources"}}
+			<div class="platform-resources__blogs">
+					{{#embed "modules/platform-resource-section" header="Blogs"}}
+					{{#content "contents" mode="append"}}
+					{{> modules/platform-resource-item
+							src="https://via.placeholder.com/300x150"
+							header="Lorci eu ligula gravida"
+							blurb="Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus."
+							link="#"}}
+					{{> modules/platform-resource-item
+							src="https://via.placeholder.com/300x150"
+							header="Lorci eu ligula gravida"
+							blurb="Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus."
+							link="#"}}
+					{{/content}}
+					{{/embed}}
+			</div>
+			<div class="platform-resources__other">
+					{{#embed "modules/platform-resource-section" header="Other Resources"}}
+					{{#content "contents" mode="append"}}
+					{{> modules/platform-resource-item
+							src="https://via.placeholder.com/200x200"
+							header="Lorci eu ligula gravida"
+							blurb="Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus."
+							link="#"}}
+					{{/content}}
+					{{/embed}}
+			</div>
+			{{/content}}
+			{{/embed}}
+
     {{/content}}
     {{/embed}}

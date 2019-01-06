@@ -65,7 +65,10 @@
 							"og-title": "test og title",
 							"twitter-title": "test twitter title"
 						},
-						"h1": "Agent-less Auto Discovery"
+						"h1": "Auto-Discovery",
+						"hero" : {
+							"intro": "Lorem ipsum dolor sit amet consectetur adipiscing elit sodales"
+						}
 					},
 					"machine-learning": {
 						"name": "machine-learning",

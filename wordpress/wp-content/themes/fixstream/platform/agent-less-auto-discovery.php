@@ -110,14 +110,52 @@
 			</ul>
 		</nav>
 		</div>
-		<div class="pageheader">
-			<h1 class="pageheader-headline">Agent-less Auto Discovery</h1>
-		</div>
 		
 	</header>
 	<main>
 		 
+		<section class="section section-hero">
+			<div class="section-content">
+				<h1 class="section-headline hero-headline">Auto-Discovery</h1>
+				<p class="section-intro hero-intro">Lorem ipsum dolor sit amet consectetur adipiscing elit sodales</p>
+			</div>
+		</section>
 		
+<section class="section section-platform-intro">
+			<div class="section-content">
+			<h2 class="platform-section-header">Vitae pretium vestibulum dui gravida in</h2>			<p class="platform-intro">Integer pharetra orci eu ligula gravida bibendum. Nulla ac aliquet nisi, at euismod lacus. Integer venenatis rutrum dignissim. Fusce aliquet et mauris eget porta. Donec ullamcorper tincidunt purus, sed pulvinar metus convallis.</p>
+			<img class="platform-image" src="https://via.placeholder.com/300x700" />
+			</div>
+		</section>
+
+<section class="section section-platform-resources">
+			<div class="section-content">
+			<h2 class="platform-section-header">Additional Resources</h2>			<div class="platform-resources__blogs">
+<h3 class="platform-resources__header">Blogs</h3>
+<ul class="platform-resources__list">
+					<li class="platform-resources__item">
+						<img class="platform-resources__item-img" src="https://via.placeholder.com/300x150" />
+						<h4 class="platform-resources__item-header">Lorci eu ligula gravida</h4>
+						<p class="platform-resources__item-blurb">Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus.</p>
+						<a href="#" class="platform-resources__item-link">Read more</a>
+					</li>					<li class="platform-resources__item">
+						<img class="platform-resources__item-img" src="https://via.placeholder.com/300x150" />
+						<h4 class="platform-resources__item-header">Lorci eu ligula gravida</h4>
+						<p class="platform-resources__item-blurb">Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus.</p>
+						<a href="#" class="platform-resources__item-link">Read more</a>
+					</li></ul>			</div>
+			<div class="platform-resources__other">
+<h3 class="platform-resources__header">Other Resources</h3>
+<ul class="platform-resources__list">
+					<li class="platform-resources__item">
+						<img class="platform-resources__item-img" src="https://via.placeholder.com/200x200" />
+						<h4 class="platform-resources__item-header">Lorci eu ligula gravida</h4>
+						<p class="platform-resources__item-blurb">Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus.</p>
+						<a href="#" class="platform-resources__item-link">Read more</a>
+					</li></ul>			</div>
+			</div>
+		</section>
+
 	</main>
 	<footer class="globalfooter">
 		<ul class="globalfooter__social">
