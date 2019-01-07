@@ -9,8 +9,49 @@ Development source and WordPress build for www.FixStream.com. No manual updates 
 ## Development
 Handle static page data and content using Handlebars + Sass + vanilla JS. Builds to wordpress/wp-content/themes/fixstream
 
-### `gulp pages`
-Parses through site-data.json and generates a default HBS, SCSS, and JS file for each page name. Convenient for keeping source files in line with data.
+`gulp pages`: Parses through site-data.json and generates a default HBS, SCSS, and JS file for each page name. Convenient for keeping source files in line with data.
+
+Example Page Object:
+```
+"platform": {								// Data Key for Handlebars - must start with a letter
+	"name": "platform",				// Generated filename for built JS/CSS
+	"nav": "Platform",				// OPTIONAL: If included, page will be added to global nav with this text label; Nav order based on JSON
+	"slug": "platform",				// Page-level URL; Nested pages handled by object nesting
+	"meta": {
+		"title": "Platform",
+		"description": "Lorem ipsum dolor sit amet.",
+		"og-title": "test og title",
+		"twitter-title": "test twitter title"
+	},
+	"h1": "Platform Capabilities",
+	"hero" : {							// Optionally add hero template; H1 (required) will automatically be placed inside hero
+		"intro": "Powerful Insights with Every Click.",		// Optional hero subheader
+		"cta": {																					// Optional hero CTA
+			"value": "Get in touch",
+			"meta": {
+				"url": "/company"
+			}
+		}
+	},
+	"subpages": {					// Optional nested subpages; follows the same structure as parent
+		"agent-less-auto-discovery": {
+			"name": "agent-less-auto-discovery",
+			"nav": "Agent-less Auto Discovery",
+			"slug": "agent-less-auto-discovery",
+			"meta": {
+				"title": "Agent-less Auto Discovery",
+				"description": "Lorem ipsum dolor sit amet.",
+				"og-title": "test og title",
+				"twitter-title": "test twitter title"
+			},
+			"h1": "Auto-Discovery",
+			"hero" : {
+				"intro": "Lorem ipsum dolor sit amet consectetur adipiscing elit sodales"
+			}
+		}
+	}
+}
+```
 
 
 `gulp theme`:Generates style.css from theme data in site-data.json (registers theme for WP admin to find). Builds to theme root.
