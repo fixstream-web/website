@@ -63,11 +63,13 @@ Object key: Data Key for Handlebars - must start with a letter
 
 `hero`: **OPTIONAL:** Includes hero template; H1 (required) will automatically be placed inside hero
 
-	`intro`: **OPTIONAL:** Hero subheader
+`hero.intro`: **OPTIONAL:** Hero subheader
 
-	`cta`: **OPTIONAL:** Hero CTA
+`hero.cta`: **OPTIONAL:** Hero CTA
 
 `subpages`: **OPTIONAL:** Nested subpages; follows the same structure as parent
+---
+
 
 `gulp theme`:Generates style.css from theme data in site-data.json (registers theme for WP admin to find). Builds to theme root.
 
