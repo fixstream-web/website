@@ -10,52 +10,55 @@
 				<h1 class="section-headline hero-headline">{{data.h1}}</h1>
 				<p class="section-intro hero-intro">{{data.hero.intro}}</p>
 				<a class="section-cta hero-cta button" href="{{data.hero.cta.meta.url}}">{{data.hero.cta.value}}</a>
-				<a class="section-cta hero-cta button" href="{{data.hero.cta2.meta.url}}">{{data.hero.cta2.value}}</a>
-				<div class="hero-solutions">
-					<ul class="hero-solutions__list">
-						{{> modules/hero-solution-item
-						category="Discover"
-						blurb="Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam."
-						link="#"}}
-						{{> modules/hero-solution-item
-						category="Correlate"
-						blurb="Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam."
-						link="#"}}
-						{{> modules/hero-solution-item
-						category="AI"
-						blurb="Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam."
-						link="#"}}
-					</ul>
-				</div>
+				<ul class="hero-solutions__list">
+					{{> modules/hero-solution-item
+					category="Auto-discovery"
+					blurb="Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis senectus curabitu."
+					link="#"}}
+					{{> modules/hero-solution-item
+					category="Multidimensional Correlation"
+					blurb="Aurabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam."
+					link="#"}}
+					{{> modules/hero-solution-item
+					category="Artificial Intelligence"
+					blurb="Nectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam."
+					link="#"}}
+				</ul>
 {{/content}}
 {{/embed}}
 
 {{#embed "modules/section" name="success-stories"}}
 {{#content "contents" mode="append"}}
-<h2>Success Stories</h2>
-<div class="row">
-	<div class="col-4">Broadcom</div>
-	<div class="col-4">SPXFlow</div>
-	<div class="col-4">AirBus</div>
-	<div class="col-4">BT...</div>
-</div>
+<ul class="row success-stories__list">
+	{{> modules/homepage-success-stories-item
+			label="Broadcom"}}
+	{{> modules/homepage-success-stories-item
+			label="SPXFlow"}}
+	{{> modules/homepage-success-stories-item
+			label="AirBus"}}
+	{{> modules/homepage-success-stories-item
+			label="BT"}}
+</ul>
 <a class="button">More Case Studies</a>
 {{/content}}
 {{/embed}}
 
-{{#embed "modules/section" name="what-fixstream-does"}}
+{{#embed "modules/section" name="how-fixstream-works"}}
 {{#content "contents" mode="append"}}
-<h2>What FixStream Does</h2>
+<h2>How FixStream Works</h2>
 <div class="row">
-	<div class="col-2">Text</div>
-	<div class="col-2">Diagram</div>
+	<div class="col-2 how-fixstream-works__copy">
+		<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sodales primis, mollis viverra conubia ligula inceptos laoreet libero tortor, nascetur non habitasse iaculis tempor nec egestas fames augue, platea porta integer nostra curae sed arcu. Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper.</p>
+	</div>
+	<div class="col-2 how-fixstream-works__image">
+		<img src="https://via.placeholder.com/318x500" />
+	</div>
 </div>
 {{/content}}
 {{/embed}}
 
 {{#embed "modules/section" name="customer-testimonials"}}
 {{#content "contents" mode="append"}}
-<h2>Customer Testimonials</h2>
 <ul class="customer-testimonials__list">
 	{{> modules/testimonial
 			name="Customer Name 1"

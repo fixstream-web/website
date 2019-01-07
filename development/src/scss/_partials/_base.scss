@@ -37,6 +37,18 @@ p {
   }
 }
 
+blockquote {
+	font-size: 1.2rem;
+	font-style: italic;
+	line-height: 1.4;
+	&::before, {
+		content: '"';
+	}
+	&::after {
+		content: '"';
+	}
+}
+
 .button,
 input[type="submit"],
 input[type="reset"],

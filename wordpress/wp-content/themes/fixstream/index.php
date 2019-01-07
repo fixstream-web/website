@@ -119,55 +119,55 @@
 				<h1 class="section-headline hero-headline">Prevent and Predict Outages</h1>
 				<p class="section-intro hero-intro">AIOps Platform to Discover, Correlate and Predict Events Across Hybrid IT</p>
 				<a class="section-cta hero-cta button" href="/resources">Watch video</a>
-				<a class="section-cta hero-cta button" href="#">Learn more</a>
-				<div class="hero-solutions">
-					<ul class="hero-solutions__list">
-						<li class="hero-solutions__item">
-							<h2 class="hero-solutions__header">Discover</h2>
-							<p class="hero-solutions__blurb">Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam.</p>
-							<a class="hero-solutions__link" href="#">Learn more</a>
-						</li>						<li class="hero-solutions__item">
-							<h2 class="hero-solutions__header">Correlate</h2>
-							<p class="hero-solutions__blurb">Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam.</p>
-							<a class="hero-solutions__link" href="#">Learn more</a>
-						</li>						<li class="hero-solutions__item">
-							<h2 class="hero-solutions__header">AI</h2>
-							<p class="hero-solutions__blurb">Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam.</p>
-							<a class="hero-solutions__link" href="#">Learn more</a>
-						</li>					</ul>
-				</div>
+				<ul class="hero-solutions__list">
+					<li class="hero-solutions__item">
+						<span class="hero-solutions__icon-holder">X</span>
+						<h2 class="hero-solutions__header">Auto-discovery</h2>
+						<p class="hero-solutions__blurb">Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis senectus curabitu.</p>
+						<a class="hero-solutions__link" href="#">Learn more</a>
+					</li>					<li class="hero-solutions__item">
+						<span class="hero-solutions__icon-holder">X</span>
+						<h2 class="hero-solutions__header">Multidimensional Correlation</h2>
+						<p class="hero-solutions__blurb">Aurabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam.</p>
+						<a class="hero-solutions__link" href="#">Learn more</a>
+					</li>					<li class="hero-solutions__item">
+						<span class="hero-solutions__icon-holder">X</span>
+						<h2 class="hero-solutions__header">Artificial Intelligence</h2>
+						<p class="hero-solutions__blurb">Nectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam.</p>
+						<a class="hero-solutions__link" href="#">Learn more</a>
+					</li>				</ul>
 			</div>
 		</section>
 <section class="section section-success-stories page-index">
 			<div class="section-content">
-<h2>Success Stories</h2>
-<div class="row">
-	<div class="col-4">Broadcom</div>
-	<div class="col-4">SPXFlow</div>
-	<div class="col-4">AirBus</div>
-	<div class="col-4">BT...</div>
-</div>
+<ul class="row success-stories__list">
+	<li class="col-4 success-stories__item"><span class="success-stories__label">Broadcom</span></li>	<li class="col-4 success-stories__item"><span class="success-stories__label">SPXFlow</span></li>	<li class="col-4 success-stories__item"><span class="success-stories__label">AirBus</span></li>	<li class="col-4 success-stories__item"><span class="success-stories__label">BT</span></li></ul>
 <a class="button">More Case Studies</a>
 			</div>
 		</section>
-<section class="section section-what-fixstream-does page-index">
+<section class="section section-how-fixstream-works page-index">
 			<div class="section-content">
-<h2>What FixStream Does</h2>
+<h2>How FixStream Works</h2>
 <div class="row">
-	<div class="col-2">Text</div>
-	<div class="col-2">Diagram</div>
+	<div class="col-2 how-fixstream-works__copy">
+		<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sodales primis, mollis viverra conubia ligula inceptos laoreet libero tortor, nascetur non habitasse iaculis tempor nec egestas fames augue, platea porta integer nostra curae sed arcu. Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper.</p>
+	</div>
+	<div class="col-2 how-fixstream-works__image">
+		<img src="https://via.placeholder.com/318x500" />
+	</div>
 </div>
 			</div>
 		</section>
 <section class="section section-customer-testimonials page-index">
 			<div class="section-content">
-<h2>Customer Testimonials</h2>
 <ul class="customer-testimonials__list">
 	<li class="customer-testimonials__item">
+		<span class="customer-testimonials__icon-holder">X</span>
 		<h3 class="customer-testimonials__header">Customer Name 1</h3>
 		<span class="customer-testimonials__title">Title</span>
 		<blockquote class="customer-testimonials__quote">Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at.</blockquote>
 	</li>	<li class="customer-testimonials__item">
+		<span class="customer-testimonials__icon-holder">X</span>
 		<h3 class="customer-testimonials__header">Customer Name 2</h3>
 		<span class="customer-testimonials__title">Title</span>
 		<blockquote class="customer-testimonials__quote">Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at.</blockquote>
@@ -178,22 +178,22 @@
 			<div class="section-content">
 <h2>Resources</h2>
 <ul class="featured-resources__list">
-	<li class="featured-resource__item">
-		<h3 class="featured-resource__header"><?php echo "wp title hook"; ?></h3>
-		<p class="featured-resource__blurb"><?php echo "wp blurb hook"; ?></p>
-		<a class="featured-resourc__link" href="<?php echo "wp link hook"; ?>">Learn more</a>
-	</li>	<li class="featured-resource__item">
-		<h3 class="featured-resource__header"><?php echo "wp title hook"; ?></h3>
-		<p class="featured-resource__blurb"><?php echo "wp blurb hook"; ?></p>
-		<a class="featured-resourc__link" href="<?php echo "wp link hook"; ?>">Learn more</a>
-	</li>	<li class="featured-resource__item">
-		<h3 class="featured-resource__header"><?php echo "wp title hook"; ?></h3>
-		<p class="featured-resource__blurb"><?php echo "wp blurb hook"; ?></p>
-		<a class="featured-resourc__link" href="<?php echo "wp link hook"; ?>">Learn more</a>
-	</li>	<li class="featured-resource__item">
-		<h3 class="featured-resource__header"><?php echo "wp title hook"; ?></h3>
-		<p class="featured-resource__blurb"><?php echo "wp blurb hook"; ?></p>
-		<a class="featured-resourc__link" href="<?php echo "wp link hook"; ?>">Learn more</a>
+	<li class="featured-resources__item">
+		<h3 class="featured-resources__header"><?php echo "wp title hook"; ?></h3>
+		<p class="featured-resources__blurb"><?php echo "wp blurb hook"; ?></p>
+		<a class="button featured-resources__link" href="<?php echo "wp link hook"; ?>">Learn more</a>
+	</li>	<li class="featured-resources__item">
+		<h3 class="featured-resources__header"><?php echo "wp title hook"; ?></h3>
+		<p class="featured-resources__blurb"><?php echo "wp blurb hook"; ?></p>
+		<a class="button featured-resources__link" href="<?php echo "wp link hook"; ?>">Learn more</a>
+	</li>	<li class="featured-resources__item">
+		<h3 class="featured-resources__header"><?php echo "wp title hook"; ?></h3>
+		<p class="featured-resources__blurb"><?php echo "wp blurb hook"; ?></p>
+		<a class="button featured-resources__link" href="<?php echo "wp link hook"; ?>">Learn more</a>
+	</li>	<li class="featured-resources__item">
+		<h3 class="featured-resources__header"><?php echo "wp title hook"; ?></h3>
+		<p class="featured-resources__blurb"><?php echo "wp blurb hook"; ?></p>
+		<a class="button featured-resources__link" href="<?php echo "wp link hook"; ?>">Learn more</a>
 	</li></ul>
 			</div>
 		</section>

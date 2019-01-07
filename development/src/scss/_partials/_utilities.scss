@@ -16,6 +16,10 @@ UTILITIES / HELPER FUNCTIONS
 	}
 }
 
+@mixin circle {
+	border-radius: 100%;
+}
+
 @mixin flex-center {
 	display: flex;
 	justify-content: center;

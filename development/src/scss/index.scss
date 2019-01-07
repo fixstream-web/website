@@ -4,3 +4,168 @@
 .section-hero {
 	padding: 3rem 0;
 }
+.hero-solutions {
+	&__list {
+		margin-top: 3rem;
+	}
+	&__item {
+		margin-bottom: 1.7rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&__header {
+		margin-bottom: 0.8rem;
+	}
+	&__icon-holder {
+		$size: 4rem;
+		@include circle;
+		@include flex-center;
+		background: $gray-4;
+		height: $size;
+		width: $size;
+		margin-bottom: 0.4rem;
+	}
+
+	@include media(60rem){
+		&__list {
+			display: flex;
+			justify-content: space-between;
+		}
+		&__item {
+			margin-bottom: 0;
+			flex-grow: 0;
+			flex-shrink: 0;
+			flex-basis: 25%;
+		}
+	}
+}
+
+.success-stories {
+	$item-margin-bottom: 1.7rem;
+	&__list {
+		margin: 2rem 0;
+	}
+	&__item {
+		background: $gray-5;
+		min-height: 8rem;
+		border: 1px solid $gray-4;
+		@include flex-center;
+		border-radius: $radius-s;
+		margin-bottom: $item-margin-bottom;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&__label {
+		color: $gray-3;
+		font-weight: $regular;
+		letter-spacing: 0.08rem;
+		font-size: 1.3rem;
+	}
+	@include media(40rem){
+		&__list {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin-bottom: 0;
+		}
+		&__item {
+			flex-grow: 0;
+			flex-shrink: 0;
+			flex-basis: 48%;
+			&:last-child {
+				margin-bottom: $item-margin-bottom;
+			}
+		}
+	}
+	@include media(70rem){
+		&__item {
+			flex-basis: 22%;
+		}
+	}
+}
+
+.how-fixstream-works {
+	&__copy {
+		text-align: left;
+	}
+	&__image {
+		margin-top: 1.7rem;
+	}
+}
+
+.customer-testimonials {
+	&__item {
+		margin-bottom: 1.7rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&__icon-holder {
+		$size: 4rem;
+		@include circle;
+		@include flex-center;
+		background: $gray-4;
+		height: $size;
+		width: $size;
+		margin-bottom: 0.4rem;
+	}
+	&__header {
+		margin-bottom: 0.4rem;
+	}
+	&__title {
+		font-size: 1.2rem;
+		margin-bottom: 0.4rem;
+	}
+	&__quote {}
+}
+
+.featured-resources {
+	&__list {
+		margin: 2rem 0;
+	}
+	&__item {
+		background: $gray-5;
+		padding: 2rem 1rem;
+		border: 1px solid $gray-4;
+		@include flex-center;
+		flex-direction: column;
+		border-radius: $radius-s;
+		margin-bottom: 1.7rem;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&__header {
+		margin-bottom: 0.4rem;
+	}
+	&__blurb {
+		margin-bottom: 0.4rem;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
