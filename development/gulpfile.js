@@ -17,16 +17,6 @@ var gulp            = require('gulp'),
     filelist        = require('gulp-filelist'),
     pagefiles;
 
-// try {
-//   pagefiles = require('./' + config.paths.tmp + '/' + 'filelist.json');
-// } catch (err) {
-//     console.log('###########################################');
-//     console.log(err.message);
-//     console.log('Run gulp audit to generate file list');
-//     console.log('###########################################');
-// }
-
-
 sass.compiler = require('node-sass');
 layouts.register(handlebars);
 
