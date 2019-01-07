@@ -52,14 +52,21 @@ Example Page Object:
 	}
 }
 ```
-### Page Config
+### Page Data Config
 Object key: Data Key for Handlebars - must start with a letter
+
 `name`: Generated filename for built JS/CSS
+
 `nav`: **OPTIONAL:** If included, page will be added to global nav with this text label; Nav order based on JSON
+
 `slug`: Page-level URL; Nested pages handled by object nesting
+
 `hero`: **OPTIONAL:** Includes hero template; H1 (required) will automatically be placed inside hero
+
 	`intro`: **OPTIONAL:** Hero subheader
+
 	`cta`: **OPTIONAL:** Hero CTA
+
 `subpages`: **OPTIONAL:** Nested subpages; follows the same structure as parent
 
 `gulp theme`:Generates style.css from theme data in site-data.json (registers theme for WP admin to find). Builds to theme root.
