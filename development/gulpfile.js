@@ -35,6 +35,24 @@ function string_src(filename, string) {
   return src
 }
 
+function arr_diff (a1, a2) {
+    var a = [], diff = [];
+    for (var i = 0; i < a1.length; i++) {
+        a[a1[i]] = true;
+    }
+    for (var i = 0; i < a2.length; i++) {
+        if (a[a2[i]]) {
+            delete a[a2[i]];
+        } else {
+            a[a2[i]] = true;
+        }
+    }
+    for (var k in a) {
+        diff.push(k);
+    }
+    return diff;
+}
+
 gulp.task('css', function(){
     return gulp.src(path.join(config.paths.src, '/scss/**/*.scss'))
         .pipe(sass(config.sassOptions)
@@ -48,13 +66,10 @@ gulp.task('css:watch', function(){
 });
 
 gulp.task('pages', ['audit'], function(){
-    pagefiles = require('./' + config.paths.tmp + '/' + 'filelist.json');
-    console.log('###########################################');
-    console.log('Audited ' + pagefiles.length + ' files in source folders');
-    console.log('###########################################');
     let errCount = 0;
     let pageCount = 0;
-    let pagesTested = 0;
+    let pagesTested = [];
+    let pagesCreated = [];
     const pageTypes = ['scss','hbs','js'];
     let nestLvl = 0;
     loopPageSet(data.site.pages, "");
@@ -155,10 +170,11 @@ gulp.task('pages', ['audit'], function(){
                             // Create a file.[type] for the page
                             string_src(set[key].name + '.' + type, content)
                                 .pipe(gulp.dest(filedir));
+                            pagesCreated.push(filepath);
                         } else {
                             // console.log('No error on: ' + key + "." + type);
+                            pagesTested.push(filepath);
                         }
-                        pagesTested++;
                         testSuccess();
                     });
                 })(key, type, set);
@@ -191,12 +207,33 @@ gulp.task('pages', ['audit'], function(){
 
     function testSuccess(){
         // Mechanism to handle async page generation
-        if (pagesTested == pageCount && errCount <= 0) {
-             console.log('##################################################');
+        if ((pagesTested.length + pagesCreated.length) == pageCount) {
+             console.log('##########################################################');
              console.log('Congratulations!');
-             console.log('Source files are in sync with pages in site data!');
-             console.log('There are ' + pageCount / pageTypes.length + ' pages; each with ' + pageTypes.join(', ').toUpperCase());
-             console.log('##################################################');
+             console.log('Source files for all pages in data exist!');
+             console.log('There are ' + pageCount / pageTypes.length + ' pages; each with ' + pageTypes.join(', ').toUpperCase() + ' (' + pagesTested.length + ' total)');
+             console.log('##########################################################');
+             console.log('');
+
+            pagefiles = require('./' + config.paths.tmp + '/' + 'filelist.json');
+            // console.log('##########################################################');
+            // console.log('Audited ' + pagefiles.length + ' files in source folders');
+            // console.log('##########################################################');
+            // console.log('');
+
+            if (arr_diff(pagesTested, pagefiles).length > 0) {
+                const pageDifs = arr_diff(pagesTested, pagefiles);
+                console.log('##########################################################');
+                console.log('The following source files exist with no page data association');
+                console.log('');
+                pageDifs.forEach(function(file){
+                    console.log(file);
+                });
+                console.log('');
+                console.log('Review for deletion');
+                console.log('##########################################################');
+                console.log('');
+            }
         }
     }
 });
@@ -211,7 +248,7 @@ gulp.task('audit', function(){
     ];
 
     return gulp.src(sourcepages)
-    .pipe(filelist('filelist.json', { relative: true }))
+    .pipe(filelist('filelist.json'))
     .pipe(gulp.dest(config.paths.tmp));
 });
 
