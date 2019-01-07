@@ -11,6 +11,25 @@ Handle static page data and content using Handlebars + Sass + vanilla JS. Builds
 
 `gulp pages`: Parses through site-data.json and generates a default HBS, SCSS, and JS file for each page name. Convenient for keeping source files in line with data.
 
+### Page Data Config
+Object key: Data Key for Handlebars - must start with a letter
+
+`name`: Generated filename for built JS/CSS
+
+`type`: **OPTIONAL:** Typically omitted; Used with a value of "wp-template" when integrating into WP template hierarchy (i.e. post templates, 404 page)
+
+`nav`: **OPTIONAL:** If included, page will be added to global nav with this text label; Nav order based on JSON
+
+`slug`: Page-level URL; Nested pages handled by object nesting
+
+`hero`: **OPTIONAL:** Includes hero template; H1 (required) will automatically be placed inside hero
+
+`hero.intro`: **OPTIONAL:** Hero subheader
+
+`hero.cta`: **OPTIONAL:** Hero CTA
+
+`subpages`: **OPTIONAL:** Nested subpages; follows the same structure as parent
+
 Example Page Object:
 ```
 "platform": {
@@ -52,25 +71,6 @@ Example Page Object:
 	}
 }
 ```
-### Page Data Config
-Object key: Data Key for Handlebars - must start with a letter
-
-`name`: Generated filename for built JS/CSS
-
-`type`: **OPTIONAL:** Typically omitted; Used with a value of "wp-template" when integrating into WP template hierarchy (i.e. post templates, 404 page)
-
-`nav`: **OPTIONAL:** If included, page will be added to global nav with this text label; Nav order based on JSON
-
-`slug`: Page-level URL; Nested pages handled by object nesting
-
-`hero`: **OPTIONAL:** Includes hero template; H1 (required) will automatically be placed inside hero
-
-`hero.intro`: **OPTIONAL:** Hero subheader
-
-`hero.cta`: **OPTIONAL:** Hero CTA
-
-`subpages`: **OPTIONAL:** Nested subpages; follows the same structure as parent
-
 
 ---
 
