@@ -13,10 +13,10 @@ Handle static page data and content using Handlebars + Sass + vanilla JS. Builds
 
 Example Page Object:
 ```
-"platform": {								// Data Key for Handlebars - must start with a letter
-	"name": "platform",				// Generated filename for built JS/CSS
-	"nav": "Platform",				// OPTIONAL: If included, page will be added to global nav with this text label; Nav order based on JSON
-	"slug": "platform",				// Page-level URL; Nested pages handled by object nesting
+"platform": {
+	"name": "platform",
+	"nav": "Platform",
+	"slug": "platform",
 	"meta": {
 		"title": "Platform",
 		"description": "Lorem ipsum dolor sit amet.",
@@ -24,16 +24,16 @@ Example Page Object:
 		"twitter-title": "test twitter title"
 	},
 	"h1": "Platform Capabilities",
-	"hero" : {							// Optionally add hero template; H1 (required) will automatically be placed inside hero
-		"intro": "Powerful Insights with Every Click.",		// Optional hero subheader
-		"cta": {																					// Optional hero CTA
+	"hero" : {
+		"intro": "Powerful Insights with Every Click.",
+		"cta": {
 			"value": "Get in touch",
 			"meta": {
 				"url": "/company"
 			}
 		}
 	},
-	"subpages": {					// Optional nested subpages; follows the same structure as parent
+	"subpages": {
 		"agent-less-auto-discovery": {
 			"name": "agent-less-auto-discovery",
 			"nav": "Agent-less Auto Discovery",
@@ -52,7 +52,15 @@ Example Page Object:
 	}
 }
 ```
-
+### Page Config
+Object key: Data Key for Handlebars - must start with a letter
+`name`: Generated filename for built JS/CSS
+`nav`: **OPTIONAL:** If included, page will be added to global nav with this text label; Nav order based on JSON
+`slug`: Page-level URL; Nested pages handled by object nesting
+`hero`: **OPTIONAL:** Includes hero template; H1 (required) will automatically be placed inside hero
+	`intro`: **OPTIONAL:** Hero subheader
+	`cta`: **OPTIONAL:** Hero CTA
+`subpages`: **OPTIONAL:** Nested subpages; follows the same structure as parent
 
 `gulp theme`:Generates style.css from theme data in site-data.json (registers theme for WP admin to find). Builds to theme root.
 
