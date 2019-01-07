@@ -15,16 +15,16 @@ var gulp            = require('gulp'),
     del             = require('del'),
     gutil           = require('gulp-util'),
     filelist        = require('gulp-filelist'),
-    files;
+    pagefiles;
 
-try {
-  files = require('./' + config.paths.tmp + '/' + 'filelist.json');
-} catch (err) {
-    console.log('###########################################');
-    console.log(err.message);
-    console.log('Run gulp audit to generate file list');
-    console.log('###########################################');
-}
+// try {
+//   pagefiles = require('./' + config.paths.tmp + '/' + 'filelist.json');
+// } catch (err) {
+//     console.log('###########################################');
+//     console.log(err.message);
+//     console.log('Run gulp audit to generate file list');
+//     console.log('###########################################');
+// }
 
 
 sass.compiler = require('node-sass');
@@ -58,8 +58,9 @@ gulp.task('css:watch', function(){
 });
 
 gulp.task('pages', ['audit'], function(){
+    pagefiles = require('./' + config.paths.tmp + '/' + 'filelist.json');
     console.log('###########################################');
-    console.log('Audited ' + files.length + ' files in source folders');
+    console.log('Audited ' + pagefiles.length + ' files in source folders');
     console.log('###########################################');
     let errCount = 0;
     let pageCount = 0;
@@ -211,7 +212,7 @@ gulp.task('pages', ['audit'], function(){
 });
 
 gulp.task('audit', function(){
-    const pagefiles = [
+    const sourcepages = [
         path.join(config.paths.src, '/hbs/pages/**/*.hbs'),
         path.join(config.paths.src, '/js/**/*.js'),
         "!" + path.join(config.paths.src, '/js/_modules/*.js'),
@@ -219,7 +220,7 @@ gulp.task('audit', function(){
         "!" + path.join(config.paths.src, '/scss/_partials/*.scss')
     ];
 
-    return gulp.src(pagefiles)
+    return gulp.src(sourcepages)
     .pipe(filelist('filelist.json', { relative: true }))
     .pipe(gulp.dest(config.paths.tmp));
 });
