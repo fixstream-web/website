@@ -5,7 +5,7 @@
 {{#content "body" mode="append"}}
 {{!-- page specific body content --}}
 
-	{{#embed "modules/section" id="solutionsDiscover" name="solutions-discover"}}
+	{{#embed "modules/section" id="solutionsDiscover" additionalClasses="solutions-section" name="solutions-discover"}}
 	{{#content "contents" mode="append"}}
 		{{> modules/solution-section-header header="Auto-Discovery"}}
 
@@ -46,7 +46,7 @@
 	{{/content}}
 	{{/embed}}
 
-	{{#embed "modules/section" id="solutionsCorrelate" name="solutions-correlate"}}
+	{{#embed "modules/section" id="solutionsCorrelate" additionalClasses="solutions-section" name="solutions-correlate"}}
 	{{#content "contents" mode="append"}}
 	{{> modules/solution-section-header header="Multidimensional Correlation"}}
 
@@ -87,7 +87,7 @@
 	{{/content}}
 	{{/embed}}
 
-	{{#embed "modules/section" id="solutionsAI" name="solutions-ai"}}
+	{{#embed "modules/section" id="solutionsAI" additionalClasses="solutions-section" name="solutions-ai"}}
 	{{#content "contents" mode="append"}}
 	{{> modules/solution-section-header header="Artificial Intelligence"}}
 
@@ -124,7 +124,7 @@
 	{{/content}}
 	{{/embed}}
 
-	{{#embed "modules/section" id="solutionsOther" name="solutions-other"}}
+	{{#embed "modules/section" id="solutionsOther" additionalClasses="solutions-section" name="solutions-other"}}
 	{{#content "contents" mode="append"}}
 	{{> modules/solution-section-header header="AIOps for Business Applications"}}
 

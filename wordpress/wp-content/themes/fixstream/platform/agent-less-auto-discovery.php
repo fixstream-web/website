@@ -114,14 +114,14 @@
 	</header>
 	<main>
 		 
-		<section class="section section-hero">
+		<section class="section section-hero page-platform page-platform-agent-less-auto-discovery">
 			<div class="section-content">
 				<h1 class="section-headline hero-headline">Auto-Discovery</h1>
 				<p class="section-intro hero-intro">Lorem ipsum dolor sit amet consectetur adipiscing elit sodales</p>
 			</div>
 		</section>
 		
-<section class="section section-platform-intro">
+<section class="section section-platform-intro page-platform page-platform-agent-less-auto-discovery">
 			<div class="section-content">
 			<h2 class="platform-section-header">Vitae pretium vestibulum dui gravida in</h2>			<p class="intro-paragraph">Integer pharetra orci eu ligula gravida bibendum. Nulla ac aliquet nisi, at euismod lacus. Integer venenatis rutrum dignissim. Fusce aliquet et mauris eget porta. Donec ullamcorper tincidunt purus, sed pulvinar metus convallis.</p>
 			<p>Integer pharetra orci eu ligula gravida bibendum. Nulla ac aliquet nisi, at euismod lacus. Integer venenatis rutrum dignissim. Fusce aliquet et mauris eget porta. Donec ullamcorper tincidunt purus, sed pulvinar metus convallis.</p>
@@ -129,7 +129,7 @@
 			</div>
 		</section>
 
-<section class="section section-platform-resources">
+<section class="section section-platform-resources page-platform page-platform-agent-less-auto-discovery">
 			<div class="section-content">
 			<h2 class="platform-section-header">Additional Resources</h2>			<div class="platform-resources__blogs">
 <h3 class="platform-resources__header">Blogs</h3>

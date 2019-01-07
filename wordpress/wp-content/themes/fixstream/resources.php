@@ -118,7 +118,7 @@
 	<main>
 
 
-<section class="section section-resources-whitepapers">
+<section class="section section-resources-whitepapers page-resources">
 			<div class="section-content">
 		<h2>Whitepapers</h2>
 		<?php $args = array( 'post_type' => 'resources', 'posts_per_page' => -1, 'resource-type' => 'whitepapers' );
@@ -134,7 +134,7 @@
 		<?php endwhile; ?>
 			</div>
 		</section>
-<section class="section section-resources-case-studies">
+<section class="section section-resources-case-studies page-resources">
 			<div class="section-content">
 		<h2>Case Studies</h2>
 		<?php $args = array( 'post_type' => 'resources', 'posts_per_page' => -1, 'resource-type' => 'case-studies' );
@@ -150,7 +150,7 @@
 		<?php endwhile; ?>
 			</div>
 		</section>
-<section class="section section-resources-tech-docs">
+<section class="section section-resources-tech-docs page-resources">
 			<div class="section-content">
 		<h2>Tech Docs</h2>
 		<?php $args = array( 'post_type' => 'resources', 'posts_per_page' => -1, 'resource-type' => 'tech-docs' );
@@ -167,7 +167,7 @@
 			</div>
 		</section>
 
-<section class="section section-resources-videos">
+<section class="section section-resources-videos page-resources">
 			<div class="section-content">
 		<h2>Videos</h2>
 		<?php $args = array( 'post_type' => 'resources', 'posts_per_page' => -1, 'resource-type' => 'videos' );
@@ -182,7 +182,7 @@
 		<?php endwhile; ?>
 			</div>
 		</section>
-<section class="section section-resources-form">
+<section class="section section-resources-form page-resources">
 			<div class="section-content">
 
 		<form id="resourcesForm" class="resource-gate-form">

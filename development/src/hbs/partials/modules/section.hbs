@@ -1,4 +1,4 @@
-<section {{#if id}}id="{{id}}" {{/if}}class="section section-{{name}}">
+<section {{#if id}}id="{{id}}" {{/if}}class="section section-{{name}}{{#if additionalClasses}} {{additionalClasses}}{{/if}}">
 			<div class="section-content">
 			{{#block "contents"}}
 			{{/block}}

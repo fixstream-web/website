@@ -114,14 +114,14 @@
 	</header>
 	<main>
 		 
-		<section class="section section-hero">
+		<section class="section section-hero page-platform">
 			<div class="section-content">
 				<h1 class="section-headline hero-headline">Platform Capabilities</h1>
 				<p class="section-intro hero-intro">Powerful Insights with Every Click.</p>
 			</div>
 		</section>
 		
-<section class="section section-platform-intro">
+<section class="section section-platform-intro page-platform">
 			<div class="section-content">
 		<h2>Lorem ipsum dolor sit amet consectetur adipiscing elit</h2>
 		<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sodales primis, mollis viverra conubia ligula inceptos laoreet libero tortor, nascetur non habitasse iaculis tempor nec egestas fames augue, platea porta integer nostra curae sed arcu. Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam. Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at.</p>

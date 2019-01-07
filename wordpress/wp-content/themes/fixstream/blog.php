@@ -128,7 +128,7 @@
 		  while($post_query->have_posts() ) {
 		    $post_query->the_post();
 		    ?>
-<section class="section section-blog-item">
+<section class="section section-blog-item page-blog">
 			<div class="section-content">
 				<a href="<?php echo get_permalink(); ?>">
 					<h2><?php the_title(); ?></h2>

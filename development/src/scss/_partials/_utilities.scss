@@ -7,9 +7,13 @@ UTILITIES / HELPER FUNCTIONS
 }
 
 @mixin max-width {
-	width: $site-base-width;
-	max-width: $site-max-width;
+	width: $site-base-width-s;
+	max-width: $site-max-width-s;
 	margin: auto;
+	@include media($small-large-threshold) {
+		width: $site-base-width-l;
+		max-width: $site-max-width-l;
+	}
 }
 
 @mixin flex-center {

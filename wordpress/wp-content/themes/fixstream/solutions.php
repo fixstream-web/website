@@ -118,7 +118,7 @@
 	<main>
 		 
 		
-<section id="solutionsDiscover" class="section section-solutions-discover">
+<section id="solutionsDiscover" class="section section-solutions-discover solutions-section">
 			<div class="section-content">
 		<h2 class="solution-section-header">Auto-Discovery</h2>
 <div class="solutions-enterprises">
@@ -150,7 +150,7 @@
 </div>
 			</div>
 		</section>
-<section id="solutionsCorrelate" class="section section-solutions-correlate">
+<section id="solutionsCorrelate" class="section section-solutions-correlate solutions-section">
 			<div class="section-content">
 	<h2 class="solution-section-header">Multidimensional Correlation</h2>
 <div class="solutions-enterprises">
@@ -182,7 +182,7 @@
 </div>
 			</div>
 		</section>
-<section id="solutionsAI" class="section section-solutions-ai">
+<section id="solutionsAI" class="section section-solutions-ai solutions-section">
 			<div class="section-content">
 	<h2 class="solution-section-header">Artificial Intelligence</h2>
 <div class="solutions-enterprises">
@@ -209,7 +209,7 @@
 </div>
 			</div>
 		</section>
-<section id="solutionsOther" class="section section-solutions-other">
+<section id="solutionsOther" class="section section-solutions-other solutions-section">
 			<div class="section-content">
 	<h2 class="solution-section-header">AIOps for Business Applications</h2>
 <div class="solutions-enterprises">

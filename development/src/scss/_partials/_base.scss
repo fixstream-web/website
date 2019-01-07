@@ -4,8 +4,11 @@
 	box-sizing: border-box;
 }
 html {
-	font-size: $font-size-root;
+	font-size: $font-size-root-s;
 	font-family: $font-stack-primary;
+	@include media($small-large-threshold) {
+		font-size: $font-size-root-l;
+	}
 }
 h1 {
 	font-size: 2.2rem;

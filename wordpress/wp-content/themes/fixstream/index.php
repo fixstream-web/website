@@ -114,7 +114,7 @@
 	</header>
 	<main>
 				
-<section class="section section-hero">
+<section class="section section-hero page-index">
 			<div class="section-content">
 				<h1 class="section-headline hero-headline">Prevent and Predict Outages</h1>
 				<p class="section-intro hero-intro">AIOps Platform to Discover, Correlate and Predict Events Across Hybrid IT</p>
@@ -138,7 +138,7 @@
 				</div>
 			</div>
 		</section>
-<section class="section section-success-stories">
+<section class="section section-success-stories page-index">
 			<div class="section-content">
 <h2>Success Stories</h2>
 <div class="row">
@@ -150,7 +150,7 @@
 <a class="button">More Case Studies</a>
 			</div>
 		</section>
-<section class="section section-what-fixstream-does">
+<section class="section section-what-fixstream-does page-index">
 			<div class="section-content">
 <h2>What FixStream Does</h2>
 <div class="row">
@@ -159,7 +159,7 @@
 </div>
 			</div>
 		</section>
-<section class="section section-customer-testimonials">
+<section class="section section-customer-testimonials page-index">
 			<div class="section-content">
 <h2>Customer Testimonials</h2>
 <ul class="customer-testimonials__list">
@@ -174,7 +174,7 @@
 	</li></ul>
 			</div>
 		</section>
-<section class="section section-featured-resources">
+<section class="section section-featured-resources page-index">
 			<div class="section-content">
 <h2>Resources</h2>
 <ul class="featured-resources__list">

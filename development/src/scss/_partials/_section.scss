@@ -1,7 +1,6 @@
 .section {
 	border: 1px dashed red;
 	padding: 2rem 0;
-	margin-bottom: 2rem;
 	&-content {
 		@include max-width;
 	}

@@ -128,7 +128,7 @@
     }
     ?>
 
-<section class="section section-resource">
+<section class="section section-resource page-single-resources">
 			<div class="section-content">
     <span>Resources > <?php echo $termName ?></span>
 	<h1><?php the_title(); ?></h1>
@@ -138,7 +138,7 @@
 			</div>
 		</section>
 
-<section class="section section-resource">
+<section class="section section-resource page-single-resources">
 			<div class="section-content">
 
 		<form id="resourcesForm" class="resource-gate-form">

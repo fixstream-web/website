@@ -114,14 +114,14 @@
 	</header>
 	<main>
 		 
-		<section class="section section-hero">
+		<section class="section section-hero page-company">
 			<div class="section-content">
 				<h1 class="section-headline hero-headline">About FixStream</h1>
 				<a class="section-cta hero-cta button" href="/company">Get in touch</a>
 			</div>
 		</section>
 		
-<section class="section section-company-leardership">
+<section class="section section-company-leardership page-company">
 			<div class="section-content">
 		<div class="row">
 			<div class="leadership-leaders col-x">
@@ -165,7 +165,7 @@
 			</div>
 		</section>
 
-<section class="section section-company-press-releases">
+<section class="section section-company-press-releases page-company">
 			<div class="section-content">
 		<h2>Press Releases</h2>
 
@@ -185,7 +185,7 @@
 			</div>
 		</section>
 
-<section class="section section-company-news-mentions">
+<section class="section section-company-news-mentions page-company">
 			<div class="section-content">
 		<h2>In The News</h2>
 
@@ -210,7 +210,7 @@
 			</div>
 		</section>
 
-<section class="section section-company-form">
+<section class="section section-company-form page-company">
 			<div class="section-content">
 
 		<form id="companyForm" class="company-form-form">
