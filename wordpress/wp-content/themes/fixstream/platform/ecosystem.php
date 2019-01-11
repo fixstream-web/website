@@ -33,23 +33,23 @@
 							name="platform"
 						 /><label class="globalnav__subnav-button" for="subnavToggle-60">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
-							<a class="globalnav__link" href="/platform/agent-less-auto-discovery">- Agent-less Auto Discovery
+							<a class="globalnav__link" href="/platform/agent-less-auto-discovery">Agent-less Auto Discovery
 							</a>
 						</li>
 						<li class="globalnav__item">
-							<a class="globalnav__link" href="/platform/machine-learning">- Machine Learning
+							<a class="globalnav__link" href="/platform/machine-learning">Machine Learning
 							</a>
 						</li>
 						<li class="globalnav__item">
-							<a class="globalnav__link" href="/platform/transaction-to-infra-correlation">- Transaction To Infra Correlation
+							<a class="globalnav__link" href="/platform/transaction-to-infra-correlation">Transaction To Infra Correlation
 							</a>
 						</li>
 						<li class="globalnav__item">
-							<a class="globalnav__link" href="/platform/architecture">- Architecture
+							<a class="globalnav__link" href="/platform/architecture">Architecture
 							</a>
 						</li>
 						<li class="globalnav__item with-subnav">
-							<a class="globalnav__link" href="/platform/ecosystem">- Ecosystem
+							<a class="globalnav__link" href="/platform/ecosystem">Ecosystem
 							</a>
 		        		<input
 		        			type="checkbox"
@@ -58,7 +58,7 @@
 		        			name="ecosystem"
 		        		 /><label class="globalnav__subnav-button" for="subnavToggle-61">+</label>								<ul class="globalnav__subnav">
 						<li class="globalnav__item">
-							<a class="globalnav__link" href="/platform/ecosystem/oracle">- Oracle
+							<a class="globalnav__link" href="/platform/ecosystem/oracle">Oracle
 							</a>
 						</li>
 					</ul>
@@ -80,19 +80,19 @@
 							name="customers"
 						 /><label class="globalnav__subnav-button" for="subnavToggle-62">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
-							<a class="globalnav__link" href="/customers/broadcom">- Broadcom
+							<a class="globalnav__link" href="/customers/broadcom">Broadcom
 							</a>
 						</li>
 						<li class="globalnav__item">
-							<a class="globalnav__link" href="/customers/maxim">- Maxim
+							<a class="globalnav__link" href="/customers/maxim">Maxim
 							</a>
 						</li>
 						<li class="globalnav__item">
-							<a class="globalnav__link" href="/customers/colv">- COLV
+							<a class="globalnav__link" href="/customers/colv">COLV
 							</a>
 						</li>
 						<li class="globalnav__item">
-							<a class="globalnav__link" href="/customers/bt">- BT
+							<a class="globalnav__link" href="/customers/bt">BT
 							</a>
 						</li>
 					</ul>

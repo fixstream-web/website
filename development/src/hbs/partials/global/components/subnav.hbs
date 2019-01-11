@@ -2,7 +2,7 @@
 						{{#each subpages}}
 						{{#if this.nav}}
 						<li class="globalnav__item{{#if this.subpages}} with-subnav{{/if}}">
-							<a class="globalnav__link" href="{{#if ../grandparent}}/{{../grandparent}}{{/if}}/{{../parent}}/{{this.slug}}">- {{this.nav}}
+							<a class="globalnav__link" href="{{#if ../grandparent}}/{{../grandparent}}{{/if}}/{{../parent}}/{{this.slug}}">{{this.nav}}
 							</a>
 							{{#if subpages}}
 		        		{{> global/components/checkbox-toggle
