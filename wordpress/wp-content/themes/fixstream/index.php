@@ -181,14 +181,18 @@
 			<div class="section-content">
 <ul class="customer-testimonials__list">
 	<li class="customer-testimonials__item">
-		<span class="customer-testimonials__icon-holder"><img src="/wp-content/themes/fixstream/img/temp-cust-logo-1.png" /></span>
-		<h3 class="customer-testimonials__header">Customer Name 1</h3>
-		<span class="customer-testimonials__title">Title</span>
+		<div class="customer-testimonials__info">
+			<span class="customer-testimonials__icon-holder"><img src="/wp-content/themes/fixstream/img/temp-cust-logo-1.png" /></span>
+			<h3 class="customer-testimonials__header">Andy Nallappan</h3>
+			<span class="customer-testimonials__title">Global CIO</span>
+		</div>
 		<blockquote class="customer-testimonials__quote">Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at.</blockquote>
 	</li>	<li class="customer-testimonials__item">
-		<span class="customer-testimonials__icon-holder"><img src="/wp-content/themes/fixstream/img/temp-cust-logo-2.png" /></span>
-		<h3 class="customer-testimonials__header">Customer Name 2</h3>
-		<span class="customer-testimonials__title">Title</span>
+		<div class="customer-testimonials__info">
+			<span class="customer-testimonials__icon-holder"><img src="/wp-content/themes/fixstream/img/temp-cust-logo-2.png" /></span>
+			<h3 class="customer-testimonials__header">Sam Gilliland</h3>
+			<span class="customer-testimonials__title">CEO</span>
+		</div>
 		<blockquote class="customer-testimonials__quote">Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at.</blockquote>
 	</li></ul>
 			</div>

@@ -146,9 +146,17 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		padding: 2rem 1rem;
+		box-shadow: $shadow-light;
+		border-radius: $radius-s;
 		&:last-child {
 			margin-bottom: 0;
 		}
+	}
+	&__info {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 	&__icon-holder {
 		$size: 4rem;
@@ -164,10 +172,11 @@
 		}
 	}
 	&__header {
+		font-size: 1.5rem;
 		margin-bottom: 0.4rem;
 	}
 	&__title {
-		font-size: 1.2rem;
+		font-size: 1.1rem;
 		margin-bottom: 0.4rem;
 	}
 	&__quote {}
@@ -179,7 +188,17 @@
 			justify-content: space-between;
 		}
 		&__item {
-			flex-basis: 45%;
+			flex-basis: 47%;
+			margin-bottom: 0;
+		}
+	}
+	@include media(60rem){
+		&__item {
+			display: flex;
+			flex-direction: row;
+		}
+		&__info {
+			margin-right: 1rem;
 		}
 	}
 }
