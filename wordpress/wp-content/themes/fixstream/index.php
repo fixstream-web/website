@@ -116,8 +116,8 @@
 				
 <section class="section section-hero page-index">
 			<div class="section-content">
-				<h1 class="section-headline hero-headline">Prevent and Predict Outages</h1>
-				<p class="section-intro hero-intro">AIOps Platform to Discover, Correlate and Predict Events Across Hybrid IT</p>
+				<h1 class="section-headline hero-headline">Prevent and Predict Outages</h1>
+				<p class="section-intro hero-intro">AIOps Platform to Discover, Correlate and Predict Events Across Hybrid IT</p>
 				<a class="section-cta hero-cta button button-secondary" href="/resources">Watch video</a>
 				<ul class="hero-solutions__list row">
 					<li class="hero-solutions__item">

@@ -24,7 +24,7 @@
 					"twitter-title": "test twitter title"
 				},
 				"hero": {
-					"intro": "AIOps Platform to Discover, Correlate and Predict Events Across Hybrid IT",
+					"intro": "AIOps Platform to Discover, Correlate and Predict Events Across Hybrid IT",
 					"cta": {
 						"value": "Watch video",
 						"meta": {
@@ -32,7 +32,7 @@
 						}
 					}
 				},
-				"h1": "Prevent and Predict Outages"
+				"h1": "Prevent and Predict Outages"
 			},
 			"platform": {
 				"name": "platform",
