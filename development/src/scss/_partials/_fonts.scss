@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
+[class^="icon-"], [class*=" icon-"] {
+  display: inline-block;
+}
+
+//FROM ICOMOON
 @font-face {
   font-family: 'icomoon';
   src:  url('../fonts/icomoon.eot?zhjmxp');
@@ -48,3 +55,6 @@
 .icon-linkedin:before {
   content: "\eac9";
 }
+
+
+

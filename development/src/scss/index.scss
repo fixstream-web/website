@@ -6,15 +6,9 @@
 	background: url('../img/temp-hero-600.jpg') no-repeat;
 	background-position: center;
 	background-size: cover;
-	> * {
+	.hero-headline,
+	.hero-intro {
 		color: $white;
-	}
-	a {
-		color: $white;
-	}
-	.button {
-		color: $white;
-		border-color: $white;
 	}
 }
 .hero-solutions {
@@ -31,6 +25,11 @@
 		&:last-child {
 			margin-bottom: 0;
 		}
+	}
+	&__header,
+	&__blurb,
+	&__link {
+		color: $white;
 	}
 	&__header {
 		font-size: 1.55rem;

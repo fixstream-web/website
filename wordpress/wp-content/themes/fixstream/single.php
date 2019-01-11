@@ -12,7 +12,7 @@
 		<a class="globalheader__link" href="/">
 			<img class="globalheader__logo" src="/wp-content/themes/fixstream/img/temp-logo.png" />
 		</a>
-		<label class="globalnav-button button button-small" for="menuToggle-1"><span class="icon-menu"></span></label>
+		<label class="globalnav-button button button-secondary button-small" for="menuToggle-1"><span class="icon-menu"></span></label>
 <input id="menuToggle-1" class="globalnav-toggle hidden" type="checkbox" />
 <nav class="globalnav">
 			<ul class="globalnav__toplevel">

@@ -1,0 +1,35 @@
+$buttons: '.button, input[type="submit"], input[type="reset"], input[type="button"], button';
+
+#{$buttons} {
+    background: $orange;
+    color: $white;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.9rem;
+    line-height: normal;
+    overflow: visible;
+    font-weight: $regular;
+    transition: background-color $duration-quick linear;
+    padding: 0.6rem 1.8rem;
+    box-shadow: 1px 1px 0 inset rgba(255,255,255, 0.5),
+    						1px 1px 3px rgba(0,0,0,0.3);
+    &:hover {
+    	background-color: darken($orange, 10%);
+    	text-decoration: none;
+    }
+
+    &.button-small {
+    	padding: 0.4rem 1.2rem;
+    	font-size: 0.8rem;
+    }
+
+    &.button-secondary {
+    	background: transparent;
+    	color: $white;
+    	border: 1px solid $white;
+    	box-shadow: none;
+    }
+}

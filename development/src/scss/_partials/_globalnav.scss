@@ -75,9 +75,10 @@ $mod: 'globalnav';
 	}
 	&-button {
 		margin: 0 1rem 0 auto;
-		color: $blue;
-		border-color: $blue;
+		color: $blue !important;
+		border-color: $blue !important;
 		font-size: 1rem !important;
+		border-radius: $radius-s !important;
 	}
 	&-toggle {
 		&:checked {

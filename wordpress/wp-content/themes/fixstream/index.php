@@ -20,7 +20,7 @@
 		<a class="globalheader__link" href="/">
 			<img class="globalheader__logo" src="/wp-content/themes/fixstream/img/temp-logo.png" />
 		</a>
-		<label class="globalnav-button button button-small" for="menuToggle-1"><span class="icon-menu"></span></label>
+		<label class="globalnav-button button button-secondary button-small" for="menuToggle-1"><span class="icon-menu"></span></label>
 <input id="menuToggle-1" class="globalnav-toggle hidden" type="checkbox" />
 <nav class="globalnav">
 			<ul class="globalnav__toplevel">
@@ -118,7 +118,7 @@
 			<div class="section-content">
 				<h1 class="section-headline hero-headline">Prevent and Predict Outages</h1>
 				<p class="section-intro hero-intro">AIOps Platform to Discover, Correlate and Predict Events Across Hybrid IT</p>
-				<a class="section-cta hero-cta button" href="/resources">Watch video</a>
+				<a class="section-cta hero-cta button button-secondary" href="/resources">Watch video</a>
 				<ul class="hero-solutions__list row">
 					<li class="hero-solutions__item">
 						<span class="hero-solutions__icon-holder"><span class="icon-stats-bars"></span></span>
