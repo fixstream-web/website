@@ -18,5 +18,11 @@
 	&__logo {
 		max-width: 100%;
 		height: auto;
+		path {
+			fill: $blue;
+			&.st0{
+				fill:#FFFFFF;
+			}
+		}
 	}
 }
