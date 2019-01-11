@@ -99,10 +99,10 @@
 					<a class="globalnav__link" href="/platform">Platform</a>
 						<input
 							type="checkbox"
-							id="subnavToggle-3"
+							id="subnavToggle-3[object Object]"
 							class="globalnav__subnav-toggle hidden"
 							name="platform"
-						 /><label class="globalnav__subnav-button" for="subnavToggle-3">+</label>						<ul class="globalnav__subnav">
+						 /><label class="globalnav__subnav-button" for="subnavToggle-3[object Object]">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/agent-less-auto-discovery">Agent-less Auto Discovery
 							</a>
@@ -124,10 +124,10 @@
 							</a>
 		        		<input
 		        			type="checkbox"
-		        			id="subnavToggle-4"
+		        			id="subnavToggle-4[object Object]"
 		        			class="globalnav__subnav-toggle hidden"
 		        			name="ecosystem"
-		        		 /><label class="globalnav__subnav-button" for="subnavToggle-4">+</label>								<ul class="globalnav__subnav">
+		        		 /><label class="globalnav__subnav-button" for="subnavToggle-4[object Object]">+</label>								<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/ecosystem/oracle">Oracle
 							</a>
@@ -146,10 +146,10 @@
 					<a class="globalnav__link" href="/customers">Customers</a>
 						<input
 							type="checkbox"
-							id="subnavToggle-5"
+							id="subnavToggle-5[object Object]"
 							class="globalnav__subnav-toggle hidden"
 							name="customers"
-						 /><label class="globalnav__subnav-button" for="subnavToggle-5">+</label>						<ul class="globalnav__subnav">
+						 /><label class="globalnav__subnav-button" for="subnavToggle-5[object Object]">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/customers/broadcom">Broadcom
 							</a>

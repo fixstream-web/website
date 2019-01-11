@@ -99,10 +99,10 @@
 					<a class="globalnav__link" href="/platform">Platform</a>
 						<input
 							type="checkbox"
-							id="subnavToggle-15"
+							id="subnavToggle-15[object Object]"
 							class="globalnav__subnav-toggle hidden"
 							name="platform"
-						 /><label class="globalnav__subnav-button" for="subnavToggle-15">+</label>						<ul class="globalnav__subnav">
+						 /><label class="globalnav__subnav-button" for="subnavToggle-15[object Object]">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/agent-less-auto-discovery">Agent-less Auto Discovery
 							</a>
@@ -124,10 +124,10 @@
 							</a>
 		        		<input
 		        			type="checkbox"
-		        			id="subnavToggle-16"
+		        			id="subnavToggle-16[object Object]"
 		        			class="globalnav__subnav-toggle hidden"
 		        			name="ecosystem"
-		        		 /><label class="globalnav__subnav-button" for="subnavToggle-16">+</label>								<ul class="globalnav__subnav">
+		        		 /><label class="globalnav__subnav-button" for="subnavToggle-16[object Object]">+</label>								<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/ecosystem/oracle">Oracle
 							</a>
@@ -146,10 +146,10 @@
 					<a class="globalnav__link" href="/customers">Customers</a>
 						<input
 							type="checkbox"
-							id="subnavToggle-17"
+							id="subnavToggle-17[object Object]"
 							class="globalnav__subnav-toggle hidden"
 							name="customers"
-						 /><label class="globalnav__subnav-button" for="subnavToggle-17">+</label>						<ul class="globalnav__subnav">
+						 /><label class="globalnav__subnav-button" for="subnavToggle-17[object Object]">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/customers/broadcom">Broadcom
 							</a>
@@ -277,17 +277,17 @@
 		<p class="featured-resources__blurb"><?php echo get_the_excerpt( 192 ) ?></p>
 		<a class="button featured-resources__link" href="<?php echo get_the_permalink( 192 ) ?>">View resource</a>
 	</li>	<li class="featured-resources__item">
-		<h3 class="featured-resources__header"><?php echo "wp title hook"; ?></h3>
-		<p class="featured-resources__blurb"><?php echo "wp blurb hook"; ?></p>
-		<a class="button featured-resources__link" href="<?php echo "wp link hook"; ?>">View resource</a>
+		<h3 class="featured-resources__header"><?php echo get_the_title( 194 ) ?></h3>
+		<p class="featured-resources__blurb"><?php echo get_the_excerpt( 194 ) ?></p>
+		<a class="button featured-resources__link" href="<?php echo get_the_permalink( 194 ) ?>">View resource</a>
 	</li>	<li class="featured-resources__item">
-		<h3 class="featured-resources__header"><?php echo "wp title hook"; ?></h3>
-		<p class="featured-resources__blurb"><?php echo "wp blurb hook"; ?></p>
-		<a class="button featured-resources__link" href="<?php echo "wp link hook"; ?>">View resource</a>
+		<h3 class="featured-resources__header"><?php echo get_the_title( 187 ) ?></h3>
+		<p class="featured-resources__blurb"><?php echo get_the_excerpt( 187 ) ?></p>
+		<a class="button featured-resources__link" href="<?php echo get_the_permalink( 187 ) ?>">View resource</a>
 	</li>	<li class="featured-resources__item">
-		<h3 class="featured-resources__header"><?php echo "wp title hook"; ?></h3>
-		<p class="featured-resources__blurb"><?php echo "wp blurb hook"; ?></p>
-		<a class="button featured-resources__link" href="<?php echo "wp link hook"; ?>">View resource</a>
+		<h3 class="featured-resources__header"><?php echo get_the_title( 182 ) ?></h3>
+		<p class="featured-resources__blurb"><?php echo get_the_excerpt( 182 ) ?></p>
+		<a class="button featured-resources__link" href="<?php echo get_the_permalink( 182 ) ?>">View resource</a>
 	</li></ul>
 			</div>
 		</section>

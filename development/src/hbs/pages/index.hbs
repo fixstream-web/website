@@ -108,22 +108,10 @@
 {{#content "contents" mode="append"}}
 <h2>Resources</h2>
 <ul class="featured-resources__list">
-	{{> modules/homepage-resource-item
-			title=(safe '<?php echo get_the_title( 192 ) ?>')
-			blurb=(safe '<?php echo get_the_excerpt( 192 ) ?>')
-			link=(safe '<?php echo get_the_permalink( 192 ) ?>')}}
-	{{> modules/homepage-resource-item
-			title=(safe '<?php echo "wp title hook"; ?>')
-			blurb=(safe '<?php echo "wp blurb hook"; ?>')
-			link=(safe '<?php echo "wp link hook"; ?>')}}
-	{{> modules/homepage-resource-item
-			title=(safe '<?php echo "wp title hook"; ?>')
-			blurb=(safe '<?php echo "wp blurb hook"; ?>')
-			link=(safe '<?php echo "wp link hook"; ?>')}}
-	{{> modules/homepage-resource-item
-			title=(safe '<?php echo "wp title hook"; ?>')
-			blurb=(safe '<?php echo "wp blurb hook"; ?>')
-			link=(safe '<?php echo "wp link hook"; ?>')}}
+	{{> modules/homepage-resource-item id=192}}
+	{{> modules/homepage-resource-item id=194}}
+	{{> modules/homepage-resource-item id=187}}
+	{{> modules/homepage-resource-item id=182}}
 </ul>
 {{/content}}
 {{/embed}}

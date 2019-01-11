@@ -211,7 +211,8 @@
 		background: $gray-5;
 		padding: 2rem 1rem;
 		border: 1px solid $gray-4;
-		@include flex-center;
+		display: flex;
+		justify-content: flex-start;
 		flex-direction: column;
 		border-radius: $radius-s;
 		margin-bottom: $item-margin-bottom;
@@ -220,10 +221,16 @@
 		}
 	}
 	&__header {
-		margin-bottom: 0.4rem;
+		font-size: 1.5rem;
+		padding-bottom: 0.6rem;
+		border-bottom: 2px solid $gray-3;
+		margin-bottom: 0.6rem;
 	}
 	&__blurb {
-		margin-bottom: 0.4rem;
+		margin-bottom: 0.75rem;
+	}
+	&__link {
+		margin-top: auto;
 	}
 	@include media(40rem){
 		&__list {
@@ -237,6 +244,9 @@
 			&:last-child {
 				margin-bottom: $item-margin-bottom;
 			}
+		}
+		&__header {
+			font-size: 1.2rem;
 		}
 	}
 	@include media(70rem){
