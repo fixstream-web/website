@@ -20,7 +20,7 @@
 		<a class="globalheader__link" href="/">
 			<img class="globalheader__logo" src="/wp-content/themes/fixstream/img/temp-logo.png" />
 		</a>
-		<label class="globalnav-button button button-small" for="menuToggle-1">#</label>
+		<label class="globalnav-button button button-small" for="menuToggle-1"><span class="icon-menu"></span></label>
 <input id="menuToggle-1" class="globalnav-toggle hidden" type="checkbox" />
 <nav class="globalnav">
 			<ul class="globalnav__toplevel">
@@ -160,9 +160,9 @@
 	</main>
 	<footer class="globalfooter">
 		<ul class="globalfooter__social">
-			<li class="globalfooter__social-item">TW</li>
-			<li class="globalfooter__social-item">LI</li>
-			<li class="globalfooter__social-item">YT</li>
+			<li class="globalfooter__social-item"><span class="icon-facebook2"></span></li>
+			<li class="globalfooter__social-item"><span class="icon-youtube"></span></li>
+			<li class="globalfooter__social-item"><span class="icon-linkedin"></span></li>
 		</ul>
 		<nav class="globalfooter__nav">
 			<ul class="globalfooter__nav-list">

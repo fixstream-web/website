@@ -75,6 +75,9 @@ $mod: 'globalnav';
 	}
 	&-button {
 		margin: 0 1rem 0 auto;
+		color: $blue;
+		border-color: $blue;
+		font-size: 1rem !important;
 	}
 	&-toggle {
 		&:checked {

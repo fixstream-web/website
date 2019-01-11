@@ -3,37 +3,56 @@
 
 .section-hero {
 	padding: 3rem 0;
+	background: url('../img/temp-hero-600.jpg') no-repeat;
+	background-position: center;
+	background-size: cover;
+	> * {
+		color: $white;
+	}
+	a {
+		color: $white;
+	}
+	.button {
+		color: $white;
+		border-color: $white;
+	}
 }
 .hero-solutions {
 	&__list {
 		margin-top: 3rem;
+		align-items: center;
 	}
 	&__item {
 		margin-bottom: 1.7rem;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		max-width: 25rem;
 		&:last-child {
 			margin-bottom: 0;
 		}
 	}
 	&__header {
-		margin-bottom: 0.8rem;
+		font-size: 1.55rem;
+		margin: 0.34rem 0 0.5rem;
 	}
 	&__icon-holder {
 		$size: 4rem;
 		@include circle;
 		@include flex-center;
-		background: $gray-4;
+		background: $orange;
 		height: $size;
 		width: $size;
+		color: $blue;
 		margin-bottom: 0.4rem;
+		font-size: 1.75rem;
 	}
 
 	@include media(60rem){
 		&__list {
-			display: flex;
+			align-items: flex-start;
 			justify-content: space-between;
+			flex-direction: row;
 		}
 		&__item {
 			margin-bottom: 0;
@@ -90,12 +109,34 @@
 	}
 }
 
+
 .how-fixstream-works {
 	&__copy {
 		text-align: left;
 	}
 	&__image {
 		margin-top: 1.7rem;
+	}
+	@include media(40rem){
+		&__row {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		&__copy {
+			flex-basis: 45%;
+		}
+		&__image {
+			margin-top: 0;
+			flex-basis: 48%;
+		}
+	}
+	@include media(60rem){
+		&__copy {
+			flex-basis: 38%;
+		}
+		&__image {
+			flex-basis: 58%;
+		}
 	}
 }
 
@@ -113,10 +154,14 @@
 		$size: 4rem;
 		@include circle;
 		@include flex-center;
-		background: $gray-4;
+		background: $blue;
+		color: $orange;
 		height: $size;
 		width: $size;
 		margin-bottom: 0.4rem;
+		& > img {
+			max-width: 65%;
+		}
 	}
 	&__header {
 		margin-bottom: 0.4rem;
@@ -126,9 +171,21 @@
 		margin-bottom: 0.4rem;
 	}
 	&__quote {}
+
+	@include media(47rem){
+		&__list {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		&__item {
+			flex-basis: 45%;
+		}
+	}
 }
 
 .featured-resources {
+	$item-margin-bottom: 1.7rem;
 	&__list {
 		margin: 2rem 0;
 	}
@@ -139,7 +196,7 @@
 		@include flex-center;
 		flex-direction: column;
 		border-radius: $radius-s;
-		margin-bottom: 1.7rem;
+		margin-bottom: $item-margin-bottom;
 		&:last-child {
 			margin-bottom: 0;
 		}
@@ -150,9 +207,36 @@
 	&__blurb {
 		margin-bottom: 0.4rem;
 	}
+	@include media(40rem){
+		&__list {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		&__item {
+			flex-basis: 48%;
+			&:last-child {
+				margin-bottom: $item-margin-bottom;
+			}
+		}
+	}
+	@include media(70rem){
+		&__item {
+			flex-basis: 23%;
+			margin-bottom: 0;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
 }
 
-
+.icon-circle-right {
+	margin-left: 0.5rem;
+	top: 0.15rem;
+	position: relative;
+}
 
 
 

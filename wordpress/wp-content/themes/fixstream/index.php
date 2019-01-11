@@ -20,7 +20,7 @@
 		<a class="globalheader__link" href="/">
 			<img class="globalheader__logo" src="/wp-content/themes/fixstream/img/temp-logo.png" />
 		</a>
-		<label class="globalnav-button button button-small" for="menuToggle-1">#</label>
+		<label class="globalnav-button button button-small" for="menuToggle-1"><span class="icon-menu"></span></label>
 <input id="menuToggle-1" class="globalnav-toggle hidden" type="checkbox" />
 <nav class="globalnav">
 			<ul class="globalnav__toplevel">
@@ -119,22 +119,22 @@
 				<h1 class="section-headline hero-headline">Prevent and Predict Outages</h1>
 				<p class="section-intro hero-intro">AIOps Platform to Discover, Correlate and Predict Events Across Hybrid IT</p>
 				<a class="section-cta hero-cta button" href="/resources">Watch video</a>
-				<ul class="hero-solutions__list">
+				<ul class="hero-solutions__list row">
 					<li class="hero-solutions__item">
-						<span class="hero-solutions__icon-holder">X</span>
+						<span class="hero-solutions__icon-holder"><span class="icon-stats-bars"></span></span>
 						<h2 class="hero-solutions__header">Auto-discovery</h2>
 						<p class="hero-solutions__blurb">Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis senectus curabitu.</p>
-						<a class="hero-solutions__link" href="#">Learn more</a>
+						<a class="hero-solutions__link" href="#">Learn more<span class="icon-circle-right"></span></a>
 					</li>					<li class="hero-solutions__item">
-						<span class="hero-solutions__icon-holder">X</span>
+						<span class="hero-solutions__icon-holder"><span class="icon-stats-bars2"></span></span>
 						<h2 class="hero-solutions__header">Multidimensional Correlation</h2>
 						<p class="hero-solutions__blurb">Aurabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam.</p>
-						<a class="hero-solutions__link" href="#">Learn more</a>
+						<a class="hero-solutions__link" href="#">Learn more<span class="icon-circle-right"></span></a>
 					</li>					<li class="hero-solutions__item">
-						<span class="hero-solutions__icon-holder">X</span>
+						<span class="hero-solutions__icon-holder"><span class="icon-sphere"></span></span>
 						<h2 class="hero-solutions__header">Artificial Intelligence</h2>
 						<p class="hero-solutions__blurb">Nectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam.</p>
-						<a class="hero-solutions__link" href="#">Learn more</a>
+						<a class="hero-solutions__link" href="#">Learn more<span class="icon-circle-right"></span></a>
 					</li>				</ul>
 			</div>
 		</section>
@@ -148,12 +148,31 @@
 <section class="section section-how-fixstream-works page-index">
 			<div class="section-content">
 <h2>How FixStream Works</h2>
-<div class="row">
-	<div class="col-2 how-fixstream-works__copy">
+<div class="row how-fixstream-works__row">
+	<div class="how-fixstream-works__copy">
+		<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sodales primis, mollis viverra conubia ligula inceptos laoreet libero tortor, nascetur non habitasse iaculis tempor nec egestas fames augue, platea porta integer nostra curae sed arcu. Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper.</p>
 		<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sodales primis, mollis viverra conubia ligula inceptos laoreet libero tortor, nascetur non habitasse iaculis tempor nec egestas fames augue, platea porta integer nostra curae sed arcu. Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper.</p>
 	</div>
-	<div class="col-2 how-fixstream-works__image">
-		<img src="https://via.placeholder.com/318x500" />
+	<div class="how-fixstream-works__image">
+		<picture class="how-fixstream-works__sources">
+			<source media="(max-width: 40rem)"
+							srcset="https://via.placeholder.com/900x1200 3x,
+											https://via.placeholder.com/600x800 2x
+											https://via.placeholder.com/300x400 1x"
+							sizes="100vw" />
+
+			<source media="(max-width: 60rem)"
+							srcset="https://via.placeholder.com/900x1200 3x,
+											https://via.placeholder.com/600x800 2x
+											https://via.placeholder.com/300x400 1x"
+							sizes="48vw" />
+
+			<source srcset="https://via.placeholder.com/900x600 3x,
+											https://via.placeholder.com/600x400 2x,
+											https://via.placeholder.com/300x200 1x"
+							sizes="58vw" />
+			<img src="https://via.placeholder.com/300x600" alt="temp image" />
+		</picture>
 	</div>
 </div>
 			</div>
@@ -162,12 +181,12 @@
 			<div class="section-content">
 <ul class="customer-testimonials__list">
 	<li class="customer-testimonials__item">
-		<span class="customer-testimonials__icon-holder">X</span>
+		<span class="customer-testimonials__icon-holder"><img src="/wp-content/themes/fixstream/img/temp-cust-logo-1.png" /></span>
 		<h3 class="customer-testimonials__header">Customer Name 1</h3>
 		<span class="customer-testimonials__title">Title</span>
 		<blockquote class="customer-testimonials__quote">Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at.</blockquote>
 	</li>	<li class="customer-testimonials__item">
-		<span class="customer-testimonials__icon-holder">X</span>
+		<span class="customer-testimonials__icon-holder"><img src="/wp-content/themes/fixstream/img/temp-cust-logo-2.png" /></span>
 		<h3 class="customer-testimonials__header">Customer Name 2</h3>
 		<span class="customer-testimonials__title">Title</span>
 		<blockquote class="customer-testimonials__quote">Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at.</blockquote>
@@ -181,19 +200,19 @@
 	<li class="featured-resources__item">
 		<h3 class="featured-resources__header"><?php echo "wp title hook"; ?></h3>
 		<p class="featured-resources__blurb"><?php echo "wp blurb hook"; ?></p>
-		<a class="button featured-resources__link" href="<?php echo "wp link hook"; ?>">Learn more</a>
+		<a class="button featured-resources__link" href="<?php echo "wp link hook"; ?>">View resource</a>
 	</li>	<li class="featured-resources__item">
 		<h3 class="featured-resources__header"><?php echo "wp title hook"; ?></h3>
 		<p class="featured-resources__blurb"><?php echo "wp blurb hook"; ?></p>
-		<a class="button featured-resources__link" href="<?php echo "wp link hook"; ?>">Learn more</a>
+		<a class="button featured-resources__link" href="<?php echo "wp link hook"; ?>">View resource</a>
 	</li>	<li class="featured-resources__item">
 		<h3 class="featured-resources__header"><?php echo "wp title hook"; ?></h3>
 		<p class="featured-resources__blurb"><?php echo "wp blurb hook"; ?></p>
-		<a class="button featured-resources__link" href="<?php echo "wp link hook"; ?>">Learn more</a>
+		<a class="button featured-resources__link" href="<?php echo "wp link hook"; ?>">View resource</a>
 	</li>	<li class="featured-resources__item">
 		<h3 class="featured-resources__header"><?php echo "wp title hook"; ?></h3>
 		<p class="featured-resources__blurb"><?php echo "wp blurb hook"; ?></p>
-		<a class="button featured-resources__link" href="<?php echo "wp link hook"; ?>">Learn more</a>
+		<a class="button featured-resources__link" href="<?php echo "wp link hook"; ?>">View resource</a>
 	</li></ul>
 			</div>
 		</section>
@@ -201,9 +220,9 @@
 	</main>
 	<footer class="globalfooter">
 		<ul class="globalfooter__social">
-			<li class="globalfooter__social-item">TW</li>
-			<li class="globalfooter__social-item">LI</li>
-			<li class="globalfooter__social-item">YT</li>
+			<li class="globalfooter__social-item"><span class="icon-facebook2"></span></li>
+			<li class="globalfooter__social-item"><span class="icon-youtube"></span></li>
+			<li class="globalfooter__social-item"><span class="icon-linkedin"></span></li>
 		</ul>
 		<nav class="globalfooter__nav">
 			<ul class="globalfooter__nav-list">

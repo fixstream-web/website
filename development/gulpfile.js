@@ -302,6 +302,13 @@ gulp.task('images', function(){
         .pipe(gulp.dest(path.join(config.paths.built, 'img')));
 });
 
+gulp.task('fonts', function(){
+    gulp.src(path.join(config.paths.fonts, '*.*'))
+        .pipe(gulp.dest(path.join(config.paths.built, 'fonts')));
+});
+
+gulp.task('assets', ['images', 'fonts']);
+
 gulp.task('js', function() {
     // Single entry point to browserify
     gulp.src([
@@ -336,7 +343,7 @@ gulp.task('clean', function(){
         ], {force:true});
 });
 
-gulp.task('build', ['css', 'hbs', 'js', 'images', 'theme']);
+gulp.task('build', ['css', 'hbs', 'js', 'assets', 'theme']);
 
 gulp.task('build:watch', function(){
     gulp.watch([
@@ -344,7 +351,8 @@ gulp.task('build:watch', function(){
         path.join(config.paths.src, '/hbs/**/**/*.hbs'),
         path.join(config.paths.src, 'functions.hbs'),
         path.join(config.paths.src, '/scss/**/*.scss'),
-        path.join(config.paths.images, '*.*')
+        path.join(config.paths.images, '*.*'),
+        path.join(config.paths.fonts, '*.*')
         ], ['build']);
 });
 

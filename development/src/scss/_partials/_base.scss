@@ -49,6 +49,12 @@ blockquote {
 	}
 }
 
+img,
+picture {
+	width: 100%;
+	max-width: 100%;
+}
+
 .button,
 input[type="submit"],
 input[type="reset"],
