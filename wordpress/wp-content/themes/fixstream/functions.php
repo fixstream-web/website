@@ -5,6 +5,7 @@ Since we're not using WordPress for pages, we have to manually handle routing to
 */
 add_action('init', 'customRouter');
 function customRouter() {
+  $load;
   $url_path = trim(parse_url(add_query_arg(array()), PHP_URL_PATH), '/');
   switch ($url_path) {
       case "platform": $load = locate_template('platform.php', true); break;
@@ -27,7 +28,7 @@ function customRouter() {
       case "free-trial": $load = locate_template('free-trial.php', true); break;
       default:
   }
-  if ($load) {
+  if (!empty($load)) {
     exit();
   }
 }

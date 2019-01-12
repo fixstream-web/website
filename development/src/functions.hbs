@@ -6,6 +6,7 @@ Since we're not using WordPress for pages, we have to manually handle routing to
 {{!-- **TODO make nav depth flexible --}}
 add_action('init', 'customRouter');
 function customRouter() {
+  $load;
   $url_path = trim(parse_url(add_query_arg(array()), PHP_URL_PATH), '/');
   switch ($url_path) {
     {{#each pages}}
@@ -33,7 +34,7 @@ function customRouter() {
       default:
       {{!-- Do we need a default? --}}
   }
-  if ($load) {
+  if (!empty($load)) {
     exit();
   }
 }
