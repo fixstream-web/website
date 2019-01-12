@@ -223,7 +223,12 @@ gulp.task('pages', ['audit'], function(){
             // console.log('');
 
             if (arr_diff(pagesTested, pagefiles).length > 0) {
-                const pageDifs = arr_diff(pagesTested, pagefiles);
+                let pageDifs = arr_diff(pagesTested, pagefiles);
+                let headIndex = pageDifs.indexOf('src/js/head.js');
+                // console.log(headIndex);
+                // console.log(pageDifs[headIndex]);
+                // console.log(pageDifs.slice(1, 0));
+                
                 console.log('##########################################################');
                 console.log('The following source files exist with no page data association');
                 console.log('');

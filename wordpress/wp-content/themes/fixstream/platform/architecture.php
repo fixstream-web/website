@@ -12,8 +12,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<?php wp_head(); ?>
 	<link rel="stylesheet" href="/wp-content/themes/fixstream/css/platform/architecture.css">
-	<script type="text/javascript" src="/wp-content/themes/fixstream/js/platform/architecture.js"></script>
-</head>
+	<script type="text/javascript" src="/wp-content/themes/fixstream/js/head.js"></script></head>
 <body class="page-platform page-platform-architecture">
 	<header class="globalheader">
 		<div class="globalheader__navbar">
@@ -139,6 +138,7 @@
 			</ul>
 		</nav>
 	</footer>
+	<script type="text/javascript" src="/wp-content/themes/fixstream/js/platform/architecture.js"></script>
 	<?php wp_footer(); ?> 
 </body>
 </html>
