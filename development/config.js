@@ -25,7 +25,8 @@ exports.sassOptions = {
 	includePaths: [
 		'./src/scss/_partials/',
 		'./node_modules/reset-css/sass/'
-	]
+	],
+	themeRoot: '/foo/'
 };
 
 

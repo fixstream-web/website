@@ -61,6 +61,7 @@ gulp.task('css', function(){
         .pipe(gulp.dest(path.join(config.paths.built, '/css')))
 });
 
+
 gulp.task('css:watch', function(){
     gulp.watch(path.join(config.paths.src, '/scss/**/*.scss'), ['css']);
 });
