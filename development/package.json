@@ -7,12 +7,19 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "NODE_ENV=development webpack --config webpack.config.js",
+    "hello": "echo 'hello'"
   },
   "author": "Alex Hudson",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "babel-loader": "^8.0.5",
     "del": "^3.0.0",
+    "eslint": "^5.12.0",
+    "eslint-loader": "^2.1.1",
     "file-system": "^2.2.2",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^6.0.0",
@@ -25,6 +32,9 @@
     "handlebars": "^4.0.12",
     "handlebars-layouts": "^3.1.4",
     "path": "^0.12.7",
-    "reset-css": "^4.0.1"
+    "reset-css": "^4.0.1",
+    "uglifyjs-webpack-plugin": "^2.1.1",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1"
   }
 }
