@@ -8,8 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "NODE_ENV=development webpack --config webpack.config.js",
-    "hello": "echo 'hello'"
+    "watch": "NODE_ENV=development webpack --config webpack.config.js"
   },
   "author": "Alex Hudson",
   "license": "ISC",
