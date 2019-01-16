@@ -13,3 +13,4 @@ development/src/scss/.DS_Store
 development/tmp/
 wordpress/.DS_Store
 wordpress/wp-content/themes/.DS_Store
+wordpress/wp-content/wflogs
