@@ -177,7 +177,6 @@
 			</ul>
 		</nav>
 	</footer>
-	<script type="text/javascript" src="/wp-content/themes/fixstream/js/platform/agent-less-auto-discovery.js"></script>
 	<?php wp_footer(); ?> 
 </body>
 </html>

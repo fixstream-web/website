@@ -70,20 +70,31 @@ gulp.task('css:watch', function(){
 });
 
 gulp.task('pages', ['audit'], function(){
-    let errCount = 0;
-    let pageCount = 0;
-    let pagesTested = [];
-    let pagesCreated = [];
     const pageTypes = ['scss','hbs','js'];
-    let nestLvl = 0;
+    let errCount = 0,
+        pageCount = 0,
+        fileCount = 0,
+        uniqueJSCount = 0,
+        pagesTested = [],
+        pagesCreated = [],
+        nestLvl = 0;
     loopPageSet(data.site.pages, "");
     countPages(data.site.pages);
 
     function countPages(set){
         for (var key in set) {
+            pageCount++;
             pageTypes.forEach(function(type){
-                pageCount++;
+                // There are only JS source files for pages that have uniqueJS in data object
+                if (type !== 'js' || set[key].uniqueJS) {
+                    fileCount++;
+                }
             })
+            // Keep track of pages that need unique JS for testing success later
+            if (set[key].uniqueJS) {
+                uniqueJSCount++;
+            }
+            // console.log(uniqueJSCount);
             if (set[key].subpages) {
                 countPages(set[key].subpages);
             }
@@ -150,37 +161,41 @@ gulp.task('pages', ['audit'], function(){
                     })();
                     let filename = set[key].name + '.' + type;
                     let filepath = path.join(filedir, filename);
-                    return fs.access(filepath, (err) => {
-                        if (err) {
-                            errCount++;
-                            // There is no file.[type] by that name
-                            console.log('###########################################');
-                            console.log('Created ' + set[key].name + '.' + type);
-                            console.log('###########################################');
-                            let content;
-                            switch(type) {
-                                case 'hbs':
-                                    content = defaultHBS;
-                                    break;
-                                case 'js':
-                                    content = defaultJS;
-                                    break;
-                                case 'scss':
-                                    content = defaultSCSS;
-                                    break;
-                                default:
-                                    content = 'Content undefined based on page type';
+
+                    // There are only JS source files for pages that have uniqueJS in data object
+                    if (type !== 'js' || set[key].uniqueJS) {                    
+                        return fs.access(filepath, (err) => {
+                            if (err) {
+                                errCount++;
+                                // There is no file.[type] by that name
+                                console.log('###########################################');
+                                console.log('Created ' + set[key].name + '.' + type);
+                                console.log('###########################################');
+                                let content;
+                                switch(type) {
+                                    case 'hbs':
+                                        content = defaultHBS;
+                                        break;
+                                    case 'js':
+                                        content = defaultJS;
+                                        break;
+                                    case 'scss':
+                                        content = defaultSCSS;
+                                        break;
+                                    default:
+                                        content = 'Content undefined based on page type';
+                                }
+                                // Create a file.[type] for the page
+                                string_src(set[key].name + '.' + type, content)
+                                    .pipe(gulp.dest(filedir));
+                                pagesCreated.push(filepath);
+                            } else {
+                                // console.log('No error on: ' + key + "." + type);
+                                pagesTested.push(filepath);
                             }
-                            // Create a file.[type] for the page
-                            string_src(set[key].name + '.' + type, content)
-                                .pipe(gulp.dest(filedir));
-                            pagesCreated.push(filepath);
-                        } else {
-                            // console.log('No error on: ' + key + "." + type);
-                            pagesTested.push(filepath);
-                        }
-                        testSuccess();
-                    });
+                            testSuccess();
+                        });
+                    }
                 })(key, type, set);
             });
 
@@ -201,7 +216,6 @@ gulp.task('pages', ['audit'], function(){
                 // Run page generation on subpages
                 loopPageSet(set[key].subpages, newParentCtx, isLastPage());
             }
-
             if (resetCtx) {
                 nestLvl = 0;
                 newParentCtx = "";
@@ -211,11 +225,12 @@ gulp.task('pages', ['audit'], function(){
 
     function testSuccess(){
         // Mechanism to handle async page generation
-        if ((pagesTested.length + pagesCreated.length) == pageCount) {
+        if ((pagesTested.length + pagesCreated.length) == fileCount) {
              console.log('##########################################################');
              console.log('Congratulations!');
              console.log('Source files for all pages in data exist!');
-             console.log('There are ' + pageCount / pageTypes.length + ' pages; each with ' + pageTypes.join(', ').toUpperCase() + ' (' + pagesTested.length + ' total)');
+             console.log('There are ' + pageCount + ' pages; each with SCSS and HBS (' + (pageCount * 2) + ' files)');
+             console.log('There are ' + uniqueJSCount + ' unique JS files');
              console.log('##########################################################');
              console.log('');
 
@@ -227,13 +242,9 @@ gulp.task('pages', ['audit'], function(){
 
             if (arr_diff(pagesTested, pagefiles).length > 0) {
                 let pageDifs = arr_diff(pagesTested, pagefiles);
-                let headIndex = pageDifs.indexOf('src/js/head.js');
-                // console.log(headIndex);
-                // console.log(pageDifs[headIndex]);
-                // console.log(pageDifs.slice(1, 0));
-                
+                let headIndex = pageDifs.indexOf('src/js/head.js');                
                 console.log('##########################################################');
-                console.log('The following source files exist with no page data association');
+                console.log('The following ('+ pageDifs.length + ') source files exist with no page data association');
                 console.log('');
                 pageDifs.forEach(function(file){
                     console.log(file);

@@ -17,7 +17,7 @@
 			"index": {
 				"type": "wp-template",
 				"name": "index",
-				"pageJS": true,
+				"uniqueJS": true,
 				"meta": {
 					"title": "Home",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.",
@@ -144,6 +144,7 @@
 			"resources": {
 				"name": "resources",
 				"nav": "Resources",
+				"uniqueJS": true,
 				"slug": "resources",
 				"meta": {
 					"title": "Resources",
@@ -230,6 +231,7 @@
 			"company": {
 				"name": "company",
 				"nav": "Company",
+				"uniqueJS": true,
 				"slug": "company",
 				"meta": {
 					"title": "Company",
@@ -281,6 +283,7 @@
 			"free-trial": {
 				"name": "free-trial",
 				"slug": "free-trial",
+				"uniqueJS": true,
 				"meta": {
 					"title": "Free Trial",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.",

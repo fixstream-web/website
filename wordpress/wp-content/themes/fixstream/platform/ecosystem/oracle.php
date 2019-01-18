@@ -138,7 +138,6 @@
 			</ul>
 		</nav>
 	</footer>
-	<script type="text/javascript" src="/wp-content/themes/fixstream/js/platform/ecosystem/oracle.js"></script>
 	<?php wp_footer(); ?> 
 </body>
 </html>

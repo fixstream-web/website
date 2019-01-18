@@ -15,8 +15,7 @@
 			</ul>
 		</nav>
 	</footer>
-	{{!-- **TODO: this should load conditionally if page has unique JS only --}}
-	{{!-- {{#if data.pageJS}} --}}
+	{{#if data.uniqueJS}}
 	<script type="text/javascript" src="{{@root.meta.themeURI}}/js/{{#if parentPath}}{{parentPath}}{{/if}}{{data.name}}.js"></script>
-	{{!-- {{/if}} --}}
+	{{/if}}
 	<?php wp_footer(); ?> 
