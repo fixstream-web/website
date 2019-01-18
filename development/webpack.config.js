@@ -4,13 +4,14 @@ const path           = require('path'),
 
 const mode = process.env['NODE_ENV'] || 'production';
 const watch = mode === 'development';
+const entry = require('webpack-glob-entry')
 
 module.exports = {
     mode,
     watch,
-    entry: './' + config.paths.src + '/js/head.js',
+    entry: entry('./' + config.paths.src + '/js/*.js'),
     output: {
-        filename: 'head.js',
+        filename: '[name].js',
         path: path.resolve(__dirname, config.paths.built + '/js'),
     },
     optimization: {
