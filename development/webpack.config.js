@@ -1,10 +1,9 @@
 const path           = require('path'),
       config         = require('./config'),
-      UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-
-const mode = process.env['NODE_ENV'] || 'production';
-const watch = mode === 'development';
-const entry = require('webpack-glob-entry')
+      UglifyJsPlugin = require('uglifyjs-webpack-plugin'),
+      mode           = process.env['NODE_ENV'] || 'production',
+      watch          = mode === 'development',
+      entry          = require('webpack-glob-entry');
 
 module.exports = {
     mode,
