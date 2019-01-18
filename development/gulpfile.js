@@ -13,7 +13,6 @@ const gulp            = require('gulp'),
       config          = require('./config'),
       fs              = require('file-system'),
       autoprefixer    = require('gulp-autoprefixer'),
-      browserify      = require('gulp-browserify'),
       del             = require('del'),
       gutil           = require('gulp-util'),
       filelist        = require('gulp-filelist');
