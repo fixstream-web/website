@@ -1,6 +1,8 @@
 'use strict';
 
 var gulp            = require('gulp'),
+    webpack = require('webpack'),
+    gulpWebpack = require('webpack-stream'),
     sass            = require('gulp-sass'),
     path            = require('path'),
     handlebars      = require('handlebars'),
@@ -316,13 +318,9 @@ gulp.task('fonts', function(){
 gulp.task('assets', ['images', 'fonts']);
 
 gulp.task('js', function() {
-    // Single entry point to browserify
-    gulp.src([
-            path.join(config.paths.src, '/js/**/*.js'),
-            "!" + path.join(config.paths.src, '/js/_modules/*.js')
-        ])
-        .pipe(browserify())
-        .pipe(gulp.dest(path.join(config.paths.built, '/js')))
+  return gulp.src('src/js/head.js')
+    .pipe(gulpWebpack(require('./webpack.config.js'), webpack))
+    .pipe(gulp.dest('../wordpress/wp-content/themes/fixstream/js'));
 });
 
 gulp.task('js:watch', function(){
