@@ -9,7 +9,7 @@ const entry = require('webpack-glob-entry')
 module.exports = {
     mode,
     watch,
-    entry: entry('./src/js/*.js'),
+    entry: entry('./' + config.paths.src + '/js/*.js'),
     output: {
         filename: '[name].js',
         path: path.resolve(__dirname, config.paths.built + '/js'),
