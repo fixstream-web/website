@@ -1,5 +1,6 @@
-const path = require('path');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const path           = require('path'),
+      config         = require('./config'),
+      UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 const mode = process.env['NODE_ENV'] || 'production';
 const watch = mode === 'development';
@@ -7,10 +8,10 @@ const watch = mode === 'development';
 module.exports = {
     mode,
     watch,
-    entry: './src/js/head.js',
+    entry: './' + config.paths.src + '/js/head.js',
     output: {
         filename: 'head.js',
-        path: path.resolve(__dirname, '../wordpress/wp-content/themes/fixstream/js'),
+        path: path.resolve(__dirname, config.paths.built + '/js'),
     },
     optimization: {
         minimizer: [new UglifyJsPlugin({

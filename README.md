@@ -1,7 +1,6 @@
 # www.FixStream.com
 Development source and WordPress build for www.FixStream.com. No manual updates should be made to the /wordpress directory- all compiled in /development. We generate a unique CSS file for each page (using modular Sass imports) to minimize HTTP requests.
 
-**TODO**: Confirm JS strategy (separate a universal head JS?).
 **TODO**: Add .nvmrc (built using v8.11.3)
 
 ---
@@ -86,7 +85,7 @@ Example Page Object:
 `gulp css`: Compiles and minifies SCSS. Builds to theme's /css directory. Can be watched with `gulp css:watch`
 
 
-`gulp js`: **TODO:** Properly compile/bundle/lint/minify. Can be watched with `gulp js:watch`
+`gulp js`: Bundles/concatinates modules, minifies and transpiles with webpack and builds to the WordPress theme. Can be watched with `gulp js:watch`
 
 
 `gulp build`: Runs `gulp hbs` `gulp images` `gulp css` `gulp js` `gulp theme`

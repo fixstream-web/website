@@ -1,23 +1,24 @@
 'use strict';
 
-var gulp            = require('gulp'),
-    webpack = require('webpack'),
-    gulpWebpack = require('webpack-stream'),
-    sass            = require('gulp-sass'),
-    path            = require('path'),
-    handlebars      = require('handlebars'),
-    compilehbs      = require('gulp-compile-handlebars'),
-    layouts         = require('handlebars-layouts'),
-    rename          = require('gulp-rename'),
-    data            = require('./data/site-data.json'),
-    config          = require('./config'),
-    fs              = require('file-system'),
-    autoprefixer    = require('gulp-autoprefixer'),
-    browserify      = require('gulp-browserify'),
-    del             = require('del'),
-    gutil           = require('gulp-util'),
-    filelist        = require('gulp-filelist'),
-    pagefiles;
+const gulp            = require('gulp'),
+      webpack         = require('webpack'),
+      gulpWebpack     = require('webpack-stream'),
+      sass            = require('gulp-sass'),
+      path            = require('path'),
+      handlebars      = require('handlebars'),
+      compilehbs      = require('gulp-compile-handlebars'),
+      layouts         = require('handlebars-layouts'),
+      rename          = require('gulp-rename'),
+      data            = require('./data/site-data.json'),
+      config          = require('./config'),
+      fs              = require('file-system'),
+      autoprefixer    = require('gulp-autoprefixer'),
+      browserify      = require('gulp-browserify'),
+      del             = require('del'),
+      gutil           = require('gulp-util'),
+      filelist        = require('gulp-filelist');
+
+let pagefiles;
 
 sass.compiler = require('node-sass');
 layouts.register(handlebars);
@@ -318,9 +319,9 @@ gulp.task('fonts', function(){
 gulp.task('assets', ['images', 'fonts']);
 
 gulp.task('js', function() {
-  return gulp.src('src/js/head.js')
+  return gulp.src(path.join(config.paths.src, '/js/head.js'))
     .pipe(gulpWebpack(require('./webpack.config.js'), webpack))
-    .pipe(gulp.dest('../wordpress/wp-content/themes/fixstream/js'));
+    .pipe(gulp.dest(path.join(config.paths.built, 'js')));
 });
 
 gulp.task('js:watch', function(){
