@@ -185,7 +185,11 @@
 <section class="section section-resources-form page-resources">
 			<div class="section-content">
 
-		<form id="resourcesForm" class="resource-gate-form">
+<form
+	id="resourcesForm"
+	class="resource-gate-form"
+	method="get"
+	action="">
 				<label for="resource-gate-first-name" >First Name</label>
 			<input
 				type="text"
@@ -222,8 +226,8 @@
 				id="resource-gate-phone"
 				name="phone"
 				 />
-			<input type="submit" id="resource-gate-submit" value="Submit" />
-		</form>
+	<input type="submit" id="resource-gate-submit" value="Submit" />
+</form>
 			</div>
 		</section>
 

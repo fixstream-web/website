@@ -125,7 +125,11 @@
 <section class="section section-free-trial-form page-free-trial">
 			<div class="section-content">
 
-		<form id="freeTrialForm" class="free-trial-form">
+<form
+	id="freeTrialForm"
+	class="free-trial-form"
+	method="get"
+	action="">
 				<label for="free-trial-first-name" >First Name<sup>*</sup></label>
 			<input
 				type="text"
@@ -162,8 +166,8 @@
 				id="free-trial-phone"
 				name="phone"
 				required />
-			<input type="submit" id="free-trial-submit" value="Submit" />
-		</form>
+	<input type="submit" id="free-trial-submit" value="Submit" />
+</form>
 			</div>
 		</section>
 

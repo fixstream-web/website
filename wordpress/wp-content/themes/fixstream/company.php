@@ -213,7 +213,11 @@
 <section class="section section-company-form page-company">
 			<div class="section-content">
 
-		<form id="companyForm" class="company-form-form">
+<form
+	id="companyForm"
+	class="company-form-form"
+	method="get"
+	action="">
 				<label for="company-form-first-name" >First Name</label>
 			<input
 				type="text"
@@ -250,8 +254,8 @@
 				id="company-form-phone"
 				name="phone"
 				 />
-			<input type="submit" id="company-form-submit" value="Submit" />
-		</form>
+	<input type="submit" id="company-form-submit" value="Submit" />
+</form>
 			</div>
 		</section>
 

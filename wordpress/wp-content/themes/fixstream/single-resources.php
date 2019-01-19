@@ -141,7 +141,11 @@
 <section class="section section-resource page-single-resources">
 			<div class="section-content">
 
-		<form id="resourcesForm" class="resource-gate-form">
+<form
+	id="resourcesForm"
+	class="resource-gate-form"
+	method="get"
+	action="">
         <label for="resource-gate-first-name" >First Name</label>
 			<input
 				type="text"
@@ -178,8 +182,8 @@
 				id="resource-gate-phone"
 				name="phone"
 				 />
-			<input type="submit" id="resource-gate-submit" value="<?php if ($termName == 'Videos'): ?>Watch<?php else: ?>Download<?php endif ?> this <?php echo $singular; ?>" />
-		</form>
+	<input type="submit" id="resource-gate-submit" value="<?php if ($termName == 'Videos'): ?>Watch<?php else: ?>Download<?php endif ?> this <?php echo $singular; ?>" />
+</form>
 			</div>
 		</section>     <?php endwhile; endif; wp_reset_query(); ?>
 
