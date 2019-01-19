@@ -150,27 +150,24 @@
 <h2>How FixStream Works</h2>
 <div class="row how-fixstream-works__row">
 	<div class="how-fixstream-works__copy">
-		<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sodales primis, mollis viverra conubia ligula inceptos laoreet libero tortor, nascetur non habitasse iaculis tempor nec egestas fames augue, platea porta integer nostra curae sed arcu. Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper.</p>
-		<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sodales primis, mollis viverra conubia ligula inceptos laoreet libero tortor, nascetur non habitasse iaculis tempor nec egestas fames augue, platea porta integer nostra curae sed arcu. Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper.</p>
+		<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sodales primis, mollis viverra conubia ligula inceptos laoreet libero tortor, nascetur non habitasse iaculis tempor nec egestas fames augue, platea porta integer nostra curae sed arcu.</p>
+		<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sodales primis, mollis viverra conubia ligula inceptos laoreet libero tortor, nascetur non habitasse iaculis tempor nec egestas fames augue, platea porta integer nostra curae sed arcu.</p>
 	</div>
 	<div class="how-fixstream-works__image">
 		<picture class="how-fixstream-works__sources">
 			<source media="(max-width: 40rem)"
-							srcset="https://via.placeholder.com/900x1200 3x,
-											https://via.placeholder.com/600x800 2x
-											https://via.placeholder.com/300x400 1x"
+							srcset="/wp-content/themes/fixstream/img/homepage_how-fixstream-works_small_2x.jpg 2x,
+							/wp-content/themes/fixstream/img/homepage_how-fixstream-works_small_1x.jpg 1x"
 							sizes="100vw" />
 
 			<source media="(max-width: 60rem)"
-							srcset="https://via.placeholder.com/900x1200 3x,
-											https://via.placeholder.com/600x800 2x
-											https://via.placeholder.com/300x400 1x"
+							srcset="/wp-content/themes/fixstream/img/homepage_how-fixstream-works_small_2x.jpg 2x,
+							/wp-content/themes/fixstream/img/homepage_how-fixstream-works_small_1x.jpg 1x"
 							sizes="48vw" />
 
-			<source srcset="https://via.placeholder.com/900x600 3x,
-											https://via.placeholder.com/600x400 2x,
-											https://via.placeholder.com/300x200 1x"
-							sizes="58vw" />
+			<source srcset="/wp-content/themes/fixstream/img/homepage_how-fixstream-works_large_2x.jpg 2x,
+			/wp-content/themes/fixstream/img/homepage_how-fixstream-works_large_1x.jpg 1x"
+							sizes="64vw" />
 			<img src="https://via.placeholder.com/300x600" alt="temp image" />
 		</picture>
 	</div>

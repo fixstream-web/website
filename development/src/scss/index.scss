@@ -109,6 +109,10 @@
 }
 
 
+.section-how-fixstream-works {
+	background: $blue;
+	color: $white;
+}
 .how-fixstream-works {
 	&__copy {
 		text-align: left;
@@ -131,10 +135,10 @@
 	}
 	@include media(60rem){
 		&__copy {
-			flex-basis: 38%;
+			flex-basis: 32%;
 		}
 		&__image {
-			flex-basis: 58%;
+			flex-basis: 64%;
 		}
 	}
 }
