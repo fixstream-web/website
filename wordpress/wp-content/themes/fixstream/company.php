@@ -31,7 +31,7 @@
 							id="subnavToggle-6[object Object]"
 							class="globalnav__subnav-toggle hidden"
 							name="platform"
-						 /><label class="globalnav__subnav-button" for="subnavToggle-6[object Object]">+</label>						<ul class="globalnav__subnav">
+							 /><label class="globalnav__subnav-button" for="subnavToggle-6[object Object]">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/agent-less-auto-discovery">Agent-less Auto Discovery
 							</a>
@@ -56,7 +56,7 @@
 		        			id="subnavToggle-7[object Object]"
 		        			class="globalnav__subnav-toggle hidden"
 		        			name="ecosystem"
-		        		 /><label class="globalnav__subnav-button" for="subnavToggle-7[object Object]">+</label>								<ul class="globalnav__subnav">
+		        			 /><label class="globalnav__subnav-button" for="subnavToggle-7[object Object]">+</label>								<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/ecosystem/oracle">Oracle
 							</a>
@@ -78,7 +78,7 @@
 							id="subnavToggle-8[object Object]"
 							class="globalnav__subnav-toggle hidden"
 							name="customers"
-						 /><label class="globalnav__subnav-button" for="subnavToggle-8[object Object]">+</label>						<ul class="globalnav__subnav">
+							 /><label class="globalnav__subnav-button" for="subnavToggle-8[object Object]">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/customers/broadcom">Broadcom
 							</a>
@@ -214,42 +214,42 @@
 			<div class="section-content">
 
 		<form id="companyForm" class="company-form-form">
-				<label for="first-name">First Name</label>
+				<label for="company-form-first-name" >First Name</label>
 			<input
 				type="text"
 				id="company-form-first-name"
 				name="first-name"
-			 />
-				<label for="last-name">Last Name</label>
+				 />
+				<label for="company-form-last-name" >Last Name</label>
 			<input
 				type="text"
 				id="company-form-last-name"
 				name="last-name"
-			 />
-				<label for="email">Email</label>
+				 />
+				<label for="company-form-email" >Email</label>
 			<input
 				type="email"
 				id="company-form-email"
 				name="email"
-			 />
-				<label for="company">Company</label>
+				 />
+				<label for="company-form-company" >Company</label>
 			<input
 				type="text"
 				id="company-form-company"
 				name="company"
-			 />
-				<label for="job-title">Job Title</label>
+				 />
+				<label for="company-form-job-title" >Job Title</label>
 			<input
 				type="text"
 				id="company-form-job-title"
 				name="job-title"
-			 />
-				<label for="phone">Phone</label>
+				 />
+				<label for="company-form-phone" >Phone</label>
 			<input
 				type="tel"
 				id="company-form-phone"
 				name="phone"
-			 />
+				 />
 			<input type="submit" id="company-form-submit" value="Submit" />
 		</form>
 			</div>
