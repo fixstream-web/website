@@ -225,24 +225,24 @@
 	class="company-form-form"
 	method="get"
 	action="">
-				<label for="company-form-first-name" >First Name</label>
+				<label for="company-form-first-name" >First Name<sup>*</sup></label>
 			<input
 				type="text"
 				id="company-form-first-name"
 				name="first-name"
-				 />
+				required />
 				<label for="company-form-last-name" >Last Name</label>
 			<input
 				type="text"
 				id="company-form-last-name"
 				name="last-name"
 				 />
-				<label for="company-form-email" >Email</label>
+				<label for="company-form-email" >Email<sup>*</sup></label>
 			<input
 				type="email"
 				id="company-form-email"
 				name="email"
-				 />
+				required />
 				<label for="company-form-company" >Company</label>
 			<input
 				type="text"
