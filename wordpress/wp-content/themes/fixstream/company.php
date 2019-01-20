@@ -124,7 +124,7 @@
 <section class="section section-company-leardership page-company">
 			<div class="section-content">
 		<div class="row">
-			<div class="leadership-leaders col-x">
+			<div class="leadership-leaders">
 				<h2>Leadership</h2>
 				<?php $args = array( 'post_type' => 'team', 'posts_per_page' => -1, 'group' => 'leadership', 'order' => 'ASC' );
 				$loop = new WP_Query( $args );
@@ -132,16 +132,19 @@
 				<ul class="leadership-list">
 					<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 					<li class="leadership-item">
-						<a class="leadership-link" href="<?php echo get_permalink(); ?>">
-							<h3 class="leadership-header"><?php the_title(); ?></h3>
-						</a>
-						<span class="leadership-title"><?php the_field('job_title'); ?></span>
+						<img class="leadership-photo" src="https://via.placeholder.com/200x200" />
+						<div class="leadership-info">
+							<a class="leadership-link" href="<?php echo get_permalink(); ?>">
+								<h3 class="leadership-header"><?php the_title(); ?></h3>
+							</a>
+							<span class="leadership-title"><?php the_field('job_title'); ?></span>
+						</div>
 					</li>
 					<?php endwhile;?>
 				</ul>
 				<?php endif; ?>
 			</div>
-			<div class="leadership-board  col-x">
+			<div class="leadership-board">
 				<h2>Board</h2>
 				<?php $args = array( 'post_type' => 'team', 'posts_per_page' => -1, 'group' => 'board', 'order' => 'ASC' );
 				$loop = new WP_Query( $args );
@@ -149,12 +152,15 @@
 				<ul class="leadership-list">
 					<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 					<li class="leadership-item">
-						<a class="leadership-link" href="<?php echo get_permalink(); ?>">
-							<h3 class="leadership-header"><?php the_title(); ?></h3>
-						</a>
-						<span class="leadership-title"><?php the_field('job_title'); ?></span>
-						<?php if( get_field('company') ): ?>
-						<span class="leadership-company">at <?php the_field('company'); ?></span>
+						<img class="leadership-photo" src="https://via.placeholder.com/200x200" />
+						<div class="leadership-info">
+							<a class="leadership-link" href="<?php echo get_permalink(); ?>">
+								<h3 class="leadership-header"><?php the_title(); ?></h3>
+							</a>
+							<span class="leadership-title"><?php the_field('job_title'); ?></span>
+							<?php if( get_field('company') ): ?>
+							<span class="leadership-company">at <?php the_field('company'); ?></span>
+						</div>
 						<?php endif; ?>
 					</li>
 					<?php endwhile;?>
@@ -176,8 +182,9 @@
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 			<li class="press-releases-item">
 				<a class="press-releases-link" href="<?php echo get_permalink(); ?>">
-					<h3 class="press-releases-header"><?php the_title(); ?></h3>
+					<h3 class="press-releases-header"><?php the_title(); ?><span class="icon-circle-right"></span></h3>
 				</a>
+				<span class="page-company-date press-releases-date"><?php echo get_the_date('M n, Y') ?></span>
 			</li>
 			<?php endwhile;?>
 		</ul>
@@ -200,7 +207,7 @@
 					<h3 class="news-mentions-header"><?php the_title(); ?></h3>
 				</a>
 				<?php if( get_field('show_date') ): ?>
-				<span class="news-mentions-date"><?php echo get_the_date('F n, Y') ?></span>
+				<span class="page-company-date news-mentions-date"><?php echo get_the_date('M n, Y') ?></span>
 				<?php endif; ?>
 			</li>
 			<?php endwhile;?>

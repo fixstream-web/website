@@ -1,12 +1,28 @@
 @import 'core';
 @import 'hero';
 
-
-
-.leadership {
-	&-leaders {
-
+//Page global shared styles
+.page-company {
+	h3 {
+		font-size: 1.3rem;
+		line-height: 1.2;
 	}
+	&-date {
+		color: $gray-3;
+		text-transform: uppercase;
+		font-size: 0.8rem;
+		margin-top: 0.4rem;
+		letter-spacing: 0.03rem;
+		display: block;
+	}
+}
+
+//Modules
+
+$mod: 'leadership';
+.#{$mod} {
+	$padding: 0.8rem;
+	&-leaders {}
 	&-board {
 		margin-top: 1rem;
 	}
@@ -15,23 +31,39 @@
 		flex-wrap: wrap;
 		justify-content: space-between;
 	}
+	&-photo {
+		width: 6rem;
+		//**TODO: This should be flexible...
+		height: 6rem;
+		flex-shrink: 0;
+		flex-grow: 0;
+		margin-right: $padding;
+	}
+	&-info {
+		flex-basis: 80%;
+	}
 	&-item {
-		margin-bottom: 1rem;
+		margin-bottom: $padding;
 		text-align: left;
 		flex-basis: 100%;
-		padding: 1rem;
+		padding: $padding;
 		border-radius: $radius-s;
 		border: 1px solid $gray-4;
 		flex-grow: 0;
 		flex-shrink: 0;
+		display: flex;
 	}
 	&-header {
-		font-size: 1.3rem;
 		margin-bottom: 0.5rem;
+	}
+	&-title,
+	&-company {
+		line-height: 1.2;
 	}
 }
 
-.press-releases {
+$mod: 'press-releases';
+.#{$mod} {
 	&-list {
 		display: flex;
 		flex-direction: column;
@@ -43,31 +75,36 @@
 		margin-bottom: 2rem;
 		text-align: left;
 	}
-	&-header {
-		font-size: 1.3rem;
-	}
 }
 
-.news-mentions {
+$mod: 'news-mentions';
+.#{$mod} {
 	&-list {
 		display: flex;
 		flex-direction: column;
 		// flex-wrap: wrap;
 		justify-content: space-between;
 	}
+	&-header {
+		margin-top: 0.4rem;
+	}
+	&-publisher {
+		color: $orange;
+		font-weight: $bold;
+		font-size: 0.8rem;
+		letter-spacing: 0.03rem;
+	}
 	&-item {
 		// flex-basis: 30%;
 		margin-bottom: 2rem;
 		text-align: left;
-	}
-	&-header {
-		font-size: 1.3rem;
-		margin: 0.4rem 0;
-	}
-	&-publisher {
-		color: $orange;
-	}
-	&-date {
-		color: $gray-3;
+		padding-left: 0.8rem;
+		border-left: 2px solid $orange;
+		&:nth-child(even) {
+			border-color: $blue;
+			.#{$mod}-publisher {
+				color: $blue;
+			}
+		}
 	}
 }
