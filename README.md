@@ -79,9 +79,13 @@ Example Page Object:
 ---
 
 
-`gulp theme`:Generates style.css from theme data in site-data.json (registers theme for WP admin to find). Builds to theme root.
+`gulp theme`: Generates style.css from theme data in site-data.json (registers theme for WP admin to find). Builds to theme root.
 
 `gulp images`: Basically just takes images in development and duplicates/moves to built (WordPress theme).
+
+`gulp fonts`: Basically just takes fonts in development and duplicates/moves to built (WordPress theme).
+
+`gulp assets`: Runs `gulp images` and `gulp fonts`.
 
 
 `gulp hbs`: Comples HBS from site-data.json as well as content within HBS templates. This also builds required functions.php. **_Content is not fully separated from source._**. Builds to theme root. Can be watched with `gulp hbs:watch`
@@ -93,7 +97,7 @@ Example Page Object:
 `gulp js`: Bundles/concatinates modules, minifies and transpiles with webpack and builds to the WordPress theme. Can be watched with `gulp js:watch`
 
 
-`gulp build`: Runs `gulp hbs` `gulp images` `gulp css` `gulp js` `gulp theme`
+`gulp build`: Runs `gulp hbs` `gulp assets` `gulp css` `gulp js` `gulp theme`
 
 
 `gulp`: Default `gulp build`
