@@ -73,11 +73,6 @@ label {
 	margin-bottom: 0.6rem;
 	text-align: left;
 	color: $gray-3;
-	&.required {
-		&:after {
-			content: '<sup>*</sup>';
-		}
-	}
 }
 
 sup {
