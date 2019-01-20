@@ -8,7 +8,9 @@ Development source and WordPress build for www.FixStream.com. No manual updates 
 ## Development
 Handle static page data and content using Handlebars + Sass + vanilla JS. Builds to wordpress/wp-content/themes/fixstream
 
-`gulp pages`: Parses through site-data.json and generates a default HBS, SCSS, and JS file for each page name. Convenient for keeping source files in line with data.
+`gulp audit`: Creates record of all existing page-specific source files (HBS/JS/SCSS) within the development environment. Exports to a temp folder as an array in a JSON object. This is fed into `gulp pages` for comparision with site-data.json. Useful for keep source files unpolluted.
+
+`gulp pages`: Parses through site-data.json and generates a default HBS, SCSS, and JS file for each page name. Compares against `gulp audit` file list and outputs a list of unassociated source files for review/deletion. Convenient for keeping source files in line with data.
 
 ### Page Data Config
 Object key: Data Key for Handlebars - must start with a letter
@@ -18,6 +20,8 @@ Object key: Data Key for Handlebars - must start with a letter
 `type`: **OPTIONAL:** Typically omitted; Used with a value of "wp-template" when integrating into WP template hierarchy (i.e. post templates, 404 page)
 
 `nav`: **OPTIONAL:** If included, page will be added to global nav with this text label; Nav order based on JSON
+
+`uniqueJS`: **OPTIONAL:** If included, `gulp pages` will generate a JS source file for page-specific scripting. Also directs HBS to include specific JS reference in page template.
 
 `slug`: Page-level URL; Nested pages handled by object nesting
 
@@ -34,6 +38,7 @@ Example Page Object:
 "platform": {
 	"name": "platform",
 	"nav": "Platform",
+	"uniqueJS": true,
 	"slug": "platform",
 	"meta": {
 		"title": "Platform",
