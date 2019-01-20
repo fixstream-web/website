@@ -31,7 +31,7 @@
 							id="subnavToggle-21[object Object]"
 							class="globalnav__subnav-toggle hidden"
 							name="platform"
-						 /><label class="globalnav__subnav-button" for="subnavToggle-21[object Object]">+</label>						<ul class="globalnav__subnav">
+							 /><label class="globalnav__subnav-button" for="subnavToggle-21[object Object]">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/agent-less-auto-discovery">Agent-less Auto Discovery
 							</a>
@@ -56,7 +56,7 @@
 		        			id="subnavToggle-22[object Object]"
 		        			class="globalnav__subnav-toggle hidden"
 		        			name="ecosystem"
-		        		 /><label class="globalnav__subnav-button" for="subnavToggle-22[object Object]">+</label>								<ul class="globalnav__subnav">
+		        			 /><label class="globalnav__subnav-button" for="subnavToggle-22[object Object]">+</label>								<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/ecosystem/oracle">Oracle
 							</a>
@@ -78,7 +78,7 @@
 							id="subnavToggle-23[object Object]"
 							class="globalnav__subnav-toggle hidden"
 							name="customers"
-						 /><label class="globalnav__subnav-button" for="subnavToggle-23[object Object]">+</label>						<ul class="globalnav__subnav">
+							 /><label class="globalnav__subnav-button" for="subnavToggle-23[object Object]">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/customers/broadcom">Broadcom
 							</a>
@@ -185,45 +185,49 @@
 <section class="section section-resources-form page-resources">
 			<div class="section-content">
 
-		<form id="resourcesForm" class="resource-gate-form">
-				<label for="first-name">First Name</label>
+<form
+	id="resourcesForm"
+	class="resource-gate-form"
+	method="get"
+	action="">
+				<label for="resource-gate-first-name" >First Name</label>
 			<input
 				type="text"
 				id="resource-gate-first-name"
 				name="first-name"
-			 />
-				<label for="last-name">Last Name</label>
+				 />
+				<label for="resource-gate-last-name" >Last Name</label>
 			<input
 				type="text"
 				id="resource-gate-last-name"
 				name="last-name"
-			 />
-				<label for="email">Email</label>
+				 />
+				<label for="resource-gate-email" >Email</label>
 			<input
 				type="email"
 				id="resource-gate-email"
 				name="email"
-			 />
-				<label for="company">Company</label>
+				 />
+				<label for="resource-gate-company" >Company</label>
 			<input
 				type="text"
 				id="resource-gate-company"
 				name="company"
-			 />
-				<label for="job-title">Job Title</label>
+				 />
+				<label for="resource-gate-job-title" >Job Title</label>
 			<input
 				type="text"
 				id="resource-gate-job-title"
 				name="job-title"
-			 />
-				<label for="phone">Phone</label>
+				 />
+				<label for="resource-gate-phone" >Phone</label>
 			<input
 				type="tel"
 				id="resource-gate-phone"
 				name="phone"
-			 />
-			<input type="submit" id="resource-gate-submit" value="Submit" />
-		</form>
+				 />
+	<input type="submit" id="resource-gate-submit" value="Submit" />
+</form>
 			</div>
 		</section>
 

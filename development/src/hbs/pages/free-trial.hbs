@@ -4,5 +4,25 @@
     {{/content}}
     {{#content "body" mode="append"}}
     {{!-- page specific body content --}}
+
+
+    {{#embed "modules/section" name="free-trial-form"}}
+		{{#content "contents" mode="append"}}
+
+			{{#embed "forms/form" id="freeTrialForm" submitText="Submit" primaryClass="free-trial" additionalClasses="" }}
+			{{#content "content"}}
+				{{> forms/components/labeled-input type="text" id="first-name" name="first-name" label="First Name" required=true }}{{~!}}
+				{{> forms/components/labeled-input type="text" id="last-name" name="last-name" label="Last Name" required=true }}{{~!}}
+				{{> forms/components/labeled-input type="email" id="email" name="email" label="Email" required=true }}{{~!}}
+				{{> forms/components/labeled-input type="text" id="company" name="company" label="Company" required=true }}{{~!}}
+				{{> forms/components/labeled-input type="text" id="job-title" name="job-title" label="Job Title" required=true }}{{~!}}
+				{{> forms/components/labeled-input type="tel" id="phone" name="phone" label="Phone" required=true }}{{~!}}
+			{{/content}}
+			{{/embed}}
+
+		{{/content}}
+		{{/embed}}
+
+
     {{/content}}
     {{/embed}}

@@ -1,6 +1,6 @@
 {{#eq type "radio"}}
 {{> forms/components/input}}<label for="{{primaryClass}}-{{id}}">{{label}}</label>
 {{else}}
-<label for="{{name}}">{{label}}</label>
+<label for="{{#both primaryClass id}}{{primaryClass}}-{{id}}{{else}}{{for}}{{/both}}" >{{label}}{{#if required}}<sup>*</sup>{{/if}}</label>
 			{{> forms/components/input}}
 {{/eq}}
