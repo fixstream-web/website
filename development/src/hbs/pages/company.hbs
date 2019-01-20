@@ -67,7 +67,7 @@
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 			<li class="press-releases-item">
 				<a class="press-releases-link" href="<?php echo get_permalink(); ?>">
-					<h3 class="press-releases-header"><?php the_title(); ?><span class="icon-circle-right"></span></h3>
+					<h3 class="press-releases-header"><?php the_title(); ?><span class="icon-inline icon-circle-right"></span></h3>
 				</a>
 				<span class="page-company-date press-releases-date"><?php echo get_the_date('M n, Y') ?></span>
 			</li>

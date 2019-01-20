@@ -124,17 +124,17 @@
 						<span class="hero-solutions__icon-holder"><span class="icon-stats-bars"></span></span>
 						<h2 class="hero-solutions__header">Auto-discovery</h2>
 						<p class="hero-solutions__blurb">Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis senectus curabitu.</p>
-						<a class="hero-solutions__link" href="#">Learn more<span class="icon-circle-right"></span></a>
+						<a class="hero-solutions__link" href="#">Learn more<span class="icon-inline icon-circle-right"></span></a>
 					</li>					<li class="hero-solutions__item">
 						<span class="hero-solutions__icon-holder"><span class="icon-stats-bars2"></span></span>
 						<h2 class="hero-solutions__header">Multidimensional Correlation</h2>
 						<p class="hero-solutions__blurb">Aurabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam.</p>
-						<a class="hero-solutions__link" href="#">Learn more<span class="icon-circle-right"></span></a>
+						<a class="hero-solutions__link" href="#">Learn more<span class="icon-inline icon-circle-right"></span></a>
 					</li>					<li class="hero-solutions__item">
 						<span class="hero-solutions__icon-holder"><span class="icon-sphere"></span></span>
 						<h2 class="hero-solutions__header">Artificial Intelligence</h2>
 						<p class="hero-solutions__blurb">Nectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam.</p>
-						<a class="hero-solutions__link" href="#">Learn more<span class="icon-circle-right"></span></a>
+						<a class="hero-solutions__link" href="#">Learn more<span class="icon-inline icon-circle-right"></span></a>
 					</li>				</ul>
 			</div>
 		</section>
