@@ -73,6 +73,10 @@ label {
 	margin-bottom: 0.6rem;
 	text-align: left;
 	color: $gray-3;
+	transition: color $duration-normal linear;
+	&.invalid {
+		color: $red;
+	}
 }
 
 sup {
@@ -99,12 +103,19 @@ textarea {
 	margin-bottom: 1rem;
 	padding-left: 1.2rem;
 	outline-color: transparent;
-	transition-property: border-color, outline-color;
+	transition-property: border-color, outline-color, color;
 	transition-duration: $duration-normal;
 	transition-timing-function: linear;
 	&:focus {
 		border-color: $orange;
 		outline: $orange dashed 2px;
+	}
+	&.invalid {
+		border-color: $red;
+		color: $red;
+		&:focus {
+			outline-color: $red;	
+		}
 	}
 }
 

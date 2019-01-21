@@ -129,7 +129,8 @@
 	id="freeTrialForm"
 	class="free-trial-form"
 	method="get"
-	action="">
+	action=""
+	novalidate>
 				<label for="free-trial-first-name" >First Name<sup>*</sup></label>
 			<input
 				type="text"

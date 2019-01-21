@@ -189,7 +189,8 @@
 	id="resourcesForm"
 	class="resource-gate-form"
 	method="get"
-	action="">
+	action=""
+	novalidate>
 				<label for="resource-gate-first-name" >First Name</label>
 			<input
 				type="text"

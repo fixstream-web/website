@@ -224,7 +224,8 @@
 	id="companyForm"
 	class="company-form-form"
 	method="get"
-	action="">
+	action=""
+	novalidate>
 				<label for="company-form-first-name" >First Name<sup>*</sup></label>
 			<input
 				type="text"
