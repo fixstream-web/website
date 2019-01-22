@@ -5,5 +5,5 @@ const validation = require('./_modules/formValidation.js'),
 
 genericForm.addEventListener('submit', (e) =>{
   e.preventDefault();
-  validation.default.testFormEmails(e);
+  validation.default.handleRequiredFields(e);
 });
