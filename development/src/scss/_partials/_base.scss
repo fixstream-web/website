@@ -67,7 +67,8 @@ form {
 	}
 }
 
-label {
+label,
+.error-message {
 	display: inline-block;
 	font-size: 0.8rem;
 	margin-bottom: 0.6rem;
@@ -117,6 +118,12 @@ textarea {
 			outline-color: $red;	
 		}
 	}
+}
+
+.error-message {
+	display: block;
+	color: $red;
+	margin: -0.3rem 0 1rem;
 }
 
 textarea {
