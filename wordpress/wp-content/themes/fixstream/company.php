@@ -256,12 +256,12 @@
 				id="company-form-job-title"
 				name="job-title"
 				 />
-				<label for="company-form-phone" >Phone</label>
+				<label for="company-form-phone" >Phone<sup>*</sup></label>
 			<input
 				type="tel"
 				id="company-form-phone"
 				name="phone"
-				 />
+				required />
 	<input type="submit" id="company-form-submit" value="Submit" />
 </form>
 			</div>

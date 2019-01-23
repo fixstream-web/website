@@ -19,6 +19,16 @@ const isValidEmail = (email, input) => {
     }
   }
 };
+const isValidPhone = (number, input) => {
+  const pattern = new RegExp('^(\\+?\\d{1,2}\\s?)?\\(?\\d{3}\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{4}$');
+  if (!pattern.test(number)) {
+    // console.log('Invalid phone format');
+    handleInputError('bad-phone', input);
+    return false;
+  } else {
+    return true;
+  }
+};
 
 const hasValue = (input) => {
   if (input.value === '') { return false; } else { return true; }
@@ -32,6 +42,8 @@ const handleRequiredFields = (e) => {
       handleInputError('required', input);
     } else if (input.attributes.type.value == 'email') {
       isValidEmail(input.value, input);
+    } else if (input.attributes.type.value == 'tel') {
+      isValidPhone(input.value, input);
     }
   });
 };
@@ -40,11 +52,14 @@ const handleResolve = (e) => {
   const input = e.target;
   const type = e.target.attributes.type.value;
   switch(type) {
+  case 'text':
+    if (!hasValue(input)) { return; }
+    break;
   case 'email':
     if (!isValidEmail(input.value, input)) { return; }
     break;
-  case 'text':
-    if (!hasValue(input)) { return; }
+  case 'tel':
+    if (!isValidPhone(input.value, input)) { return; }
     break;
   default:
     console.log('Unknown input type');
@@ -68,6 +83,9 @@ const handleInputError = (type, input) => {
   switch(type) {
   case 'bad-domain':
     message = 'Please use a business email.';
+    break;
+  case 'bad-phone':
+    message = 'Please enter a valid phone number with area code.';
     break;
   case 'invalid':
     message = 'Please enter a valid email address.';
@@ -93,5 +111,6 @@ const handleInputError = (type, input) => {
 
 export default {
   isValidEmail: isValidEmail,
+  isValidPhone: isValidPhone,
   handleRequiredFields: handleRequiredFields
 };
