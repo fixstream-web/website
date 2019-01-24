@@ -191,24 +191,24 @@
 	method="get"
 	action=""
 	novalidate>
-				<label for="resource-gate-first-name" >First Name</label>
+				<label for="resource-gate-first-name" >First Name<sup>*</sup></label>
 			<input
 				type="text"
 				id="resource-gate-first-name"
 				name="first-name"
-				 />
+				required />
 				<label for="resource-gate-last-name" >Last Name</label>
 			<input
 				type="text"
 				id="resource-gate-last-name"
 				name="last-name"
 				 />
-				<label for="resource-gate-email" >Email</label>
+				<label for="resource-gate-email" >Email<sup>*</sup></label>
 			<input
 				type="email"
 				id="resource-gate-email"
 				name="email"
-				 />
+				required />
 				<label for="resource-gate-company" >Company</label>
 			<input
 				type="text"
