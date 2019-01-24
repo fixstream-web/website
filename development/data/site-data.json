@@ -267,6 +267,7 @@
 			},
 			"single-resources" : {
 				"type": "wp-template",
+				"uniqueJS": true,
 				"name": "single-resources"
 			},
 			"four-oh-four": {

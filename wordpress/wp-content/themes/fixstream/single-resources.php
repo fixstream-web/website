@@ -138,7 +138,7 @@
 			</div>
 		</section>
 
-<section class="section section-resource page-single-resources">
+<section class="section section-resource-gate page-single-resources">
 			<div class="section-content">
 
 <form
@@ -147,24 +147,24 @@
 	method="get"
 	action=""
 	novalidate>
-        <label for="resource-gate-first-name" >First Name</label>
+        <label for="resource-gate-first-name" >First Name<sup>*</sup></label>
 			<input
 				type="text"
 				id="resource-gate-first-name"
 				name="first-name"
-				 />
+				required />
         <label for="resource-gate-last-name" >Last Name</label>
 			<input
 				type="text"
 				id="resource-gate-last-name"
 				name="last-name"
 				 />
-        <label for="resource-gate-email" >Email</label>
+        <label for="resource-gate-email" >Email<sup>*</sup></label>
 			<input
 				type="email"
 				id="resource-gate-email"
 				name="email"
-				 />
+				required />
         <label for="resource-gate-company" >Company</label>
 			<input
 				type="text"
@@ -177,12 +177,12 @@
 				id="resource-gate-job-title"
 				name="job-title"
 				 />
-        <label for="resource-gate-phone" >Phone</label>
+        <label for="resource-gate-phone" >Phone<sup>*</sup></label>
 			<input
 				type="tel"
 				id="resource-gate-phone"
 				name="phone"
-				 />
+				required />
 	<input type="submit" id="resource-gate-submit" value="<?php if ($termName == 'Videos'): ?>Watch<?php else: ?>Download<?php endif ?> this <?php echo $singular; ?>" />
 </form>
 			</div>
@@ -209,6 +209,7 @@
 			</ul>
 		</nav>
 	</footer>
+	<script type="text/javascript" src="/wp-content/themes/fixstream/js/single-resources.js"></script>
 	<?php wp_footer(); ?> 
 </body>
 </html>

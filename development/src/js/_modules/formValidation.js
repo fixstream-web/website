@@ -109,8 +109,20 @@ const handleInputError = (type, input) => {
   }
 };
 
+
+const listenToForms = () => {
+  const forms = document.querySelectorAll('form');
+  forms.forEach((form) => {
+    form.addEventListener('submit', (e) =>{
+      e.preventDefault();
+      handleRequiredFields(e);
+    });
+  });
+};
+
 export default {
   isValidEmail: isValidEmail,
   isValidPhone: isValidPhone,
-  handleRequiredFields: handleRequiredFields
+  handleRequiredFields: handleRequiredFields,
+  listenToForms: listenToForms
 };
