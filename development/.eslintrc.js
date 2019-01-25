@@ -13,5 +13,8 @@ module.exports = {
             'warn',
             { vars: 'all', args: 'none', ignoreRestSiblings: false }
         ]
+    },
+    parserOptions: {
+        sourceType: 'module'
     }
 };

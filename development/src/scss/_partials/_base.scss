@@ -61,15 +61,30 @@ picture {
 
 form {
 	width: 100%;
+	text-align: left;
 	input[type="submit"] {
 		margin-top: 1rem;
 	}
 }
 
-label {
-	display: block;
+label,
+.error-message {
+	display: inline-block;
 	font-size: 0.8rem;
-	margin-bottom: 0.4rem;
+	margin-bottom: 0.6rem;
+	text-align: left;
+	color: $gray-3;
+	transition: color $duration-normal linear;
+	&.invalid {
+		color: $red;
+	}
+}
+
+sup {
+	font-size: 0.6rem;
+	position: relative;
+	top: -0.15rem;
+	margin-left: 0.05rem;
 }
 
 input[type="text"],
@@ -79,10 +94,36 @@ input[type="password"],
 input[type="number"],
 textarea {
 	background: transparent;
-	border: 1px solid $black;
-	height: 2rem;
+	border: 1px solid $gray-3;
+	border-radius: $radius-s;
+	color: $gray-3;
+	font-size: 1rem;
+	letter-spacing: 0.03rem;
+	height: 46px;
 	width: 100%;
-	margin-bottom: 0.4rem;
+	margin-bottom: 1rem;
+	padding-left: 1.2rem;
+	outline-color: transparent;
+	transition-property: border-color, outline-color, color;
+	transition-duration: $duration-normal;
+	transition-timing-function: linear;
+	&:focus {
+		border-color: $orange;
+		outline: $orange dashed 2px;
+	}
+	&.invalid {
+		border-color: $red;
+		color: $red;
+		&:focus {
+			outline-color: $red;	
+		}
+	}
+}
+
+.error-message {
+	display: block;
+	color: $red;
+	margin: -0.3rem 0 1rem;
 }
 
 textarea {

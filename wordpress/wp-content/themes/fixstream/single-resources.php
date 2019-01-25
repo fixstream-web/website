@@ -23,7 +23,7 @@
 							id="subnavToggle-27[object Object]"
 							class="globalnav__subnav-toggle hidden"
 							name="platform"
-						 /><label class="globalnav__subnav-button" for="subnavToggle-27[object Object]">+</label>						<ul class="globalnav__subnav">
+							 /><label class="globalnav__subnav-button" for="subnavToggle-27[object Object]">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/agent-less-auto-discovery">Agent-less Auto Discovery
 							</a>
@@ -48,7 +48,7 @@
 		        			id="subnavToggle-28[object Object]"
 		        			class="globalnav__subnav-toggle hidden"
 		        			name="ecosystem"
-		        		 /><label class="globalnav__subnav-button" for="subnavToggle-28[object Object]">+</label>								<ul class="globalnav__subnav">
+		        			 /><label class="globalnav__subnav-button" for="subnavToggle-28[object Object]">+</label>								<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/ecosystem/oracle">Oracle
 							</a>
@@ -70,7 +70,7 @@
 							id="subnavToggle-29[object Object]"
 							class="globalnav__subnav-toggle hidden"
 							name="customers"
-						 /><label class="globalnav__subnav-button" for="subnavToggle-29[object Object]">+</label>						<ul class="globalnav__subnav">
+							 /><label class="globalnav__subnav-button" for="subnavToggle-29[object Object]">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/customers/broadcom">Broadcom
 							</a>
@@ -138,48 +138,53 @@
 			</div>
 		</section>
 
-<section class="section section-resource page-single-resources">
+<section class="section section-resource-gate page-single-resources">
 			<div class="section-content">
 
-		<form id="resourcesForm" class="resource-gate-form">
-        <label for="first-name">First Name</label>
+<form
+	id="resourcesForm"
+	class="resource-gate-form"
+	method="get"
+	action=""
+	novalidate>
+        <label for="resource-gate-first-name" >First Name<sup>*</sup></label>
 			<input
 				type="text"
 				id="resource-gate-first-name"
 				name="first-name"
-			 />
-        <label for="last-name">Last Name</label>
+				required />
+        <label for="resource-gate-last-name" >Last Name</label>
 			<input
 				type="text"
 				id="resource-gate-last-name"
 				name="last-name"
-			 />
-        <label for="email">Email</label>
+				 />
+        <label for="resource-gate-email" >Email<sup>*</sup></label>
 			<input
 				type="email"
 				id="resource-gate-email"
 				name="email"
-			 />
-        <label for="company">Company</label>
+				required />
+        <label for="resource-gate-company" >Company</label>
 			<input
 				type="text"
 				id="resource-gate-company"
 				name="company"
-			 />
-        <label for="job-title">Job Title</label>
+				 />
+        <label for="resource-gate-job-title" >Job Title</label>
 			<input
 				type="text"
 				id="resource-gate-job-title"
 				name="job-title"
-			 />
-        <label for="phone">Phone</label>
+				 />
+        <label for="resource-gate-phone" >Phone<sup>*</sup></label>
 			<input
 				type="tel"
 				id="resource-gate-phone"
 				name="phone"
-			 />
-			<input type="submit" id="resource-gate-submit" value="<?php if ($termName == 'Videos'): ?>Watch<?php else: ?>Download<?php endif ?> this <?php echo $singular; ?>" />
-		</form>
+				required />
+	<input type="submit" id="resource-gate-submit" value="<?php if ($termName == 'Videos'): ?>Watch<?php else: ?>Download<?php endif ?> this <?php echo $singular; ?>" />
+</form>
 			</div>
 		</section>     <?php endwhile; endif; wp_reset_query(); ?>
 
@@ -204,6 +209,7 @@
 			</ul>
 		</nav>
 	</footer>
+	<script type="text/javascript" src="/wp-content/themes/fixstream/js/single-resources.js"></script>
 	<?php wp_footer(); ?> 
 </body>
 </html>
