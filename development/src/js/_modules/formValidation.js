@@ -2,6 +2,8 @@
 
 import isEmail from 'validator/lib/isEmail';
 
+let errCount = 0;
+
 const isValidEmail = (email, input) => {
   if (!isEmail(email)) {
     // console.log('Not a valid email');
@@ -77,6 +79,7 @@ const handleResolve = (e) => {
 };
 
 const handleInputError = (type, input) => {
+  errCount++;
   let errorNode = document.createElement('span');
   let message;
   errorNode.classList.add('error-message');
@@ -113,9 +116,15 @@ const handleInputError = (type, input) => {
 const listenToForms = () => {
   const forms = document.querySelectorAll('form');
   forms.forEach((form) => {
-    form.addEventListener('submit', (e) =>{
+    form.setAttribute('novalidate', '');
+    form.addEventListener('submit', (e) => {
+      errCount = 0;
       e.preventDefault();
       handleRequiredFields(e);
+      if (errCount == 0) {
+        console.log('Form is valid.');
+        form.submit();
+      }
     });
   });
 };

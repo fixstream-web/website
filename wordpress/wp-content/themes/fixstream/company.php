@@ -11,6 +11,8 @@
 	<meta property="og:type" content="website">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<?php wp_head(); ?>
+	<script type="text/javascript" 
+	src='https://crm.zoho.com/crm/javascript/zcga.js'></script>
 	<link rel="stylesheet" href="/wp-content/themes/fixstream/css/company.css">
 	<script type="text/javascript" src="/wp-content/themes/fixstream/js/head.js"></script></head>
 <body class="page-company">
@@ -26,12 +28,13 @@
 			<ul class="globalnav__toplevel">
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/platform">Platform</a>
-						<input
-							type="checkbox"
-							id="subnavToggle-6[object Object]"
-							class="globalnav__subnav-toggle hidden"
-							name="platform"
-							 /><label class="globalnav__subnav-button" for="subnavToggle-6[object Object]">+</label>						<ul class="globalnav__subnav">
+						<input type="checkbox"
+							   id="subnavToggle-6[object Object]"
+							   class="globalnav__subnav-toggle hidden"
+							   name="platform"
+							   
+							   
+							    /><label class="globalnav__subnav-button" for="subnavToggle-6[object Object]">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/agent-less-auto-discovery">Agent-less Auto Discovery
 							</a>
@@ -51,12 +54,13 @@
 						<li class="globalnav__item with-subnav">
 							<a class="globalnav__link" href="/platform/ecosystem">Ecosystem
 							</a>
-		        		<input
-		        			type="checkbox"
-		        			id="subnavToggle-7[object Object]"
-		        			class="globalnav__subnav-toggle hidden"
-		        			name="ecosystem"
-		        			 /><label class="globalnav__subnav-button" for="subnavToggle-7[object Object]">+</label>								<ul class="globalnav__subnav">
+		        		<input type="checkbox"
+		        			   id="subnavToggle-7[object Object]"
+		        			   class="globalnav__subnav-toggle hidden"
+		        			   name="ecosystem"
+		        			   
+		        			   
+		        			    /><label class="globalnav__subnav-button" for="subnavToggle-7[object Object]">+</label>								<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/ecosystem/oracle">Oracle
 							</a>
@@ -73,12 +77,13 @@
 				</li>
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/customers">Customers</a>
-						<input
-							type="checkbox"
-							id="subnavToggle-8[object Object]"
-							class="globalnav__subnav-toggle hidden"
-							name="customers"
-							 /><label class="globalnav__subnav-button" for="subnavToggle-8[object Object]">+</label>						<ul class="globalnav__subnav">
+						<input type="checkbox"
+							   id="subnavToggle-8[object Object]"
+							   class="globalnav__subnav-toggle hidden"
+							   name="customers"
+							   
+							   
+							    /><label class="globalnav__subnav-button" for="subnavToggle-8[object Object]">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/customers/broadcom">Broadcom
 							</a>
@@ -219,52 +224,105 @@
 
 <section class="section section-company-form page-company">
 			<div class="section-content">
-
-<form
-	id="companyForm"
-	class="company-form-form"
-	method="get"
-	action=""
-	novalidate>
+			<form
+				id="companyForm"
+				class="company-form-form"
+				method="POST"
+				action="https://crm.zoho.com/crm/WebToLeadForm"
+				name="WebToLeads2827769000013092001">
+			
+				<input type="text"
+				   id="company-form-companyForm"
+				   
+				   name="xnQsjsdp"
+				   value="be33935b148cef540a9c7ec757591c5e87233fd9b02b3e0f7fc19ff323f87c4f"
+				   
+				   style="display:none;" />
+				<input type="hidden"
+				   id="company-form-zc_gad"
+				   
+				   name="zc_gad"
+				   
+				   
+				    />
+				<input type="text"
+				   id="company-form-companyForm"
+				   
+				   name="xmIwtLD"
+				   value="fe7b377c8652a2e065c6ae23d3329ce6fe00e464edb9987cb10ddd3421b3eed3"
+				   
+				   style="display:none;" />
+				<input type="text"
+				   id="company-form-companyForm"
+				   
+				   name="actionType"
+				   value="TGVhZHM&#x3D;"
+				   
+				   style="display:none;" />
+				<input type="text"
+				   id="company-form-companyForm"
+				   
+				   name="returnURL"
+				   value="http://localhost:8888/company"
+				   
+				   style="display:none;" />
+			
+			
 				<label for="company-form-first-name" >First Name<sup>*</sup></label>
-			<input
-				type="text"
-				id="company-form-first-name"
-				name="first-name"
-				required />
+						<input type="text"
+							   id="company-form-first-name"
+							   
+							   name="First Name"
+							   
+							   required
+							    />
+			
 				<label for="company-form-last-name" >Last Name</label>
-			<input
-				type="text"
-				id="company-form-last-name"
-				name="last-name"
-				 />
+						<input type="text"
+							   id="company-form-last-name"
+							   
+							   name="Last Name"
+							   
+							   
+							    />
+			
 				<label for="company-form-email" >Email<sup>*</sup></label>
-			<input
-				type="email"
-				id="company-form-email"
-				name="email"
-				required />
+						<input type="email"
+							   id="company-form-email"
+							   
+							   name="Email"
+							   
+							   required
+							    />
+			
 				<label for="company-form-company" >Company</label>
-			<input
-				type="text"
-				id="company-form-company"
-				name="company"
-				 />
+						<input type="text"
+							   id="company-form-company"
+							   
+							   name="Company"
+							   
+							   
+							    />
+			
 				<label for="company-form-job-title" >Job Title</label>
-			<input
-				type="text"
-				id="company-form-job-title"
-				name="job-title"
-				 />
+						<input type="text"
+							   id="company-form-job-title"
+							   
+							   name="Designation"
+							   
+							   
+							    />
+			
 				<label for="company-form-phone" >Phone<sup>*</sup></label>
-			<input
-				type="tel"
-				id="company-form-phone"
-				name="phone"
-				required />
-	<input type="submit" id="company-form-submit" value="Submit" />
-</form>
-			</div>
+						<input type="tel"
+							   id="company-form-phone"
+							   
+							   name="Phone"
+							   
+							   required
+							    />
+				<input type="submit" id="company-form-submit" value="Submit" />
+			</form>			</div>
 		</section>
 
 

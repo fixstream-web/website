@@ -11,6 +11,8 @@
 	<meta property="og:type" content="website">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<?php wp_head(); ?>
+	<script type="text/javascript" 
+	src='https://crm.zoho.com/crm/javascript/zcga.js'></script>
 	<link rel="stylesheet" href="/wp-content/themes/fixstream/css/resources.css">
 	<script type="text/javascript" src="/wp-content/themes/fixstream/js/head.js"></script></head>
 <body class="page-resources">
@@ -26,12 +28,13 @@
 			<ul class="globalnav__toplevel">
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/platform">Platform</a>
-						<input
-							type="checkbox"
-							id="subnavToggle-21[object Object]"
-							class="globalnav__subnav-toggle hidden"
-							name="platform"
-							 /><label class="globalnav__subnav-button" for="subnavToggle-21[object Object]">+</label>						<ul class="globalnav__subnav">
+						<input type="checkbox"
+							   id="subnavToggle-21[object Object]"
+							   class="globalnav__subnav-toggle hidden"
+							   name="platform"
+							   
+							   
+							    /><label class="globalnav__subnav-button" for="subnavToggle-21[object Object]">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/agent-less-auto-discovery">Agent-less Auto Discovery
 							</a>
@@ -51,12 +54,13 @@
 						<li class="globalnav__item with-subnav">
 							<a class="globalnav__link" href="/platform/ecosystem">Ecosystem
 							</a>
-		        		<input
-		        			type="checkbox"
-		        			id="subnavToggle-22[object Object]"
-		        			class="globalnav__subnav-toggle hidden"
-		        			name="ecosystem"
-		        			 /><label class="globalnav__subnav-button" for="subnavToggle-22[object Object]">+</label>								<ul class="globalnav__subnav">
+		        		<input type="checkbox"
+		        			   id="subnavToggle-22[object Object]"
+		        			   class="globalnav__subnav-toggle hidden"
+		        			   name="ecosystem"
+		        			   
+		        			   
+		        			    /><label class="globalnav__subnav-button" for="subnavToggle-22[object Object]">+</label>								<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/ecosystem/oracle">Oracle
 							</a>
@@ -73,12 +77,13 @@
 				</li>
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/customers">Customers</a>
-						<input
-							type="checkbox"
-							id="subnavToggle-23[object Object]"
-							class="globalnav__subnav-toggle hidden"
-							name="customers"
-							 /><label class="globalnav__subnav-button" for="subnavToggle-23[object Object]">+</label>						<ul class="globalnav__subnav">
+						<input type="checkbox"
+							   id="subnavToggle-23[object Object]"
+							   class="globalnav__subnav-toggle hidden"
+							   name="customers"
+							   
+							   
+							    /><label class="globalnav__subnav-button" for="subnavToggle-23[object Object]">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/customers/broadcom">Broadcom
 							</a>
@@ -188,45 +193,57 @@
 <form
 	id="resourcesForm"
 	class="resource-gate-form"
-	method="get"
+	method=""
 	action=""
-	novalidate>
+	name="resources-form">
 				<label for="resource-gate-first-name" >First Name<sup>*</sup></label>
-			<input
-				type="text"
-				id="resource-gate-first-name"
-				name="first-name"
-				required />
+			<input type="text"
+				   id="resource-gate-first-name"
+				   
+				   name="first-name"
+				   
+				   required
+				    />
 				<label for="resource-gate-last-name" >Last Name</label>
-			<input
-				type="text"
-				id="resource-gate-last-name"
-				name="last-name"
-				 />
+			<input type="text"
+				   id="resource-gate-last-name"
+				   
+				   name="last-name"
+				   
+				   
+				    />
 				<label for="resource-gate-email" >Email<sup>*</sup></label>
-			<input
-				type="email"
-				id="resource-gate-email"
-				name="email"
-				required />
+			<input type="email"
+				   id="resource-gate-email"
+				   
+				   name="email"
+				   
+				   required
+				    />
 				<label for="resource-gate-company" >Company</label>
-			<input
-				type="text"
-				id="resource-gate-company"
-				name="company"
-				 />
+			<input type="text"
+				   id="resource-gate-company"
+				   
+				   name="company"
+				   
+				   
+				    />
 				<label for="resource-gate-job-title" >Job Title</label>
-			<input
-				type="text"
-				id="resource-gate-job-title"
-				name="job-title"
-				 />
+			<input type="text"
+				   id="resource-gate-job-title"
+				   
+				   name="job-title"
+				   
+				   
+				    />
 				<label for="resource-gate-phone" >Phone</label>
-			<input
-				type="tel"
-				id="resource-gate-phone"
-				name="phone"
-				 />
+			<input type="tel"
+				   id="resource-gate-phone"
+				   
+				   name="phone"
+				   
+				   
+				    />
 	<input type="submit" id="resource-gate-submit" value="Submit" />
 </form>
 			</div>

@@ -1,9 +1,9 @@
 <form
 	id="{{id}}"
 	class="{{primaryClass}}-form{{#if additionalClasses}} {{additionalClasses}}{{/if}}"
-	method="get"
-	action=""
-	novalidate>
+	method="{{method}}"
+	action="{{action}}"
+	name="{{name}}">
 	{{#block "content"}}
 	{{/block}}
 	<input type="submit" id="{{primaryClass}}-submit" value="{{submitText}}" />

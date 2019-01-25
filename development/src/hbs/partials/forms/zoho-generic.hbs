@@ -1,0 +1,79 @@
+{{#embed "forms/form"
+			id="companyForm"
+			submitText="Submit"
+			primaryClass="company-form"
+			additionalClasses=""
+			action="https://crm.zoho.com/crm/WebToLeadForm"
+			name="WebToLeads2827769000013092001"
+			method="POST"}}
+	{{#content "content"}}
+
+	{{!-- START ZOHO HIDDEN --}}
+	{{> forms/components/input
+		type="text"
+		name="xnQsjsdp"
+		value="be33935b148cef540a9c7ec757591c5e87233fd9b02b3e0f7fc19ff323f87c4f"
+		hidden=true}}{{~!}}
+	{{> forms/components/input
+		type="hidden"
+		name="zc_gad"
+		id="zc_gad"
+		value=""}}{{~!}}
+	{{> forms/components/input
+		type="text"
+		name="xmIwtLD"
+		value="fe7b377c8652a2e065c6ae23d3329ce6fe00e464edb9987cb10ddd3421b3eed3"
+		hidden=true}}{{~!}}
+	{{> forms/components/input
+		type="text"
+		name="actionType"
+		value="TGVhZHM="
+		hidden=true}}{{~!}}
+	{{> forms/components/input
+		type="text"
+		name="returnURL"
+		value="http://localhost:8888/company"
+		hidden=true}}{{~!}}
+	{{!-- END ZOHO HIDDEN --}}
+
+
+	{{> forms/components/labeled-input
+		type="text"
+		id="first-name"
+		name="First Name"
+		label="First Name"
+		required=true}}{{~!}}
+
+	{{> forms/components/labeled-input
+		type="text"
+		id="last-name"
+		name="Last Name"
+		label="Last Name"}}{{~!}}
+
+	{{> forms/components/labeled-input
+		type="email"
+		id="email"
+		name="Email"
+		label="Email"
+		required=true}}{{~!}}
+
+	{{> forms/components/labeled-input
+		type="text"
+		id="company"
+		name="Company"
+		label="Company"}}{{~!}}
+
+	{{> forms/components/labeled-input
+		type="text"
+		id="job-title"
+		name="Designation"
+		label="Job Title"}}{{~!}}
+
+	{{> forms/components/labeled-input
+		type="tel"
+		id="phone"
+		name="Phone"
+		label="Phone"
+		required=true}}{{~!}}
+{{/content}}
+{{/embed}}
