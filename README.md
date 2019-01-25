@@ -8,7 +8,9 @@ Development source and WordPress build for www.FixStream.com. No manual updates 
 ## Development
 Handle static page data and content using Handlebars + Sass + vanilla JS. Builds to wordpress/wp-content/themes/fixstream
 
-`gulp pages`: Parses through site-data.json and generates a default HBS, SCSS, and JS file for each page name. Convenient for keeping source files in line with data.
+`gulp audit`: Creates record of all existing page-specific source files (HBS/JS/SCSS) within the development environment. Exports to a temp folder as an array in a JSON object. This is fed into `gulp pages` for comparision with site-data.json. Useful for keep source files unpolluted.
+
+`gulp pages`: Parses through site-data.json and generates a default HBS, SCSS, and JS file for each page name. Compares against `gulp audit` file list and outputs a list of unassociated source files for review/deletion. Convenient for keeping source files in line with data.
 
 ### Page Data Config
 Object key: Data Key for Handlebars - must start with a letter
@@ -18,6 +20,8 @@ Object key: Data Key for Handlebars - must start with a letter
 `type`: **OPTIONAL:** Typically omitted; Used with a value of "wp-template" when integrating into WP template hierarchy (i.e. post templates, 404 page)
 
 `nav`: **OPTIONAL:** If included, page will be added to global nav with this text label; Nav order based on JSON
+
+`uniqueJS`: **OPTIONAL:** If included, `gulp pages` will generate a JS source file for page-specific scripting. Also directs HBS to include specific JS reference in page template.
 
 `slug`: Page-level URL; Nested pages handled by object nesting
 
@@ -34,6 +38,7 @@ Example Page Object:
 "platform": {
 	"name": "platform",
 	"nav": "Platform",
+	"uniqueJS": true,
 	"slug": "platform",
 	"meta": {
 		"title": "Platform",
@@ -74,9 +79,13 @@ Example Page Object:
 ---
 
 
-`gulp theme`:Generates style.css from theme data in site-data.json (registers theme for WP admin to find). Builds to theme root.
+`gulp theme`: Generates style.css from theme data in site-data.json (registers theme for WP admin to find). Builds to theme root.
 
 `gulp images`: Basically just takes images in development and duplicates/moves to built (WordPress theme).
+
+`gulp fonts`: Basically just takes fonts in development and duplicates/moves to built (WordPress theme).
+
+`gulp assets`: Runs `gulp images` and `gulp fonts`.
 
 
 `gulp hbs`: Comples HBS from site-data.json as well as content within HBS templates. This also builds required functions.php. **_Content is not fully separated from source._**. Builds to theme root. Can be watched with `gulp hbs:watch`
@@ -88,7 +97,7 @@ Example Page Object:
 `gulp js`: Bundles/concatinates modules, minifies and transpiles with webpack and builds to the WordPress theme. Can be watched with `gulp js:watch`
 
 
-`gulp build`: Runs `gulp hbs` `gulp images` `gulp css` `gulp js` `gulp theme`
+`gulp build`: Runs `gulp hbs` `gulp assets` `gulp css` `gulp js` `gulp theme`
 
 
 `gulp`: Default `gulp build`

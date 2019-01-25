@@ -335,7 +335,7 @@ gulp.task('js', function() {
 });
 
 gulp.task('js:watch', function(){
-    gulp.watch(path.join(config.paths.src, '/js/*.js'), ['js']);
+    gulp.watch(path.join(config.paths.src, '/js/**/*.js'), ['js']);
 });
 
 gulp.task('theme', function(){
