@@ -11,8 +11,6 @@
 	<meta property="og:type" content="website">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<?php wp_head(); ?>
-	<script type="text/javascript" 
-	src='https://crm.zoho.com/crm/javascript/zcga.js'></script>
 	<link rel="stylesheet" href="/wp-content/themes/fixstream/css/free-trial.css">
 	<script type="text/javascript" src="/wp-content/themes/fixstream/js/head.js"></script></head>
 <body class="page-free-trial">
@@ -169,22 +167,14 @@
 				   
 				   required />
 				<label for="free-trial-phone" >Phone<sup>*</sup></label>
-<<<<<<< Updated upstream
 			<input type="tel"
 				   id="free-trial-phone"
 				   class=""
 				   name="phone"
 				   
 				   required />
-=======
-			<input
-				type="tel"
-				id="free-trial-phone"
-				name="phone"
-				required />
 
 
->>>>>>> Stashed changes
 	<input type="submit" id="free-trial-submit" value="Submit" />
 </form>
 			</div>
@@ -213,5 +203,7 @@
 	</footer>
 	<script type="text/javascript" src="/wp-content/themes/fixstream/js/free-trial.js"></script>
 	<?php wp_footer(); ?> 
+	<script type="text/javascript" 
+src='https://crm.zoho.com/crm/javascript/zcga.js'></script>
 </body>
 </html>

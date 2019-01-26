@@ -3,8 +3,6 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<?php wp_head(); ?>
-	<script type="text/javascript" 
-	src='https://crm.zoho.com/crm/javascript/zcga.js'></script>
 	<link rel="stylesheet" href="/wp-content/themes/fixstream/css/single-resources.css">
 	<script type="text/javascript" src="/wp-content/themes/fixstream/js/head.js"></script></head>
 <body class="page-single-resources">
@@ -219,5 +217,7 @@
 	</footer>
 	<script type="text/javascript" src="/wp-content/themes/fixstream/js/single-resources.js"></script>
 	<?php wp_footer(); ?> 
+	<script type="text/javascript" 
+src='https://crm.zoho.com/crm/javascript/zcga.js'></script>
 </body>
 </html>
