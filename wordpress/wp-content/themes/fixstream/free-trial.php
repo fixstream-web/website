@@ -169,12 +169,22 @@
 				   
 				   required />
 				<label for="free-trial-phone" >Phone<sup>*</sup></label>
+<<<<<<< Updated upstream
 			<input type="tel"
 				   id="free-trial-phone"
 				   class=""
 				   name="phone"
 				   
 				   required />
+=======
+			<input
+				type="tel"
+				id="free-trial-phone"
+				name="phone"
+				required />
+
+
+>>>>>>> Stashed changes
 	<input type="submit" id="free-trial-submit" value="Submit" />
 </form>
 			</div>
