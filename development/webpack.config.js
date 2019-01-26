@@ -40,7 +40,21 @@ module.exports = {
                         presets: ['@babel/preset-env']
                     }
                 }
-            }
+            },
+          {
+            test: /\.modernizrrc$/,
+            loader: "modernizr-loader!json-loader"
+          }
         ]
+    },
+    resolve: {
+        alias: {
+            modernizr$: path.resolve(__dirname, ".modernizrrc")
+        }
     }
 }
+
+
+
+
+
