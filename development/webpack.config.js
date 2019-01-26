@@ -6,23 +6,23 @@ const path           = require('path'),
       entry          = require('webpack-glob-entry');
 
 module.exports = {
-    mode,
-    watch,
+    mode: 'development',
+    watch: false,
     entry: entry('./' + config.paths.src + '/js/*.js'),
     output: {
         filename: '[name].js',
         path: path.resolve(__dirname, config.paths.built + '/js'),
     },
-    optimization: {
-        minimizer: [new UglifyJsPlugin({
-            extractComments: false,
-            uglifyOptions: {
-                comments: false,
-                mangle: true
-            },
-            parallel: 4
-        })]
-    },
+    // optimization: {
+    //     minimizer: [new UglifyJsPlugin({
+    //         extractComments: false,
+    //         uglifyOptions: {
+    //             comments: false,
+    //             mangle: false
+    //         },
+    //         parallel: 4
+    //     })]
+    // },
     module: {
         rules: [
             {
