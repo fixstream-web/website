@@ -25,7 +25,6 @@
 							   class="globalnav__subnav-toggle hidden"
 							   name="platform"
 							   
-							   
 							    /><label class="globalnav__subnav-button" for="subnavToggle-27[object Object]">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/agent-less-auto-discovery">Agent-less Auto Discovery
@@ -51,7 +50,6 @@
 		        			   class="globalnav__subnav-toggle hidden"
 		        			   name="ecosystem"
 		        			   
-		        			   
 		        			    /><label class="globalnav__subnav-button" for="subnavToggle-28[object Object]">+</label>								<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/ecosystem/oracle">Oracle
@@ -73,7 +71,6 @@
 							   id="subnavToggle-29[object Object]"
 							   class="globalnav__subnav-toggle hidden"
 							   name="customers"
-							   
 							   
 							    /><label class="globalnav__subnav-button" for="subnavToggle-29[object Object]">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
@@ -155,51 +152,45 @@
         <label for="resource-gate-first-name" >First Name<sup>*</sup></label>
 			<input type="text"
 				   id="resource-gate-first-name"
-				   
+				   class=""
 				   name="first-name"
 				   
-				   required
-				    />
+				   required />
         <label for="resource-gate-last-name" >Last Name</label>
 			<input type="text"
 				   id="resource-gate-last-name"
-				   
+				   class=""
 				   name="last-name"
-				   
 				   
 				    />
         <label for="resource-gate-email" >Email<sup>*</sup></label>
 			<input type="email"
 				   id="resource-gate-email"
-				   
+				   class=""
 				   name="email"
 				   
-				   required
-				    />
+				   required />
         <label for="resource-gate-company" >Company</label>
 			<input type="text"
 				   id="resource-gate-company"
-				   
+				   class=""
 				   name="company"
-				   
 				   
 				    />
         <label for="resource-gate-job-title" >Job Title</label>
 			<input type="text"
 				   id="resource-gate-job-title"
-				   
+				   class=""
 				   name="job-title"
-				   
 				   
 				    />
         <label for="resource-gate-phone" >Phone<sup>*</sup></label>
 			<input type="tel"
 				   id="resource-gate-phone"
-				   
+				   class=""
 				   name="phone"
 				   
-				   required
-				    />
+				   required />
 	<input type="submit" id="resource-gate-submit" value="<?php if ($termName == 'Videos'): ?>Watch<?php else: ?>Download<?php endif ?> this <?php echo $singular; ?>" />
 </form>
 			</div>

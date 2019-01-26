@@ -1,8 +1,7 @@
 {{!--**TODO: try to treat textarea in the same labeled-input --}}
 <input type="{{type}}"
 	   id="{{#both primaryClass id}}{{primaryClass}}-{{id}}{{else}}{{for}}{{/both}}"
-	   {{#if additionalClasses}}class="{{additionalClasses}}"{{/if}}
+	   class="{{additionalClasses}}{{#if hidden}} hidden{{/if}}"
 	   {{#if name}}name="{{name}}"{{/if}}
 	   {{#if value}}value="{{value}}"{{/if}}
-	   {{#if required}}required{{/if}}
-	   {{#if hidden}}style="display:none;"{{/if}} />
+	   {{#if required}}required{{/if}} />

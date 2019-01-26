@@ -33,7 +33,6 @@
 							   class="globalnav__subnav-toggle hidden"
 							   name="platform"
 							   
-							   
 							    /><label class="globalnav__subnav-button" for="subnavToggle-60[object Object]">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/agent-less-auto-discovery">Agent-less Auto Discovery
@@ -59,7 +58,6 @@
 		        			   class="globalnav__subnav-toggle hidden"
 		        			   name="ecosystem"
 		        			   
-		        			   
 		        			    /><label class="globalnav__subnav-button" for="subnavToggle-61[object Object]">+</label>								<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/ecosystem/oracle">Oracle
@@ -81,7 +79,6 @@
 							   id="subnavToggle-62[object Object]"
 							   class="globalnav__subnav-toggle hidden"
 							   name="customers"
-							   
 							   
 							    /><label class="globalnav__subnav-button" for="subnavToggle-62[object Object]">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">

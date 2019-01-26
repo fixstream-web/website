@@ -33,7 +33,6 @@
 							   class="globalnav__subnav-toggle hidden"
 							   name="platform"
 							   
-							   
 							    /><label class="globalnav__subnav-button" for="subnavToggle-12[object Object]">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/agent-less-auto-discovery">Agent-less Auto Discovery
@@ -59,7 +58,6 @@
 		        			   class="globalnav__subnav-toggle hidden"
 		        			   name="ecosystem"
 		        			   
-		        			   
 		        			    /><label class="globalnav__subnav-button" for="subnavToggle-13[object Object]">+</label>								<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/ecosystem/oracle">Oracle
@@ -81,7 +79,6 @@
 							   id="subnavToggle-14[object Object]"
 							   class="globalnav__subnav-toggle hidden"
 							   name="customers"
-							   
 							   
 							    /><label class="globalnav__subnav-button" for="subnavToggle-14[object Object]">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
@@ -139,51 +136,45 @@
 				<label for="free-trial-first-name" >First Name<sup>*</sup></label>
 			<input type="text"
 				   id="free-trial-first-name"
-				   
+				   class=""
 				   name="first-name"
 				   
-				   required
-				    />
+				   required />
 				<label for="free-trial-last-name" >Last Name<sup>*</sup></label>
 			<input type="text"
 				   id="free-trial-last-name"
-				   
+				   class=""
 				   name="last-name"
 				   
-				   required
-				    />
+				   required />
 				<label for="free-trial-email" >Email<sup>*</sup></label>
 			<input type="email"
 				   id="free-trial-email"
-				   
+				   class=""
 				   name="email"
 				   
-				   required
-				    />
+				   required />
 				<label for="free-trial-company" >Company<sup>*</sup></label>
 			<input type="text"
 				   id="free-trial-company"
-				   
+				   class=""
 				   name="company"
 				   
-				   required
-				    />
+				   required />
 				<label for="free-trial-job-title" >Job Title<sup>*</sup></label>
 			<input type="text"
 				   id="free-trial-job-title"
-				   
+				   class=""
 				   name="job-title"
 				   
-				   required
-				    />
+				   required />
 				<label for="free-trial-phone" >Phone<sup>*</sup></label>
 			<input type="tel"
 				   id="free-trial-phone"
-				   
+				   class=""
 				   name="phone"
 				   
-				   required
-				    />
+				   required />
 	<input type="submit" id="free-trial-submit" value="Submit" />
 </form>
 			</div>
