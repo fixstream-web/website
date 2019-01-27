@@ -1,13 +1,11 @@
 const path           = require('path'),
       config         = require('./config'),
       UglifyJsPlugin = require('uglifyjs-webpack-plugin'),
-      mode           = process.env['NODE_ENV'] || 'production',
-      watch          = mode === 'development',
       entry          = require('webpack-glob-entry');
-
+// Note: Mode is intentionally set to hard coded development to turn off unwanted optimizations
 module.exports = {
-    mode,
-    watch,
+    mode: 'development',
+    watch: false,
     entry: entry('./' + config.paths.src + '/js/*.js'),
     output: {
         filename: '[name].js',
@@ -21,7 +19,8 @@ module.exports = {
                 mangle: true
             },
             parallel: 4
-        })]
+        })],
+        minimize: true
     },
     module: {
         rules: [
