@@ -33,7 +33,7 @@
 	{{> forms/components/input
 		type="text"
 		name="returnURL"
-		value="http://localhost:8888/company#companyForm"
+		value=(concat @root.meta.sitename '/company#companyForm')
 		hidden=true}}{{~!}}
 	{{!-- END REQUIRED ZOHO HIDDEN --}}
 

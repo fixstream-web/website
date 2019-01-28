@@ -291,8 +291,16 @@ gulp.task('hbs', function(){
                                 safe: function(string){
                                     return new handlebars.SafeString(string);
                                 },
-                                concat: function(arg1, arg2, arg3){
-                                    return arg1 + arg2 + arg3;
+                                concat: function(){
+                                    let arry = [];
+                                    let idx = 0;
+                                    for (var key in arguments) {
+                                      if (idx < arguments.length - 1) {
+                                        arry.push(arguments[key]);
+                                        idx++;
+                                      }
+                                    }
+                                    return arry.join('');
                                 },
                                 navCount: function(){
                                     return navIndex++;

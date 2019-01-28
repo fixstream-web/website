@@ -39,13 +39,21 @@ const hasValue = (input) => {
 const handleRequiredFields = (e) => {
   const allRequired = e.target.querySelectorAll('[required]');
   allRequired.forEach((input) => {
-    if (!hasValue(input)) {
-      // console.log(input.attributes.name.value + ' is empty');
-      handleInputError('required', input);
-    } else if (input.attributes.type.value == 'email') {
-      isValidEmail(input.value, input);
-    } else if (input.attributes.type.value == 'tel') {
-      isValidPhone(input.value, input);
+    // console.log('Requried field is an: ' + input.nodeName);
+    switch(input.nodeName) {
+    case 'INPUT':
+      if (!hasValue(input)) {
+        // console.log(input.attributes.name.value + ' is empty');
+        handleInputError('required', input);
+      } else if (input.attributes.type.value == 'email') {
+        isValidEmail(input.value, input);
+      } else if (input.attributes.type.value == 'tel') {
+        isValidPhone(input.value, input);
+      }
+      break;
+    case 'SELECT':
+      // **TODO: Determine how to handle required select fields
+      break;
     }
   });
 };
