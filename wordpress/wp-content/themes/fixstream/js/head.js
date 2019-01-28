@@ -6,4 +6,4 @@
 /*!************************!*\
   !*** ./src/js/head.js ***!
   \************************/
-/*! no static exports found */function(module,exports,__webpack_require__){eval("var Modernizr = __webpack_require__(/*! modernizr */ \"./.modernizrrc\");\n\nif (Modernizr.flexbox) {\n  console.log('Test to show Modernizr is working. This site has flexbox.');\n}\n\n//# sourceURL=webpack:///./src/js/head.js?")}});
+/*! no static exports found */function(module,exports,__webpack_require__){eval("var Modernizr = __webpack_require__(/*! modernizr */ \"./.modernizrrc\"); // const Drift = require('./_modules/drift.js');\n\n\nif (Modernizr.flexbox) {\n  console.log('Test to show Modernizr is working. This site has flexbox.');\n}\n\n//# sourceURL=webpack:///./src/js/head.js?")}});
