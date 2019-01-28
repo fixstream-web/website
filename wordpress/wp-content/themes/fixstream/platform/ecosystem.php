@@ -5,7 +5,7 @@
 	<meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.">
 	<meta property="og:title" content="test og title">
 	<meta name="twitter:title" content="test twitter title">
-	<meta property="og:url" content="https://fixstream.com">
+	<meta property="og:url" content="http://localhost:8888">
 	<meta property="og:site_name" content="Fixstream"/>
 	<meta property="og:locale" content="en_US">
 	<meta property="og:type" content="website">
@@ -26,12 +26,12 @@
 			<ul class="globalnav__toplevel">
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/platform">Platform</a>
-						<input
-							type="checkbox"
-							id="subnavToggle-60[object Object]"
-							class="globalnav__subnav-toggle hidden"
-							name="platform"
-							 /><label class="globalnav__subnav-button" for="subnavToggle-60[object Object]">+</label>						<ul class="globalnav__subnav">
+						<input type="checkbox"
+							   id="subnavToggle-60"
+							   class="globalnav__subnav-toggle hidden"
+							   name="platform"
+							   
+							    /><label class="globalnav__subnav-button" for="subnavToggle-60">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/agent-less-auto-discovery">Agent-less Auto Discovery
 							</a>
@@ -51,12 +51,12 @@
 						<li class="globalnav__item with-subnav">
 							<a class="globalnav__link" href="/platform/ecosystem">Ecosystem
 							</a>
-		        		<input
-		        			type="checkbox"
-		        			id="subnavToggle-61[object Object]"
-		        			class="globalnav__subnav-toggle hidden"
-		        			name="ecosystem"
-		        			 /><label class="globalnav__subnav-button" for="subnavToggle-61[object Object]">+</label>								<ul class="globalnav__subnav">
+		        		<input type="checkbox"
+		        			   id="subnavToggle-61"
+		        			   class="globalnav__subnav-toggle hidden"
+		        			   name="ecosystem"
+		        			   
+		        			    /><label class="globalnav__subnav-button" for="subnavToggle-61">+</label>								<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/ecosystem/oracle">Oracle
 							</a>
@@ -73,12 +73,12 @@
 				</li>
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/customers">Customers</a>
-						<input
-							type="checkbox"
-							id="subnavToggle-62[object Object]"
-							class="globalnav__subnav-toggle hidden"
-							name="customers"
-							 /><label class="globalnav__subnav-button" for="subnavToggle-62[object Object]">+</label>						<ul class="globalnav__subnav">
+						<input type="checkbox"
+							   id="subnavToggle-62"
+							   class="globalnav__subnav-toggle hidden"
+							   name="customers"
+							   
+							    /><label class="globalnav__subnav-button" for="subnavToggle-62">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/customers/broadcom">Broadcom
 							</a>
@@ -139,5 +139,7 @@
 		</nav>
 	</footer>
 	<?php wp_footer(); ?> 
+	<script type="text/javascript" 
+src='https://crm.zoho.com/crm/javascript/zcga.js'></script>
 </body>
 </html>

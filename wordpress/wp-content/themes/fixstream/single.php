@@ -18,12 +18,12 @@
 			<ul class="globalnav__toplevel">
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/platform">Platform</a>
-						<input
-							type="checkbox"
-							id="subnavToggle-33[object Object]"
-							class="globalnav__subnav-toggle hidden"
-							name="platform"
-							 /><label class="globalnav__subnav-button" for="subnavToggle-33[object Object]">+</label>						<ul class="globalnav__subnav">
+						<input type="checkbox"
+							   id="subnavToggle-33"
+							   class="globalnav__subnav-toggle hidden"
+							   name="platform"
+							   
+							    /><label class="globalnav__subnav-button" for="subnavToggle-33">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/agent-less-auto-discovery">Agent-less Auto Discovery
 							</a>
@@ -43,12 +43,12 @@
 						<li class="globalnav__item with-subnav">
 							<a class="globalnav__link" href="/platform/ecosystem">Ecosystem
 							</a>
-		        		<input
-		        			type="checkbox"
-		        			id="subnavToggle-34[object Object]"
-		        			class="globalnav__subnav-toggle hidden"
-		        			name="ecosystem"
-		        			 /><label class="globalnav__subnav-button" for="subnavToggle-34[object Object]">+</label>								<ul class="globalnav__subnav">
+		        		<input type="checkbox"
+		        			   id="subnavToggle-34"
+		        			   class="globalnav__subnav-toggle hidden"
+		        			   name="ecosystem"
+		        			   
+		        			    /><label class="globalnav__subnav-button" for="subnavToggle-34">+</label>								<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/ecosystem/oracle">Oracle
 							</a>
@@ -65,12 +65,12 @@
 				</li>
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/customers">Customers</a>
-						<input
-							type="checkbox"
-							id="subnavToggle-35[object Object]"
-							class="globalnav__subnav-toggle hidden"
-							name="customers"
-							 /><label class="globalnav__subnav-button" for="subnavToggle-35[object Object]">+</label>						<ul class="globalnav__subnav">
+						<input type="checkbox"
+							   id="subnavToggle-35"
+							   class="globalnav__subnav-toggle hidden"
+							   name="customers"
+							   
+							    /><label class="globalnav__subnav-button" for="subnavToggle-35">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/customers/broadcom">Broadcom
 							</a>
@@ -147,5 +147,7 @@
 		</nav>
 	</footer>
 	<?php wp_footer(); ?> 
+	<script type="text/javascript" 
+src='https://crm.zoho.com/crm/javascript/zcga.js'></script>
 </body>
 </html>

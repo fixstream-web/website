@@ -1,0 +1,22 @@
+{{#embed "forms/components/select"
+							id="leadStatus"
+							name="Lead Status"
+							hidden=true
+							required=true}}
+	{{#content "options" mode="append"}}
+		{{> forms/components/option value="-None-"}}
+		{{> forms/components/option value="Attempted&#x20;to&#x20;Contact" label="Attempted to Contact"}}
+		{{> forms/components/option value="Nurture"}}
+		{{> forms/components/option value="RFI"}}
+		{{> forms/components/option value="Clicked&#x20;Email" label="Clicked Email"}}
+		{{> forms/components/option value="Contact&#x20;in&#x20;Future" label="Contact in Future"}}
+		{{> forms/components/option value="Contacted"}}
+		{{> forms/components/option value="MQL"}}
+		{{> forms/components/option value="Junk&#x20;Lead" label="Junk Lead"}}
+		{{> forms/components/option value="Lost&#x20;Lead" label="Lost Lead"}}
+		{{> forms/components/option value="Do&#x20;Not&#x20;Contact" label="Do Not Contact"}}
+		{{> forms/components/option value="SQL"}}
+		{{> forms/components/option value="New"}}
+		{{> forms/components/option value="Campaign"}}
+	{{/content}}
+{{/embed}}

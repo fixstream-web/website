@@ -5,7 +5,7 @@
 	<meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.">
 	<meta property="og:title" content="test og title">
 	<meta name="twitter:title" content="test twitter title">
-	<meta property="og:url" content="https://fixstream.com">
+	<meta property="og:url" content="http://localhost:8888">
 	<meta property="og:site_name" content="Fixstream"/>
 	<meta property="og:locale" content="en_US">
 	<meta property="og:type" content="website">
@@ -26,12 +26,12 @@
 			<ul class="globalnav__toplevel">
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/platform">Platform</a>
-						<input
-							type="checkbox"
-							id="subnavToggle-12[object Object]"
-							class="globalnav__subnav-toggle hidden"
-							name="platform"
-							 /><label class="globalnav__subnav-button" for="subnavToggle-12[object Object]">+</label>						<ul class="globalnav__subnav">
+						<input type="checkbox"
+							   id="subnavToggle-12"
+							   class="globalnav__subnav-toggle hidden"
+							   name="platform"
+							   
+							    /><label class="globalnav__subnav-button" for="subnavToggle-12">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/agent-less-auto-discovery">Agent-less Auto Discovery
 							</a>
@@ -51,12 +51,12 @@
 						<li class="globalnav__item with-subnav">
 							<a class="globalnav__link" href="/platform/ecosystem">Ecosystem
 							</a>
-		        		<input
-		        			type="checkbox"
-		        			id="subnavToggle-13[object Object]"
-		        			class="globalnav__subnav-toggle hidden"
-		        			name="ecosystem"
-		        			 /><label class="globalnav__subnav-button" for="subnavToggle-13[object Object]">+</label>								<ul class="globalnav__subnav">
+		        		<input type="checkbox"
+		        			   id="subnavToggle-13"
+		        			   class="globalnav__subnav-toggle hidden"
+		        			   name="ecosystem"
+		        			   
+		        			    /><label class="globalnav__subnav-button" for="subnavToggle-13">+</label>								<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/ecosystem/oracle">Oracle
 							</a>
@@ -73,12 +73,12 @@
 				</li>
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/customers">Customers</a>
-						<input
-							type="checkbox"
-							id="subnavToggle-14[object Object]"
-							class="globalnav__subnav-toggle hidden"
-							name="customers"
-							 /><label class="globalnav__subnav-button" for="subnavToggle-14[object Object]">+</label>						<ul class="globalnav__subnav">
+						<input type="checkbox"
+							   id="subnavToggle-14"
+							   class="globalnav__subnav-toggle hidden"
+							   name="customers"
+							   
+							    /><label class="globalnav__subnav-button" for="subnavToggle-14">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/customers/broadcom">Broadcom
 							</a>
@@ -128,45 +128,53 @@
 <form
 	id="freeTrialForm"
 	class="free-trial-form"
-	method="get"
+	method=""
 	action=""
-	novalidate>
+	name="free-trial-form">
 				<label for="free-trial-first-name" >First Name<sup>*</sup></label>
-			<input
-				type="text"
-				id="free-trial-first-name"
-				name="first-name"
-				required />
+			<input type="text"
+				   id="free-trial-first-name"
+				   class=""
+				   name="first-name"
+				   
+				   required />
 				<label for="free-trial-last-name" >Last Name<sup>*</sup></label>
-			<input
-				type="text"
-				id="free-trial-last-name"
-				name="last-name"
-				required />
+			<input type="text"
+				   id="free-trial-last-name"
+				   class=""
+				   name="last-name"
+				   
+				   required />
 				<label for="free-trial-email" >Email<sup>*</sup></label>
-			<input
-				type="email"
-				id="free-trial-email"
-				name="email"
-				required />
+			<input type="email"
+				   id="free-trial-email"
+				   class=""
+				   name="email"
+				   
+				   required />
 				<label for="free-trial-company" >Company<sup>*</sup></label>
-			<input
-				type="text"
-				id="free-trial-company"
-				name="company"
-				required />
+			<input type="text"
+				   id="free-trial-company"
+				   class=""
+				   name="company"
+				   
+				   required />
 				<label for="free-trial-job-title" >Job Title<sup>*</sup></label>
-			<input
-				type="text"
-				id="free-trial-job-title"
-				name="job-title"
-				required />
+			<input type="text"
+				   id="free-trial-job-title"
+				   class=""
+				   name="job-title"
+				   
+				   required />
 				<label for="free-trial-phone" >Phone<sup>*</sup></label>
-			<input
-				type="tel"
-				id="free-trial-phone"
-				name="phone"
-				required />
+			<input type="tel"
+				   id="free-trial-phone"
+				   class=""
+				   name="phone"
+				   
+				   required />
+
+
 	<input type="submit" id="free-trial-submit" value="Submit" />
 </form>
 			</div>
@@ -195,5 +203,7 @@
 	</footer>
 	<script type="text/javascript" src="/wp-content/themes/fixstream/js/free-trial.js"></script>
 	<?php wp_footer(); ?> 
+	<script type="text/javascript" 
+src='https://crm.zoho.com/crm/javascript/zcga.js'></script>
 </body>
 </html>

@@ -2,6 +2,8 @@
 
 import isEmail from 'validator/lib/isEmail';
 
+let errCount = 0;
+
 const isValidEmail = (email, input) => {
   if (!isEmail(email)) {
     // console.log('Not a valid email');
@@ -37,13 +39,21 @@ const hasValue = (input) => {
 const handleRequiredFields = (e) => {
   const allRequired = e.target.querySelectorAll('[required]');
   allRequired.forEach((input) => {
-    if (!hasValue(input)) {
-      // console.log(input.attributes.name.value + ' is empty');
-      handleInputError('required', input);
-    } else if (input.attributes.type.value == 'email') {
-      isValidEmail(input.value, input);
-    } else if (input.attributes.type.value == 'tel') {
-      isValidPhone(input.value, input);
+    // console.log('Requried field is an: ' + input.nodeName);
+    switch(input.nodeName) {
+    case 'INPUT':
+      if (!hasValue(input)) {
+        // console.log(input.attributes.name.value + ' is empty');
+        handleInputError('required', input);
+      } else if (input.attributes.type.value == 'email') {
+        isValidEmail(input.value, input);
+      } else if (input.attributes.type.value == 'tel') {
+        isValidPhone(input.value, input);
+      }
+      break;
+    case 'SELECT':
+      // **TODO: Determine how to handle required select fields
+      break;
     }
   });
 };
@@ -77,6 +87,7 @@ const handleResolve = (e) => {
 };
 
 const handleInputError = (type, input) => {
+  errCount++;
   let errorNode = document.createElement('span');
   let message;
   errorNode.classList.add('error-message');
@@ -113,9 +124,15 @@ const handleInputError = (type, input) => {
 const listenToForms = () => {
   const forms = document.querySelectorAll('form');
   forms.forEach((form) => {
-    form.addEventListener('submit', (e) =>{
+    form.setAttribute('novalidate', '');
+    form.addEventListener('submit', (e) => {
+      errCount = 0;
       e.preventDefault();
       handleRequiredFields(e);
+      if (errCount == 0) {
+        console.log('Form is valid.');
+        form.submit();
+      }
     });
   });
 };

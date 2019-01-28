@@ -17,6 +17,17 @@
 				{{> forms/components/labeled-input type="text" id="company" name="company" label="Company" required=true }}{{~!}}
 				{{> forms/components/labeled-input type="text" id="job-title" name="job-title" label="Job Title" required=true }}{{~!}}
 				{{> forms/components/labeled-input type="tel" id="phone" name="phone" label="Phone" required=true }}{{~!}}
+
+				{{!-- EXAMPLE SELECT INPUT --}}
+				{{!-- **TODO: reconsile for/id/name etc between labels and selects/inputs --}}
+				{{!-- {{> forms/components/label for="dummy-select" label="Dropdown"}}
+				{{#embed "forms/components/select" id="dummy-select"}}
+				{{#content "options" mode="append"}}
+					{{> forms/components/option value="Test" }}
+					{{> forms/components/option value="Test 2" }}
+				{{/content}}
+				{{/embed}} --}}
+
 			{{/content}}
 			{{/embed}}
 

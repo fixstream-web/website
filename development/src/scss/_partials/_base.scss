@@ -92,6 +92,7 @@ input[type="email"],
 input[type="tel"],
 input[type="password"],
 input[type="number"],
+select,
 textarea {
 	background: transparent;
 	border: 1px solid $gray-3;
@@ -115,8 +116,21 @@ textarea {
 		border-color: $red;
 		color: $red;
 		&:focus {
-			outline-color: $red;	
+			outline-color: $red;
 		}
+	}
+}
+
+
+.select-box {
+	position: relative;
+	&__ui {
+		//**TOTO: Look at this visual/placement and make sure it's font-size-flexible;
+		position: absolute;
+		top: 6px;
+		right: 14px;
+		font-size: 30px;
+		color: $gray-3;
 	}
 }
 
