@@ -25,4 +25,17 @@
 			}
 		}
 	}
+	@include media($globalnav-small-threshold) {
+		&__navbar {
+			height: auto;
+		}
+		&__link {
+			margin-left: 0;
+		}
+	}
+	@include media($small-large-threshold) {
+		&__link {
+			margin-left: 1rem;
+		}
+	}
 }

@@ -27,11 +27,11 @@
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/platform">Platform</a>
 						<input type="checkbox"
-							   id="subnavToggle-51[object Object]"
+							   id="subnavToggle-66[object Object]"
 							   class="globalnav__subnav-toggle hidden"
 							   name="platform"
 							   
-							    /><label class="globalnav__subnav-button" for="subnavToggle-51[object Object]">+</label>						<ul class="globalnav__subnav">
+							    /><label class="globalnav__subnav-button" for="subnavToggle-66[object Object]">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/agent-less-auto-discovery">Agent-less Auto Discovery
 							</a>
@@ -52,11 +52,11 @@
 							<a class="globalnav__link" href="/platform/ecosystem">Ecosystem
 							</a>
 		        		<input type="checkbox"
-		        			   id="subnavToggle-52[object Object]"
+		        			   id="subnavToggle-67[object Object]"
 		        			   class="globalnav__subnav-toggle hidden"
 		        			   name="ecosystem"
 		        			   
-		        			    /><label class="globalnav__subnav-button" for="subnavToggle-52[object Object]">+</label>								<ul class="globalnav__subnav">
+		        			    /><label class="globalnav__subnav-button" for="subnavToggle-67[object Object]">+</label>								<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/ecosystem/oracle">Oracle
 							</a>
@@ -74,11 +74,11 @@
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/customers">Customers</a>
 						<input type="checkbox"
-							   id="subnavToggle-53[object Object]"
+							   id="subnavToggle-68[object Object]"
 							   class="globalnav__subnav-toggle hidden"
 							   name="customers"
 							   
-							    /><label class="globalnav__subnav-button" for="subnavToggle-53[object Object]">+</label>						<ul class="globalnav__subnav">
+							    /><label class="globalnav__subnav-button" for="subnavToggle-68[object Object]">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/customers/broadcom">Broadcom
 							</a>
@@ -106,7 +106,7 @@
 				<li class="globalnav__item">
 					<a class="globalnav__link" href="/blog">Blog</a>
 				</li>
-				<li class="globalnav__free-trial"><a class="button" href="/free-trial">Free Trial</a></li>
+				<li class="globalnav__free-trial"><a class="button button-small" href="/free-trial">Free Trial</a></li>
 			</ul>
 		</nav>
 		</div>

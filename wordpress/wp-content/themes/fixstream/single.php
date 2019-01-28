@@ -98,7 +98,7 @@
 				<li class="globalnav__item">
 					<a class="globalnav__link" href="/blog">Blog</a>
 				</li>
-				<li class="globalnav__free-trial"><a class="button" href="/free-trial">Free Trial</a></li>
+				<li class="globalnav__free-trial"><a class="button button-small" href="/free-trial">Free Trial</a></li>
 			</ul>
 		</nav>
 
