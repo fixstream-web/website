@@ -1,4 +1,4 @@
 'use strict';
 
-const validation = require('./_modules/formValidation.js');
-validation.default.listenToForms();
+const forms = require('./_modules/forms.js');
+forms.default.listenToForms();

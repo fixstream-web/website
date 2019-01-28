@@ -1,10 +1,12 @@
+{{!-- When ready to activate integration, move this URL to the form's ACTION property --}}
+{{!-- https://crm.zoho.com/crm/WebToLeadForm --}}
 <div id='crmWebToEntityForm'>
 {{#embed "forms/form"
 			id="companyForm"
 			submitText="Submit"
 			primaryClass="company-form"
 			additionalClasses=""
-			action="https://crm.zoho.com/crm/WebToLeadForm"
+			action=""
 			name="WebToLeads2827769000013092001"
 			method="POST"}}
 	{{#content "content"}}
@@ -43,12 +45,14 @@
 		id="first-name"
 		name="First Name"
 		label="First Name"
+		additionalClasses="cookies-first-name"
 		required=true}}{{~!}}
 
 	{{> forms/components/labeled-input
 		type="text"
 		id="last-name"
 		name="Last Name"
+		additionalClasses="cookies-last-name"
 		label="Last Name"}}{{~!}}
 
 	{{> forms/components/labeled-input
@@ -56,18 +60,21 @@
 		id="email"
 		name="Email"
 		label="Email"
+		additionalClasses="cookies-email"
 		required=true}}{{~!}}
 
 	{{> forms/components/labeled-input
 		type="text"
 		id="company"
 		name="Company"
+		additionalClasses="cookies-company"
 		label="Company"}}{{~!}}
 
 	{{> forms/components/labeled-input
 		type="text"
 		id="job-title"
 		name="Designation"
+		additionalClasses="cookies-job-title"
 		label="Job Title"}}{{~!}}
 
 	{{> forms/components/labeled-input
@@ -75,6 +82,7 @@
 		id="phone"
 		name="Phone"
 		label="Phone"
+		additionalClasses="cookies-phone"
 		required=true}}{{~!}}
 		{{!-- END DATA CAPTURE --}}
 

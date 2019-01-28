@@ -150,45 +150,45 @@
         <label for="resource-gate-first-name" >First Name<sup>*</sup></label>
 			<input type="text"
 				   id="resource-gate-first-name"
-				   class=""
+				   class="cookies-first-name"
 				   name="first-name"
 				   
 				   required />
         <label for="resource-gate-last-name" >Last Name</label>
 			<input type="text"
 				   id="resource-gate-last-name"
-				   class=""
+				   class="cookies-last-name"
 				   name="last-name"
 				   
 				    />
         <label for="resource-gate-email" >Email<sup>*</sup></label>
 			<input type="email"
 				   id="resource-gate-email"
-				   class=""
+				   class="cookies-email"
 				   name="email"
 				   
 				   required />
         <label for="resource-gate-company" >Company</label>
 			<input type="text"
 				   id="resource-gate-company"
-				   class=""
+				   class="cookies-company"
 				   name="company"
 				   
 				    />
         <label for="resource-gate-job-title" >Job Title</label>
 			<input type="text"
 				   id="resource-gate-job-title"
-				   class=""
+				   class="cookies-job-title"
 				   name="job-title"
 				   
 				    />
-        <label for="resource-gate-phone" >Phone<sup>*</sup></label>
+        <label for="resource-gate-phone" >Phone</label>
 			<input type="tel"
 				   id="resource-gate-phone"
-				   class=""
+				   class="cookies-phone"
 				   name="phone"
 				   
-				   required />
+				    />
 	<input type="submit" id="resource-gate-submit" value="<?php if ($termName == 'Videos'): ?>Watch<?php else: ?>Download<?php endif ?> this <?php echo $singular; ?>" />
 </form>
 			</div>
