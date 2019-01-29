@@ -302,6 +302,9 @@ gulp.task('hbs', function(){
                                     }
                                     return arry.join('');
                                 },
+                                navIndex: function(){
+                                    return navIndex;
+                                },
                                 navCount: function(){
                                     return navIndex++;
                                 },

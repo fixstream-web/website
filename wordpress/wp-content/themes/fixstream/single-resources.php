@@ -12,8 +12,8 @@
 			<img class="globalheader__logo" src="/wp-content/themes/fixstream/img/temp-logo.png" />
 
 		</a>
-		<label class="globalnav-button button button-secondary button-small" for="menuToggle-1"><span class="icon-menu"></span></label>
-<input id="menuToggle-1" class="globalnav-toggle hidden" type="checkbox" />
+		<label class="globalnav-button button button-secondary button-small" tabindex="0" for="menuToggle-1"><span class="icon-menu"></span></label>
+<input id="menuToggle-1" class="globalnav-toggle hidden" type="checkbox" tabindex="0" />
 <nav class="globalnav">
 			<ul class="globalnav__toplevel">
 				<li class="globalnav__item with-subnav">

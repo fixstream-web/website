@@ -14,7 +14,8 @@ $globalnav-stacked-max: 72rem;
 
 @mixin subnav-hover($mod) {
 	&:hover,
-	&:focus {
+	&:focus,
+	&:focus-within {
 		.#{$mod}__subnav {
 			display: block;
 			.#{$mod}__subnav {
@@ -193,40 +194,32 @@ $mod: 'globalnav';
 				max-width: 30rem;
 	    	margin: $link-padding auto 0;
 			}
-			&__item {
-				$padding: 0.4rem;
-				border: none;
-				padding: $padding 0;
-				&:last-child {
-					padding: $padding;
-				}
-			}
-			&__subnav {
-				margin-top: 0;
-				box-shadow: $shadow-drop;
-				border-radius: $radius-s;
-				&-button {
-					display: none;
-				}
-			}
 			&__free-trial {
 		    	padding: 0;
 		    	margin-left: #{$link-padding / 2};
 			}
-			.#{$mod}__item,
-			.#{$mod}__link {
+			&__item,
+			&__link {
 				cursor: pointer;
 			}
-			.#{$mod}__item {
-				position: relative;
+			&__link {
+				&:focus {
+					z-index: 10;
+				}
 			}
-			.#{$mod}__subnav {
+			&__subnav {
 				$padding: 0.3rem;
 				position: absolute;
 				top: 1.6rem;
 				left: $link-padding;
+				margin-top: 0;
+				box-shadow: $shadow-drop;
+				border-radius: $radius-s;
 				min-width: 20rem;
 				padding: $padding;
+				&-button {
+					display: none;
+				}
 				.#{$mod}__item {
 					margin: 0.35rem 0;
 				}
@@ -235,9 +228,17 @@ $mod: 'globalnav';
 				}
 				.#{$mod}__subnav {
 					left: -$padding;
+					top: 1.8rem;
 				}
 			}
-			.#{$mod}__item {
+			&__item {
+				$padding: 0.4rem;
+				border: none;
+				position: relative;
+				padding: $padding 0;
+				&:last-child {
+					padding: $padding;
+				}
 				@include item-hover($mod);
 				&.with-subnav {
 					padding-left: 0;
@@ -247,17 +248,15 @@ $mod: 'globalnav';
 							@include subnav-hover($mod);
 						}
 					}
-				}
-			}
-			.#{$mod}__item.with-subnav {
-				&:hover,
-				&:focus {
-					.#{$mod}__link {
-						color: $blue;
-					}
-					.#{$mod}__subnav {
-						z-index: 99;
-						display: block;
+					&:hover,
+					&:focus {
+						.#{$mod}__link {
+							color: $blue;
+						}
+						.#{$mod}__subnav {
+							z-index: 9;
+							display: block;
+						}
 					}
 				}
 			}

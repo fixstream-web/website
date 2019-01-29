@@ -32,10 +32,12 @@ h5 {
 h6 {
 	font-size: 1.2rem;
 }
-p {
+p, a {
 	font-size: 1rem;
 	line-height: 1.5;
 	letter-spacing: 0.015rem;
+}
+p {
   & + * {
   	margin-top: 0.6rem;
   }
@@ -143,6 +145,10 @@ textarea {
 textarea {
 	height: auto;
 	text-indent: 0;
+}
+
+*:focus {
+	outline-color: $lightblue;
 }
 
 
