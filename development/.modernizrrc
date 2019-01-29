@@ -6,6 +6,7 @@
   "feature-detects": [
     "es6/promises",
     "forcetouch",
-    "css/flexbox"
+    "css/flexbox",
+    "touchevents"
   ]
 }
