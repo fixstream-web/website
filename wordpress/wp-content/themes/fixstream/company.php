@@ -224,7 +224,7 @@
 				id="companyForm"
 				class="company-form-form"
 				method="POST"
-				action="https://crm.zoho.com/crm/WebToLeadForm"
+				action=""
 				name="WebToLeads2827769000013092001">
 			
 				<input type="text"
@@ -261,7 +261,7 @@
 				<label for="company-form-first-name" >First Name<sup>*</sup></label>
 						<input type="text"
 							   id="company-form-first-name"
-							   class=""
+							   class="cookies-first-name"
 							   name="First Name"
 							   
 							   required />
@@ -269,7 +269,7 @@
 				<label for="company-form-last-name" >Last Name</label>
 						<input type="text"
 							   id="company-form-last-name"
-							   class=""
+							   class="cookies-last-name"
 							   name="Last Name"
 							   
 							    />
@@ -277,7 +277,7 @@
 				<label for="company-form-email" >Email<sup>*</sup></label>
 						<input type="email"
 							   id="company-form-email"
-							   class=""
+							   class="cookies-email"
 							   name="Email"
 							   
 							   required />
@@ -285,7 +285,7 @@
 				<label for="company-form-company" >Company</label>
 						<input type="text"
 							   id="company-form-company"
-							   class=""
+							   class="cookies-company"
 							   name="Company"
 							   
 							    />
@@ -293,7 +293,7 @@
 				<label for="company-form-job-title" >Job Title</label>
 						<input type="text"
 							   id="company-form-job-title"
-							   class=""
+							   class="cookies-job-title"
 							   name="Designation"
 							   
 							    />
@@ -301,7 +301,7 @@
 				<label for="company-form-phone" >Phone<sup>*</sup></label>
 						<input type="tel"
 							   id="company-form-phone"
-							   class=""
+							   class="cookies-phone"
 							   name="Phone"
 							   
 							   required />

@@ -134,45 +134,45 @@
 				<label for="free-trial-first-name" >First Name<sup>*</sup></label>
 			<input type="text"
 				   id="free-trial-first-name"
-				   class=""
+				   class="cookies-first-name"
 				   name="first-name"
 				   
 				   required />
-				<label for="free-trial-last-name" >Last Name<sup>*</sup></label>
+				<label for="free-trial-last-name" >Last Name</label>
 			<input type="text"
 				   id="free-trial-last-name"
-				   class=""
+				   class="cookies-last-name"
 				   name="last-name"
 				   
-				   required />
+				    />
 				<label for="free-trial-email" >Email<sup>*</sup></label>
 			<input type="email"
 				   id="free-trial-email"
-				   class=""
+				   class="cookies-email"
 				   name="email"
 				   
 				   required />
-				<label for="free-trial-company" >Company<sup>*</sup></label>
+				<label for="free-trial-company" >Company</label>
 			<input type="text"
 				   id="free-trial-company"
-				   class=""
+				   class="cookies-company"
 				   name="company"
 				   
-				   required />
-				<label for="free-trial-job-title" >Job Title<sup>*</sup></label>
+				    />
+				<label for="free-trial-job-title" >Job Title</label>
 			<input type="text"
 				   id="free-trial-job-title"
-				   class=""
+				   class="cookies-job-title"
 				   name="job-title"
 				   
-				   required />
-				<label for="free-trial-phone" >Phone<sup>*</sup></label>
+				    />
+				<label for="free-trial-phone" >Phone</label>
 			<input type="tel"
 				   id="free-trial-phone"
-				   class=""
+				   class="cookies-phone"
 				   name="phone"
 				   
-				   required />
+				    />
 
 
 	<input type="submit" id="free-trial-submit" value="Submit" />

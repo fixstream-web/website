@@ -11,12 +11,44 @@
 
 			{{#embed "forms/form" id="freeTrialForm" submitText="Submit" primaryClass="free-trial" additionalClasses="" }}
 			{{#content "content"}}
-				{{> forms/components/labeled-input type="text" id="first-name" name="first-name" label="First Name" required=true }}{{~!}}
-				{{> forms/components/labeled-input type="text" id="last-name" name="last-name" label="Last Name" required=true }}{{~!}}
-				{{> forms/components/labeled-input type="email" id="email" name="email" label="Email" required=true }}{{~!}}
-				{{> forms/components/labeled-input type="text" id="company" name="company" label="Company" required=true }}{{~!}}
-				{{> forms/components/labeled-input type="text" id="job-title" name="job-title" label="Job Title" required=true }}{{~!}}
-				{{> forms/components/labeled-input type="tel" id="phone" name="phone" label="Phone" required=true }}{{~!}}
+				{{> forms/components/labeled-input
+						type="text"
+						id="first-name"
+						additionalClasses="cookies-first-name"
+						name="first-name"
+						label="First Name"
+						required=true}}{{~!}}
+				{{> forms/components/labeled-input
+						type="text"
+						id="last-name"
+						additionalClasses="cookies-last-name"
+						name="last-name"
+						label="Last Name"}}{{~!}}
+				{{> forms/components/labeled-input
+						type="email"
+						id="email"
+						additionalClasses="cookies-email"
+						name="email"
+						label="Email"
+						required=true}}{{~!}}
+				{{> forms/components/labeled-input
+						type="text"
+						id="company"
+						additionalClasses="cookies-company"
+						name="company"
+						label="Company"}}{{~!}}
+				{{> forms/components/labeled-input
+						type="text"
+						id="job-title"
+						additionalClasses="cookies-job-title"
+						name="job-title"
+						label="Job Title"}}{{~!}}
+				{{> forms/components/labeled-input
+						type="tel"
+						id="phone"
+						additionalClasses="cookies-phone"
+						name="phone"
+						label="Phone"}}{{~!}}
 
 				{{!-- EXAMPLE SELECT INPUT --}}
 				{{!-- **TODO: reconsile for/id/name etc between labels and selects/inputs --}}
