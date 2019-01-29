@@ -1,5 +1,6 @@
 $mod: 'globalnav';
 .#{$mod} {
+	$link-padding: 1rem;
 	margin-left: auto;
 	display: none;
 	width: 100%;
@@ -18,8 +19,8 @@ $mod: 'globalnav';
 		}
 	}
 	&__link {
-		padding-left: 1rem;
-		padding-right: 1rem;
+		padding-left: $link-padding;
+		padding-right: $link-padding;
 		box-decoration-break: clone;
 		&:hover {
 			text-decoration: none;
@@ -27,7 +28,7 @@ $mod: 'globalnav';
 	}
 	&__free-trial {
     	@include flex-center;
-    	padding: 1rem 0;
+    	padding: $link-padding 0;
 	}
 	&__toplevel {
 		display: flex;
@@ -82,7 +83,7 @@ $mod: 'globalnav';
 		}
 	}
 	&-button {
-		margin: 0 1rem 0 auto;
+		margin: 0 $link-padding 0 auto;
 		color: $blue !important;
 		border-color: $blue !important;
 		font-size: 1rem !important;
@@ -102,6 +103,7 @@ $mod: 'globalnav';
 		top: auto;
 		flex-basis: 100%;
 		background: transparent;
+		overflow: visible;
 		&-button {
 			display: none;
 		}
@@ -111,12 +113,12 @@ $mod: 'globalnav';
 			justify-content: center;
 			align-items: center;
 			max-width: 30rem;
-    		margin: 1rem auto 0;
+    	margin: $link-padding auto 0;
 		}
 		&__item {
 			border: none;
 			padding: 0;
-			margin: 0.3rem 0;
+			margin: 0.4rem 0;
 		}
 		&__subnav {
 			&-button {
@@ -128,12 +130,15 @@ $mod: 'globalnav';
 		}
 	}
 	@include media($small-large-threshold) {
-		flex-basis: 80%;
+		flex-basis: 84%;
 		margin-right: 1rem;
 		&__toplevel {
     		margin: 0;
     		max-width: 100%;
     		justify-content: flex-end;
+		}
+		&__free-trial {
+	    	margin-left: $link-padding;
 		}
 	}
 }
