@@ -10,6 +10,7 @@ FONTS
 $font-stack-primary: 'Open Sans', Helvetica, Arial, sans-serif;
 $font-size-root-s: 16px;
 $font-size-root-l: 18px;
+$typography-small-max: 63rem;
 $bold: 700;
 $regular: 400;
 $light: 300;
@@ -38,9 +39,6 @@ $radius-s: 4px;
 $radius-l: 7px;
 $shadow: 0 0 10px rgba($black, 0.4);
 $shadow-light: 0 0 12px rgba($black, 0.15);
-$globalheader-navbar-height-s: 8vh;
-$globalnav-max-height-s: #{100vh - $globalheader-navbar-height-s};
-$globalnav-small-threshold: 50rem;
 
 /* ~~~~~~~~~~~~~~~~~~~~
 ANIMATION
@@ -53,8 +51,7 @@ $duration-slow: 0.6s;
 /* ~~~~~~~~~~~~~~~~~~~~
 LAYOUT
 ~~~~~~~~~~~~~~~~~~~~~ */
-$small-large-threshold: 55rem;
-$site-max-width-s: 700px;
+$site-max-width-s: 43.75rem; // 700px
 $site-base-width-s: 85%;
-$site-max-width-l: 1100px;
+$site-max-width-l: 68.75rem; // 1100px;
 $site-base-width-l: 80%;

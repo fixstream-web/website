@@ -10,7 +10,7 @@ UTILITIES / HELPER FUNCTIONS
 	width: $site-base-width-s;
 	max-width: $site-max-width-s;
 	margin: auto;
-	@include media($small-large-threshold) {
+	@include media($typography-small-max) {
 		width: $site-base-width-l;
 		max-width: $site-max-width-l;
 	}

@@ -6,7 +6,7 @@
 html {
 	font-size: $font-size-root-s;
 	font-family: $font-stack-primary;
-	@include media($small-large-threshold) {
+	@include media($typography-small-max) {
 		font-size: $font-size-root-l;
 	}
 }
