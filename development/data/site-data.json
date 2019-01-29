@@ -2,7 +2,7 @@
 	"site": {
 		"meta": {
 			"name": "Fixstream",
-			"sitename": "https://fixstream.com",
+			"sitename": "http://localhost:8888",
 			"themeURI": "/wp-content/themes/fixstream"
 		},
 		"theme": {

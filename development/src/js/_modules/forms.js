@@ -1,6 +1,7 @@
 'use strict';
 
 import isEmail from 'validator/lib/isEmail';
+const cookies = require('./cookies.js');
 
 let errCount = 0;
 
@@ -32,20 +33,26 @@ const isValidPhone = (number, input) => {
   }
 };
 
-const hasValue = (input) => {
-  if (input.value === '') { return false; } else { return true; }
-};
+
 
 const handleRequiredFields = (e) => {
   const allRequired = e.target.querySelectorAll('[required]');
   allRequired.forEach((input) => {
-    if (!hasValue(input)) {
-      // console.log(input.attributes.name.value + ' is empty');
-      handleInputError('required', input);
-    } else if (input.attributes.type.value == 'email') {
-      isValidEmail(input.value, input);
-    } else if (input.attributes.type.value == 'tel') {
-      isValidPhone(input.value, input);
+    // console.log('Requried field is an: ' + input.nodeName);
+    switch(input.nodeName) {
+    case 'INPUT':
+      if (!cookies.default.hasValue(input)) {
+        // console.log(input.attributes.name.value + ' is empty');
+        handleInputError('required', input);
+      } else if (input.attributes.type.value == 'email') {
+        isValidEmail(input.value, input);
+      } else if (input.attributes.type.value == 'tel') {
+        isValidPhone(input.value, input);
+      }
+      break;
+    case 'SELECT':
+      // **TODO: Determine how to handle required select fields
+      break;
     }
   });
 };
@@ -55,7 +62,7 @@ const handleResolve = (e) => {
   const type = e.target.attributes.type.value;
   switch(type) {
   case 'text':
-    if (!hasValue(input)) { return; }
+    if (!cookies.default.hasValue(input)) { return; }
     break;
   case 'email':
     if (!isValidEmail(input.value, input)) { return; }
@@ -123,6 +130,7 @@ const listenToForms = () => {
       handleRequiredFields(e);
       if (errCount == 0) {
         console.log('Form is valid.');
+        cookies.default.setCookies(e.target);
         form.submit();
       }
     });

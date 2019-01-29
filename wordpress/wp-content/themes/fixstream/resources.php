@@ -5,7 +5,7 @@
 	<meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.">
 	<meta property="og:title" content="test og title">
 	<meta name="twitter:title" content="test twitter title">
-	<meta property="og:url" content="https://fixstream.com">
+	<meta property="og:url" content="http://localhost:8888">
 	<meta property="og:site_name" content="Fixstream"/>
 	<meta property="og:locale" content="en_US">
 	<meta property="og:type" content="website">
@@ -27,11 +27,11 @@
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/platform">Platform</a>
 						<input type="checkbox"
-							   id="subnavToggle-21[object Object]"
+							   id="subnavToggle-21"
 							   class="globalnav__subnav-toggle hidden"
 							   name="platform"
 							   
-							    /><label class="globalnav__subnav-button" for="subnavToggle-21[object Object]">+</label>						<ul class="globalnav__subnav">
+							    /><label class="globalnav__subnav-button" for="subnavToggle-21">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/agent-less-auto-discovery">Agent-less Auto Discovery
 							</a>
@@ -52,11 +52,11 @@
 							<a class="globalnav__link" href="/platform/ecosystem">Ecosystem
 							</a>
 		        		<input type="checkbox"
-		        			   id="subnavToggle-22[object Object]"
+		        			   id="subnavToggle-22"
 		        			   class="globalnav__subnav-toggle hidden"
 		        			   name="ecosystem"
 		        			   
-		        			    /><label class="globalnav__subnav-button" for="subnavToggle-22[object Object]">+</label>								<ul class="globalnav__subnav">
+		        			    /><label class="globalnav__subnav-button" for="subnavToggle-22">+</label>								<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/ecosystem/oracle">Oracle
 							</a>
@@ -74,11 +74,11 @@
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/customers">Customers</a>
 						<input type="checkbox"
-							   id="subnavToggle-23[object Object]"
+							   id="subnavToggle-23"
 							   class="globalnav__subnav-toggle hidden"
 							   name="customers"
 							   
-							    /><label class="globalnav__subnav-button" for="subnavToggle-23[object Object]">+</label>						<ul class="globalnav__subnav">
+							    /><label class="globalnav__subnav-button" for="subnavToggle-23">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/customers/broadcom">Broadcom
 							</a>
@@ -194,42 +194,42 @@
 				<label for="resource-gate-first-name" >First Name<sup>*</sup></label>
 			<input type="text"
 				   id="resource-gate-first-name"
-				   class=""
+				   class="cookies-first-name"
 				   name="first-name"
 				   
 				   required />
 				<label for="resource-gate-last-name" >Last Name</label>
 			<input type="text"
 				   id="resource-gate-last-name"
-				   class=""
+				   class="cookies-last-name"
 				   name="last-name"
 				   
 				    />
 				<label for="resource-gate-email" >Email<sup>*</sup></label>
 			<input type="email"
 				   id="resource-gate-email"
-				   class=""
+				   class="cookies-email"
 				   name="email"
 				   
 				   required />
 				<label for="resource-gate-company" >Company</label>
 			<input type="text"
 				   id="resource-gate-company"
-				   class=""
+				   class="cookies-company"
 				   name="company"
 				   
 				    />
 				<label for="resource-gate-job-title" >Job Title</label>
 			<input type="text"
 				   id="resource-gate-job-title"
-				   class=""
+				   class="cookies-job-title"
 				   name="job-title"
 				   
 				    />
 				<label for="resource-gate-phone" >Phone</label>
 			<input type="tel"
 				   id="resource-gate-phone"
-				   class=""
+				   class="cookies-phone"
 				   name="phone"
 				   
 				    />

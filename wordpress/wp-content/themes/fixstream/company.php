@@ -5,7 +5,7 @@
 	<meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.">
 	<meta property="og:title" content="test og title">
 	<meta name="twitter:title" content="test twitter title">
-	<meta property="og:url" content="https://fixstream.com">
+	<meta property="og:url" content="http://localhost:8888">
 	<meta property="og:site_name" content="Fixstream"/>
 	<meta property="og:locale" content="en_US">
 	<meta property="og:type" content="website">
@@ -27,11 +27,11 @@
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/platform">Platform</a>
 						<input type="checkbox"
-							   id="subnavToggle-6[object Object]"
+							   id="subnavToggle-6"
 							   class="globalnav__subnav-toggle hidden"
 							   name="platform"
 							   
-							    /><label class="globalnav__subnav-button" for="subnavToggle-6[object Object]">+</label>						<ul class="globalnav__subnav">
+							    /><label class="globalnav__subnav-button" for="subnavToggle-6">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/agent-less-auto-discovery">Agent-less Auto Discovery
 							</a>
@@ -52,11 +52,11 @@
 							<a class="globalnav__link" href="/platform/ecosystem">Ecosystem
 							</a>
 		        		<input type="checkbox"
-		        			   id="subnavToggle-7[object Object]"
+		        			   id="subnavToggle-7"
 		        			   class="globalnav__subnav-toggle hidden"
 		        			   name="ecosystem"
 		        			   
-		        			    /><label class="globalnav__subnav-button" for="subnavToggle-7[object Object]">+</label>								<ul class="globalnav__subnav">
+		        			    /><label class="globalnav__subnav-button" for="subnavToggle-7">+</label>								<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/ecosystem/oracle">Oracle
 							</a>
@@ -74,11 +74,11 @@
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/customers">Customers</a>
 						<input type="checkbox"
-							   id="subnavToggle-8[object Object]"
+							   id="subnavToggle-8"
 							   class="globalnav__subnav-toggle hidden"
 							   name="customers"
 							   
-							    /><label class="globalnav__subnav-button" for="subnavToggle-8[object Object]">+</label>						<ul class="globalnav__subnav">
+							    /><label class="globalnav__subnav-button" for="subnavToggle-8">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/customers/broadcom">Broadcom
 							</a>
@@ -224,7 +224,7 @@
 				id="companyForm"
 				class="company-form-form"
 				method="POST"
-				action="https://crm.zoho.com/crm/WebToLeadForm"
+				action=""
 				name="WebToLeads2827769000013092001">
 			
 				<input type="text"
@@ -261,7 +261,7 @@
 				<label for="company-form-first-name" >First Name<sup>*</sup></label>
 						<input type="text"
 							   id="company-form-first-name"
-							   class=""
+							   class="cookies-first-name"
 							   name="First Name"
 							   
 							   required />
@@ -269,7 +269,7 @@
 				<label for="company-form-last-name" >Last Name</label>
 						<input type="text"
 							   id="company-form-last-name"
-							   class=""
+							   class="cookies-last-name"
 							   name="Last Name"
 							   
 							    />
@@ -277,7 +277,7 @@
 				<label for="company-form-email" >Email<sup>*</sup></label>
 						<input type="email"
 							   id="company-form-email"
-							   class=""
+							   class="cookies-email"
 							   name="Email"
 							   
 							   required />
@@ -285,7 +285,7 @@
 				<label for="company-form-company" >Company</label>
 						<input type="text"
 							   id="company-form-company"
-							   class=""
+							   class="cookies-company"
 							   name="Company"
 							   
 							    />
@@ -293,7 +293,7 @@
 				<label for="company-form-job-title" >Job Title</label>
 						<input type="text"
 							   id="company-form-job-title"
-							   class=""
+							   class="cookies-job-title"
 							   name="Designation"
 							   
 							    />
@@ -301,7 +301,7 @@
 				<label for="company-form-phone" >Phone<sup>*</sup></label>
 						<input type="tel"
 							   id="company-form-phone"
-							   class=""
+							   class="cookies-phone"
 							   name="Phone"
 							   
 							   required />
