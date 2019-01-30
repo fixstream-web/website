@@ -52,8 +52,8 @@ $mod: 'globalheader';
 		height: auto;
 		path {
 			fill: $blue;
-			&.st0{
-				fill:#FFFFFF;
+			&.st0 {
+				fill: $white;
 			}
 		}
 	}
@@ -136,7 +136,12 @@ $mod: 'globalnav';
 		}
 		.#{$mod}__link {
 			&::before {
-				content: "\2014" + " ";
+				content:"\021B3";
+				color: inherit;
+				font-size: 0.8rem;
+				display: inline-block;
+				margin-right: 0.2rem;
+				position: relative;
 			}
 		}
 		&-button {
@@ -158,6 +163,7 @@ $mod: 'globalnav';
 			}
 		}
 	}
+	// **TODO: Resolve globalnav mobile menu toggle button;
 	&-button {
 		margin: 0 $link-padding 0 auto;
 		color: $blue !important;
@@ -200,6 +206,7 @@ $mod: 'globalnav';
 				cursor: pointer;
 			}
 			&__link {
+				padding: 0 0.6rem;
 				&:hover {
 					text-decoration: none;
 				}
@@ -208,34 +215,32 @@ $mod: 'globalnav';
 				}
 			}
 			&__subnav {
-				$padding: 0.3rem;
+				$padding: 0.45rem;
 				position: absolute;
 				top: 1.6rem;
 				left: $link-padding;
 				margin-top: 0;
 				box-shadow: $shadow-drop;
 				border-radius: $radius-s;
-				min-width: 20rem;
+				min-width: max-content;
 				padding: $padding;
 				&-button {
 					display: none;
-				}
-				.#{$mod}__item {
-					margin: 0.35rem 0;
 				}
 				.#{$mod}__link {
 					display: block;
 				}
 				.#{$mod}__subnav {
 					left: -$padding;
-					top: 1.8rem;
+					top: 1.68rem;
+					width: 100%;
 				}
 			}
 			&__item {
-				$padding: 0.4rem;
+				$padding: 0.2rem 0;
 				border: none;
 				position: relative;
-				padding: $padding 0;
+				padding: $padding;
 				&:last-child {
 					padding: $padding;
 				}
