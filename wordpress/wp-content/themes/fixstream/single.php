@@ -205,6 +205,7 @@
 			<li class="globalfooter__social-item"><span class="icon-youtube"></span></li>
 			<li class="globalfooter__social-item"><span class="icon-linkedin"></span></li>
 		</ul>
+		<small class="globalfooter__copyright">© Copyright <?php echo copyright_year(); ?> | <a href="#">Terms of Use</a> | <a href="">Privacy Policy</a></small>
 	</footer>
 	<?php wp_footer(); ?>
 	<script type="text/javascript" src='https://crm.zoho.com/crm/javascript/zcga.js'></script>

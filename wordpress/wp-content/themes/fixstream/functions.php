@@ -177,3 +177,10 @@ add_filter( 'wpseo_opengraph_site_name', 'remove_yoast_meta_desc_specific_page' 
 add_filter( 'wpseo_locale', 'remove_yoast_meta_desc_specific_page' );
 add_filter( 'wpseo_twitter_title', 'remove_yoast_meta_desc_specific_page' );
 add_filter( 'wpseo_twitter_card_type', 'remove_yoast_meta_desc_specific_page' );
+
+
+function copyright_year() {
+  $startYear = 2018;
+  $curYear = date('Y');
+  return $startYear . (($startYear != $curYear) ? '-' . $curYear : '');
+}

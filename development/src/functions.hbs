@@ -81,3 +81,10 @@ add_filter( 'wpseo_twitter_title', 'remove_yoast_meta_desc_specific_page' );
 add_filter( 'wpseo_twitter_card_type', 'remove_yoast_meta_desc_specific_page' );
 {{!-- Additional tag hooks found here: --}}
 {{!-- https://solvemethod.com/remove-yoast-seo-meta-tags/ --}}
+
+
+function copyright_year() {
+  $startYear = 2018;
+  $curYear = date('Y');
+  return $startYear . (($startYear != $curYear) ? '-' . $curYear : '');
+}

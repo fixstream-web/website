@@ -43,6 +43,15 @@ p {
   }
 }
 
+small {
+	font-size: 0.7rem;
+	color: $gray-3;
+	a {
+		font-size: inherit;
+		color: inherit;
+	}
+}
+
 blockquote {
 	font-size: 1.2rem;
 	font-style: italic;
