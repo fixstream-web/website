@@ -155,7 +155,7 @@ textarea {
 a {
 	text-decoration: none;
 	color: $gray-1;
-	&:hover {
+	.no-touchevents &:hover {
 		text-decoration: underline;
 	}
 }
