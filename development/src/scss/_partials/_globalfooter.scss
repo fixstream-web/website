@@ -1,10 +1,14 @@
+$globalfooter-small-max: 38rem;
+$globalfooter-medium-max: 78.75rem;
+
 $mod: 'globalfooter';
 .#{$mod} {
 	background: $gray-5;
 	min-height: 4rem;
-	padding: 2rem;
+	padding: 2rem 0;
+	font-size: 0.9rem;
 	&__nav {
-		width: 100%;
+		@include max-width;
 	}
 	&__nav-item {
 		margin-bottom: 1rem;
@@ -14,9 +18,7 @@ $mod: 'globalfooter';
 	}
 	&__nav-link {
 		color: $gray-2;
-	}
-	&__free-trial {
-		margin-top: 1.6rem;
+		font-size: inherit;
 	}
 	&__subnav {
 		.#{$mod}__nav-item {
@@ -33,7 +35,8 @@ $mod: 'globalfooter';
 	&__social {
 		position: relative;
 		display: flex;
-		margin: 1.75rem 0;
+		@include max-width;
+		margin-top: 1.75rem;
 	}
 	&__social-item {
 		height: 44px;
@@ -48,6 +51,57 @@ $mod: 'globalfooter';
 	}
 	&__copyright {
 		display: block;
+		@include max-width;
 		margin-top: 1rem;
+	}
+	@include media($globalfooter-small-max) {
+		font-size: 0.8rem;
+		&__nav-list {
+			display: flex;
+    		flex-wrap: wrap;
+    		justify-content: space-between;
+		}
+		&__nav-item {
+			flex-basis: 13%;
+			&:nth-child(1) {
+				flex-basis: 40%;
+			}
+			&:nth-child(4) {
+				flex-basis: 21%;
+			}
+			&:nth-child(5),
+			&:nth-child(6),
+			&:nth-child(7) {
+				flex-basis: 33%;
+			}
+		}
+		&__subnav {
+			.#{$mod}__nav-item {
+				margin: 0.4rem 0.75rem;
+			}
+		}
+		&__social {
+			justify-content: center;
+		}
+		&__copyright {
+			text-align: center;
+		}
+	}
+	@include media($globalfooter-medium-max) {
+		&__nav-item {
+			flex-basis: 8%;
+			margin-bottom: 0;
+			&:nth-child(1) {
+				flex-basis: 25%;
+			}
+			&:nth-child(4) {
+				flex-basis: 12%;
+			}
+			&:nth-child(5),
+			&:nth-child(6),
+			&:nth-child(7) {
+				flex-basis: 10%;
+			}
+		}
 	}
 }

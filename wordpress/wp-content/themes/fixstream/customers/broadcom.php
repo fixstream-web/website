@@ -189,7 +189,6 @@
 				<li class="globalfooter__nav-item">
 					<a class="globalfooter__nav-link" href="/blog">Blog</a>
 				</li>
-				<li class="globalfooter__free-trial"><a class="button" href="/free-trial">Free Trial</a></li>
 			</ul>
 		</nav>
 		<ul class="globalfooter__social">
