@@ -217,7 +217,7 @@ $mod: 'globalnav';
 			&__subnav {
 				$padding: 0.45rem;
 				position: absolute;
-				top: 1.6rem;
+				top: 1.68rem;
 				left: $link-padding;
 				margin-top: 0;
 				box-shadow: $shadow-drop;
@@ -232,7 +232,6 @@ $mod: 'globalnav';
 				}
 				.#{$mod}__subnav {
 					left: -$padding;
-					top: 1.68rem;
 					width: 100%;
 				}
 			}
@@ -254,12 +253,13 @@ $mod: 'globalnav';
 						}
 					}
 					&:hover,
-					&:focus {
+					&:focus,
+					&:focus-within {
 						.#{$mod}__link {
 							color: $blue;
 						}
 						.#{$mod}__subnav {
-							z-index: 9;
+							z-index: 99;
 							display: block;
 						}
 					}
