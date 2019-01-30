@@ -101,9 +101,6 @@ $mod: 'globalnav';
 		padding-left: $link-padding;
 		padding-right: $link-padding;
 		box-decoration-break: clone;
-		&:hover {
-			text-decoration: none;
-		}
 	}
 	&__free-trial {
     	@include flex-center;
@@ -203,6 +200,9 @@ $mod: 'globalnav';
 				cursor: pointer;
 			}
 			&__link {
+				&:hover {
+					text-decoration: none;
+				}
 				&:focus {
 					z-index: 10;
 				}
