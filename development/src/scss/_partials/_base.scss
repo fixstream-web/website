@@ -6,7 +6,7 @@
 html {
 	font-size: $font-size-root-s;
 	font-family: $font-stack-primary;
-	@include media($small-large-threshold) {
+	@include media($typography-small-max) {
 		font-size: $font-size-root-l;
 	}
 }
@@ -32,13 +32,24 @@ h5 {
 h6 {
 	font-size: 1.2rem;
 }
-p {
+p, a {
 	font-size: 1rem;
 	line-height: 1.5;
 	letter-spacing: 0.015rem;
+}
+p {
   & + * {
   	margin-top: 0.6rem;
   }
+}
+
+small {
+	font-size: 0.7rem;
+	color: $gray-3;
+	a {
+		font-size: inherit;
+		color: inherit;
+	}
 }
 
 blockquote {
@@ -145,11 +156,15 @@ textarea {
 	text-indent: 0;
 }
 
+*:focus {
+	outline-color: $lightblue;
+}
+
 
 a {
 	text-decoration: none;
 	color: $gray-1;
-	&:hover {
+	.no-touchevents &:hover {
 		text-decoration: underline;
 	}
 }

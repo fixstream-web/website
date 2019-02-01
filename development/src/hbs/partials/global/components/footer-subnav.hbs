@@ -1,0 +1,15 @@
+<ul class="globalfooter__subnav">
+						{{#each subpages}}
+						{{#if this.nav}}
+						<li class="globalfooter__nav-item{{#if this.subpages}} with-subnav{{/if}}">
+							<a class="globalfooter__nav-link" href="{{#if ../grandparent}}/{{../grandparent}}{{/if}}/{{../parent}}/{{this.slug}}">{{this.nav}}
+							</a>
+							{{#if subpages}}
+								{{> global/components/footer-subnav
+										parent=this.slug
+										grandparent=../parent}}{{~!}}
+							{{/if}}
+						</li>
+						{{/if}}
+						{{/each}}
+					</ul>

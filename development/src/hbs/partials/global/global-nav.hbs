@@ -1,5 +1,6 @@
-<label class="globalnav-button button button-secondary button-small" for="menuToggle-1"><span class="icon-menu"></span></label>
-<input id="menuToggle-1" class="globalnav-toggle hidden" type="checkbox" />
+{{!-- **TODO: Make mobile menu toggle accessible; ideally without JS --}}
+<label class="globalnav-button button button-secondary button-small" tabindex="0" for="menuToggle-1"><span class="icon-menu"></span></label>
+<input id="menuToggle-1" class="globalnav-toggle hidden" type="checkbox" tabindex="0" />
 <nav class="globalnav">
 			<ul class="globalnav__toplevel">
     			{{#each pages}}
@@ -7,6 +8,7 @@
 				<li class="globalnav__item{{#if this.subpages}} with-subnav{{/if}}">
 					<a class="globalnav__link" href="/{{this.slug}}">{{this.nav}}</a>
 					{{#if this.subpages}}
+						{{!-- **TODO: Make all checkbox menus accessible --}}
 						{{> global/components/checkbox-toggle
 								additionalClasses="globalnav__subnav-button"
 								for=(concat 'subnavToggle-' (navCount))
@@ -18,6 +20,6 @@
 				</li>
 				{{/if}}
 				{{/each}}
-				<li class="globalnav__free-trial"><a class="button" href="/free-trial">Free Trial</a></li>
+				<li class="globalnav__free-trial"><a class="button button-small" href="/free-trial">Free Trial</a></li>
 			</ul>
 		</nav>

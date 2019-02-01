@@ -20,8 +20,8 @@
 			<img class="globalheader__logo" src="/wp-content/themes/fixstream/img/temp-logo.png" />
 
 		</a>
-		<label class="globalnav-button button button-secondary button-small" for="menuToggle-1"><span class="icon-menu"></span></label>
-<input id="menuToggle-1" class="globalnav-toggle hidden" type="checkbox" />
+		<label class="globalnav-button button button-secondary button-small" tabindex="0" for="menuToggle-1"><span class="icon-menu"></span></label>
+<input id="menuToggle-1" class="globalnav-toggle hidden" type="checkbox" tabindex="0" />
 <nav class="globalnav">
 			<ul class="globalnav__toplevel">
 				<li class="globalnav__item with-subnav">
@@ -106,7 +106,7 @@
 				<li class="globalnav__item">
 					<a class="globalnav__link" href="/blog">Blog</a>
 				</li>
-				<li class="globalnav__free-trial"><a class="button" href="/free-trial">Free Trial</a></li>
+				<li class="globalnav__free-trial"><a class="button button-small" href="/free-trial">Free Trial</a></li>
 			</ul>
 		</nav>
 		</div>
@@ -228,26 +228,85 @@
 
 	</main>
 	<footer class="globalfooter">
+		<nav class="globalfooter__nav">
+			<ul class="globalfooter__nav-list">
+				<li class="globalfooter__nav-item">
+					<a class="globalfooter__nav-link" href="/platform">Platform</a>
+						<ul class="globalfooter__subnav">
+						<li class="globalfooter__nav-item">
+							<a class="globalfooter__nav-link" href="/platform/agent-less-auto-discovery">Agent-less Auto Discovery
+							</a>
+						</li>
+						<li class="globalfooter__nav-item">
+							<a class="globalfooter__nav-link" href="/platform/machine-learning">Machine Learning
+							</a>
+						</li>
+						<li class="globalfooter__nav-item">
+							<a class="globalfooter__nav-link" href="/platform/transaction-to-infra-correlation">Transaction To Infra Correlation
+							</a>
+						</li>
+						<li class="globalfooter__nav-item">
+							<a class="globalfooter__nav-link" href="/platform/architecture">Architecture
+							</a>
+						</li>
+						<li class="globalfooter__nav-item with-subnav">
+							<a class="globalfooter__nav-link" href="/platform/ecosystem">Ecosystem
+							</a>
+								<ul class="globalfooter__subnav">
+						<li class="globalfooter__nav-item">
+							<a class="globalfooter__nav-link" href="/platform/ecosystem/oracle">Oracle
+							</a>
+						</li>
+					</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="globalfooter__nav-item">
+					<a class="globalfooter__nav-link" href="/solutions">Solutions</a>
+				</li>
+				<li class="globalfooter__nav-item">
+					<a class="globalfooter__nav-link" href="/resources">Resources</a>
+				</li>
+				<li class="globalfooter__nav-item">
+					<a class="globalfooter__nav-link" href="/customers">Customers</a>
+						<ul class="globalfooter__subnav">
+						<li class="globalfooter__nav-item">
+							<a class="globalfooter__nav-link" href="/customers/broadcom">Broadcom
+							</a>
+						</li>
+						<li class="globalfooter__nav-item">
+							<a class="globalfooter__nav-link" href="/customers/maxim">Maxim
+							</a>
+						</li>
+						<li class="globalfooter__nav-item">
+							<a class="globalfooter__nav-link" href="/customers/colv">COLV
+							</a>
+						</li>
+						<li class="globalfooter__nav-item">
+							<a class="globalfooter__nav-link" href="/customers/bt">BT
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="globalfooter__nav-item">
+					<a class="globalfooter__nav-link" href="/whats-aiops">What&#x27;s AIOps?</a>
+				</li>
+				<li class="globalfooter__nav-item">
+					<a class="globalfooter__nav-link" href="/company">Company</a>
+				</li>
+				<li class="globalfooter__nav-item">
+					<a class="globalfooter__nav-link" href="/blog">Blog</a>
+				</li>
+			</ul>
+		</nav>
 		<ul class="globalfooter__social">
 			<li class="globalfooter__social-item"><span class="icon-facebook2"></span></li>
 			<li class="globalfooter__social-item"><span class="icon-youtube"></span></li>
 			<li class="globalfooter__social-item"><span class="icon-linkedin"></span></li>
 		</ul>
-		<nav class="globalfooter__nav">
-			<ul class="globalfooter__nav-list">
-				<li class="globalfooter__nav-item"><a class="globalfooter__nav-link" href="/platform">Platform</a></li>
-				<li class="globalfooter__nav-item"><a class="globalfooter__nav-link" href="/solutions">Solutions</a></li>
-				<li class="globalfooter__nav-item"><a class="globalfooter__nav-link" href="/resources">Resources</a></li>
-				<li class="globalfooter__nav-item"><a class="globalfooter__nav-link" href="/customers">Customers</a></li>
-				<li class="globalfooter__nav-item"><a class="globalfooter__nav-link" href="/whats-aiops">What&#x27;s AIOps?</a></li>
-				<li class="globalfooter__nav-item"><a class="globalfooter__nav-link" href="/company">Company</a></li>
-				<li class="globalfooter__nav-item"><a class="globalfooter__nav-link" href="/blog">Blog</a></li>
-				<li class="globalfooter__free-trial"><a class="button" href="/free-trial">Free Trial</a></li>
-			</ul>
-		</nav>
+		<small class="globalfooter__copyright">© Copyright <?php echo copyright_year(); ?> | <a href="#">Terms of Use</a> | <a href="">Privacy Policy</a></small>
 	</footer>
-	<?php wp_footer(); ?> 
-	<script type="text/javascript" 
-src='https://crm.zoho.com/crm/javascript/zcga.js'></script>
+	<?php wp_footer(); ?>
+	<script type="text/javascript" src='https://crm.zoho.com/crm/javascript/zcga.js'></script>
 </body>
 </html>

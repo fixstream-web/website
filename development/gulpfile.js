@@ -302,6 +302,9 @@ gulp.task('hbs', function(){
                                     }
                                     return arry.join('');
                                 },
+                                navIndex: function(){
+                                    return navIndex;
+                                },
                                 navCount: function(){
                                     return navIndex++;
                                 },
@@ -321,7 +324,10 @@ gulp.task('hbs', function(){
 });
 
 gulp.task('hbs:watch', function(){
-    gulp.watch(path.join(config.paths.src, '/hbs/*.hbs'), ['hbs']);
+    gulp.watch([
+        path.join(config.paths.src, '/hbs/pages/**/*.hbs'),
+        path.join(config.paths.src, 'functions.hbs')
+        ], ['hbs']);
 });
 
 gulp.task('images', function(){
