@@ -3,7 +3,11 @@
 /*
 Since we're not using WordPress for pages, we have to manually handle routing to the proper template. This switch statement will need to reflect the entire catalog of pages.
 */
-add_action('init', 'customRouter');
+
+if ( get_site_url() !== "http://162.198.226.17" ) {
+  add_action('init', 'customRouter');
+}
+
 function customRouter() {
   $load;
   $url_path = trim(parse_url(add_query_arg(array()), PHP_URL_PATH), '/');
