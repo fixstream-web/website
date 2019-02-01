@@ -13,6 +13,7 @@ $buttons: '.button, input[type="submit"], input[type="reset"], input[type="butto
     letter-spacing: 0.03rem;
     line-height: normal;
     overflow: visible;
+    text-shadow: $orange-text-shadow;
     font-weight: $regular;
     transition: background-color $duration-quick linear;
     padding: 0.6rem 1.8rem;
@@ -33,5 +34,6 @@ $buttons: '.button, input[type="submit"], input[type="reset"], input[type="butto
     	color: $white;
     	border: 1px solid $white;
     	box-shadow: none;
+        text-shadow: none;
     }
 }

@@ -89,13 +89,12 @@ $mod: 'news-mentions';
 		margin-top: 0.4rem;
 	}
 	&-publisher {
-		color: $orange;
-		font-weight: $bold;
-		font-size: 0.8rem;
+		background-color: $orange;
+		font-size: 0.7rem;
 		letter-spacing: 0.03rem;
+		text-shadow: $orange-text-shadow;
 	}
 	&-item {
-		// flex-basis: 30%;
 		margin-bottom: 2rem;
 		text-align: left;
 		padding-left: 0.8rem;
@@ -103,7 +102,8 @@ $mod: 'news-mentions';
 		&:nth-child(even) {
 			border-color: $blue;
 			.#{$mod}-publisher {
-				color: $blue;
+				background-color: $blue;
+				text-shadow: $blue-text-shadow;
 			}
 		}
 	}
