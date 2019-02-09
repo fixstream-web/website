@@ -188,3 +188,8 @@ function copyright_year() {
   $curYear = date('Y');
   return $startYear . (($startYear != $curYear) ? '-' . $curYear : '');
 }
+
+if ( !is_admin() ) add_filter( 'wp_default_scripts', 'remove_jquery' );
+function remove_jquery( &$scripts) {
+  $scripts->remove( 'jquery');    
+}
