@@ -116,32 +116,33 @@
 				
 <section class="section section-hero page-index">
 			<div class="section-content">
-				<h1 class="section-headline hero-headline">Prevent and Predict Outages</h1>
-				<p class="section-intro hero-intro">AIOps Platform to Discover, Correlate and Predict Events Across Hybrid IT</p>
+				<h1 class="section-headline hero-headline">Autonomous IT Operations</h1>
+				<p class="section-intro hero-intro">AIOps+ Platform Automates Anomaly Detection, Incident Prediction and Remediation</p>
 				<a class="section-cta hero-cta button button-secondary" href="/resources">Watch video</a>
 				<ul class="hero-solutions__list row">
 					<li class="hero-solutions__item">
 						<span class="hero-solutions__icon-holder"><span class="icon-stats-bars"></span></span>
-						<h2 class="hero-solutions__header">Auto-discovery</h2>
-						<p class="hero-solutions__blurb">Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis senectus curabitu.</p>
+						<h2 class="hero-solutions__header">Accurate Inventory</h2>
+						<p class="hero-solutions__blurb">Agent-less Autodiscovery to create accurate topology maps and automatically update your CMDB</p>
 						<a class="hero-solutions__link" href="#">Learn more<span class="icon-inline icon-circle-right"></span></a>
 					</li>					<li class="hero-solutions__item">
 						<span class="hero-solutions__icon-holder"><span class="icon-stats-bars2"></span></span>
-						<h2 class="hero-solutions__header">Multidimensional Correlation</h2>
-						<p class="hero-solutions__blurb">Aurabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam.</p>
+						<h2 class="hero-solutions__header">Full Stack Correlation</h2>
+						<p class="hero-solutions__blurb">Automated transactions to application to infra mapping to help you resolve IT problems in minutes</p>
 						<a class="hero-solutions__link" href="#">Learn more<span class="icon-inline icon-circle-right"></span></a>
 					</li>					<li class="hero-solutions__item">
 						<span class="hero-solutions__icon-holder"><span class="icon-sphere"></span></span>
-						<h2 class="hero-solutions__header">Artificial Intelligence</h2>
-						<p class="hero-solutions__blurb">Nectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam.</p>
+						<h2 class="hero-solutions__header">AI</h2>
+						<p class="hero-solutions__blurb">Powerful ML to help you accurately predict and resolve complex issues</p>
 						<a class="hero-solutions__link" href="#">Learn more<span class="icon-inline icon-circle-right"></span></a>
 					</li>				</ul>
 			</div>
 		</section>
 <section class="section section-success-stories page-index">
 			<div class="section-content">
+<h2>Trusted by Global Enterprises and Managed Service Providers</h2>
 <ul class="row success-stories__list">
-	<li class="col-4 success-stories__item"><span class="success-stories__label">Broadcom</span></li>	<li class="col-4 success-stories__item"><span class="success-stories__label">SPXFlow</span></li>	<li class="col-4 success-stories__item"><span class="success-stories__label">AirBus</span></li>	<li class="col-4 success-stories__item"><span class="success-stories__label">BT</span></li></ul>
+	<li class="col-4 success-stories__item"><span class="success-stories__label">Broadcom</span></li>	<li class="col-4 success-stories__item"><span class="success-stories__label">SPXFlow</span></li>	<li class="col-4 success-stories__item"><span class="success-stories__label">Maxim Integrated</span></li>	<li class="col-4 success-stories__item"><span class="success-stories__label">BT</span></li></ul>
 <a class="button">More Case Studies</a>
 			</div>
 		</section>
@@ -150,8 +151,10 @@
 <h2>How FixStream Works</h2>
 <div class="row how-fixstream-works__row">
 	<div class="how-fixstream-works__copy">
-		<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sodales primis, mollis viverra conubia ligula inceptos laoreet libero tortor, nascetur non habitasse iaculis tempor nec egestas fames augue, platea porta integer nostra curae sed arcu.</p>
-		<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sodales primis, mollis viverra conubia ligula inceptos laoreet libero tortor, nascetur non habitasse iaculis tempor nec egestas fames augue, platea porta integer nostra curae sed arcu.</p>
+		<p>FixStream helps you predict outages with 90%+ probability, and achieve MTTR in minutes, not hours and days.</p>
+		<p>Enterprise lose revenues and profitability every day since they rely on domain-centric IT tools that don’t correlate data across the entire stack, forcing already overwhelmed IT Operations staff to manually process rapidly increasing amount of unstructured data.</p>
+		<p>With FixStream you will gain unprecedented insights into your entire IT operations and automate many of the complex processes that are holding your team back.</p>
+		<p>FixStream AIOps+ platform delivers superior prediction accuracy by first creating an accurate inventory, by correlating millions of data points across all domains, and then by applying powerful machine learning across the entire stack.</p>
 	</div>
 	<div class="how-fixstream-works__image">
 		<picture class="how-fixstream-works__sources">
@@ -180,17 +183,17 @@
 	<li class="customer-testimonials__item">
 		<div class="customer-testimonials__info">
 			<span class="customer-testimonials__icon-holder"><img src="/wp-content/themes/fixstream/img/temp-cust-logo-1.png" /></span>
-			<h3 class="customer-testimonials__header">Andy Nallappan</h3>
-			<span class="customer-testimonials__title">Global CIO</span>
+			<h3 class="customer-testimonials__header">Mike Fisher</h3>
+			<span class="customer-testimonials__title">SVP, Global IT Operations</span>
 		</div>
-		<blockquote class="customer-testimonials__quote">Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at.</blockquote>
+		<blockquote class="customer-testimonials__quote">I’ve chosen FixStream to get a single view of business critical applications and infrastructure end to end. I’ve not seen another operations platform with this breadth of visibility across all domains.</blockquote>
 	</li>	<li class="customer-testimonials__item">
 		<div class="customer-testimonials__info">
 			<span class="customer-testimonials__icon-holder"><img src="/wp-content/themes/fixstream/img/temp-cust-logo-2.png" /></span>
-			<h3 class="customer-testimonials__header">Sam Gilliland</h3>
-			<span class="customer-testimonials__title">CEO</span>
+			<h3 class="customer-testimonials__header">Andy Nallappam</h3>
+			<span class="customer-testimonials__title">Global CIO, Broadcom</span>
 		</div>
-		<blockquote class="customer-testimonials__quote">Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at.</blockquote>
+		<blockquote class="customer-testimonials__quote">We looked for tools that would automate the IT asset discovery process with 100% accuracy, and we couldn’t find any, till we met FixStream. We have deployed now FixStream across our 11 data-centers, and we plan to use it across all companies we acquire in the future.</blockquote>
 	</li></ul>
 			</div>
 		</section>
@@ -199,21 +202,21 @@
 <h2>Resources</h2>
 <ul class="featured-resources__list">
 	<li class="featured-resources__item">
+		<h3 class="featured-resources__header"><?php echo get_the_title( 195 ) ?></h3>
+		<p class="featured-resources__blurb"><?php echo get_the_excerpt( 195 ) ?></p>
+		<a class="button featured-resources__link" href="<?php echo get_the_permalink( 195 ) ?>">View resource</a>
+	</li>	<li class="featured-resources__item">
 		<h3 class="featured-resources__header"><?php echo get_the_title( 192 ) ?></h3>
 		<p class="featured-resources__blurb"><?php echo get_the_excerpt( 192 ) ?></p>
 		<a class="button featured-resources__link" href="<?php echo get_the_permalink( 192 ) ?>">View resource</a>
 	</li>	<li class="featured-resources__item">
-		<h3 class="featured-resources__header"><?php echo get_the_title( 194 ) ?></h3>
-		<p class="featured-resources__blurb"><?php echo get_the_excerpt( 194 ) ?></p>
-		<a class="button featured-resources__link" href="<?php echo get_the_permalink( 194 ) ?>">View resource</a>
+		<h3 class="featured-resources__header"><?php echo get_the_title( 39 ) ?></h3>
+		<p class="featured-resources__blurb"><?php echo get_the_excerpt( 39 ) ?></p>
+		<a class="button featured-resources__link" href="<?php echo get_the_permalink( 39 ) ?>">View resource</a>
 	</li>	<li class="featured-resources__item">
-		<h3 class="featured-resources__header"><?php echo get_the_title( 187 ) ?></h3>
-		<p class="featured-resources__blurb"><?php echo get_the_excerpt( 187 ) ?></p>
-		<a class="button featured-resources__link" href="<?php echo get_the_permalink( 187 ) ?>">View resource</a>
-	</li>	<li class="featured-resources__item">
-		<h3 class="featured-resources__header"><?php echo get_the_title( 182 ) ?></h3>
-		<p class="featured-resources__blurb"><?php echo get_the_excerpt( 182 ) ?></p>
-		<a class="button featured-resources__link" href="<?php echo get_the_permalink( 182 ) ?>">View resource</a>
+		<h3 class="featured-resources__header"><?php echo get_the_title( 198 ) ?></h3>
+		<p class="featured-resources__blurb"><?php echo get_the_excerpt( 198 ) ?></p>
+		<a class="button featured-resources__link" href="<?php echo get_the_permalink( 198 ) ?>">View resource</a>
 	</li></ul>
 			</div>
 		</section>

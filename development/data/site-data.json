@@ -25,7 +25,7 @@
 					"twitter-title": "test twitter title"
 				},
 				"hero": {
-					"intro": "AIOps Platform to Discover, Correlate and Predict Events Across Hybrid IT",
+					"intro": "AIOps+ Platform Automates Anomaly Detection, Incident Prediction and Remediation",
 					"cta": {
 						"value": "Watch video",
 						"meta": {
@@ -33,7 +33,7 @@
 						}
 					}
 				},
-				"h1": "Prevent and Predict Outages"
+				"h1": "Autonomous IT Operations"
 			},
 			"platform": {
 				"name": "platform",
