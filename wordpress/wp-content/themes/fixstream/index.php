@@ -201,23 +201,31 @@
 			<div class="section-content">
 <h2>Resources</h2>
 <ul class="featured-resources__list">
+	<?php $single = makeSingleCategory(195); ?>
 	<li class="featured-resources__item">
-		<h3 class="featured-resources__header"><?php echo get_the_title( 195 ) ?></h3>
+		<span class="tag tag-<?php echo $single['class']; ?>"><?php echo $single['singular']; ?></span>	<h3 class="featured-resources__header"><?php echo get_the_title( 195 ) ?></h3>
 		<p class="featured-resources__blurb"><?php echo get_the_excerpt( 195 ) ?></p>
 		<a class="button featured-resources__link" href="<?php echo get_the_permalink( 195 ) ?>">View resource</a>
-	</li>	<li class="featured-resources__item">
-		<h3 class="featured-resources__header"><?php echo get_the_title( 192 ) ?></h3>
+	</li>
+	<?php $single = makeSingleCategory(192); ?>
+	<li class="featured-resources__item">
+		<span class="tag tag-<?php echo $single['class']; ?>"><?php echo $single['singular']; ?></span>	<h3 class="featured-resources__header"><?php echo get_the_title( 192 ) ?></h3>
 		<p class="featured-resources__blurb"><?php echo get_the_excerpt( 192 ) ?></p>
 		<a class="button featured-resources__link" href="<?php echo get_the_permalink( 192 ) ?>">View resource</a>
-	</li>	<li class="featured-resources__item">
-		<h3 class="featured-resources__header"><?php echo get_the_title( 39 ) ?></h3>
+	</li>
+	<?php $single = makeSingleCategory(39); ?>
+	<li class="featured-resources__item">
+		<span class="tag tag-<?php echo $single['class']; ?>"><?php echo $single['singular']; ?></span>	<h3 class="featured-resources__header"><?php echo get_the_title( 39 ) ?></h3>
 		<p class="featured-resources__blurb"><?php echo get_the_excerpt( 39 ) ?></p>
 		<a class="button featured-resources__link" href="<?php echo get_the_permalink( 39 ) ?>">View resource</a>
-	</li>	<li class="featured-resources__item">
-		<h3 class="featured-resources__header"><?php echo get_the_title( 198 ) ?></h3>
+	</li>
+	<?php $single = makeSingleCategory(198); ?>
+	<li class="featured-resources__item">
+		<span class="tag tag-<?php echo $single['class']; ?>"><?php echo $single['singular']; ?></span>	<h3 class="featured-resources__header"><?php echo get_the_title( 198 ) ?></h3>
 		<p class="featured-resources__blurb"><?php echo get_the_excerpt( 198 ) ?></p>
 		<a class="button featured-resources__link" href="<?php echo get_the_permalink( 198 ) ?>">View resource</a>
-	</li></ul>
+	</li>
+</ul>
 			</div>
 		</section>
 
