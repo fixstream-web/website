@@ -6,31 +6,12 @@
     {{!-- page specific body content --}}
 
     <?php if (have_posts()) : while (have_posts()) : the_post();
-    $terms = get_the_terms( $post->ID, 'resource-type' );
-    $termName = $terms[0]->name;
-    $singular;
-    switch ($termName) {
-        case 'Case Studies':
-            $singular = 'Case Study';
-            break;
-        case 'Whitepapers':
-            $singular = 'Whitepaper';
-            break;
-        case 'Videos':
-            $singular = 'Video';
-            break;
-        case 'Tech Docs':
-            $singular = 'Tech Doc';
-            break;
-        default:
-            $singular = 'Resource';
-            break;
-    }
+    $single = makeSingleCategory($post->ID);
     ?>
 
     {{#embed "modules/section" name="resource"}}
 	{{#content "contents" mode="append"}}
-    <span>Resources > <?php echo $termName ?></span>
+    <span>Resources > <?php echo $single['termName'] ?></span>
 	<h1><?php the_title(); ?></h1>
     <?php if (get_the_excerpt()): ?>
     <p><?php echo get_the_excerpt() ?></p>
@@ -42,7 +23,7 @@
     {{#embed "modules/section" name="resource-gate"}}
     {{#content "contents" mode="append"}}
 
-    {{#embed "forms/form" id="resourcesForm" submitText=(safe "<?php if ($termName == 'Videos'): ?>Watch<?php else: ?>Download<?php endif ?> this <?php echo $singular; ?>") primaryClass="resource-gate" additionalClasses="" }}
+    {{#embed "forms/form" id="resourcesForm" submitText=(safe "<?php if ($single['termName'] == 'Videos'): ?>Watch<?php else: ?>Download<?php endif ?> this <?php echo $single['singular']; ?>") primaryClass="resource-gate" additionalClasses="" }}
     {{#content "content"}}
         {{> forms/components/labeled-input
             type="text"

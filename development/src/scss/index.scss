@@ -213,15 +213,23 @@
 	}
 	&__item {
 		background: $gray-5;
-		padding: 2rem 1rem;
+		padding: 1.5rem 1rem;
 		border: 1px solid $gray-4;
+		border-radius: $radius-s;
 		display: flex;
 		justify-content: flex-start;
 		flex-direction: column;
-		border-radius: $radius-s;
 		margin-bottom: $item-margin-bottom;
 		&:last-child {
 			margin-bottom: 0;
+		}
+		.tag {
+			align-self: center;
+			//Seems to be necessary to prevent shrinking within the flex parent
+			flex-basis: 1.55rem;
+				//Then center the content itself
+				display: flex;
+    			align-items: center;
 		}
 	}
 	&__header {
@@ -229,6 +237,7 @@
 		padding-bottom: 0.6rem;
 		border-bottom: 2px solid $gray-3;
 		margin-bottom: 0.6rem;
+		margin-top: 0.8rem;
 	}
 	&__blurb {
 		margin-bottom: 0.75rem;
@@ -236,6 +245,7 @@
 	&__link {
 		margin-top: auto;
 	}
+
 	@include media(40rem){
 		&__list {
 			display: flex;

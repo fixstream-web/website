@@ -1,7 +1,29 @@
-.tag {
+$mod: 'tag';
+.#{$mod} {
     background-color: $gray-4;
     color: $white;
     border-radius: $radius-s;
     padding: 0.15rem 0.55rem;
     text-shadow: 0px 1px rgba(0,0,0,0.35);
+    &-small {
+        font-size: 0.7rem;
+        letter-spacing: 0.03rem;
+    }
+    &-tech-doc {
+    	background-color: $blue;
+		text-shadow: $blue-text-shadow;
+    }
+    &-whitepaper {
+    	background-color: $lightblue;
+		text-shadow: $lightblue-text-shadow;
+    }
+    &-blog {
+        background-color: $yellow;
+        text-shadow: $yellow-text-shadow;
+    }
+    &-video {
+    	background-color: $purple;
+		text-shadow: $purple-text-shadow;
+    }
 }
+

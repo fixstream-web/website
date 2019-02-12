@@ -106,31 +106,12 @@
 	<article>
 		
     <?php if (have_posts()) : while (have_posts()) : the_post();
-    $terms = get_the_terms( $post->ID, 'resource-type' );
-    $termName = $terms[0]->name;
-    $singular;
-    switch ($termName) {
-        case 'Case Studies':
-            $singular = 'Case Study';
-            break;
-        case 'Whitepapers':
-            $singular = 'Whitepaper';
-            break;
-        case 'Videos':
-            $singular = 'Video';
-            break;
-        case 'Tech Docs':
-            $singular = 'Tech Doc';
-            break;
-        default:
-            $singular = 'Resource';
-            break;
-    }
+    $single = makeSingleCategory($post->ID);
     ?>
 
 <section class="section section-resource page-single-resources">
 			<div class="section-content">
-    <span>Resources > <?php echo $termName ?></span>
+    <span>Resources > <?php echo $single['termName'] ?></span>
 	<h1><?php the_title(); ?></h1>
     <?php if (get_the_excerpt()): ?>
     <p><?php echo get_the_excerpt() ?></p>
@@ -189,7 +170,7 @@
 				   name="phone"
 				   
 				    />
-	<input type="submit" id="resource-gate-submit" value="<?php if ($termName == 'Videos'): ?>Watch<?php else: ?>Download<?php endif ?> this <?php echo $singular; ?>" />
+	<input type="submit" id="resource-gate-submit" value="<?php if ($single['termName'] == 'Videos'): ?>Watch<?php else: ?>Download<?php endif ?> this <?php echo $single['singular']; ?>" />
 </form>
 			</div>
 		</section>     <?php endwhile; endif; wp_reset_query(); ?>
