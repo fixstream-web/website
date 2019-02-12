@@ -4,6 +4,10 @@ const gulp            = require('gulp'),
       webpack         = require('webpack'),
       gulpWebpack     = require('webpack-stream'),
       sass            = require('gulp-sass'),
+      autoprefixer    = require('gulp-autoprefixer'),
+      shorthand       = require('gulp-shorthand'),
+      cleanCSS        = require('gulp-clean-css'),
+      csso            = require('gulp-csso'),
       path            = require('path'),
       handlebars      = require('handlebars'),
       compilehbs      = require('gulp-compile-handlebars'),
@@ -12,7 +16,6 @@ const gulp            = require('gulp'),
       data            = require('./data/site-data.json'),
       config          = require('./config'),
       fs              = require('file-system'),
-      autoprefixer    = require('gulp-autoprefixer'),
       del             = require('del'),
       gutil           = require('gulp-util'),
       filelist        = require('gulp-filelist'),
@@ -67,6 +70,9 @@ gulp.task('css:compile', function(){
         .pipe(sass(config.sassOptions)
             .on('error', sass.logError))
         .pipe(autoprefixer(config.autoprefixerOptions))
+        .pipe(shorthand())
+        .pipe(cleanCSS({compatibility: 'ie8', level: 2}))
+        .pipe(csso())
         .pipe(gulp.dest(path.join(config.paths.built, '/css')))
 });
 
