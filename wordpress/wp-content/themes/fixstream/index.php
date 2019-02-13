@@ -140,15 +140,15 @@
 		</section>
 <section class="section section-success-stories page-index">
 			<div class="section-content">
-<h2>Trusted by Global Enterprises and Managed Service Providers</h2>
+<h2 class="success-stories__header">Trusted by Global Enterprises and Managed Service Providers</h2>
 <ul class="row success-stories__list">
-	<li class="col-4 success-stories__item"><span class="success-stories__label">Broadcom</span></li>	<li class="col-4 success-stories__item"><span class="success-stories__label">SPXFlow</span></li>	<li class="col-4 success-stories__item"><span class="success-stories__label">Maxim Integrated</span></li>	<li class="col-4 success-stories__item"><span class="success-stories__label">BT</span></li></ul>
+	<li class="success-stories__item"><span class="success-stories__label">Broadcom</span></li>	<li class="success-stories__item"><span class="success-stories__label">SPXFlow</span></li>	<li class="success-stories__item"><span class="success-stories__label">Maxim Integrated</span></li>	<li class="success-stories__item"><span class="success-stories__label">BT</span></li></ul>
 <a class="button">More Case Studies</a>
 			</div>
 		</section>
-<section class="section section-how-fixstream-works page-index">
+<section class="section section-how-fixstream-works section-has-arrow section-has-arrow-top">
+<h2 class="how-fixstream-works__header">How FixStream Works</h2>
 			<div class="section-content">
-<h2>How FixStream Works</h2>
 <div class="row how-fixstream-works__row">
 	<div class="how-fixstream-works__copy">
 		<p>FixStream helps you predict outages with 90%+ probability, and achieve MTTR in minutes, not hours and days.</p>
@@ -177,23 +177,15 @@
 </div>
 			</div>
 		</section>
-<section class="section section-customer-testimonials page-index">
+<section class="section section-customer-testimonials section-has-arrow section-has-arrow-top section-has-arrow-bottom">
 			<div class="section-content">
 <ul class="customer-testimonials__list">
 	<li class="customer-testimonials__item">
-		<div class="customer-testimonials__info">
-			<span class="customer-testimonials__icon-holder"><img src="/wp-content/themes/fixstream/img/temp-cust-logo-1.png" /></span>
-			<h3 class="customer-testimonials__header">Mike Fisher</h3>
-			<span class="customer-testimonials__title">SVP, Global IT Operations</span>
-		</div>
 		<blockquote class="customer-testimonials__quote">I’ve chosen FixStream to get a single view of business critical applications and infrastructure end to end. I’ve not seen another operations platform with this breadth of visibility across all domains.</blockquote>
+		<h3 class="customer-testimonials__header">Mike Fisher <span class="customer-testimonials__title">SVP, Global IT Operations</span></h3>	
 	</li>	<li class="customer-testimonials__item">
-		<div class="customer-testimonials__info">
-			<span class="customer-testimonials__icon-holder"><img src="/wp-content/themes/fixstream/img/temp-cust-logo-2.png" /></span>
-			<h3 class="customer-testimonials__header">Andy Nallappam</h3>
-			<span class="customer-testimonials__title">Global CIO, Broadcom</span>
-		</div>
 		<blockquote class="customer-testimonials__quote">We looked for tools that would automate the IT asset discovery process with 100% accuracy, and we couldn’t find any, till we met FixStream. We have deployed now FixStream across our 11 data-centers, and we plan to use it across all companies we acquire in the future.</blockquote>
+		<h3 class="customer-testimonials__header">Andy Nallappam <span class="customer-testimonials__title">Global CIO, Broadcom</span></h3>	
 	</li></ul>
 			</div>
 		</section>
@@ -203,26 +195,26 @@
 <ul class="featured-resources__list">
 	<?php $single = makeSingleCategory(195); ?>
 	<li class="featured-resources__item">
-		<span class="tag tag-<?php echo $single['class']; ?>"><?php echo $single['singular']; ?></span>	<h3 class="featured-resources__header"><?php echo get_the_title( 195 ) ?></h3>
-		<p class="featured-resources__blurb"><?php echo get_the_excerpt( 195 ) ?></p>
+		<h3 class="featured-resources__header"><?php echo get_the_title( 195 ) ?></h3>
+		<img class="featured-resources__img" src="https://via.placeholder.com/420x500" />
 		<a class="button featured-resources__link" href="<?php echo get_the_permalink( 195 ) ?>">View resource</a>
 	</li>
 	<?php $single = makeSingleCategory(192); ?>
 	<li class="featured-resources__item">
-		<span class="tag tag-<?php echo $single['class']; ?>"><?php echo $single['singular']; ?></span>	<h3 class="featured-resources__header"><?php echo get_the_title( 192 ) ?></h3>
-		<p class="featured-resources__blurb"><?php echo get_the_excerpt( 192 ) ?></p>
+		<h3 class="featured-resources__header"><?php echo get_the_title( 192 ) ?></h3>
+		<img class="featured-resources__img" src="https://via.placeholder.com/420x500" />
 		<a class="button featured-resources__link" href="<?php echo get_the_permalink( 192 ) ?>">View resource</a>
 	</li>
 	<?php $single = makeSingleCategory(39); ?>
 	<li class="featured-resources__item">
-		<span class="tag tag-<?php echo $single['class']; ?>"><?php echo $single['singular']; ?></span>	<h3 class="featured-resources__header"><?php echo get_the_title( 39 ) ?></h3>
-		<p class="featured-resources__blurb"><?php echo get_the_excerpt( 39 ) ?></p>
+		<h3 class="featured-resources__header"><?php echo get_the_title( 39 ) ?></h3>
+		<img class="featured-resources__img" src="https://via.placeholder.com/420x500" />
 		<a class="button featured-resources__link" href="<?php echo get_the_permalink( 39 ) ?>">View resource</a>
 	</li>
 	<?php $single = makeSingleCategory(198); ?>
 	<li class="featured-resources__item">
-		<span class="tag tag-<?php echo $single['class']; ?>"><?php echo $single['singular']; ?></span>	<h3 class="featured-resources__header"><?php echo get_the_title( 198 ) ?></h3>
-		<p class="featured-resources__blurb"><?php echo get_the_excerpt( 198 ) ?></p>
+		<h3 class="featured-resources__header"><?php echo get_the_title( 198 ) ?></h3>
+		<img class="featured-resources__img" src="https://via.placeholder.com/420x500" />
 		<a class="button featured-resources__link" href="<?php echo get_the_permalink( 198 ) ?>">View resource</a>
 	</li>
 </ul>
@@ -303,9 +295,9 @@
 			</ul>
 		</nav>
 		<ul class="globalfooter__social">
-			<li class="globalfooter__social-item"><span class="icon-facebook2"></span></li>
-			<li class="globalfooter__social-item"><span class="icon-youtube"></span></li>
+			<li class="globalfooter__social-item"><span class="icon-twitter"></span></li>
 			<li class="globalfooter__social-item"><span class="icon-linkedin"></span></li>
+			<li class="globalfooter__social-item"><span class="icon-youtube2"></span></li>
 		</ul>
 		<small class="globalfooter__copyright">© Copyright <?php echo copyright_year(); ?> | <a href="#">Terms of Use</a> | <a href="">Privacy Policy</a></small>
 	</footer>

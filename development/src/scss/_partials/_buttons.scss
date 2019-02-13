@@ -15,7 +15,8 @@ $buttons: '.button, input[type="submit"], input[type="reset"], input[type="butto
     overflow: visible;
     text-shadow: $orange-text-shadow;
     font-weight: $regular;
-    transition: background-color $duration-quick linear;
+    transition: $duration-quick linear;
+    transition-property: background-color, color, border-color;
     padding: 0.6rem 1.8rem;
     box-shadow: 1px 1px 0 inset rgba(255,255,255, 0.5),
     						1px 1px 3px rgba(0,0,0,0.3);
@@ -35,5 +36,10 @@ $buttons: '.button, input[type="submit"], input[type="reset"], input[type="butto
     	border: 1px solid $white;
     	box-shadow: none;
         text-shadow: none;
+        .no-touchevents &:hover {
+            background: transparent;
+            color: $orange;
+            border-color: $orange;
+        }
     }
 }

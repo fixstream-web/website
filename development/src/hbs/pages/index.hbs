@@ -32,7 +32,7 @@
 
 {{#embed "modules/section" name="success-stories"}}
 {{#content "contents" mode="append"}}
-<h2>Trusted by Global Enterprises and Managed Service Providers</h2>
+<h2 class="success-stories__header">Trusted by Global Enterprises and Managed Service Providers</h2>
 <ul class="row success-stories__list">
 	{{> modules/homepage-success-stories-item
 			label="Broadcom"}}
@@ -47,9 +47,11 @@
 {{/content}}
 {{/embed}}
 
-{{#embed "modules/section" name="how-fixstream-works"}}
+{{#embed "modules/section" name="how-fixstream-works" additionalClasses="section-has-arrow section-has-arrow-top"}}
+{{#content "bleed" mode="append"}}
+<h2 class="how-fixstream-works__header">How FixStream Works</h2>
+{{/content}}
 {{#content "contents" mode="append"}}
-<h2>How FixStream Works</h2>
 <div class="row how-fixstream-works__row">
 	<div class="how-fixstream-works__copy">
 		<p>FixStream helps you predict outages with 90%+ probability, and achieve MTTR in minutes, not hours and days.</p>
@@ -84,16 +86,14 @@
 {{/content}}
 {{/embed}}
 
-{{#embed "modules/section" name="customer-testimonials"}}
+{{#embed "modules/section" name="customer-testimonials" additionalClasses="section-has-arrow section-has-arrow-top section-has-arrow-bottom"}}
 {{#content "contents" mode="append"}}
 <ul class="customer-testimonials__list">
 	{{> modules/testimonial
-			logo="temp-cust-logo-1.png"
 			name="Mike Fisher"
 			title="SVP, Global IT Operations"
 			quote="I’ve chosen FixStream to get a single view of business critical applications and infrastructure end to end. I’ve not seen another operations platform with this breadth of visibility across all domains."}}
 	{{> modules/testimonial
-			logo="temp-cust-logo-2.png"
 			name="Andy Nallappam"
 			title="Global CIO, Broadcom"
 			quote="We looked for tools that would automate the IT asset discovery process with 100% accuracy, and we couldn’t find any, till we met FixStream. We have deployed now FixStream across our 11 data-centers, and we plan to use it across all companies we acquire in the future."}}

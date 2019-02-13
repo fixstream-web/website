@@ -414,9 +414,9 @@
 			</ul>
 		</nav>
 		<ul class="globalfooter__social">
-			<li class="globalfooter__social-item"><span class="icon-facebook2"></span></li>
-			<li class="globalfooter__social-item"><span class="icon-youtube"></span></li>
+			<li class="globalfooter__social-item"><span class="icon-twitter"></span></li>
 			<li class="globalfooter__social-item"><span class="icon-linkedin"></span></li>
+			<li class="globalfooter__social-item"><span class="icon-youtube2"></span></li>
 		</ul>
 		<small class="globalfooter__copyright">© Copyright <?php echo copyright_year(); ?> | <a href="#">Terms of Use</a> | <a href="">Privacy Policy</a></small>
 	</footer>
