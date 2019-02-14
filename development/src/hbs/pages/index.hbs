@@ -12,17 +12,17 @@
 				<a class="section-cta hero-cta button button-secondary" href="{{data.hero.cta.meta.url}}">{{data.hero.cta.value}}</a>
 				<ul class="hero-solutions__list row">
 					{{> modules/hero-solution-item
-					icon="icon-stats-bars"
+					icon="icon-accurate-inventory.svg"
 					category="Accurate Inventory"
 					blurb="Agent-less Autodiscovery to create accurate topology maps and automatically update your CMDB"
 					link="#"}}
 					{{> modules/hero-solution-item
-					icon="icon-stats-bars2"
+					icon="icon-full-stack-correlation.svg"
 					category="Full Stack Correlation"
 					blurb="Automated transactions to application to infra mapping to help you resolve IT problems in minutes"
 					link="#"}}
 					{{> modules/hero-solution-item
-					icon="icon-sphere"
+					icon="icon-ai.svg"
 					category="AI"
 					blurb="Powerful ML to help you accurately predict and resolve complex issues"
 					link="#"}}
@@ -35,12 +35,16 @@
 <h2 class="success-stories__header">Trusted by Global Enterprises and Managed Service Providers</h2>
 <ul class="row success-stories__list">
 	{{> modules/homepage-success-stories-item
+			logo="homepage_success-stories_broadcom.png"
 			label="Broadcom"}}
 	{{> modules/homepage-success-stories-item
+			logo="homepage_success-stories_spxflow.png"
 			label="SPXFlow"}}
 	{{> modules/homepage-success-stories-item
+			logo="homepage_success-stories_maxim.png"
 			label="Maxim Integrated"}}
 	{{> modules/homepage-success-stories-item
+			logo="homepage_success-stories_bt.png"
 			label="BT"}}
 </ul>
 <a class="button">More Case Studies</a>
@@ -105,10 +109,33 @@
 {{#content "contents" mode="append"}}
 <h2>Resources</h2>
 <ul class="featured-resources__list">
-	{{> modules/homepage-resource-item id=195}}
-	{{> modules/homepage-resource-item id=192}}
-	{{> modules/homepage-resource-item id=39}}
-	{{> modules/homepage-resource-item id=198}}
+	{{!-- {{> modules/homepage-resource-item id=195}} --}}
+	{{!-- {{> modules/homepage-resource-item id=192}} --}}
+	{{!-- {{> modules/homepage-resource-item id=39}} --}}
+	{{!-- {{> modules/homepage-resource-item id=198}} --}}
+	<li class="featured-resources__item">
+		<h3 class="featured-resources__header">AIOps for Dummies</h3>
+		<img class="featured-resources__img" src="https://via.placeholder.com/420x500" />
+		<a class="button featured-resources__link" href="/">Download</a>
+	</li>
+	<li class="featured-resources__item">
+		<h3 class="featured-resources__header">AIOps Whitepaper</h3>
+		<img class="featured-resources__img" src="https://via.placeholder.com/420x500" />
+		<a class="button featured-resources__link" href="/">Download</a>
+	</li>
+	<li class="featured-resources__item">
+		<h3 class="featured-resources__header">Latest Blog</h3>
+		<img class="featured-resources__img" src="https://via.placeholder.com/420x280" />
+		<p class="featured-resources__copy">Getting a Handle on AIOps And Learning What These Platforms and Solutions Can Do for You</p>
+		<a class="button featured-resources__link" href="/">Read Blog</a>
+	</li>
+	<li class="featured-resources__item">
+		<h3 class="featured-resources__header">Hear From Our CEO</h3>
+		<img class="featured-resources__img" src="https://via.placeholder.com/420x420" />
+		<span class="featured-resources__copy"><strong>Sameer Padhye</strong></span>
+		<span class="featured-resources__copy">Founder & CEO</span>
+		<a class="button featured-resources__link" href="/">Learn More</a>
+	</li>
 </ul>
 {{/content}}
 {{/embed}}
