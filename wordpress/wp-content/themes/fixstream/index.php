@@ -118,23 +118,23 @@
 			<div class="section-content">
 				<h1 class="section-headline hero-headline">Autonomous IT Operations</h1>
 				<p class="section-intro hero-intro">AIOps+ Platform Automates Anomaly Detection, Incident Prediction and Remediation</p>
-				<a class="section-cta hero-cta button button-secondary" href="/resources">Watch video</a>
+				<a class="section-cta hero-cta button" href="/resources">Watch video</a>
 				<ul class="hero-solutions__list row">
-					<li class="hero-solutions__item">
+					<li class="hero-solutions__item hero-solutions__item--accurate-inventory">
 						<span class="hero-solutions__icon-holder">
 							<img class="hero-solutions__icon" src="/wp-content/themes/fixstream/img/svg/icon-accurate-inventory.svg" />
 						</span>
 						<h2 class="hero-solutions__header">Accurate Inventory</h2>
 						<p class="hero-solutions__blurb">Agent-less Autodiscovery to create accurate topology maps and automatically update your CMDB</p>
 						<a class="hero-solutions__link" href="#">Learn more<span class="icon-inline icon-circle-right"></span></a>
-					</li>					<li class="hero-solutions__item">
+					</li>					<li class="hero-solutions__item hero-solutions__item--full-stack-correlation">
 						<span class="hero-solutions__icon-holder">
 							<img class="hero-solutions__icon" src="/wp-content/themes/fixstream/img/svg/icon-full-stack-correlation.svg" />
 						</span>
 						<h2 class="hero-solutions__header">Full Stack Correlation</h2>
 						<p class="hero-solutions__blurb">Automated transactions to application to infra mapping to help you resolve IT problems in minutes</p>
 						<a class="hero-solutions__link" href="#">Learn more<span class="icon-inline icon-circle-right"></span></a>
-					</li>					<li class="hero-solutions__item">
+					</li>					<li class="hero-solutions__item hero-solutions__item--ai">
 						<span class="hero-solutions__icon-holder">
 							<img class="hero-solutions__icon" src="/wp-content/themes/fixstream/img/svg/icon-ai.svg" />
 						</span>

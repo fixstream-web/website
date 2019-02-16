@@ -2,28 +2,69 @@
 @import 'hero';
 
 .section-hero {
-	padding: 3rem 0;
-	background: url('../img/temp-hero-600.jpg') no-repeat;
+	padding: 2.5rem 0 0 0;
+	background: url('../img/homepage_hero-large.jpg') no-repeat;
 	background-position: center;
 	background-size: cover;
+	position: relative;
+	overflow: hidden;
+	.hero-headline {
+		font-weight: $bold;
+		font-size: 3rem;
+	}
+	.hero-intro {
+		margin-bottom: 0.6rem;
+	}
 	.hero-headline,
 	.hero-intro {
 		color: $white;
 	}
+	&:before,
+	&:after {
+		content: '';
+		display: inline-block;
+	    height: 106px;
+	    width: 100%;
+		background-color: $white;
+		position: absolute;
+		bottom: -106px;
+	}
+	&:before {
+		transform-origin: 100% 100%;
+		left: -50%;
+		transform: rotate(8deg);
+	}
+	&:after {
+		transform-origin: 0% 100%;
+		right: -50%;
+		transform: rotate(-8deg);
+	}
 }
+
+
 .hero-solutions {
 	&__list {
-		margin-top: 3rem;
+		margin-top: 1.6rem;
 		align-items: center;
 	}
 	&__item {
 		margin-bottom: 1.7rem;
 		display: flex;
+		padding: 2rem 1rem 5.5rem;
 		flex-direction: column;
 		align-items: center;
 		max-width: 25rem;
+		$radius: 200px;
+		border-top-left-radius: $radius;
+		border-top-right-radius: $radius;
+		background: rgba(darken($blue, 15%), 0.8);
 		&:last-child {
 			margin-bottom: 0;
+		}
+		&--full-stack-correlation {
+			.hero-solutions__icon {
+				top: -0.15rem;
+			}
 		}
 	}
 	&__header,
@@ -36,7 +77,7 @@
 		margin: 0.34rem 0 0.5rem;
 	}
 	&__icon-holder {
-		$size: 6rem;
+		$size: 7rem;
 		@include circle;
 		@include flex-center;
 		background: $white;
@@ -46,13 +87,14 @@
 		font-size: 1.75rem;
 	}
 	&__icon {
-		height: 75px;
-		width: 75px;
+		position: relative;
+		height: 85px;
+		width: 85px;
 	}
 
 	@include media(60rem){
 		&__list {
-			align-items: flex-start;
+			align-items: stretch;
 			justify-content: space-between;
 			flex-direction: row;
 		}
@@ -60,7 +102,7 @@
 			margin-bottom: 0;
 			flex-grow: 0;
 			flex-shrink: 0;
-			flex-basis: 25%;
+			flex-basis: 30%;
 		}
 	}
 }
