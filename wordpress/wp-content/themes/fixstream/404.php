@@ -12,13 +12,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<?php wp_head(); ?>
 	<link rel="stylesheet" href="/wp-content/themes/fixstream/css/404.css">
-	<script type="text/javascript" src="/wp-content/themes/fixstream/js/head.js"></script></head>
+	<script type="text/javascript" src="/wp-content/themes/fixstream/js/head.js" rel="preload" as="script"></script></head>
 <body class="page-404">
 	<header class="globalheader">
 		<div class="globalheader__navbar">
 		<a class="globalheader__link" href="/">
 			<img class="globalheader__logo" src="/wp-content/themes/fixstream/img/temp-logo.png" />
-
 		</a>
 		<label class="globalnav-button button button-secondary button-small" tabindex="0" for="menuToggle-1"><span class="icon-menu"></span></label>
 <input id="menuToggle-1" class="globalnav-toggle hidden" type="checkbox" tabindex="0" />
