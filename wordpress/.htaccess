@@ -1,3 +1,33 @@
+FileETag None
+
+<Files *.js.gz>
+  AddType "text/javascript" .gz
+  AddEncoding gzip .gz
+</Files>
+<Files *.css.gz>
+  AddType "text/css" .gz
+  AddEncoding gzip .gz
+</Files>
+
+<Files *.js.br>
+  AddType "text/javascript" .br
+  AddEncoding br .br
+</Files>
+<Files *.css.br>
+  AddType "text/css" .br
+  AddEncoding br .br
+</Files>
+
+RewriteEngine On
+
+RewriteCond %{HTTP:Accept-Encoding} br
+RewriteCond %{REQUEST_FILENAME}.br -f
+RewriteRule ^(.*)$ $1.br [L]
+
+RewriteCond %{HTTP:Accept-Encoding} gzip
+RewriteCond %{REQUEST_FILENAME}.gz -f
+RewriteRule ^(.*)$ $1.gz [L]
+
 
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
@@ -10,3 +40,8 @@ RewriteRule . /index.php [L]
 </IfModule>
 
 # END WordPress
+
+#<IfModule mod_deflate.c>
+#AddOutputFilterByType DEFLATE application/javascript
+#AddOutputFilterByType DEFLATE application/x-javascript
+#</IfModule>

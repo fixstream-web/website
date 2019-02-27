@@ -4,6 +4,10 @@ const gulp            = require('gulp'),
       webpack         = require('webpack'),
       gulpWebpack     = require('webpack-stream'),
       sass            = require('gulp-sass'),
+      autoprefixer    = require('gulp-autoprefixer'),
+      shorthand       = require('gulp-shorthand'),
+      cleanCSS        = require('gulp-clean-css'),
+      csso            = require('gulp-csso'),
       path            = require('path'),
       handlebars      = require('handlebars'),
       compilehbs      = require('gulp-compile-handlebars'),
@@ -12,10 +16,11 @@ const gulp            = require('gulp'),
       data            = require('./data/site-data.json'),
       config          = require('./config'),
       fs              = require('file-system'),
-      autoprefixer    = require('gulp-autoprefixer'),
       del             = require('del'),
       gutil           = require('gulp-util'),
-      filelist        = require('gulp-filelist');
+      filelist        = require('gulp-filelist'),
+      zopfli          = require("gulp-zopfli"),
+      brotli          = require('gulp-brotli');
 
 let pagefiles;
 
@@ -55,18 +60,167 @@ function arr_diff (a1, a2) {
     return diff;
 }
 
-gulp.task('css', function(){
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~    CSS PIPELINE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+gulp.task('css:compile', function(){
     return gulp.src(path.join(config.paths.src, '/scss/**/*.scss'))
         .pipe(sass(config.sassOptions)
             .on('error', sass.logError))
         .pipe(autoprefixer(config.autoprefixerOptions))
+        .pipe(shorthand())
+        .pipe(cleanCSS({compatibility: 'ie8', level: 2}))
+        .pipe(csso())
         .pipe(gulp.dest(path.join(config.paths.built, '/css')))
 });
 
+gulp.task('css:brotli', function(){
+    return gulp.src(path.join(config.paths.built, '/css/**/*.css'))
+            .pipe(brotli.compress({
+                      extension: 'br',
+                      skipLarger: true,
+                      mode: 0,
+                      quality: 11,
+                      lgblock: 0
+                    }))
+            .pipe(gulp.dest(function (file) {
+                return file.base;
+            }))
+});
+
+gulp.task('css:gzip', function(){
+    return gulp.src(path.join(config.paths.built, '/css/**/*.css'))
+            .pipe(zopfli())
+            .pipe(gulp.dest(function (file) {
+                return file.base;
+            }))
+});
+
+gulp.task('css:compress', ['css:compile'], function(){
+    gulp.start('css:gzip');
+    gulp.start('css:brotli');
+});
+
+
+gulp.task('css', ['css:compress']);
 
 gulp.task('css:watch', function(){
     gulp.watch(path.join(config.paths.src, '/scss/**/*.scss'), ['css']);
 });
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~    JS PIPELINE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+gulp.task('js:compile', function() {
+  return gulp.src(path.join(config.paths.src, '/js/head.js'))
+    .pipe(gulpWebpack(require('./webpack.config.js'), webpack))
+    .pipe(gulp.dest(path.join(config.paths.built, 'js')));
+});
+
+gulp.task('js:brotli', function(){
+    return gulp.src(path.join(config.paths.built, '/js/**/*.js'))
+            .pipe(brotli.compress({
+                      extension: 'br',
+                      skipLarger: true,
+                      mode: 0,
+                      quality: 11,
+                      lgblock: 0
+                    }))
+            .pipe(gulp.dest(function (file) {
+                return file.base;
+            }))
+});
+
+gulp.task('js:gzip', function(){
+    return gulp.src(path.join(config.paths.built, '/js/**/*.js'))
+            .pipe(zopfli())
+            .pipe(gulp.dest(function (file) {
+                return file.base;
+            }))
+});
+
+gulp.task('js:compress', ['js:compile'], function(){
+    gulp.start('js:gzip');
+    gulp.start('js:brotli');
+});
+
+gulp.task('js', ['js:compress']);
+
+gulp.task('js:watch', function(){
+    gulp.watch(path.join(config.paths.src, '/js/**/*.js'), ['js']);
+});
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~    HBS PIPELINE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+gulp.task('hbs', function(){
+    let navIndex = 0;
+    gulp.src([
+        path.join(config.paths.src, '/hbs/pages/**/*.hbs'),
+        path.join(config.paths.src, 'functions.hbs')
+        ])
+        .pipe(compilehbs(data.site, {
+                            ignorePartials: true,
+                            batch: [path.join(config.paths.src, '/hbs/partials')],
+                            helpers: {
+                                eq: function(arg1, arg2, options) {
+                                    return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
+                                },
+                                log: function(arg1) {
+                                    console.log(arg1);
+                                },
+                                safe: function(string){
+                                    return new handlebars.SafeString(string);
+                                },
+                                concat: function(){
+                                    let arry = [];
+                                    let idx = 0;
+                                    for (var key in arguments) {
+                                      if (idx < arguments.length - 1) {
+                                        arry.push(arguments[key]);
+                                        idx++;
+                                      }
+                                    }
+                                    return arry.join('');
+                                },
+                                navIndex: function(){
+                                    return navIndex;
+                                },
+                                navCount: function(){
+                                    return navIndex++;
+                                },
+                                both: function(arg1, arg2, options){
+                                    if(arg1 && arg2) {
+                                    return options.fn(this);
+                                  } else {
+                                    return options.inverse(this);
+                                  }
+                                }
+                            }
+                        }))
+        .pipe(rename({
+            extname: config.types.ext
+        }))
+    .pipe(gulp.dest(config.paths.built));
+});
+
+gulp.task('hbs:watch', function(){
+    gulp.watch([
+        path.join(config.paths.src, '/hbs/pages/**/*.hbs'),
+        path.join(config.paths.src, 'functions.hbs')
+        ], ['hbs']);
+});
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~    Source Control
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 gulp.task('pages', ['audit'], function(){
     const pageTypes = ['scss','hbs','js'];
@@ -272,63 +426,9 @@ gulp.task('audit', function(){
 });
 
 
-gulp.task('hbs', function(){
-    let navIndex = 0;
-    gulp.src([
-        path.join(config.paths.src, '/hbs/pages/**/*.hbs'),
-        path.join(config.paths.src, 'functions.hbs')
-        ])
-        .pipe(compilehbs(data.site, {
-                            ignorePartials: true,
-                            batch: [path.join(config.paths.src, '/hbs/partials')],
-                            helpers: {
-                                eq: function(arg1, arg2, options) {
-                                    return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
-                                },
-                                log: function(arg1) {
-                                    console.log(arg1);
-                                },
-                                safe: function(string){
-                                    return new handlebars.SafeString(string);
-                                },
-                                concat: function(){
-                                    let arry = [];
-                                    let idx = 0;
-                                    for (var key in arguments) {
-                                      if (idx < arguments.length - 1) {
-                                        arry.push(arguments[key]);
-                                        idx++;
-                                      }
-                                    }
-                                    return arry.join('');
-                                },
-                                navIndex: function(){
-                                    return navIndex;
-                                },
-                                navCount: function(){
-                                    return navIndex++;
-                                },
-                                both: function(arg1, arg2, options){
-                                    if(arg1 && arg2) {
-                                    return options.fn(this);
-                                  } else {
-                                    return options.inverse(this);
-                                  }
-                                }
-                            }
-                        }))
-        .pipe(rename({
-            extname: config.types.ext
-        }))
-    .pipe(gulp.dest(config.paths.built));
-});
-
-gulp.task('hbs:watch', function(){
-    gulp.watch([
-        path.join(config.paths.src, '/hbs/pages/**/*.hbs'),
-        path.join(config.paths.src, 'functions.hbs')
-        ], ['hbs']);
-});
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~    Misc Control
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 gulp.task('images', function(){
     gulp.src(path.join(config.paths.images, '*.*'))
@@ -341,16 +441,6 @@ gulp.task('fonts', function(){
 });
 
 gulp.task('assets', ['images', 'fonts']);
-
-gulp.task('js', function() {
-  return gulp.src(path.join(config.paths.src, '/js/head.js'))
-    .pipe(gulpWebpack(require('./webpack.config.js'), webpack))
-    .pipe(gulp.dest(path.join(config.paths.built, 'js')));
-});
-
-gulp.task('js:watch', function(){
-    gulp.watch(path.join(config.paths.src, '/js/**/*.js'), ['js']);
-});
 
 gulp.task('theme', function(){
     // Generates comment string for theme registration
