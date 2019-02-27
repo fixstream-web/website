@@ -26,11 +26,11 @@
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/platform">Platform</a>
 						<input type="checkbox"
-							   id="subnavToggle-33"
+							   id="subnavToggle-21"
 							   class="globalnav__subnav-toggle hidden"
 							   name="platform"
 							   
-							    /><label class="globalnav__subnav-button" for="subnavToggle-33">+</label>						<ul class="globalnav__subnav">
+							    /><label class="globalnav__subnav-button" for="subnavToggle-21">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/agent-less-auto-discovery">Agent-less Auto Discovery
 							</a>
@@ -51,11 +51,11 @@
 							<a class="globalnav__link" href="/platform/ecosystem">Ecosystem
 							</a>
 		        		<input type="checkbox"
-		        			   id="subnavToggle-34"
+		        			   id="subnavToggle-22"
 		        			   class="globalnav__subnav-toggle hidden"
 		        			   name="ecosystem"
 		        			   
-		        			    /><label class="globalnav__subnav-button" for="subnavToggle-34">+</label>								<ul class="globalnav__subnav">
+		        			    /><label class="globalnav__subnav-button" for="subnavToggle-22">+</label>								<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/ecosystem/oracle">Oracle
 							</a>
@@ -73,11 +73,11 @@
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/customers">Customers</a>
 						<input type="checkbox"
-							   id="subnavToggle-35"
+							   id="subnavToggle-23"
 							   class="globalnav__subnav-toggle hidden"
 							   name="customers"
 							   
-							    /><label class="globalnav__subnav-button" for="subnavToggle-35">+</label>						<ul class="globalnav__subnav">
+							    /><label class="globalnav__subnav-button" for="subnavToggle-23">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/customers/broadcom">Broadcom
 							</a>
@@ -120,65 +120,73 @@
 <section class="section section-resources-whitepapers page-resources">
 			<div class="section-content">
 		<h2>Whitepapers</h2>
-		<?php $args = array( 'post_type' => 'resources', 'posts_per_page' => -1, 'resource-type' => 'whitepapers' );
-		$loop = new WP_Query( $args );
-		while ( $loop->have_posts() ) : $loop->the_post(); ?>
-		<div class="resource-row">
-			<h3 class="resource-title"><?php the_title(); ?></h3>
-			<div class="resource-options">
-				<a class="button button-small resource-link" href="<?php echo get_permalink(); ?>">More</a>
-				<a class="button button-small resource-link">Download</a>
-			</div>
-		</div>
+		<ul class="resource__list">
+			<?php $args = array( 'post_type' => 'resources', 'posts_per_page' => -1, 'resource-type' => 'whitepapers' );
+			$loop = new WP_Query( $args );
+			while ( $loop->have_posts() ) : $loop->the_post(); ?>
+			<li class="resource__item">
+				<h3 class="resource__title"><?php the_title(); ?></h3>
+				<div class="resource__options">
+					<a class="button button-small button-secondary button-secondary-orange resource__link" href="<?php echo get_permalink(); ?>">More</a>
+					<a class="button button-small resource__link">Download</a>
+				</div>
+			</li>
 		<?php endwhile; ?>
+		</ul>
 			</div>
 		</section>
 <section class="section section-resources-case-studies page-resources">
 			<div class="section-content">
 		<h2>Case Studies</h2>
+		<ul class="resource__list">
 		<?php $args = array( 'post_type' => 'resources', 'posts_per_page' => -1, 'resource-type' => 'case-studies' );
 		$loop = new WP_Query( $args );
 		while ( $loop->have_posts() ) : $loop->the_post(); ?>
-		<div class="resource-row">
-			<h3 class="resource-title"><?php the_title(); ?></h3>
-			<div class="resource-options">
-				<a class="button button-small resource-link" href="<?php echo get_permalink(); ?>">More</a>
-				<a class="button button-small resource-link">Download</a>
-			</div>
-		</div>
+			<li class="resource__item">
+				<h3 class="resource__title"><?php the_title(); ?></h3>
+				<div class="resource__options">
+					<a class="button button-small button-secondary button-secondary-orange resource__link" href="<?php echo get_permalink(); ?>">More</a>
+					<a class="button button-small resource__link">Download</a>
+				</div>
+			</li>
 		<?php endwhile; ?>
+		</ul>
 			</div>
 		</section>
 <section class="section section-resources-tech-docs page-resources">
 			<div class="section-content">
 		<h2>Tech Docs</h2>
+		<ul class="resource__list">
 		<?php $args = array( 'post_type' => 'resources', 'posts_per_page' => -1, 'resource-type' => 'tech-docs' );
 		$loop = new WP_Query( $args );
 		while ( $loop->have_posts() ) : $loop->the_post(); ?>
-		<div class="resource-row">
-			<h3 class="resource-title"><?php the_title(); ?></h3>
-			<div class="resource-options">
-				<a class="button button-small resource-link" href="<?php echo get_permalink(); ?>">More</a>
-				<a class="button button-small resource-link">Download</a>
-			</div>
-		</div>
+			<li class="resource__item">
+				<h3 class="resource__title"><?php the_title(); ?></h3>
+				<div class="resource__options">
+					<a class="button button-small button-secondary button-secondary-orange resource__link" href="<?php echo get_permalink(); ?>">More</a>
+					<a class="button button-small resource__link">Download</a>
+				</div>
+			</li>
 		<?php endwhile; ?>
+		</ul>
 			</div>
 		</section>
 
 <section class="section section-resources-videos page-resources">
 			<div class="section-content">
 		<h2>Videos</h2>
+		<ul class="resource__list">
 		<?php $args = array( 'post_type' => 'resources', 'posts_per_page' => -1, 'resource-type' => 'videos' );
 		$loop = new WP_Query( $args );
 		while ( $loop->have_posts() ) : $loop->the_post(); ?>
-		<div class="resource-row">
-			<h3 class="resource-title"><?php the_title(); ?></h3>
-			<div class="resource-options">
-				<a class="button button-small resource-link" href="<?php echo get_permalink(); ?>">Watch</a>
-			</div>
-		</div>
+			<li class="resource__item">
+				<h3 class="resource__title"><?php the_title(); ?></h3>
+				<div class="resource__options">
+					<a href="<?php echo get_permalink(); ?>" class="button button-small resource__link">Watch</a>
+				</div>
+			</li>
 		<?php endwhile; ?>
+		</ul>
 			</div>
 		</section>
 <section class="section section-resources-form page-resources">

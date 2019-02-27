@@ -1,5 +1,4 @@
 $buttons: '.button, input[type="submit"], input[type="reset"], input[type="button"], button';
-
 #{$buttons} {
     background: $orange;
     color: $white;
@@ -7,7 +6,6 @@ $buttons: '.button, input[type="submit"], input[type="reset"], input[type="butto
     display: inline-block;
     text-transform: uppercase;
     cursor: pointer;
-    font-family: inherit;
     border: none;
     font-size: 0.9rem;
     letter-spacing: 0.03rem;
@@ -36,6 +34,10 @@ $buttons: '.button, input[type="submit"], input[type="reset"], input[type="butto
     	border: 1px solid $white;
     	box-shadow: none;
         text-shadow: none;
+        &-orange {
+            color: $orange;
+            border-color: $orange;
+        }
         .no-touchevents &:hover {
             background: transparent;
             color: $orange;
