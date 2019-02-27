@@ -1,8 +1,43 @@
 .section {
-	// border: 1px dashed red;
 	padding: 2rem 0;
 	text-align: center;
 	&-content {
 		@include max-width;
+	}
+	&-has-arrow {
+		$border: 2px solid $gray-4;
+		$offset: 0.05rem;
+		position: relative;
+		&:before,
+		&:after {
+			$size: 4rem;
+			display: inline-block;
+			position: absolute;
+			right: 0;
+			left: 0;
+			margin: auto;
+			background-color: $white;
+			height: $size;
+			width: $size;
+			border-right: $border;
+			border-bottom: $border;
+			transform: rotate(36deg) skewX(-20deg);
+		}
+		&:before {
+			top: $offset;
+		}
+		&:after {
+			bottom: $offset;
+		}
+	}
+	&-has-arrow-top {
+		&:before {
+			content: '';
+		}
+	}
+	&-has-arrow-bottom {
+		&:after {
+			content: '';
+		}
 	}
 }

@@ -12,13 +12,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<?php wp_head(); ?>
 	<link rel="stylesheet" href="/wp-content/themes/fixstream/css/index.css">
-	<script type="text/javascript" src="/wp-content/themes/fixstream/js/head.js"></script></head>
+	<script type="text/javascript" src="/wp-content/themes/fixstream/js/head.js" rel="preload" as="script"></script></head>
 <body class="page-index">
 	<header class="globalheader">
 		<div class="globalheader__navbar">
 		<a class="globalheader__link" href="/">
 			<img class="globalheader__logo" src="/wp-content/themes/fixstream/img/temp-logo.png" />
-
 		</a>
 		<label class="globalnav-button button button-secondary button-small" tabindex="0" for="menuToggle-1"><span class="icon-menu"></span></label>
 <input id="menuToggle-1" class="globalnav-toggle hidden" type="checkbox" tabindex="0" />
@@ -118,20 +117,26 @@
 			<div class="section-content">
 				<h1 class="section-headline hero-headline">Autonomous IT Operations</h1>
 				<p class="section-intro hero-intro">AIOps+ Platform Automates Anomaly Detection, Incident Prediction and Remediation</p>
-				<a class="section-cta hero-cta button button-secondary" href="/resources">Watch video</a>
+				<a class="section-cta hero-cta button" href="/resources">Watch video</a>
 				<ul class="hero-solutions__list row">
-					<li class="hero-solutions__item">
-						<span class="hero-solutions__icon-holder"><span class="icon-stats-bars"></span></span>
+					<li class="hero-solutions__item hero-solutions__item--accurate-inventory">
+						<span class="hero-solutions__icon-holder">
+							<img class="hero-solutions__icon" src="/wp-content/themes/fixstream/img/svg/icon-accurate-inventory.svg" />
+						</span>
 						<h2 class="hero-solutions__header">Accurate Inventory</h2>
 						<p class="hero-solutions__blurb">Agent-less Autodiscovery to create accurate topology maps and automatically update your CMDB</p>
 						<a class="hero-solutions__link" href="#">Learn more<span class="icon-inline icon-circle-right"></span></a>
-					</li>					<li class="hero-solutions__item">
-						<span class="hero-solutions__icon-holder"><span class="icon-stats-bars2"></span></span>
+					</li>					<li class="hero-solutions__item hero-solutions__item--full-stack-correlation">
+						<span class="hero-solutions__icon-holder">
+							<img class="hero-solutions__icon" src="/wp-content/themes/fixstream/img/svg/icon-full-stack-correlation.svg" />
+						</span>
 						<h2 class="hero-solutions__header">Full Stack Correlation</h2>
 						<p class="hero-solutions__blurb">Automated transactions to application to infra mapping to help you resolve IT problems in minutes</p>
 						<a class="hero-solutions__link" href="#">Learn more<span class="icon-inline icon-circle-right"></span></a>
-					</li>					<li class="hero-solutions__item">
-						<span class="hero-solutions__icon-holder"><span class="icon-sphere"></span></span>
+					</li>					<li class="hero-solutions__item hero-solutions__item--ai">
+						<span class="hero-solutions__icon-holder">
+							<img class="hero-solutions__icon" src="/wp-content/themes/fixstream/img/svg/icon-ai.svg" />
+						</span>
 						<h2 class="hero-solutions__header">AI</h2>
 						<p class="hero-solutions__blurb">Powerful ML to help you accurately predict and resolve complex issues</p>
 						<a class="hero-solutions__link" href="#">Learn more<span class="icon-inline icon-circle-right"></span></a>
@@ -140,15 +145,23 @@
 		</section>
 <section class="section section-success-stories page-index">
 			<div class="section-content">
-<h2>Trusted by Global Enterprises and Managed Service Providers</h2>
+<h2 class="success-stories__header">Trusted by Global Enterprises and Managed Service Providers</h2>
 <ul class="row success-stories__list">
-	<li class="col-4 success-stories__item"><span class="success-stories__label">Broadcom</span></li>	<li class="col-4 success-stories__item"><span class="success-stories__label">SPXFlow</span></li>	<li class="col-4 success-stories__item"><span class="success-stories__label">Maxim Integrated</span></li>	<li class="col-4 success-stories__item"><span class="success-stories__label">BT</span></li></ul>
+	<li class="success-stories__item">
+		<img class="success-stories__logo" src="/wp-content/themes/fixstream/img/homepage_success-stories_broadcom.png" alt="Broadcom logo" />
+	</li>	<li class="success-stories__item">
+		<img class="success-stories__logo" src="/wp-content/themes/fixstream/img/homepage_success-stories_spxflow.png" alt="SPXFlow logo" />
+	</li>	<li class="success-stories__item">
+		<img class="success-stories__logo" src="/wp-content/themes/fixstream/img/homepage_success-stories_maxim.png" alt="Maxim Integrated logo" />
+	</li>	<li class="success-stories__item">
+		<img class="success-stories__logo" src="/wp-content/themes/fixstream/img/homepage_success-stories_bt.png" alt="BT logo" />
+	</li></ul>
 <a class="button">More Case Studies</a>
 			</div>
 		</section>
-<section class="section section-how-fixstream-works page-index">
+<section class="section section-how-fixstream-works section-has-arrow section-has-arrow-top">
+<h2 class="how-fixstream-works__header">How FixStream Works</h2>
 			<div class="section-content">
-<h2>How FixStream Works</h2>
 <div class="row how-fixstream-works__row">
 	<div class="how-fixstream-works__copy">
 		<p>FixStream helps you predict outages with 90%+ probability, and achieve MTTR in minutes, not hours and days.</p>
@@ -177,23 +190,15 @@
 </div>
 			</div>
 		</section>
-<section class="section section-customer-testimonials page-index">
+<section class="section section-customer-testimonials section-has-arrow section-has-arrow-top section-has-arrow-bottom">
 			<div class="section-content">
 <ul class="customer-testimonials__list">
 	<li class="customer-testimonials__item">
-		<div class="customer-testimonials__info">
-			<span class="customer-testimonials__icon-holder"><img src="/wp-content/themes/fixstream/img/temp-cust-logo-1.png" /></span>
-			<h3 class="customer-testimonials__header">Mike Fisher</h3>
-			<span class="customer-testimonials__title">SVP, Global IT Operations</span>
-		</div>
 		<blockquote class="customer-testimonials__quote">I’ve chosen FixStream to get a single view of business critical applications and infrastructure end to end. I’ve not seen another operations platform with this breadth of visibility across all domains.</blockquote>
+		<h3 class="customer-testimonials__header">Mike Fisher <span class="customer-testimonials__title">SVP, Global IT Operations</span></h3>	
 	</li>	<li class="customer-testimonials__item">
-		<div class="customer-testimonials__info">
-			<span class="customer-testimonials__icon-holder"><img src="/wp-content/themes/fixstream/img/temp-cust-logo-2.png" /></span>
-			<h3 class="customer-testimonials__header">Andy Nallappam</h3>
-			<span class="customer-testimonials__title">Global CIO, Broadcom</span>
-		</div>
 		<blockquote class="customer-testimonials__quote">We looked for tools that would automate the IT asset discovery process with 100% accuracy, and we couldn’t find any, till we met FixStream. We have deployed now FixStream across our 11 data-centers, and we plan to use it across all companies we acquire in the future.</blockquote>
+		<h3 class="customer-testimonials__header">Andy Nallappam <span class="customer-testimonials__title">Global CIO, Broadcom</span></h3>	
 	</li></ul>
 			</div>
 		</section>
@@ -201,29 +206,28 @@
 			<div class="section-content">
 <h2>Resources</h2>
 <ul class="featured-resources__list">
-	<?php $single = makeSingleCategory(195); ?>
 	<li class="featured-resources__item">
-		<span class="tag tag-<?php echo $single['class']; ?>"><?php echo $single['singular']; ?></span>	<h3 class="featured-resources__header"><?php echo get_the_title( 195 ) ?></h3>
-		<p class="featured-resources__blurb"><?php echo get_the_excerpt( 195 ) ?></p>
-		<a class="button featured-resources__link" href="<?php echo get_the_permalink( 195 ) ?>">View resource</a>
+		<h3 class="featured-resources__header">AIOps for Dummies</h3>
+		<img class="featured-resources__img" src="https://via.placeholder.com/420x500" />
+		<a class="button featured-resources__link" href="/">Download</a>
 	</li>
-	<?php $single = makeSingleCategory(192); ?>
 	<li class="featured-resources__item">
-		<span class="tag tag-<?php echo $single['class']; ?>"><?php echo $single['singular']; ?></span>	<h3 class="featured-resources__header"><?php echo get_the_title( 192 ) ?></h3>
-		<p class="featured-resources__blurb"><?php echo get_the_excerpt( 192 ) ?></p>
-		<a class="button featured-resources__link" href="<?php echo get_the_permalink( 192 ) ?>">View resource</a>
+		<h3 class="featured-resources__header">AIOps Whitepaper</h3>
+		<img class="featured-resources__img" src="https://via.placeholder.com/420x500" />
+		<a class="button featured-resources__link" href="/">Download</a>
 	</li>
-	<?php $single = makeSingleCategory(39); ?>
 	<li class="featured-resources__item">
-		<span class="tag tag-<?php echo $single['class']; ?>"><?php echo $single['singular']; ?></span>	<h3 class="featured-resources__header"><?php echo get_the_title( 39 ) ?></h3>
-		<p class="featured-resources__blurb"><?php echo get_the_excerpt( 39 ) ?></p>
-		<a class="button featured-resources__link" href="<?php echo get_the_permalink( 39 ) ?>">View resource</a>
+		<h3 class="featured-resources__header">Latest Blog</h3>
+		<img class="featured-resources__img" src="https://via.placeholder.com/420x280" />
+		<p class="featured-resources__copy">Getting a Handle on AIOps And Learning What These Platforms and Solutions Can Do for You</p>
+		<a class="button featured-resources__link" href="/">Read Blog</a>
 	</li>
-	<?php $single = makeSingleCategory(198); ?>
 	<li class="featured-resources__item">
-		<span class="tag tag-<?php echo $single['class']; ?>"><?php echo $single['singular']; ?></span>	<h3 class="featured-resources__header"><?php echo get_the_title( 198 ) ?></h3>
-		<p class="featured-resources__blurb"><?php echo get_the_excerpt( 198 ) ?></p>
-		<a class="button featured-resources__link" href="<?php echo get_the_permalink( 198 ) ?>">View resource</a>
+		<h3 class="featured-resources__header">Hear From Our CEO</h3>
+		<img class="featured-resources__img" src="https://via.placeholder.com/420x420" />
+		<span class="featured-resources__copy"><strong>Sameer Padhye</strong></span>
+		<span class="featured-resources__copy">Founder & CEO</span>
+		<a class="button featured-resources__link" href="/">Learn More</a>
 	</li>
 </ul>
 			</div>
@@ -303,9 +307,9 @@
 			</ul>
 		</nav>
 		<ul class="globalfooter__social">
-			<li class="globalfooter__social-item"><span class="icon-facebook2"></span></li>
-			<li class="globalfooter__social-item"><span class="icon-youtube"></span></li>
+			<li class="globalfooter__social-item"><span class="icon-twitter"></span></li>
 			<li class="globalfooter__social-item"><span class="icon-linkedin"></span></li>
+			<li class="globalfooter__social-item"><span class="icon-youtube2"></span></li>
 		</ul>
 		<small class="globalfooter__copyright">© Copyright <?php echo copyright_year(); ?> | <a href="#">Terms of Use</a> | <a href="">Privacy Policy</a></small>
 	</footer>

@@ -1,9 +1,6 @@
 <?php $single = makeSingleCategory({{id}}); ?>
 <li class="featured-resources__item">
-	{{> global/components/tag
-		additionalClasses=(safe "tag-<?php echo $single['class']; ?>")
-		label=(safe "<?php echo $single['singular']; ?>")}}
 	<h3 class="featured-resources__header">{{safe (concat '<?php echo get_the_title( ' id ' ) ?>')}}</h3>
-	<p class="featured-resources__blurb">{{safe (concat '<?php echo get_the_excerpt( ' id ' ) ?>')}}</p>
+	<img class="featured-resources__img" src="https://via.placeholder.com/420x500" />
 	<a class="button featured-resources__link" href="{{safe (concat '<?php echo get_the_permalink( ' id ' ) ?>')}}">View resource</a>
 </li>

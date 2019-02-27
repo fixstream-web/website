@@ -2,28 +2,69 @@
 @import 'hero';
 
 .section-hero {
-	padding: 3rem 0;
-	background: url('../img/temp-hero-600.jpg') no-repeat;
+	padding: 2.5rem 0 0 0;
+	background: url('../img/homepage_hero-large.jpg') no-repeat;
 	background-position: center;
 	background-size: cover;
+	position: relative;
+	overflow: hidden;
+	.hero-headline {
+		font-weight: $bold;
+		font-size: 3rem;
+	}
+	.hero-intro {
+		margin-bottom: 0.6rem;
+	}
 	.hero-headline,
 	.hero-intro {
 		color: $white;
 	}
+	&:before,
+	&:after {
+		content: '';
+		display: inline-block;
+	    height: 106px;
+	    width: 100%;
+		background-color: $white;
+		position: absolute;
+		bottom: -106px;
+	}
+	&:before {
+		transform-origin: 100% 100%;
+		left: -50%;
+		transform: rotate(8deg);
+	}
+	&:after {
+		transform-origin: 0% 100%;
+		right: -50%;
+		transform: rotate(-8deg);
+	}
 }
+
+
 .hero-solutions {
 	&__list {
-		margin-top: 3rem;
+		margin-top: 1.6rem;
 		align-items: center;
 	}
 	&__item {
 		margin-bottom: 1.7rem;
 		display: flex;
+		padding: 2rem 1rem 5.5rem;
 		flex-direction: column;
 		align-items: center;
 		max-width: 25rem;
+		$radius: 200px;
+		border-top-left-radius: $radius;
+		border-top-right-radius: $radius;
+		background: rgba(darken($blue, 15%), 0.8);
 		&:last-child {
 			margin-bottom: 0;
+		}
+		&--full-stack-correlation {
+			.hero-solutions__icon {
+				top: -0.15rem;
+			}
 		}
 	}
 	&__header,
@@ -36,20 +77,24 @@
 		margin: 0.34rem 0 0.5rem;
 	}
 	&__icon-holder {
-		$size: 4rem;
+		$size: 7rem;
 		@include circle;
 		@include flex-center;
-		background: $orange;
+		background: $white;
 		height: $size;
 		width: $size;
-		color: $blue;
 		margin-bottom: 0.4rem;
 		font-size: 1.75rem;
+	}
+	&__icon {
+		position: relative;
+		height: 85px;
+		width: 85px;
 	}
 
 	@include media(60rem){
 		&__list {
-			align-items: flex-start;
+			align-items: stretch;
 			justify-content: space-between;
 			flex-direction: row;
 		}
@@ -57,32 +102,32 @@
 			margin-bottom: 0;
 			flex-grow: 0;
 			flex-shrink: 0;
-			flex-basis: 25%;
+			flex-basis: 30%;
 		}
 	}
 }
 
 .success-stories {
 	$item-margin-bottom: 1.7rem;
+	&__header {
+		color: $orange;
+	}
 	&__list {
 		margin: 2rem 0;
 	}
 	&__item {
-		background: $gray-5;
+		$border: 2px solid $gray-4;
 		min-height: 8rem;
-		border: 1px solid $gray-4;
+		border-left: $border;
 		@include flex-center;
-		border-radius: $radius-s;
 		margin-bottom: $item-margin-bottom;
 		&:last-child {
 			margin-bottom: 0;
+			border-right: $border;
 		}
 	}
-	&__label {
-		color: $gray-3;
-		font-weight: $regular;
-		letter-spacing: 0.08rem;
-		font-size: 1.3rem;
+	&__logo {
+		max-width: 85%;
 	}
 	@include media(40rem){
 		&__list {
@@ -90,7 +135,7 @@
 			flex-direction: row;
 			flex-wrap: wrap;
 			justify-content: space-between;
-			margin-bottom: 0;
+			margin: 2.2rem 0 0.8rem;
 		}
 		&__item {
 			flex-grow: 0;
@@ -103,17 +148,28 @@
 	}
 	@include media(70rem){
 		&__item {
-			flex-basis: 22%;
+			flex-basis: 25%;
 		}
 	}
 }
 
 
 .section-how-fixstream-works {
-	background: $blue;
-	color: $white;
+	padding-top: 0;
+	&.section-has-arrow:before {
+	    top: 2.05rem;
+	    background-color: $orange;
+	    border: none;
+	    z-index: -1;
+	}
 }
 .how-fixstream-works {
+	&__header {
+		background: $orange;
+		padding: 0.9rem 0;
+		margin-bottom: 3.5rem;
+		color: $white;
+	}
 	&__copy {
 		text-align: left;
 	}
@@ -135,55 +191,43 @@
 	}
 	@include media(60rem){
 		&__copy {
-			flex-basis: 32%;
+			flex-basis: 38%;
 		}
 		&__image {
-			flex-basis: 64%;
+			flex-basis: 59%;
 		}
 	}
 }
 
+
+.section-customer-testimonials {
+	.section-content {
+		padding: 3rem 0;
+		border-top: 2px solid $gray-4;
+		border-bottom: 2px solid $gray-4;
+	}
+}
 .customer-testimonials {
 	&__item {
 		margin-bottom: 1.7rem;
 		display: flex;
 		flex-direction: column;
-		align-items: center;
-		padding: 2rem 1rem;
-		box-shadow: $shadow-light;
-		border-radius: $radius-s;
+		align-items: flex-start;
+		text-align: left;
 		&:last-child {
 			margin-bottom: 0;
 		}
 	}
-	&__info {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-	&__icon-holder {
-		$size: 4rem;
-		@include circle;
-		@include flex-center;
-		background: $blue;
-		color: $orange;
-		height: $size;
-		width: $size;
-		margin-bottom: 0.4rem;
-		& > img {
-			max-width: 65%;
-		}
-	}
 	&__header {
-		font-size: 1.5rem;
-		margin-bottom: 0.4rem;
+		font-size: 1.35rem;
+		font-weight: $bold;
+		margin-top: auto;
+		// margin-bottom: 0.4rem;
 	}
-	&__title {
-		font-size: 1.1rem;
-		margin-bottom: 0.4rem;
+	&__title {}
+	&__quote {
+		margin-bottom: 0.8rem;
 	}
-	&__quote {}
-
 	@include media(47rem){
 		&__list {
 			display: flex;
@@ -191,17 +235,8 @@
 			justify-content: space-between;
 		}
 		&__item {
-			flex-basis: 47%;
+			flex-basis: 45%;
 			margin-bottom: 0;
-		}
-	}
-	@include media(60rem){
-		&__item {
-			display: flex;
-			flex-direction: row;
-		}
-		&__info {
-			margin-right: 1rem;
 		}
 	}
 }
@@ -212,10 +247,8 @@
 		margin: 2rem 0;
 	}
 	&__item {
-		background: $gray-5;
 		padding: 1.5rem 1rem;
 		border: 1px solid $gray-4;
-		border-radius: $radius-s;
 		display: flex;
 		justify-content: flex-start;
 		flex-direction: column;
@@ -223,24 +256,23 @@
 		&:last-child {
 			margin-bottom: 0;
 		}
-		.tag {
-			align-self: center;
-			//Seems to be necessary to prevent shrinking within the flex parent
-			flex-basis: 1.55rem;
-				//Then center the content itself
-				display: flex;
-    			align-items: center;
-		}
+	}
+	&__img {
+		margin-bottom: 1.5rem;
 	}
 	&__header {
 		font-size: 1.5rem;
 		padding-bottom: 0.6rem;
-		border-bottom: 2px solid $gray-3;
 		margin-bottom: 0.6rem;
-		margin-top: 0.8rem;
+		color: $orange;
 	}
 	&__blurb {
 		margin-bottom: 0.75rem;
+	}
+	&__copy {
+		margin-bottom: 0.75rem;
+		margin-top: -0.5rem;
+		display: block;
 	}
 	&__link {
 		margin-top: auto;
@@ -265,7 +297,7 @@
 	}
 	@include media(70rem){
 		&__item {
-			flex-basis: 23%;
+			flex-basis: 21.5%;
 			margin-bottom: 0;
 			&:last-child {
 				margin-bottom: 0;
@@ -273,12 +305,6 @@
 		}
 	}
 }
-
-
-
-
-
-
 
 
 

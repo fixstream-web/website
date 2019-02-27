@@ -3,7 +3,7 @@ $globalfooter-medium-max: 78.75rem;
 
 $mod: 'globalfooter';
 .#{$mod} {
-	background: $gray-5;
+	background: $black;
 	min-height: 4rem;
 	padding: 2rem 0;
 	font-size: 0.9rem;
@@ -12,18 +12,21 @@ $mod: 'globalfooter';
 	}
 	&__nav-item {
 		margin-bottom: 1rem;
+		color: $white;
+		font-weight: $bold;
 		&:last-child {
 			margin-bottom: 0;
 		}
 	}
 	&__nav-link {
-		color: $gray-2;
+		color: inherit;
 		font-size: inherit;
 	}
 	&__subnav {
 		.#{$mod}__nav-item {
 			margin: 0.5rem 1rem;
 			width: auto;
+			font-weight: $regular;
 			&:before {
 				content:"\021B3";
 				display: inline-block;
@@ -40,10 +43,10 @@ $mod: 'globalfooter';
 	}
 	&__social-item {
 		height: 44px;
-		width: 44px;
-		font-size: 2.2rem;
-		color: $blue;
-		margin-right: 0.4rem;
+		width: auto;
+		font-size: 1.6rem;
+		color: $lightblue;
+		margin-right: 0.75rem;
 		@include flex-center;
 		&:last-child {
 			margin-right: 0;
@@ -81,7 +84,7 @@ $mod: 'globalfooter';
 			}
 		}
 		&__social {
-			justify-content: center;
+			justify-content: flex-start;
 		}
 		&__copyright {
 			text-align: center;

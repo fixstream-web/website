@@ -7,7 +7,7 @@ $globalnav-stacked-max: 72rem;
 	&:hover,
 	&:focus {
 		.#{$mod}__link {
-			color: $blue;
+			color: $orange;
 		}
 	}
 }
@@ -34,7 +34,7 @@ $globalnav-stacked-max: 72rem;
 
 $mod: 'globalheader';
 .#{$mod} {
-	background: $white;
+	background: $black;
 	@include box-shadow;
 	position: sticky;
 	top: 0;
@@ -44,7 +44,7 @@ $mod: 'globalheader';
 		height: $globalheader-navbar-height-s;
 	}
 	&__link {
-		flex-basis: 100px;
+		flex-basis: 150px;
 		margin-left: 1rem;
 	}
 	&__logo {
@@ -62,7 +62,7 @@ $mod: 'globalheader';
 			&__navbar {
 				flex-wrap: wrap;
 				height: auto;
-				padding: 1rem 0;
+				// padding: 1rem 0;
 			}
 			&__link {
 				margin-left: 0;
@@ -90,6 +90,7 @@ $mod: 'globalnav';
 	border-bottom: 4px solid $gray-3;
 	overflow-y: scroll;
 	max-height: $globalnav-max-height-s;
+	padding: 1rem 0;
 	&__item {
 		padding: 0.65rem 0;
 		border-bottom: 1px solid $gray-4;
@@ -101,6 +102,7 @@ $mod: 'globalnav';
 		padding-left: $link-padding;
 		padding-right: $link-padding;
 		box-decoration-break: clone;
+		color: $white;
 	}
 	&__free-trial {
     	@include flex-center;
@@ -256,7 +258,7 @@ $mod: 'globalnav';
 					&:focus,
 					&:focus-within {
 						.#{$mod}__link {
-							color: $blue;
+							color: $orange;
 						}
 						.#{$mod}__subnav {
 							z-index: 99;

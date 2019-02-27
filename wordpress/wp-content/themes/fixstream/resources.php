@@ -12,13 +12,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<?php wp_head(); ?>
 	<link rel="stylesheet" href="/wp-content/themes/fixstream/css/resources.css">
-	<script type="text/javascript" src="/wp-content/themes/fixstream/js/head.js"></script></head>
+	<script type="text/javascript" src="/wp-content/themes/fixstream/js/head.js" rel="preload" as="script"></script></head>
 <body class="page-resources">
 	<header class="globalheader">
 		<div class="globalheader__navbar">
 		<a class="globalheader__link" href="/">
 			<img class="globalheader__logo" src="/wp-content/themes/fixstream/img/temp-logo.png" />
-
 		</a>
 		<label class="globalnav-button button button-secondary button-small" tabindex="0" for="menuToggle-1"><span class="icon-menu"></span></label>
 <input id="menuToggle-1" class="globalnav-toggle hidden" type="checkbox" tabindex="0" />
@@ -312,9 +311,9 @@
 			</ul>
 		</nav>
 		<ul class="globalfooter__social">
-			<li class="globalfooter__social-item"><span class="icon-facebook2"></span></li>
-			<li class="globalfooter__social-item"><span class="icon-youtube"></span></li>
+			<li class="globalfooter__social-item"><span class="icon-twitter"></span></li>
 			<li class="globalfooter__social-item"><span class="icon-linkedin"></span></li>
+			<li class="globalfooter__social-item"><span class="icon-youtube2"></span></li>
 		</ul>
 		<small class="globalfooter__copyright">© Copyright <?php echo copyright_year(); ?> | <a href="#">Terms of Use</a> | <a href="">Privacy Policy</a></small>
 	</footer>

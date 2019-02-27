@@ -431,7 +431,7 @@ gulp.task('audit', function(){
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 gulp.task('images', function(){
-    gulp.src(path.join(config.paths.images, '*.*'))
+    gulp.src(path.join(config.paths.images, '**/*.*'))
         .pipe(gulp.dest(path.join(config.paths.built, 'img')));
 });
 
@@ -470,7 +470,7 @@ gulp.task('build:watch', function(){
         path.join(config.paths.src, '/hbs/**/**/*.hbs'),
         path.join(config.paths.src, 'functions.hbs'),
         path.join(config.paths.src, '/scss/**/*.scss'),
-        path.join(config.paths.images, '*.*'),
+        path.join(config.paths.images, '**/*.*'),
         path.join(config.paths.fonts, '*.*')
         ], ['build']);
 });
