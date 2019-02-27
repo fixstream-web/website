@@ -127,3 +127,4 @@ WordPress is integrated for blogging as well as custom post types including:
 	* External Links
 	* Press Releases
 * Private Job Posts
+* **TODO:** Events (conference/booth etc)
