@@ -26,11 +26,11 @@
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/platform">Platform</a>
 						<input type="checkbox"
-							   id="subnavToggle-3"
+							   id="subnavToggle-9"
 							   class="globalnav__subnav-toggle hidden"
 							   name="platform"
 							   
-							    /><label class="globalnav__subnav-button" for="subnavToggle-3">+</label>						<ul class="globalnav__subnav">
+							    /><label class="globalnav__subnav-button" for="subnavToggle-9">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/agent-less-auto-discovery">Agent-less Auto Discovery
 							</a>
@@ -51,11 +51,11 @@
 							<a class="globalnav__link" href="/platform/ecosystem">Ecosystem
 							</a>
 		        		<input type="checkbox"
-		        			   id="subnavToggle-4"
+		        			   id="subnavToggle-10"
 		        			   class="globalnav__subnav-toggle hidden"
 		        			   name="ecosystem"
 		        			   
-		        			    /><label class="globalnav__subnav-button" for="subnavToggle-4">+</label>								<ul class="globalnav__subnav">
+		        			    /><label class="globalnav__subnav-button" for="subnavToggle-10">+</label>								<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/ecosystem/oracle">Oracle
 							</a>
@@ -73,11 +73,11 @@
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/customers">Customers</a>
 						<input type="checkbox"
-							   id="subnavToggle-5"
+							   id="subnavToggle-11"
 							   class="globalnav__subnav-toggle hidden"
 							   name="customers"
 							   
-							    /><label class="globalnav__subnav-button" for="subnavToggle-5">+</label>						<ul class="globalnav__subnav">
+							    /><label class="globalnav__subnav-button" for="subnavToggle-11">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/customers/broadcom">Broadcom
 							</a>
@@ -116,36 +116,46 @@
 	</header>
 	<main>
 		 
-		    <?php
-	    $args = array(
-	        'post_type' => 'post',
-	        'posts_per_page' => '-1'
-	    );
-
-	    $post_query = new WP_Query($args);
-		if($post_query->have_posts() ) {
-		  while($post_query->have_posts() ) {
-		    $post_query->the_post();
-		    ?>
-<section class="section section-blog-item page-blog">
+		
+<section class="section section-blog-archive-section page-blog">
 			<div class="section-content">
-				<a href="<?php echo get_permalink(); ?>">
-					<h2><?php the_title(); ?></h2>
-				</a>
 
-				<?php $post = get_field('attribution');
-				if( $post ): ?>
-					<?php setup_postdata($post); ?>
-					<h3>By <?php the_title(); ?></h3>
-					<?php wp_reset_postdata(); ?>
-				<?php endif; ?>
+	    <ul class="blog-archive__list">
+	    <?php
+		    $args = array(
+		        'post_type' => 'post',
+		        'posts_per_page' => '-1'
+		    );
 
-				
+		    $post_query = new WP_Query($args);
+			if($post_query->have_posts() ) {
+			  while($post_query->have_posts() ) {
+			    $post_query->the_post();
+			    ?>
+				    
+					<li class="blog-archive__item">
+						<span class="date blog-archive__date"><?php echo get_the_date('M n, Y') ?></span>
+						<a class="blog-archive__link" href="<?php echo get_permalink(); ?>">
+							<h2 class="blog-archive__header"><?php the_title(); ?></h2>
+						</a>
+
+						<?php $post = get_field('attribution');
+						if( $post ): ?>
+							<?php setup_postdata($post); ?>
+							<h3 class="blog-archive__author">By <?php the_title(); ?></h3>
+							<?php wp_reset_postdata(); ?>
+						<?php endif; ?>
+					</li>
+					
+					
+			    <?php
+			  }
+			}
+		?>
+
+		</ul>
 			</div>
-		</section>		    <?php
-		  }
-		}
-	?>
+		</section>
 
 	</main>
 	<footer class="globalfooter">

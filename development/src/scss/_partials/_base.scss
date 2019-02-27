@@ -32,7 +32,7 @@ h5 {
 h6 {
 	font-size: 1.2rem;
 }
-p, a {
+p, a, li {
 	font-size: 1rem;
 	line-height: 1.5;
 	letter-spacing: 0.015rem;
@@ -140,7 +140,7 @@ textarea {
 .select-box {
 	position: relative;
 	&__ui {
-		//**TOTO: Look at this visual/placement and make sure it's font-size-flexible;
+		//**TODO: Look at this visual/placement and make sure it's font-size-flexible;
 		position: absolute;
 		top: 6px;
 		right: 14px;
@@ -174,7 +174,7 @@ a {
 }
 
 article {
-	padding: 2rem 0;
+	padding: 3rem 0;
 }
 
 .icon-inline {

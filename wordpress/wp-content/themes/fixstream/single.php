@@ -18,11 +18,11 @@
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/platform">Platform</a>
 						<input type="checkbox"
-							   id="subnavToggle-33"
+							   id="subnavToggle-45"
 							   class="globalnav__subnav-toggle hidden"
 							   name="platform"
 							   
-							    /><label class="globalnav__subnav-button" for="subnavToggle-33">+</label>						<ul class="globalnav__subnav">
+							    /><label class="globalnav__subnav-button" for="subnavToggle-45">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/agent-less-auto-discovery">Agent-less Auto Discovery
 							</a>
@@ -43,11 +43,11 @@
 							<a class="globalnav__link" href="/platform/ecosystem">Ecosystem
 							</a>
 		        		<input type="checkbox"
-		        			   id="subnavToggle-34"
+		        			   id="subnavToggle-46"
 		        			   class="globalnav__subnav-toggle hidden"
 		        			   name="ecosystem"
 		        			   
-		        			    /><label class="globalnav__subnav-button" for="subnavToggle-34">+</label>								<ul class="globalnav__subnav">
+		        			    /><label class="globalnav__subnav-button" for="subnavToggle-46">+</label>								<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/ecosystem/oracle">Oracle
 							</a>
@@ -65,11 +65,11 @@
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/customers">Customers</a>
 						<input type="checkbox"
-							   id="subnavToggle-35"
+							   id="subnavToggle-47"
 							   class="globalnav__subnav-toggle hidden"
 							   name="customers"
 							   
-							    /><label class="globalnav__subnav-button" for="subnavToggle-35">+</label>						<ul class="globalnav__subnav">
+							    /><label class="globalnav__subnav-button" for="subnavToggle-47">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/customers/broadcom">Broadcom
 							</a>
@@ -102,30 +102,34 @@
 		</nav>
 
 	</header>		
-	<article>
-		
+	<main>
+		<article>
+			
+	<?php if (have_posts()) : while (have_posts()) : the_post();?>
 	<div class="section-content">
-		<?php if (have_posts()) : while (have_posts()) : the_post();?>
-		<main>
 		<h1><?php the_title(); ?></h1>
 		<?php the_content(); ?>
-		</main>
-
-		<?php $post = get_field('attribution');
-		if( $post ): ?>
-		<aside>
-			<h4>About the author</h4>
-			<?php setup_postdata($post); ?>
-				<?php the_title(); ?>
-			<?php wp_reset_postdata(); ?>
-		</aside>
-		<?php endif; ?>
-
-		<?php endwhile; endif; wp_reset_query(); ?>
 	</div>
 
+	<?php $post = get_field('attribution');
+	if( $post ): ?>
+	
+	<aside>
+		<div class="section-content">
+			<h4>About the author</h4>
+			<?php setup_postdata($post); ?>
+			<?php the_title(); ?>
+			<?php wp_reset_postdata(); ?>
+		</div>
+	</aside>
+	
+	<?php endif; ?>
 
-	</article>
+	<?php endwhile; endif; wp_reset_query(); ?>
+
+
+		</article>
+	</main>
 	<footer class="globalfooter">
 		<nav class="globalfooter__nav">
 			<ul class="globalfooter__nav-list">

@@ -69,7 +69,7 @@
 				<a class="press-releases-link" href="<?php echo get_permalink(); ?>">
 					<h3 class="press-releases-header"><?php the_title(); ?><span class="icon-inline icon-circle-right"></span></h3>
 				</a>
-				<span class="page-company-date press-releases-date"><?php echo get_the_date('M n, Y') ?></span>
+				<span class="date press-releases-date"><?php echo get_the_date('M n, Y') ?></span>
 			</li>
 			<?php endwhile;?>
 		</ul>
@@ -95,7 +95,7 @@
 					<h3 class="news-mentions-header"><?php the_title(); ?></h3>
 				</a>
 				<?php if( get_field('show_date') ): ?>
-				<span class="page-company-date news-mentions-date"><?php echo get_the_date('M n, Y') ?></span>
+				<span class="date news-mentions-date"><?php echo get_the_date('M n, Y') ?></span>
 				<?php endif; ?>
 			</li>
 			<?php endwhile;?>

@@ -42,7 +42,8 @@
 }
 
 
-.hero-solutions {
+$mod: 'hero-solutions';
+.#{$mod} {
 	&__list {
 		margin-top: 1.6rem;
 		align-items: center;
@@ -107,7 +108,8 @@
 	}
 }
 
-.success-stories {
+$mod: 'success-stories';
+.#{$mod} {
 	$item-margin-bottom: 1.7rem;
 	&__header {
 		color: $orange;
@@ -154,7 +156,9 @@
 }
 
 
-.section-how-fixstream-works {
+
+$mod: 'how-fixstream-works';
+.section-#{$mod} {
 	padding-top: 0;
 	&.section-has-arrow:before {
 	    top: 2.05rem;
@@ -163,7 +167,7 @@
 	    z-index: -1;
 	}
 }
-.how-fixstream-works {
+.#{$mod} {
 	&__header {
 		background: $orange;
 		padding: 0.9rem 0;
@@ -200,14 +204,15 @@
 }
 
 
-.section-customer-testimonials {
+$mod: 'customer-testimonials';
+.section-#{$mod} {
 	.section-content {
 		padding: 3rem 0;
 		border-top: 2px solid $gray-4;
 		border-bottom: 2px solid $gray-4;
 	}
 }
-.customer-testimonials {
+.#{$mod} {
 	&__item {
 		margin-bottom: 1.7rem;
 		display: flex;
@@ -241,7 +246,8 @@
 	}
 }
 
-.featured-resources {
+$mod: 'featured-resources';
+.#{$mod} {
 	$item-margin-bottom: 1.7rem;
 	&__list {
 		margin: 2rem 0;

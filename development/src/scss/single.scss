@@ -5,6 +5,19 @@ main {
 }
 
 aside {
-	background: $gray-3;
-	padding: 1.2rem;
+	margin-top: 2rem;
+	.section-content {
+		padding: 1.2rem;
+		background: $gray-4;
+	}
+}
+
+article {
+	h1,h2,h3,h4,h5,h6,p,ul {
+		max-width: 44rem;
+	}
+}
+
+li {
+	margin-bottom: 0.5rem;
 }

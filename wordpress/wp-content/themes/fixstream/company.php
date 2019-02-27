@@ -26,11 +26,11 @@
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/platform">Platform</a>
 						<input type="checkbox"
-							   id="subnavToggle-6"
+							   id="subnavToggle-15"
 							   class="globalnav__subnav-toggle hidden"
 							   name="platform"
 							   
-							    /><label class="globalnav__subnav-button" for="subnavToggle-6">+</label>						<ul class="globalnav__subnav">
+							    /><label class="globalnav__subnav-button" for="subnavToggle-15">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/agent-less-auto-discovery">Agent-less Auto Discovery
 							</a>
@@ -51,11 +51,11 @@
 							<a class="globalnav__link" href="/platform/ecosystem">Ecosystem
 							</a>
 		        		<input type="checkbox"
-		        			   id="subnavToggle-7"
+		        			   id="subnavToggle-16"
 		        			   class="globalnav__subnav-toggle hidden"
 		        			   name="ecosystem"
 		        			   
-		        			    /><label class="globalnav__subnav-button" for="subnavToggle-7">+</label>								<ul class="globalnav__subnav">
+		        			    /><label class="globalnav__subnav-button" for="subnavToggle-16">+</label>								<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/ecosystem/oracle">Oracle
 							</a>
@@ -73,11 +73,11 @@
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/customers">Customers</a>
 						<input type="checkbox"
-							   id="subnavToggle-8"
+							   id="subnavToggle-17"
 							   class="globalnav__subnav-toggle hidden"
 							   name="customers"
 							   
-							    /><label class="globalnav__subnav-button" for="subnavToggle-8">+</label>						<ul class="globalnav__subnav">
+							    /><label class="globalnav__subnav-button" for="subnavToggle-17">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/customers/broadcom">Broadcom
 							</a>
@@ -183,7 +183,7 @@
 				<a class="press-releases-link" href="<?php echo get_permalink(); ?>">
 					<h3 class="press-releases-header"><?php the_title(); ?><span class="icon-inline icon-circle-right"></span></h3>
 				</a>
-				<span class="page-company-date press-releases-date"><?php echo get_the_date('M n, Y') ?></span>
+				<span class="date press-releases-date"><?php echo get_the_date('M n, Y') ?></span>
 			</li>
 			<?php endwhile;?>
 		</ul>
@@ -205,7 +205,7 @@
 					<h3 class="news-mentions-header"><?php the_title(); ?></h3>
 				</a>
 				<?php if( get_field('show_date') ): ?>
-				<span class="page-company-date news-mentions-date"><?php echo get_the_date('M n, Y') ?></span>
+				<span class="date news-mentions-date"><?php echo get_the_date('M n, Y') ?></span>
 				<?php endif; ?>
 			</li>
 			<?php endwhile;?>

@@ -15,15 +15,17 @@
 		{{/content}}
 		{{/embed}}
 		{{/block}}{{~!}}
-	<article>
-		{{#block "body"}}
-		{{#if data.hero}}
-		{{#with data.hero}}
-		{{> modules/hero}}{{~!}}
-		{{/with}}
-		{{/if}}
-		{{/block}}{{~!}}
-	</article>
+	<main>
+		<article>
+			{{#block "body"}}
+			{{#if data.hero}}
+			{{#with data.hero}}
+			{{> modules/hero}}{{~!}}
+			{{/with}}
+			{{/if}}
+			{{/block}}{{~!}}
+		</article>
+	</main>
 	{{#block "footer"}}{{> global/global-footer}}{{/block}}
 </body>
 </html>

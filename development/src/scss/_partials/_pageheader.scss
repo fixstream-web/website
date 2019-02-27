@@ -1,4 +1,5 @@
-.pageheader {
+$mod: 'pageheader';
+.#{$mod} {
 	@include max-width;
 	margin: auto;
 	margin-top: 1rem;

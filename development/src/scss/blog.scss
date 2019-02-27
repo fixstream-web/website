@@ -1,1 +1,41 @@
 @import 'core';
+@import 'date';
+
+$mod: 'blog-archive';
+.#{$mod} {
+	$gutter: 1rem;
+	$text-margin: 0.45rem;
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__item {
+		flex-basis: calc(33.33% - #{$gutter * 1.333});
+		margin-bottom: #{$gutter * 2};
+		margin-right: #{$gutter * 2};
+		border-bottom: 1px solid $orange;
+		padding-bottom: 1.5rem;
+		text-align: left;
+		display: flex;
+		flex-direction: column;
+		&:nth-child(3n) {
+			margin-right: 0;
+		}
+	}
+	&__date {
+		margin-bottom: $text-margin;
+		margin-top: 0;
+	}
+	&__header {
+		font-size: 1.3rem;
+		margin: 0;
+	}
+	// &__link {
+	// 	color: $orange;
+	// }
+	&__author {
+		font-size: 1rem;
+		margin-top: $text-margin;
+		color: $gray-3;
+	}
+}
