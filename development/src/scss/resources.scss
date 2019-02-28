@@ -1,19 +1,10 @@
 @import 'core';
+@import 'item-list';
 
 $mod: 'resource';
 .#{$mod} {
-	$gutter: 1rem;
-	&__list {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-	}
+	&__list {}
 	&__item {
-		margin-bottom: $gutter;
-		flex-basis: calc(50% - #{$gutter / 2});
-		text-align: left;
-		border: 1px solid $gray-4;
-		padding: $gutter * 1.5;
 		display: flex;
 		flex-direction: column;
 	}

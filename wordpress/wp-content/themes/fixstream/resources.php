@@ -120,11 +120,11 @@
 <section class="section section-resources-whitepapers page-resources">
 			<div class="section-content">
 		<h2>Whitepapers</h2>
-		<ul class="resource__list">
+		<ul class="item-list item-list--large-padding resource__list">
 			<?php $args = array( 'post_type' => 'resources', 'posts_per_page' => -1, 'resource-type' => 'whitepapers' );
 			$loop = new WP_Query( $args );
 			while ( $loop->have_posts() ) : $loop->the_post(); ?>
-			<li class="resource__item">
+			<li class="item item--50 resource__item">
 				<h3 class="resource__title"><?php the_title(); ?></h3>
 				<div class="resource__options">
 					<a class="button button-small button-secondary button-secondary-orange resource__link" href="<?php echo get_permalink(); ?>">More</a>
@@ -138,11 +138,11 @@
 <section class="section section-resources-case-studies page-resources">
 			<div class="section-content">
 		<h2>Case Studies</h2>
-		<ul class="resource__list">
+		<ul class="item-list resource__list">
 		<?php $args = array( 'post_type' => 'resources', 'posts_per_page' => -1, 'resource-type' => 'case-studies' );
 		$loop = new WP_Query( $args );
 		while ( $loop->have_posts() ) : $loop->the_post(); ?>
-			<li class="resource__item">
+			<li class="item item--50 resource__item">
 				<h3 class="resource__title"><?php the_title(); ?></h3>
 				<div class="resource__options">
 					<a class="button button-small button-secondary button-secondary-orange resource__link" href="<?php echo get_permalink(); ?>">More</a>
@@ -156,11 +156,11 @@
 <section class="section section-resources-tech-docs page-resources">
 			<div class="section-content">
 		<h2>Tech Docs</h2>
-		<ul class="resource__list">
+		<ul class="item-list resource__list">
 		<?php $args = array( 'post_type' => 'resources', 'posts_per_page' => -1, 'resource-type' => 'tech-docs' );
 		$loop = new WP_Query( $args );
 		while ( $loop->have_posts() ) : $loop->the_post(); ?>
-			<li class="resource__item">
+			<li class="item item--50 resource__item">
 				<h3 class="resource__title"><?php the_title(); ?></h3>
 				<div class="resource__options">
 					<a class="button button-small button-secondary button-secondary-orange resource__link" href="<?php echo get_permalink(); ?>">More</a>
@@ -175,11 +175,11 @@
 <section class="section section-resources-videos page-resources">
 			<div class="section-content">
 		<h2>Videos</h2>
-		<ul class="resource__list">
+		<ul class="item-list resource__list">
 		<?php $args = array( 'post_type' => 'resources', 'posts_per_page' => -1, 'resource-type' => 'videos' );
 		$loop = new WP_Query( $args );
 		while ( $loop->have_posts() ) : $loop->the_post(); ?>
-			<li class="resource__item">
+			<li class="item item--50 resource__item">
 				<h3 class="resource__title"><?php the_title(); ?></h3>
 				<div class="resource__options">
 					<a href="<?php echo get_permalink(); ?>" class="button button-small resource__link">Watch</a>

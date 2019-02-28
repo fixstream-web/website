@@ -128,9 +128,9 @@
 				<?php $args = array( 'post_type' => 'team', 'posts_per_page' => -1, 'group' => 'leadership', 'order' => 'ASC' );
 				$loop = new WP_Query( $args );
 				if ($loop->have_posts() ) : ?>
-				<ul class="leadership-list">
+				<ul class="item-list leadership-list">
 					<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-					<li class="leadership-item">
+					<li class="item item--50 leadership-item">
 						<img class="leadership-photo" src="https://via.placeholder.com/200x200" />
 						<div class="leadership-info">
 							<a class="leadership-link" href="<?php echo get_permalink(); ?>">
@@ -148,9 +148,9 @@
 				<?php $args = array( 'post_type' => 'team', 'posts_per_page' => -1, 'group' => 'board', 'order' => 'ASC' );
 				$loop = new WP_Query( $args );
 				if ($loop->have_posts() ) : ?>
-				<ul class="leadership-list">
+				<ul class="item-list leadership-list">
 					<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-					<li class="leadership-item">
+					<li class="item item--50 leadership-item">
 						<img class="leadership-photo" src="https://via.placeholder.com/200x200" />
 						<div class="leadership-info">
 							<a class="leadership-link" href="<?php echo get_permalink(); ?>">
@@ -177,9 +177,9 @@
 		<?php $args = array( 'post_type' => 'news', 'posts_per_page' => 4, 'news-type' => 'press-releases' );
 		$loop = new WP_Query( $args );
 		if ($loop->have_posts() ) : ?>
-		<ul class="press-releases-list">
+		<ul class="item-list press-releases-list">
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-			<li class="press-releases-item">
+			<li class="item item--frameless press-releases-item">
 				<a class="press-releases-link" href="<?php echo get_permalink(); ?>">
 					<h3 class="press-releases-header"><?php the_title(); ?><span class="icon-inline icon-circle-right"></span></h3>
 				</a>
@@ -198,9 +198,9 @@
 		<?php $args = array( 'post_type' => 'news', 'posts_per_page' => 7, 'news-type' => 'mentions' );
 		$loop = new WP_Query( $args );
 		if ($loop->have_posts() ) : ?>
-		<ul class="news-mentions-list">
+		<ul class="item-list news-mentions-list">
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-			<li class="news-mentions-item">
+			<li class="item item--frameless item--radius-0 news-mentions-item">
 				<span class="tag tag-small news-mentions-publisher"><?php echo the_field('publisher_name') ?></span>				<a class="news-mentions-link" href="<?php echo the_field('source'); ?>" target="_blank">
 					<h3 class="news-mentions-header"><?php the_title(); ?></h3>
 				</a>

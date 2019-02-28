@@ -1,6 +1,7 @@
 @import 'core';
 @import 'hero';
 @import 'date';
+@import 'item-list';
 
 //Page global shared styles
 .page-company {
@@ -19,11 +20,7 @@ $mod: 'leadership';
 	&-board {
 		margin-top: 1rem;
 	}
-	&-list {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-	}
+	&-list {}
 	&-photo {
 		width: 6rem;
 		//**TODO: This should be flexible...
@@ -36,14 +33,6 @@ $mod: 'leadership';
 		flex-basis: 80%;
 	}
 	&-item {
-		margin-bottom: $padding;
-		text-align: left;
-		flex-basis: 100%;
-		padding: $padding;
-		border-radius: $radius-s;
-		border: 1px solid $gray-4;
-		flex-grow: 0;
-		flex-shrink: 0;
 		display: flex;
 	}
 	&-header {
@@ -57,27 +46,13 @@ $mod: 'leadership';
 
 $mod: 'press-releases';
 .#{$mod} {
-	&-list {
-		display: flex;
-		flex-direction: column;
-		// flex-wrap: wrap;
-		justify-content: space-between;
-	}
-	&-item {
-		flex-basis: 30%;
-		margin-bottom: 2rem;
-		text-align: left;
-	}
+	&-list {}
+	&-item {}
 }
 
 $mod: 'news-mentions';
 .#{$mod} {
-	&-list {
-		display: flex;
-		flex-direction: column;
-		// flex-wrap: wrap;
-		justify-content: space-between;
-	}
+	&-list {}
 	&-header {
 		margin-top: 0.4rem;
 	}
@@ -87,7 +62,6 @@ $mod: 'news-mentions';
 	}
 	&-item {
 		margin-bottom: 2rem;
-		text-align: left;
 		padding-left: 0.8rem;
 		border-left: 2px solid $orange;
 		&:nth-child(even) {
