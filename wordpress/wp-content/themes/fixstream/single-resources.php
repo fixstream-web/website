@@ -111,70 +111,68 @@
 
     <div class="resource-row">
 
-<section class="section section-resource page-single-resources">
+<section class="section section-single-resource page-single-resources">
 			<div class="section-content">
-    <span>Resources > <?php echo $single['termName'] ?></span>
-	<h1><?php the_title(); ?></h1>
+    <span class="tag tag-tech-doc single-resource__tag"><?php echo $single['termName'] ?></span>
+	<h1 class="single-resource__header"><?php the_title(); ?></h1>
     <?php if (get_the_excerpt()): ?>
-    <p><?php echo get_the_excerpt() ?></p>
+    <blockquote class="single-resource__excerpt"><?php echo get_the_excerpt() ?></blockquote>
      <?php endif; ?>
 			</div>
 		</section>
 
 <section class="section section-resource-gate page-single-resources">
 			<div class="section-content">
-
-<form
-	id="resourcesForm"
-	class="resource-gate-form"
-	method=""
-	action=""
-	name="resource-gate">
-        <label for="resource-gate-first-name" >First Name<sup>*</sup></label>
-			<input type="text"
-				   id="resource-gate-first-name"
-				   class="cookies-first-name"
-				   name="first-name"
-				   
-				   required />
-        <label for="resource-gate-last-name" >Last Name</label>
-			<input type="text"
-				   id="resource-gate-last-name"
-				   class="cookies-last-name"
-				   name="last-name"
-				   
-				    />
-        <label for="resource-gate-email" >Email<sup>*</sup></label>
-			<input type="email"
-				   id="resource-gate-email"
-				   class="cookies-email"
-				   name="email"
-				   
-				   required />
-        <label for="resource-gate-company" >Company</label>
-			<input type="text"
-				   id="resource-gate-company"
-				   class="cookies-company"
-				   name="company"
-				   
-				    />
-        <label for="resource-gate-job-title" >Job Title</label>
-			<input type="text"
-				   id="resource-gate-job-title"
-				   class="cookies-job-title"
-				   name="job-title"
-				   
-				    />
-        <label for="resource-gate-phone" >Phone</label>
-			<input type="tel"
-				   id="resource-gate-phone"
-				   class="cookies-phone"
-				   name="phone"
-				   
-				    />
-	<input type="submit" id="resource-gate-submit" value="<?php if ($single['termName'] == 'Videos'): ?>Watch<?php else: ?>Download<?php endif ?> this <?php echo $single['singular']; ?>" />
-</form>
-			</div>
+        <form
+        	id="resourcesForm"
+        	class="resource-gate-form"
+        	method=""
+        	action=""
+        	name="resource-gate">
+            <label for="resource-gate-first-name" >First Name<sup>*</sup></label>
+        			<input type="text"
+        				   id="resource-gate-first-name"
+        				   class="cookies-first-name"
+        				   name="first-name"
+        				   
+        				   required />
+            <label for="resource-gate-last-name" >Last Name</label>
+        			<input type="text"
+        				   id="resource-gate-last-name"
+        				   class="cookies-last-name"
+        				   name="last-name"
+        				   
+        				    />
+            <label for="resource-gate-email" >Email<sup>*</sup></label>
+        			<input type="email"
+        				   id="resource-gate-email"
+        				   class="cookies-email"
+        				   name="email"
+        				   
+        				   required />
+            <label for="resource-gate-company" >Company</label>
+        			<input type="text"
+        				   id="resource-gate-company"
+        				   class="cookies-company"
+        				   name="company"
+        				   
+        				    />
+            <label for="resource-gate-job-title" >Job Title</label>
+        			<input type="text"
+        				   id="resource-gate-job-title"
+        				   class="cookies-job-title"
+        				   name="job-title"
+        				   
+        				    />
+            <label for="resource-gate-phone" >Phone</label>
+        			<input type="tel"
+        				   id="resource-gate-phone"
+        				   class="cookies-phone"
+        				   name="phone"
+        				   
+        				    />
+        	<input type="submit" id="resource-gate-submit" value="<?php if ($single['termName'] == 'Videos'): ?>Watch<?php else: ?>Download<?php endif ?> this <?php echo $single['singular']; ?>" />
+        </form>			</div>
 		</section>
     </div>
 

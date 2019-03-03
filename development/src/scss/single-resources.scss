@@ -1,4 +1,5 @@
 @import 'core';
+@import 'tag';
 
 .resource-row {
 	@include max-width;
@@ -6,7 +7,7 @@
 	justify-content: space-between;
 }
 
-.section-resource,
+.section-single-resource,
 .section-resource-gate {
 	.section-content {
 		width: 100%;
@@ -15,10 +16,22 @@
 }
 
 
-.section-resource {
-	flex-basis: 53%;
+
+$mod: 'single-resource';
+.section-#{$mod} {
+	flex-basis: 49%;
 	text-align: left;
 }
-.section-resource-gate {
+.#{$mod} {
+	&__tag {}
+	&__header {
+		margin: 0.7rem 0 0.5rem;
+	}
+	&__excerpt {}
+}
+
+$mod: 'resource-gate';
+.section-#{$mod} {
 	flex-basis: 42%;
 }
+.#{$mod} {}

@@ -11,12 +11,12 @@
 
     <div class="resource-row">
 
-    {{#embed "modules/section" name="resource"}}
+    {{#embed "modules/section" name="single-resource"}}
 	{{#content "contents" mode="append"}}
-    <span>Resources > <?php echo $single['termName'] ?></span>
-	<h1><?php the_title(); ?></h1>
+    <span class="tag tag-tech-doc single-resource__tag"><?php echo $single['termName'] ?></span>
+	<h1 class="single-resource__header"><?php the_title(); ?></h1>
     <?php if (get_the_excerpt()): ?>
-    <p><?php echo get_the_excerpt() ?></p>
+    <blockquote class="single-resource__excerpt"><?php echo get_the_excerpt() ?></blockquote>
      <?php endif; ?>
 	{{/content}}
 	{{/embed}}
@@ -24,50 +24,7 @@
 
     {{#embed "modules/section" name="resource-gate"}}
     {{#content "contents" mode="append"}}
-
-    {{#embed "forms/form" id="resourcesForm" submitText=(safe "<?php if ($single['termName'] == 'Videos'): ?>Watch<?php else: ?>Download<?php endif ?> this <?php echo $single['singular']; ?>") primaryClass="resource-gate" additionalClasses="" }}
-    {{#content "content"}}
-        {{> forms/components/labeled-input
-            type="text"
-            id="first-name"
-            additionalClasses="cookies-first-name"
-            name="first-name"
-            label="First Name"
-            required=true}}{{~!}}
-        {{> forms/components/labeled-input
-            type="text"
-            id="last-name"
-            additionalClasses="cookies-last-name"
-            name="last-name"
-            label="Last Name"}}{{~!}}
-        {{> forms/components/labeled-input
-            type="email"
-            id="email"
-            additionalClasses="cookies-email"
-            name="email"
-            label="Email"
-            required=true}}{{~!}}
-        {{> forms/components/labeled-input
-            type="text"
-            id="company"
-            additionalClasses="cookies-company"
-            name="company"
-            label="Company"}}{{~!}}
-        {{> forms/components/labeled-input
-            type="text"
-            id="job-title"
-            additionalClasses="cookies-job-title"
-            name="job-title"
-            label="Job Title"}}{{~!}}
-        {{> forms/components/labeled-input
-            type="tel"
-            id="phone"
-            additionalClasses="cookies-phone"
-            name="phone"
-            label="Phone"}}{{~!}}
-    {{/content}}
-    {{/embed}}
-
+        {{> forms/resource-gate}}
     {{/content}}
     {{/embed}}
 
