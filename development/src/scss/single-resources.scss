@@ -1,1 +1,24 @@
 @import 'core';
+
+.resource-row {
+	@include max-width;
+	display: flex;
+	justify-content: space-between;
+}
+
+.section-resource,
+.section-resource-gate {
+	.section-content {
+		width: 100%;
+		max-width: 100%;
+	}
+}
+
+
+.section-resource {
+	flex-basis: 53%;
+	text-align: left;
+}
+.section-resource-gate {
+	flex-basis: 42%;
+}

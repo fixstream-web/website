@@ -109,6 +109,8 @@
     $single = makeSingleCategory($post->ID);
     ?>
 
+    <div class="resource-row">
+
 <section class="section section-resource page-single-resources">
 			<div class="section-content">
     <span>Resources > <?php echo $single['termName'] ?></span>
@@ -173,7 +175,10 @@
 	<input type="submit" id="resource-gate-submit" value="<?php if ($single['termName'] == 'Videos'): ?>Watch<?php else: ?>Download<?php endif ?> this <?php echo $single['singular']; ?>" />
 </form>
 			</div>
-		</section>     <?php endwhile; endif; wp_reset_query(); ?>
+		</section>
+    </div>
+
+    <?php endwhile; endif; wp_reset_query(); ?>
 
 
 		</article>

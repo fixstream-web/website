@@ -9,6 +9,8 @@
     $single = makeSingleCategory($post->ID);
     ?>
 
+    <div class="resource-row">
+
     {{#embed "modules/section" name="resource"}}
 	{{#content "contents" mode="append"}}
     <span>Resources > <?php echo $single['termName'] ?></span>
@@ -68,7 +70,10 @@
 
     {{/content}}
     {{/embed}}
-     <?php endwhile; endif; wp_reset_query(); ?>
+
+    </div>
+
+    <?php endwhile; endif; wp_reset_query(); ?>
 
     {{/content}}
     {{/embed}}
