@@ -206,28 +206,29 @@
 			<div class="section-content">
 <h2>Resources</h2>
 <ul class="featured-resources__list">
+	<?php $single = makeSingleCategory(195); ?>
 	<li class="featured-resources__item">
-		<h3 class="featured-resources__header">AIOps for Dummies</h3>
+		<h3 class="featured-resources__header"><?php echo get_the_title( 195 ) ?></h3>
 		<img class="featured-resources__img" src="https://via.placeholder.com/420x500" />
-		<a class="button featured-resources__link" href="/">Download</a>
+		<a class="button featured-resources__link" href="<?php echo get_the_permalink( 195 ) ?>">View resource</a>
 	</li>
+	<?php $single = makeSingleCategory(192); ?>
 	<li class="featured-resources__item">
-		<h3 class="featured-resources__header">AIOps Whitepaper</h3>
+		<h3 class="featured-resources__header"><?php echo get_the_title( 192 ) ?></h3>
 		<img class="featured-resources__img" src="https://via.placeholder.com/420x500" />
-		<a class="button featured-resources__link" href="/">Download</a>
+		<a class="button featured-resources__link" href="<?php echo get_the_permalink( 192 ) ?>">View resource</a>
 	</li>
+	<?php $single = makeSingleCategory(39); ?>
 	<li class="featured-resources__item">
-		<h3 class="featured-resources__header">Latest Blog</h3>
-		<img class="featured-resources__img" src="https://via.placeholder.com/420x280" />
-		<p class="featured-resources__copy">Getting a Handle on AIOps And Learning What These Platforms and Solutions Can Do for You</p>
-		<a class="button featured-resources__link" href="/">Read Blog</a>
+		<h3 class="featured-resources__header"><?php echo get_the_title( 39 ) ?></h3>
+		<img class="featured-resources__img" src="https://via.placeholder.com/420x500" />
+		<a class="button featured-resources__link" href="<?php echo get_the_permalink( 39 ) ?>">View resource</a>
 	</li>
+	<?php $single = makeSingleCategory(198); ?>
 	<li class="featured-resources__item">
-		<h3 class="featured-resources__header">Hear From Our CEO</h3>
-		<img class="featured-resources__img" src="https://via.placeholder.com/420x420" />
-		<span class="featured-resources__copy"><strong>Sameer Padhye</strong></span>
-		<span class="featured-resources__copy">Founder & CEO</span>
-		<a class="button featured-resources__link" href="/">Learn More</a>
+		<h3 class="featured-resources__header"><?php echo get_the_title( 198 ) ?></h3>
+		<img class="featured-resources__img" src="https://via.placeholder.com/420x500" />
+		<a class="button featured-resources__link" href="<?php echo get_the_permalink( 198 ) ?>">View resource</a>
 	</li>
 </ul>
 			</div>
