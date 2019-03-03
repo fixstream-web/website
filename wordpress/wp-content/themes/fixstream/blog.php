@@ -138,7 +138,9 @@
 						<a class="blog-archive__link" href="<?php echo get_permalink(); ?>">
 							<h2 class="blog-archive__header"><?php the_title(); ?></h2>
 						</a>
-
+						<div class="blog-archive__tags">
+							<span class="tag tag-small tag--lightblue blog-archive__tag">AIOps</span> <span class="tag tag-small tag--yellow blog-archive__tag">Other</span>
+						</div>
 						<?php $post = get_field('attribution');
 						if( $post ): ?>
 							<?php setup_postdata($post); ?>

@@ -9,6 +9,23 @@ $mod: 'tag';
         font-size: 0.7rem;
         letter-spacing: 0.03rem;
     }
+    &--blue {
+        background-color: $blue;
+        text-shadow: $blue-text-shadow;
+    }
+    &--lightblue {
+        background-color: $lightblue;
+        text-shadow: $lightblue-text-shadow;
+    }
+    &--yellow {
+        background-color: $yellow;
+        text-shadow: $yellow-text-shadow;
+    }
+    &--purple {
+        background-color: $purple;
+        text-shadow: $purple-text-shadow;
+    }
+    
     &-tech-doc {
     	background-color: $blue;
 		text-shadow: $blue-text-shadow;

@@ -1,4 +1,5 @@
 @import 'core';
+@import 'tag';
 
 main {
 	padding-top: 0;
@@ -20,4 +21,14 @@ article {
 
 li {
 	margin-bottom: 0.5rem;
+}
+
+.blog-header {
+	border-bottom: 1px solid $gray-4;
+	padding-bottom: 1rem;
+	margin-bottom: 1rem;
+}
+
+.tags-row {
+	margin: 0.2rem 0 0.4rem;
 }

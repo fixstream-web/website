@@ -1,5 +1,6 @@
 @import 'core';
 @import 'date';
+@import 'tag';
 @import 'item-list';
 
 $mod: 'blog-archive';
@@ -12,11 +13,17 @@ $mod: 'blog-archive';
 		text-align: left;
 		display: flex;
 		flex-direction: column;
+		align-items: start;
 	}
 	&__date {
 		margin-bottom: $text-margin;
 		margin-top: 0;
 	}
+	&__tags {
+		// @include show;
+		margin-top: 0.3rem;
+	}
+	&__tag {}
 	&__header {
 		font-size: 1.3rem;
 		margin: 0;
