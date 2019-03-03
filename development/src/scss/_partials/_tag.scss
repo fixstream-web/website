@@ -5,6 +5,7 @@ $mod: 'tag';
     border-radius: $radius-s;
     padding: 0.15rem 0.55rem;
     text-shadow: 0px 1px rgba(0,0,0,0.35);
+    //**TOO make all modifiers follow BEM
     &-small {
         font-size: 0.7rem;
         letter-spacing: 0.03rem;
@@ -25,7 +26,8 @@ $mod: 'tag';
         background-color: $purple;
         text-shadow: $purple-text-shadow;
     }
-    
+
+    //**TODO make resource specific classes extend the color class instead of duplicating styles
     &-tech-doc {
     	background-color: $blue;
 		text-shadow: $blue-text-shadow;
