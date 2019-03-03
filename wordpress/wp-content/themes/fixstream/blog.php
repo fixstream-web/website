@@ -120,7 +120,7 @@
 <section class="section section-blog-archive-section page-blog">
 			<div class="section-content">
 
-	    <ul class="blog-archive__list">
+	    <ul class="item-list blog-archive__list">
 	    <?php
 		    $args = array(
 		        'post_type' => 'post',
@@ -133,7 +133,7 @@
 			    $post_query->the_post();
 			    ?>
 				    
-					<li class="blog-archive__item">
+					<li class="item item--frameless item--33 blog-archive__item">
 						<span class="date blog-archive__date"><?php echo get_the_date('M n, Y') ?></span>
 						<a class="blog-archive__link" href="<?php echo get_permalink(); ?>">
 							<h2 class="blog-archive__header"><?php the_title(); ?></h2>

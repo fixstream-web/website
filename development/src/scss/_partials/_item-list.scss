@@ -1,18 +1,28 @@
-$padding: 1rem;
+$margin: 1rem;
+
+@mixin col-spec($count) {
+	$divisor: 1 / $count * ($count - 1);
+	$base-width: 100% / $count;
+	flex-basis: calc(#{$base-width} - #{$margin * $divisor});
+	&:nth-child(#{$count}n) {
+		margin-right: 0;
+	}
+}
 
 $mod: 'item-list';
 .#{$mod} {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: flex-start;
 }
 
 $mod: 'item';
 .#{$mod} {
-    margin-bottom: $padding;
+    margin-bottom: $margin;
+    margin-right: $margin;
 	text-align: left;
 	flex-basis: 100%;
-	padding: $padding;
+	padding: $margin;
 	border-radius: $radius-s;
 	border: 1px solid $gray-4;
 	flex-grow: 0;
@@ -20,32 +30,16 @@ $mod: 'item';
 	&--frameless {
 		border: none;
 		padding: 0;
-	}
-	&--radius-0 {
 		border-radius: 0;
 	}
 	&--50 {
-		flex-basis: calc(50% - #{$padding * 0.5});
+		@include col-spec(2);
 	}
 	&--33 {
-		flex-basis: calc(33% - #{$padding * 0.5});
+		@include col-spec(3);
 	}
 	&--25 {
-		flex-basis: calc(25% - #{$padding * 0.75});
-	}
-	// **TODO look at all the edge cases for last child alignment
-	&--33,
-	&--25 {
-		//**TODO target just the second to last item
-		// &:last-child(n+1) {
-		// 	background: blue;
-		// 	margin-left: $padding;
-		// }
-		&:last-child {
-			// background: red;
-			margin-right: auto;
-	    	margin-left: $padding;
-		}
+		@include col-spec(4);
 	}
 }
 

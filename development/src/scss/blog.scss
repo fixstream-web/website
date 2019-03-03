@@ -1,26 +1,17 @@
 @import 'core';
 @import 'date';
+@import 'item-list';
 
 $mod: 'blog-archive';
 .#{$mod} {
-	$gutter: 1rem;
 	$text-margin: 0.45rem;
-	&__list {
-		display: flex;
-		flex-wrap: wrap;
-	}
+	&__list {}
 	&__item {
-		flex-basis: calc(33.33% - #{$gutter * 1.333});
-		margin-bottom: #{$gutter * 2};
-		margin-right: #{$gutter * 2};
 		border-bottom: 1px solid $orange;
 		padding-bottom: 1.5rem;
 		text-align: left;
 		display: flex;
 		flex-direction: column;
-		&:nth-child(3n) {
-			margin-right: 0;
-		}
 	}
 	&__date {
 		margin-bottom: $text-margin;

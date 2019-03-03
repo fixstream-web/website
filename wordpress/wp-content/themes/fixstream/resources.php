@@ -142,7 +142,7 @@
 		<?php $args = array( 'post_type' => 'resources', 'posts_per_page' => -1, 'resource-type' => 'case-studies' );
 		$loop = new WP_Query( $args );
 		while ( $loop->have_posts() ) : $loop->the_post(); ?>
-			<li class="item item--50 resource__item">
+			<li class="item item--25 resource__item">
 				<h3 class="resource__title"><?php the_title(); ?></h3>
 				<div class="resource__options">
 					<a class="button button-small button-secondary button-secondary-orange resource__link" href="<?php echo get_permalink(); ?>">More</a>
@@ -179,7 +179,7 @@
 		<?php $args = array( 'post_type' => 'resources', 'posts_per_page' => -1, 'resource-type' => 'videos' );
 		$loop = new WP_Query( $args );
 		while ( $loop->have_posts() ) : $loop->the_post(); ?>
-			<li class="item item--50 resource__item">
+			<li class="item item--33 resource__item">
 				<h3 class="resource__title"><?php the_title(); ?></h3>
 				<div class="resource__options">
 					<a href="<?php echo get_permalink(); ?>" class="button button-small resource__link">Watch</a>

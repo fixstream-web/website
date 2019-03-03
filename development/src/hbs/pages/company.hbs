@@ -87,7 +87,7 @@
 		if ($loop->have_posts() ) : ?>
 		<ul class="item-list news-mentions-list">
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-			<li class="item item--frameless item--radius-0 news-mentions-item">
+			<li class="item item--frameless item--33 news-mentions-item">
 				{{> global/components/tag
 					additionalClasses="tag-small news-mentions-publisher"
 					label=(safe "<?php echo the_field('publisher_name') ?>")}}
