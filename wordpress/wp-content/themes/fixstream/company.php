@@ -201,7 +201,7 @@
 		<ul class="item-list news-mentions-list">
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 			<li class="item item--frameless item--33 news-mentions-item">
-				<span class="tag tag-small news-mentions-publisher"><?php echo the_field('publisher_name') ?></span>				<a class="news-mentions-link" href="<?php echo the_field('source'); ?>" target="_blank">
+				<span class="tag tag--small news-mentions-publisher"><?php echo the_field('publisher_name') ?></span>				<a class="news-mentions-link" href="<?php echo the_field('source'); ?>" target="_blank">
 					<h3 class="news-mentions-header"><?php the_title(); ?></h3>
 				</a>
 				<?php if( get_field('show_date') ): ?>

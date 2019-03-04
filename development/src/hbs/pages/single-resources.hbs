@@ -13,7 +13,7 @@
 
     {{#embed "modules/section" name="single-resource"}}
 	{{#content "contents" mode="append"}}
-    <span class="tag tag-tech-doc single-resource__tag"><?php echo $single['termName'] ?></span>
+    <span class="tag tag--tech-doc single-resource__tag"><?php echo $single['termName'] ?></span>
 	<h1 class="single-resource__header"><?php the_title(); ?></h1>
     <?php if (get_the_excerpt()): ?>
     <blockquote class="single-resource__excerpt"><?php echo get_the_excerpt() ?></blockquote>

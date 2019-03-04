@@ -110,7 +110,7 @@
 		<div class="blog-header">
 			<h1><?php the_title(); ?></h1>
 			<div class="tags-row">
-				<span class="tag tag-small tag--lightblue">AIOps</span> <span class="tag tag-small tag--yellow">Other</span>
+				<span class="tag tag--small tag--lightblue">AIOps</span> <span class="tag tag--small tag--yellow">Other</span>
 			</div>
 		</div>
 		<?php the_content(); ?>
