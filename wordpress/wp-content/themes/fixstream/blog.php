@@ -130,17 +130,23 @@
 		    $post_query = new WP_Query($args);
 			if($post_query->have_posts() ) {
 			  while($post_query->have_posts() ) {
-			    $post_query->the_post();
-			    ?>
+			    $post_query->the_post(); ?>
 				    
 					<li class="item item--frameless item--33 blog-archive__item">
 						<span class="date blog-archive__date"><?php echo get_the_date('M n, Y') ?></span>
 						<a class="blog-archive__link" href="<?php echo get_permalink(); ?>">
 							<h2 class="blog-archive__header"><?php the_title(); ?></h2>
 						</a>
+						
+						<?php $cats = get_the_category(get_the_ID()); ?>
+
+						<?php if (!in_category("Uncategorized")): ?>
 						<div class="blog-archive__tags">
-							<span class="tag tag--small tag--lightblue blog-archive__tag">AIOps</span> <span class="tag tag--small tag--yellow blog-archive__tag">Other</span>
+							<?php foreach ($cats as $cat) { ?>
+					        <span class="tag tag--small tag--<?php echo $cat->slug; ?> blog-archive__tag"><?php echo $cat->name ?></span>
+					  		<?php } ?>
 						</div>
+						<?php endif; ?>
 						<?php $post = get_field('attribution');
 						if( $post ): ?>
 							<?php setup_postdata($post); ?>
@@ -149,11 +155,8 @@
 						<?php endif; ?>
 					</li>
 					
-					
-			    <?php
-			  }
-			}
-		?>
+			    <?php }
+			} ?>
 
 		</ul>
 			</div>

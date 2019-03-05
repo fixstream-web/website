@@ -113,7 +113,7 @@
 
 <section class="section section-single-resource page-single-resources">
 			<div class="section-content">
-    <span class="tag tag--tech-doc single-resource__tag"><?php echo $single['termName'] ?></span>
+    <span class="tag tag--<?php echo $single['class'] ?> single-resource__tag"><?php echo $single['termName'] ?></span>
 	<h1 class="single-resource__header"><?php the_title(); ?></h1>
     <?php if (get_the_excerpt()): ?>
     <blockquote class="single-resource__excerpt"><?php echo get_the_excerpt() ?></blockquote>

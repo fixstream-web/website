@@ -27,8 +27,11 @@ $mod: 'tag';
     }
     //Map categories to colorforms
     &--tech-doc   { @extend .#{$mod}--blue; }
+    &--case-study { @extend .#{$mod}--yellow; }
     &--whitepaper { @extend .#{$mod}--lightblue; }
-    &--blog       { @extend .#{$mod}--yellow; }
     &--video      { @extend .#{$mod}--purple; }
+    //**TODO categories need unique color
+    &--aiops      { @extend .#{$mod}--purple; }
+    &--blog       { @extend .#{$mod}--yellow; }
 }
 
