@@ -9,9 +9,15 @@
 	<div class="section-content">
 		<div class="blog-header">
 			<h1><?php the_title(); ?></h1>
+			<?php $cats = get_the_category(get_the_ID()); ?>
+
+			<?php if (!in_category("Uncategorized")): ?>
 			<div class="tags-row">
-				<span class="tag tag--small tag--lightblue">AIOps</span> <span class="tag tag--small tag--yellow">Other</span>
+				<?php foreach ($cats as $cat) { ?>
+		        <span class="tag tag--small tag--<?php echo $cat->slug; ?> blog-archive__tag"><?php echo $cat->name ?></span>
+		  		<?php } ?>
 			</div>
+			<?php endif; ?>
 		</div>
 		<?php the_content(); ?>
 	</div>
