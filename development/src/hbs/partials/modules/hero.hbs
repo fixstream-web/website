@@ -1,16 +1,16 @@
-{{#embed "modules/section" name="hero" extras=extras}}
+{{#embed "modules/section" name="hero" additionalClasses=additionalClasses}}
 {{#content "contents" mode="append"}}
-			{{#if data.h1}}
-				<h1 class="section-headline hero-headline">{{data.h1}}</h1>
-				{{/if}}
-				{{#if data.hero.intro}}
-				<p class="section-intro hero-intro">{{data.hero.intro}}</p>
-				{{/if}}
-				{{#if data.hero.cta}}
-				<a class="section-cta hero-cta button" href="{{data.hero.cta.meta.url}}">{{data.hero.cta.value}}</a>
-				{{/if}}
-				{{#if data.hero.cta2}}
-				<a class="section-cta hero-cta button" href="{{data.hero.cta2.meta.url}}">{{data.hero.cta2.value}}</a>
-				{{/if}}
+	{{#if data.h1}}
+		<h1 class="hero__headline">{{data.h1}}</h1>
+		{{/if}}
+		{{#if data.hero.intro}}
+		<p class="hero__intro">{{data.hero.intro}}</p>
+		{{/if}}
+		{{#if data.hero.cta}}
+		<a class="hero__cta button" href="{{data.hero.cta.meta.url}}">{{data.hero.cta.value}}</a>
+		{{/if}}
+		{{#if data.hero.cta2}}
+		<a class="hero__cta button" href="{{data.hero.cta2.meta.url}}">{{data.hero.cta2.value}}</a>
+		{{/if}}
 {{/content}}
 {{/embed}}

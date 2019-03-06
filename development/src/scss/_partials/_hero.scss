@@ -1,9 +1,16 @@
-.section-hero {
+$mod: 'hero';
+.section-#{$mod} {
 	padding: 8rem 0;
+	background: url('../img/homepage_hero-large.jpg') no-repeat;
+	background-position: center;
+	background-size: cover;
 }
-.hero-headline {
-	margin-bottom: 0.8rem;
-}
-.hero-intro {
-	// margin-bottom: 1rem;
+.#{$mod} {
+	&__headline {
+		margin-bottom: 0.8rem;
+	}
+	&__headline,
+	&__intro {
+		color: $white;
+	}
 }

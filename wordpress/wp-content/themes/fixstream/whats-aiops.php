@@ -109,13 +109,15 @@
 			</ul>
 		</nav>
 		</div>
-		<div class="pageheader">
-			<h1 class="pageheader-headline">What&#x27;s AIOps?</h1>
-		</div>
 		
 	</header>
 	<main>
 		 
+		<section class="section section-hero whats-aiops-hero">
+			<div class="section-content">
+		<h1 class="hero__headline">What&#x27;s AIOps?</h1>
+			</div>
+		</section>
 		
 	</main>
 	<footer class="globalfooter">

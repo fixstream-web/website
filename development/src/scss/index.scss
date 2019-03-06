@@ -2,24 +2,11 @@
 @import 'hero';
 @import 'tag';
 
-.section-hero {
+$mod: 'hero';
+.section-#{$mod} {
 	padding: 2.5rem 0 0 0;
-	background: url('../img/homepage_hero-large.jpg') no-repeat;
-	background-position: center;
-	background-size: cover;
 	position: relative;
 	overflow: hidden;
-	.hero-headline {
-		font-weight: $bold;
-		font-size: 3rem;
-	}
-	.hero-intro {
-		margin-bottom: 0.6rem;
-	}
-	.hero-headline,
-	.hero-intro {
-		color: $white;
-	}
 	&:before,
 	&:after {
 		content: '';
@@ -41,6 +28,17 @@
 		transform: rotate(-8deg);
 	}
 }
+
+.#{$mod} {
+	&__headline {
+		font-weight: $bold;
+		font-size: 3rem;
+	}
+	&__intro {
+		margin-bottom: 0.6rem;
+	}
+}
+
 
 
 $mod: 'hero-solutions';

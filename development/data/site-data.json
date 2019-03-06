@@ -226,7 +226,8 @@
 					"og-title": "test og title",
 					"twitter-title": "test twitter title"
 				},
-				"h1": "What's AIOps?"
+				"h1": "What's AIOps?",
+				"hero": {}
 			},
 			"company": {
 				"name": "company",

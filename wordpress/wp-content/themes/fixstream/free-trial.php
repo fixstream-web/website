@@ -113,10 +113,10 @@
 	</header>
 	<main>
 		 
-		<section class="section section-hero page-free-trial">
+		<section class="section section-hero free-trial-hero">
 			<div class="section-content">
-				<h1 class="section-headline hero-headline">Free Trial</h1>
-				<a class="section-cta hero-cta button" href="#">Button text</a>
+		<h1 class="hero__headline">Free Trial</h1>
+		<a class="hero__cta button" href="#">Button text</a>
 			</div>
 		</section>
 		

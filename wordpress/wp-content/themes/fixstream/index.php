@@ -113,11 +113,11 @@
 	</header>
 	<main>
 				
-<section class="section section-hero page-index">
+<section class="section section-hero homepage-hero">
 			<div class="section-content">
-				<h1 class="section-headline hero-headline">Autonomous IT Operations</h1>
-				<p class="section-intro hero-intro">AIOps+ Platform Automates Anomaly Detection, Incident Prediction and Remediation</p>
-				<a class="section-cta hero-cta button" href="/resources">Watch video</a>
+				<h1 class="hero__headline">Autonomous IT Operations</h1>
+				<p class="hero__intro">AIOps+ Platform Automates Anomaly Detection, Incident Prediction and Remediation</p>
+				<a class="hero__cta button" href="/resources">Watch video</a>
 				<ul class="hero-solutions__list row">
 					<li class="hero-solutions__item hero-solutions__item--accurate-inventory">
 						<span class="hero-solutions__icon-holder">

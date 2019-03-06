@@ -113,10 +113,10 @@
 	</header>
 	<main>
 		 
-		<section class="section section-hero page-platform">
+		<section class="section section-hero platform-hero">
 			<div class="section-content">
-				<h1 class="section-headline hero-headline">Platform Capabilities</h1>
-				<p class="section-intro hero-intro">Powerful Insights with Every Click.</p>
+		<h1 class="hero__headline">Platform Capabilities</h1>
+		<p class="hero__intro">Powerful Insights with Every Click.</p>
 			</div>
 		</section>
 		

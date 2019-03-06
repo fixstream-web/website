@@ -113,10 +113,10 @@
 	</header>
 	<main>
 		 
-		<section class="section section-hero page-platform page-platform-agent-less-auto-discovery">
+		<section class="section section-hero agent-less-auto-discovery-hero">
 			<div class="section-content">
-				<h1 class="section-headline hero-headline">Auto-Discovery</h1>
-				<p class="section-intro hero-intro">Lorem ipsum dolor sit amet consectetur adipiscing elit sodales</p>
+		<h1 class="hero__headline">Auto-Discovery</h1>
+		<p class="hero__intro">Lorem ipsum dolor sit amet consectetur adipiscing elit sodales</p>
 			</div>
 		</section>
 		

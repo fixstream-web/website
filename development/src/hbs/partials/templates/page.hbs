@@ -23,7 +23,7 @@
 		{{#block "body"}}
 		{{#eq data.name 'index'}}{{else}} {{!-- Custom logic to prevent default hero on index page --}}
 		{{#if data.hero}}
-		{{> modules/hero}}{{~!}}
+		{{> modules/hero additionalClasses=(concat data.name "-hero")}}{{~!}}
 		{{/if}}
 		{{/eq}}
 		{{/block}}{{~!}}

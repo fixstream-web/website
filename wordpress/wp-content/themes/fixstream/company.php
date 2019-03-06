@@ -113,10 +113,10 @@
 	</header>
 	<main>
 		 
-		<section class="section section-hero page-company">
+		<section class="section section-hero company-hero">
 			<div class="section-content">
-				<h1 class="section-headline hero-headline">About FixStream</h1>
-				<a class="section-cta hero-cta button" href="/company">Get in touch</a>
+		<h1 class="hero__headline">About FixStream</h1>
+		<a class="hero__cta button" href="/company">Get in touch</a>
 			</div>
 		</section>
 		

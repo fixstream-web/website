@@ -5,11 +5,11 @@
 {{#content "body" mode="append"}}
 {{!-- page specific body content --}}
 
-{{#embed "modules/section" name="hero" extras=extras}}
+{{#embed "modules/section" name="hero" additionalClasses="homepage-hero"}}
 {{#content "contents" mode="append"}}
-				<h1 class="section-headline hero-headline">{{data.h1}}</h1>
-				<p class="section-intro hero-intro">{{data.hero.intro}}</p>
-				<a class="section-cta hero-cta button" href="{{data.hero.cta.meta.url}}">{{data.hero.cta.value}}</a>
+				<h1 class="hero__headline">{{data.h1}}</h1>
+				<p class="hero__intro">{{data.hero.intro}}</p>
+				<a class="hero__cta button" href="{{data.hero.cta.meta.url}}">{{data.hero.cta.value}}</a>
 				<ul class="hero-solutions__list row">
 					{{> modules/hero-solution-item
 					icon="icon-accurate-inventory.svg"
