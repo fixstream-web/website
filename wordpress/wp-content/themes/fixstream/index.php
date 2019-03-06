@@ -206,29 +206,41 @@
 			<div class="section-content">
 <h2>Resources</h2>
 <ul class="featured-resources__list">
-	<?php $single = makeSingleCategory(195); ?>
+	<?php $single = makeSingleCategory(195);
+	if ($single["class"] == "blog") { $buttonLabel = "Read post";
+	} else 							{ $buttonLabel = "View resource";
+	} ?>
 	<li class="featured-resources__item">
-		<h3 class="featured-resources__header"><?php echo get_the_title( 195 ) ?></h3>
-		<img class="featured-resources__img" src="https://via.placeholder.com/420x500" />
-		<a class="button featured-resources__link" href="<?php echo get_the_permalink( 195 ) ?>">View resource</a>
+		<span class="tag tag--<?php echo $single['class']; ?> featured-resources__tag"><?php echo $single['singular']; ?></span>	<h3 class="featured-resources__header"><?php echo get_the_title( 195 ) ?></h3>
+		<img class="featured-resources__img" src="https://via.placeholder.com/400x400" />
+		<a class="button featured-resources__link" href="<?php echo get_the_permalink( 195 ) ?>"><?php echo $buttonLabel; ?></a>
 	</li>
-	<?php $single = makeSingleCategory(192); ?>
+	<?php $single = makeSingleCategory(192);
+	if ($single["class"] == "blog") { $buttonLabel = "Read post";
+	} else 							{ $buttonLabel = "View resource";
+	} ?>
 	<li class="featured-resources__item">
-		<h3 class="featured-resources__header"><?php echo get_the_title( 192 ) ?></h3>
-		<img class="featured-resources__img" src="https://via.placeholder.com/420x500" />
-		<a class="button featured-resources__link" href="<?php echo get_the_permalink( 192 ) ?>">View resource</a>
+		<span class="tag tag--<?php echo $single['class']; ?> featured-resources__tag"><?php echo $single['singular']; ?></span>	<h3 class="featured-resources__header"><?php echo get_the_title( 192 ) ?></h3>
+		<img class="featured-resources__img" src="https://via.placeholder.com/400x400" />
+		<a class="button featured-resources__link" href="<?php echo get_the_permalink( 192 ) ?>"><?php echo $buttonLabel; ?></a>
 	</li>
-	<?php $single = makeSingleCategory(39); ?>
+	<?php $single = makeSingleCategory(39);
+	if ($single["class"] == "blog") { $buttonLabel = "Read post";
+	} else 							{ $buttonLabel = "View resource";
+	} ?>
 	<li class="featured-resources__item">
-		<h3 class="featured-resources__header"><?php echo get_the_title( 39 ) ?></h3>
-		<img class="featured-resources__img" src="https://via.placeholder.com/420x500" />
-		<a class="button featured-resources__link" href="<?php echo get_the_permalink( 39 ) ?>">View resource</a>
+		<span class="tag tag--<?php echo $single['class']; ?> featured-resources__tag"><?php echo $single['singular']; ?></span>	<h3 class="featured-resources__header"><?php echo get_the_title( 39 ) ?></h3>
+		<img class="featured-resources__img" src="https://via.placeholder.com/400x300" />
+		<a class="button featured-resources__link" href="<?php echo get_the_permalink( 39 ) ?>"><?php echo $buttonLabel; ?></a>
 	</li>
-	<?php $single = makeSingleCategory(198); ?>
+	<?php $single = makeSingleCategory(198);
+	if ($single["class"] == "blog") { $buttonLabel = "Read post";
+	} else 							{ $buttonLabel = "View resource";
+	} ?>
 	<li class="featured-resources__item">
-		<h3 class="featured-resources__header"><?php echo get_the_title( 198 ) ?></h3>
-		<img class="featured-resources__img" src="https://via.placeholder.com/420x500" />
-		<a class="button featured-resources__link" href="<?php echo get_the_permalink( 198 ) ?>">View resource</a>
+		<span class="tag tag--<?php echo $single['class']; ?> featured-resources__tag"><?php echo $single['singular']; ?></span>	<h3 class="featured-resources__header"><?php echo get_the_title( 198 ) ?></h3>
+		<img class="featured-resources__img" src="https://via.placeholder.com/400x400" />
+		<a class="button featured-resources__link" href="<?php echo get_the_permalink( 198 ) ?>"><?php echo $buttonLabel; ?></a>
 	</li>
 </ul>
 			</div>
