@@ -26,11 +26,11 @@
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/platform">Platform</a>
 						<input type="checkbox"
-							   id="subnavToggle-12"
+							   id="subnavToggle-15"
 							   class="globalnav__subnav-toggle hidden"
 							   name="platform"
 							   
-							    /><label class="globalnav__subnav-button" for="subnavToggle-12">+</label>						<ul class="globalnav__subnav">
+							    /><label class="globalnav__subnav-button" for="subnavToggle-15">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/agent-less-auto-discovery">Agent-less Auto Discovery
 							</a>
@@ -51,11 +51,11 @@
 							<a class="globalnav__link" href="/platform/ecosystem">Ecosystem
 							</a>
 		        		<input type="checkbox"
-		        			   id="subnavToggle-13"
+		        			   id="subnavToggle-16"
 		        			   class="globalnav__subnav-toggle hidden"
 		        			   name="ecosystem"
 		        			   
-		        			    /><label class="globalnav__subnav-button" for="subnavToggle-13">+</label>								<ul class="globalnav__subnav">
+		        			    /><label class="globalnav__subnav-button" for="subnavToggle-16">+</label>								<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/ecosystem/oracle">Oracle
 							</a>
@@ -73,11 +73,11 @@
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/customers">Customers</a>
 						<input type="checkbox"
-							   id="subnavToggle-14"
+							   id="subnavToggle-17"
 							   class="globalnav__subnav-toggle hidden"
 							   name="customers"
 							   
-							    /><label class="globalnav__subnav-button" for="subnavToggle-14">+</label>						<ul class="globalnav__subnav">
+							    /><label class="globalnav__subnav-button" for="subnavToggle-17">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/customers/broadcom">Broadcom
 							</a>

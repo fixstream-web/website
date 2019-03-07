@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js">
 <head>
-	<title>Fixstream | Platform</title>
+	<title>Fixstream | Blog by Category</title>
 	<meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.">
 	<meta property="og:title" content="test og title">
 	<meta name="twitter:title" content="test twitter title">
@@ -11,9 +11,9 @@
 	<meta property="og:type" content="website">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<?php wp_head(); ?>
-	<link rel="stylesheet" href="/wp-content/themes/fixstream/css/platform.css">
+	<link rel="stylesheet" href="/wp-content/themes/fixstream/css/category.css">
 	<script type="text/javascript" src="/wp-content/themes/fixstream/js/head.js" rel="preload" as="script"></script></head>
-<body class="page-platform">
+<body class="page-blog-category">
 	<header class="globalheader">
 		<div class="globalheader__navbar">
 		<a class="globalheader__link" href="/">
@@ -26,11 +26,11 @@
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/platform">Platform</a>
 						<input type="checkbox"
-							   id="subnavToggle-21"
+							   id="subnavToggle-6"
 							   class="globalnav__subnav-toggle hidden"
 							   name="platform"
 							   
-							    /><label class="globalnav__subnav-button" for="subnavToggle-21">+</label>						<ul class="globalnav__subnav">
+							    /><label class="globalnav__subnav-button" for="subnavToggle-6">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/agent-less-auto-discovery">Agent-less Auto Discovery
 							</a>
@@ -51,11 +51,11 @@
 							<a class="globalnav__link" href="/platform/ecosystem">Ecosystem
 							</a>
 		        		<input type="checkbox"
-		        			   id="subnavToggle-22"
+		        			   id="subnavToggle-7"
 		        			   class="globalnav__subnav-toggle hidden"
 		        			   name="ecosystem"
 		        			   
-		        			    /><label class="globalnav__subnav-button" for="subnavToggle-22">+</label>								<ul class="globalnav__subnav">
+		        			    /><label class="globalnav__subnav-button" for="subnavToggle-7">+</label>								<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/ecosystem/oracle">Oracle
 							</a>
@@ -73,11 +73,11 @@
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/customers">Customers</a>
 						<input type="checkbox"
-							   id="subnavToggle-23"
+							   id="subnavToggle-8"
 							   class="globalnav__subnav-toggle hidden"
 							   name="customers"
 							   
-							    /><label class="globalnav__subnav-button" for="subnavToggle-23">+</label>						<ul class="globalnav__subnav">
+							    /><label class="globalnav__subnav-button" for="subnavToggle-8">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/customers/broadcom">Broadcom
 							</a>
@@ -109,24 +109,50 @@
 			</ul>
 		</nav>
 		</div>
+		<div class="pageheader">
+			<h1 class="pageheader-headline">Blog by Category</h1>
+		</div>
 		
 	</header>
 	<main>
 		 
-		<section class="section section-hero platform-hero">
-			<div class="section-content">
-		<h1 class="hero__headline">Platform Capabilities</h1>
-		<p class="hero__intro">Powerful Insights with Every Click.</p>
-			</div>
-		</section>
 		
-<section class="section section-platform-intro page-platform">
+
+<section class="section section-blog-archive-section page-blog-category">
 			<div class="section-content">
-		<h2>Lorem ipsum dolor sit amet consectetur adipiscing elit</h2>
-		<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sodales primis, mollis viverra conubia ligula inceptos laoreet libero tortor, nascetur non habitasse iaculis tempor nec egestas fames augue, platea porta integer nostra curae sed arcu. Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam. Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at.</p>
-		<img src="https://via.placeholder.com/300x700" />
+	    <ul class="item-list blog-archive__list">
+	    <?php
+		    $args = array(
+		        'post_type' => 'post',
+		        'posts_per_page' => '-1',
+		        'category_name' => basename($_SERVER['REQUEST_URI']).PHP_EOL
+		    );
+
+		    $post_query = new WP_Query($args);
+			if($post_query->have_posts() ) {
+			  while($post_query->have_posts() ) {
+			    $post_query->the_post(); ?>
+
+			    <li class="item item--frameless item--33 blog-archive__item">
+					<span class="date blog-archive__date"><?php echo get_the_date('M j, Y') ?></span>
+					<a class="blog-archive__link" href="<?php echo get_permalink(); ?>">
+						<h2 class="blog-archive__header"><?php the_title(); ?></h2>
+					</a>
+					
+					<?php $post = get_field('attribution');
+					if( $post ): ?>
+						<?php setup_postdata($post); ?>
+						<h3 class="blog-archive__author">By <?php the_title(); ?></h3>
+						<?php wp_reset_postdata(); ?>
+					<?php endif; ?>
+				</li>
+
+		<?php }
+		} ?>
+		</ul>
 			</div>
 		</section>
+
 
 	</main>
 	<footer class="globalfooter">

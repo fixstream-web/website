@@ -33,5 +33,27 @@ $mod: 'tag';
     //**TODO categories need unique color
     &--aiops      { @extend .#{$mod}--purple; }
     &--blog       { @extend .#{$mod}--yellow; }
+
+    //When a tag is a child of an anchor, prevent text-underline and transition background color
+    &__link {
+        .no-touchevents & .#{$mod} {
+            transition: background-color $duration-quick linear;
+        }
+        .no-touchevents &:hover {
+            text-decoration: none;
+            .#{$mod}--blue {
+                background-color: darken($blue, 10%);
+            }
+            .#{$mod}--lightblue {
+                background-color: darken($lightblue, 10%);
+            }
+            .#{$mod}--yellow {
+                background-color: darken($yellow, 2.5%);
+            }
+            .#{$mod}--purple {
+                background-color: darken($purple, 10%);
+            }
+        }
+    }
 }
 

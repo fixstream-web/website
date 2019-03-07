@@ -271,6 +271,17 @@
 				"uniqueJS": true,
 				"name": "single-resources"
 			},
+			"category": {
+				"type": "wp-template",
+				"name": "category",
+				"meta": {
+					"title": "Blog by Category",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.",
+					"og-title": "test og title",
+					"twitter-title": "test twitter title"
+				},
+				"h1": "Blog by Category"
+			},
 			"four-oh-four": {
 				"type": "wp-template",
 				"name": "404",
