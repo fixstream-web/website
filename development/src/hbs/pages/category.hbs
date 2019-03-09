@@ -21,7 +21,7 @@
 			  while($post_query->have_posts() ) {
 			    $post_query->the_post(); ?>
 
-			    <li class="item item--frameless item--33 blog-archive__item">
+			    <li class="item item--frameless item--50 blog-archive__item">
 					<span class="date blog-archive__date"><?php echo get_the_date('M j, Y') ?></span>
 					<a class="blog-archive__link" href="<?php echo get_permalink(); ?>">
 						<h2 class="blog-archive__header"><?php the_title(); ?></h2>
@@ -38,6 +38,32 @@
 		<?php }
 		} ?>
 		</ul>
+		{{!-- **TODO: make aside nav dynamic --}}
+		{{!-- **TODO: configure blog year archive --}}
+		<aside class="blog-archive__aside">
+			<h3 class="blog-archive__aside-header">More from the blog</h3>
+			<nav class="blog-archive__nav">
+				<ul class="blog-archive__nav-list">
+					<li class="blog-archive__nav-item">
+						<a href="#" class="blog-archive__nav-link">2019</a>
+					</li>
+					<li class="blog-archive__nav-item">
+						<a href="#" class="blog-archive__nav-link">2018</a>
+					</li>
+					<li class="blog-archive__nav-item">
+						<a href="#" class="blog-archive__nav-link">2017</a>
+					</li>
+				</ul>
+			</nav>
+			<h3 class="blog-archive__aside-header">Categories</h3>
+			<nav class="blog-archive__nav">
+				<ul class="blog-archive__nav-list">
+					<li class="blog-archive__nav-item">
+						<a href="#" class="blog-archive__nav-link">Other</a>
+					</li>
+				</ul>
+			</nav>
+		</aside>
 		{{/content}}
 		{{/embed}}
 

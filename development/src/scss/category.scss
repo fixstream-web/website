@@ -1,1 +1,41 @@
-@import 'core';
+@import 'blog';
+
+// **TODO: BEM this sass;
+.section-blog-archive-section .section-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+}
+
+.blog-archive {
+	&__list {
+		flex-basis: 68%;
+	}
+	&__aside {
+		flex-basis: 27%;
+		background-color: $blue;
+		padding: 1.3rem;
+		text-align: left;
+		color: $white;
+		position: sticky;
+		top: 11rem;
+	}
+	&__aside-header {
+		font-size: 1.2rem;
+	}
+	&__nav {
+		margin: 0.7rem 0 1rem;
+	}
+	&__nav-list {}
+	&__nav-item {
+		border-bottom: 1px solid darken($blue, 7%);
+		margin-bottom: 0.3rem;
+		padding: 0.15rem 0;
+		&:last-child {
+			border-bottom: 0;
+		}
+	}
+	&__nav-link {
+		color: inherit;
+	}
+}
