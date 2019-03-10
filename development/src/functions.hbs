@@ -52,6 +52,7 @@ function custom_post_types() {
   {{> utilities/post-type post-type="team" name="Team" singular="Member" icon="dashicons-groups" }}
   {{> utilities/post-type post-type="jobs" name="Private Jobs" singular="Private Job" icon="dashicons-businessman" }}
   {{!-- **TODO: Register Events post type --}}
+  {{> utilities/post-type post-type="events" name="Events" singular="Event" icon="dashicons-location" }}
 }
 
 add_action( 'init', 'enable_taxonomies', 0 );

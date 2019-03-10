@@ -1,0 +1,25 @@
+@import 'core';
+
+$mod: 'single-event';
+.#{$mod} {
+	background-color: $gray-5;
+	padding: 1rem;
+	border-radius: $radius-l;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border: 1px solid $gray-4;
+	&__header {
+		flex-basis: 50%;
+	}
+	&__name {
+		margin-bottom: 0.4rem;
+	}
+	&__info {
+		flex-basis: 44%;
+		background: $white;
+		padding: 1rem;
+		border-radius: $radius-l;
+		box-shadow: $shadow-light;
+	}
+}

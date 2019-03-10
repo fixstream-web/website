@@ -215,6 +215,36 @@
 			</div>
 		</section>
 
+<section class="section section-company-events page-company">
+			<div class="section-content">
+		<h2>Events</h2>
+
+		<?php $args = array( 
+		'post_type' => 'events', 
+		'posts_per_page' => -1,
+		'meta_key'			=> 'event_start_date',
+		'orderby'			=> 'meta_value',
+		'order'				=> 'ASC'
+		);
+		$loop = new WP_Query( $args );
+		if ($loop->have_posts() ) : ?>
+		<ul class="item-list events-list">
+			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+			<li class="item item--frameless item--33 events-item">
+				<a class="events-link" href="<?php echo get_permalink(); ?>">
+					<h3 class="events-header"><?php the_title(); ?></h3>
+				</a>
+				<?php if( get_field('location_or_booth') ): ?>
+				<p class="events-location"><?php echo the_field('location_or_booth'); ?></p>
+				<?php endif; ?>
+			</li>
+			<?php endwhile;?>
+		</ul>
+		<?php endif; ?>
+
+			</div>
+		</section>
+
 <section class="section section-company-form page-company">
 			<div class="section-content">
 			<div id='crmWebToEntityForm'>

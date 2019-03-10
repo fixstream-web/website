@@ -271,6 +271,10 @@
 				"uniqueJS": true,
 				"name": "single-resources"
 			},
+			"single-events" : {
+				"type": "wp-template",
+				"name": "single-events"
+			},
 			"category": {
 				"type": "wp-template",
 				"name": "category",

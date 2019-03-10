@@ -74,3 +74,12 @@ $mod: 'news-mentions';
 		}
 	}
 }
+
+$mod: 'events';
+.#{$mod} {
+	&-list {}
+	&-item {}
+	&-link {}
+	&-location {}
+	&-header {}
+}

@@ -88,6 +88,18 @@ function custom_post_types() {
         'supports'       => array(),
         'rewrite'        => array( 'with_front' => false, 'slug' => 'jobs'),
       )
+    );  register_post_type( 'events',
+      array(
+        'labels'         => array(
+        'name'           => __( 'Events' ),
+        'singular_name'  => __( 'Event' )
+      ),
+        'public'         => true,
+        'has_archive'    => true,
+        'menu_icon'      => 'dashicons-location',
+        'supports'       => array(),
+        'rewrite'        => array( 'with_front' => false, 'slug' => 'events'),
+      )
     );}
 
 add_action( 'init', 'enable_taxonomies', 0 );

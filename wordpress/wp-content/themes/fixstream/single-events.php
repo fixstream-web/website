@@ -3,9 +3,9 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<?php wp_head(); ?>
-	<link rel="stylesheet" href="/wp-content/themes/fixstream/css/single.css">
+	<link rel="stylesheet" href="/wp-content/themes/fixstream/css/single-events.css">
 	<script type="text/javascript" src="/wp-content/themes/fixstream/js/head.js" rel="preload" as="script"></script></head>
-<body class="page-single">
+<body class="page-single-events">
 	<header class="globalheader">
 		<div class="globalheader__navbar">
 		<a class="globalheader__link" href="/">
@@ -18,11 +18,11 @@
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/platform">Platform</a>
 						<input type="checkbox"
-							   id="subnavToggle-42"
+							   id="subnavToggle-30"
 							   class="globalnav__subnav-toggle hidden"
 							   name="platform"
 							   
-							    /><label class="globalnav__subnav-button" for="subnavToggle-42">+</label>						<ul class="globalnav__subnav">
+							    /><label class="globalnav__subnav-button" for="subnavToggle-30">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/agent-less-auto-discovery">Agent-less Auto Discovery
 							</a>
@@ -43,11 +43,11 @@
 							<a class="globalnav__link" href="/platform/ecosystem">Ecosystem
 							</a>
 		        		<input type="checkbox"
-		        			   id="subnavToggle-43"
+		        			   id="subnavToggle-31"
 		        			   class="globalnav__subnav-toggle hidden"
 		        			   name="ecosystem"
 		        			   
-		        			    /><label class="globalnav__subnav-button" for="subnavToggle-43">+</label>								<ul class="globalnav__subnav">
+		        			    /><label class="globalnav__subnav-button" for="subnavToggle-31">+</label>								<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/ecosystem/oracle">Oracle
 							</a>
@@ -65,11 +65,11 @@
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/customers">Customers</a>
 						<input type="checkbox"
-							   id="subnavToggle-44"
+							   id="subnavToggle-32"
 							   class="globalnav__subnav-toggle hidden"
 							   name="customers"
 							   
-							    /><label class="globalnav__subnav-button" for="subnavToggle-44">+</label>						<ul class="globalnav__subnav">
+							    /><label class="globalnav__subnav-button" for="subnavToggle-32">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/customers/broadcom">Broadcom
 							</a>
@@ -105,38 +105,41 @@
 	<main>
 		<article>
 			
-	<?php if (have_posts()) : while (have_posts()) : the_post();?>
-	<div class="section-content">
-		<div class="blog-header">
-			<h1><?php the_title(); ?></h1>
-			<?php $cats = get_the_category(get_the_ID()); ?>
+<section class="section section-single-event page-single-events">
+			<div class="section-content">
+	<div class="single-event">
 
-			<?php if (!in_category("Uncategorized")): ?>
-			<div class="tags-row">
-				<?php foreach ($cats as $cat) { ?>
-		        <span class="tag tag--small tag--<?php echo $cat->slug; ?> blog-archive__tag"><?php echo $cat->name ?></span>
-		  		<?php } ?>
-			</div>
+		<div class="single-event__header">
+			<h1 class="single-event__name"><?php the_title(); ?></h1>
+			<?php if( get_field('message') ): ?>
+			<p><?php echo the_field('message'); ?></p>
 			<?php endif; ?>
 		</div>
-		<?php the_content(); ?>
-	</div>
 
-	<?php $post = get_field('attribution');
-	if( $post ): ?>
+		<div class="single-event__info">
+			<?php if( get_field('event_start_date') || get_field('event_start_date') ): ?>
+			<p><?php if( get_field('event_start_date') ): ?><?php echo the_field('event_start_date'); ?><?php endif; ?><?php if( get_field('event_end_date') ): ?> - <?php echo the_field('event_end_date'); ?><?php endif; ?></p>
+			<?php endif; ?>
+
+
+			<?php if( get_field('location_or_booth') ): ?>
+			<p><?php echo the_field('location_or_booth'); ?></p>
+			<?php endif; ?>
+
+			<?php if( get_field('street_address') ): ?>
+			<p><?php echo the_field('street_address'); ?></p>
+			<?php endif; ?>
+
+			<?php if( get_field('city') || get_field('state') || get_field('country') ): ?>
+			<p><?php if( get_field('city') ): ?><?php echo the_field('city'); ?><?php endif; ?><?php if( get_field('city') && get_field('state') ): ?>, <?php endif; ?><?php if( get_field('state') ): ?><?php echo the_field('state'); ?><?php endif; ?><?php if( get_field('country') ): ?> <?php echo the_field('country'); ?><?php endif; ?></p>
+			<?php endif; ?>
 	
-	<aside>
-		<div class="section-content">
-			<h4>About the author</h4>
-			<?php setup_postdata($post); ?>
-			<?php the_title(); ?>
-			<?php wp_reset_postdata(); ?>
 		</div>
-	</aside>
-	
-	<?php endif; ?>
 
-	<?php endwhile; endif; wp_reset_query(); ?>
+	</div>
+	
+			</div>
+		</section>  
 
 
 		</article>

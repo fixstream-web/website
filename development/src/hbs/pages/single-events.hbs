@@ -1,0 +1,49 @@
+{{#embed "templates/post" data=pages.single-events additionalClasses="page-single-events"}}
+    {{#content "head" mode="append"}}
+    {{!-- append page specific head tags --}}
+    {{/content}}
+    {{#content "body" mode="append"}}
+    {{!-- page specific body content --}}
+
+    {{#embed "modules/section" name="single-event"}}
+	{{#content "contents" mode="append"}}
+	<div class="single-event">
+
+		<div class="single-event__header">
+			<h1 class="single-event__name"><?php the_title(); ?></h1>
+			<?php if( get_field('message') ): ?>
+			<p><?php echo the_field('message'); ?></p>
+			<?php endif; ?>
+		</div>
+
+		<div class="single-event__info">
+			<?php if( get_field('event_start_date') || get_field('event_start_date') ): ?>
+			<p><?php if( get_field('event_start_date') ): ?><?php echo the_field('event_start_date'); ?><?php endif; ?><?php if( get_field('event_end_date') ): ?> - <?php echo the_field('event_end_date'); ?><?php endif; ?></p>
+			<?php endif; ?>
+
+			{{!-- <?php if( get_field('event_end_date') ): ?>
+			<p>through <?php echo the_field('event_end_date'); ?></p>
+			<?php endif; ?> --}}
+
+			<?php if( get_field('location_or_booth') ): ?>
+			<p><?php echo the_field('location_or_booth'); ?></p>
+			<?php endif; ?>
+
+			<?php if( get_field('street_address') ): ?>
+			<p><?php echo the_field('street_address'); ?></p>
+			<?php endif; ?>
+
+			<?php if( get_field('city') || get_field('state') || get_field('country') ): ?>
+			<p><?php if( get_field('city') ): ?><?php echo the_field('city'); ?><?php endif; ?><?php if( get_field('city') && get_field('state') ): ?>, <?php endif; ?><?php if( get_field('state') ): ?><?php echo the_field('state'); ?><?php endif; ?><?php if( get_field('country') ): ?> <?php echo the_field('country'); ?><?php endif; ?></p>
+			<?php endif; ?>
+	
+		</div>
+
+	</div>
+	
+	{{/content}}
+	{{/embed}}
+  
+
+    {{/content}}
+    {{/embed}}
