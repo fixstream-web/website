@@ -1,19 +1,11 @@
 <!DOCTYPE html>
 <html class="no-js">
 <head>
-	<title>Fixstream | Oracle</title>
-	<meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.">
-	<meta property="og:title" content="test og title">
-	<meta name="twitter:title" content="test twitter title">
-	<meta property="og:url" content="http://localhost:8888">
-	<meta property="og:site_name" content="Fixstream"/>
-	<meta property="og:locale" content="en_US">
-	<meta property="og:type" content="website">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<?php wp_head(); ?>
-	<link rel="stylesheet" href="/wp-content/themes/fixstream/css/platform/ecosystem/oracle.css">
+	<link rel="stylesheet" href="/wp-content/themes/fixstream/css/single-news.css">
 	<script type="text/javascript" src="/wp-content/themes/fixstream/js/head.js" rel="preload" as="script"></script></head>
-<body class="page-platform-ecosystem page-platform-ecosystem-oracle">
+<body class="page-single-news">
 	<header class="globalheader">
 		<div class="globalheader__navbar">
 		<a class="globalheader__link" href="/">
@@ -26,11 +18,11 @@
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/platform">Platform</a>
 						<input type="checkbox"
-							   id="subnavToggle-84"
+							   id="subnavToggle-36"
 							   class="globalnav__subnav-toggle hidden"
 							   name="platform"
 							   
-							    /><label class="globalnav__subnav-button" for="subnavToggle-84">+</label>						<ul class="globalnav__subnav">
+							    /><label class="globalnav__subnav-button" for="subnavToggle-36">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/agent-less-auto-discovery">Agent-less Auto Discovery
 							</a>
@@ -51,11 +43,11 @@
 							<a class="globalnav__link" href="/platform/ecosystem">Ecosystem
 							</a>
 		        		<input type="checkbox"
-		        			   id="subnavToggle-85"
+		        			   id="subnavToggle-37"
 		        			   class="globalnav__subnav-toggle hidden"
 		        			   name="ecosystem"
 		        			   
-		        			    /><label class="globalnav__subnav-button" for="subnavToggle-85">+</label>								<ul class="globalnav__subnav">
+		        			    /><label class="globalnav__subnav-button" for="subnavToggle-37">+</label>								<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/ecosystem/oracle">Oracle
 							</a>
@@ -73,11 +65,11 @@
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/customers">Customers</a>
 						<input type="checkbox"
-							   id="subnavToggle-86"
+							   id="subnavToggle-38"
 							   class="globalnav__subnav-toggle hidden"
 							   name="customers"
 							   
-							    /><label class="globalnav__subnav-button" for="subnavToggle-86">+</label>						<ul class="globalnav__subnav">
+							    /><label class="globalnav__subnav-button" for="subnavToggle-38">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/customers/broadcom">Broadcom
 							</a>
@@ -108,15 +100,32 @@
 				<li class="globalnav__free-trial"><a class="button button-small" href="/free-trial">Free Trial</a></li>
 			</ul>
 		</nav>
-		</div>
-		<div class="pageheader">
-			<h1 class="pageheader-headline">Oracle</h1>
-		</div>
-		
-	</header>
+
+	</header>		
 	<main>
-		 
-		
+		<article>
+			
+    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+<section class="section section-single-news page-single-news">
+			<div class="section-content">
+  
+  	<span class="date single-news__date"><?php echo get_the_date('M j, Y') ?></span>
+	<h1 class="single-news__header"><?php the_title(); ?></h1>
+    <?php if (get_the_excerpt()): ?>
+    <blockquote class="single-news__excerpt"><?php echo get_the_excerpt() ?></blockquote>
+     <?php endif; ?>
+
+     <?php if (get_field('press_release_doc')): ?>
+     <a href="<?php echo the_field('press_release_doc') ?>" class="button single-news__link">Download the press release</a>
+     <?php endif; ?>
+			</div>
+		</section>
+
+    <?php endwhile; endif; wp_reset_query(); ?>
+
+
+		</article>
 	</main>
 	<footer class="globalfooter">
 		<nav class="globalfooter__nav">
@@ -201,3 +210,17 @@
 	<script type="text/javascript" src='https://crm.zoho.com/crm/javascript/zcga.js'></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

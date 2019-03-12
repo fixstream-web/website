@@ -1,0 +1,83 @@
+{{#embed "templates/post" data=pages.single-news additionalClasses="page-single-news"}}
+    {{#content "head" mode="append"}}
+    {{!-- append page specific head tags --}}
+    {{/content}}
+    {{#content "body" mode="append"}}
+    {{!-- page specific body content --}}
+
+    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+    {{#embed "modules/section" name="single-news"}}
+	{{#content "contents" mode="append"}}
+  
+  	<span class="date single-news__date"><?php echo get_the_date('M j, Y') ?></span>
+	<h1 class="single-news__header"><?php the_title(); ?></h1>
+    <?php if (get_the_excerpt()): ?>
+    <blockquote class="single-news__excerpt"><?php echo get_the_excerpt() ?></blockquote>
+     <?php endif; ?>
+
+     <?php if (get_field('press_release_doc')): ?>
+     <a href="<?php echo the_field('press_release_doc') ?>" class="button single-news__link">Download the press release</a>
+     <?php endif; ?>
+     {{!-- **TODO: Handle else when there's no doc --}}
+	{{/content}}
+	{{/embed}}
+
+
+    <?php endwhile; endif; wp_reset_query(); ?>
+
+    {{/content}}
+    {{/embed}}
+
+
+
+    {{!-- **TODO: resolve PR with no docs:
+	/news/fixstream-and-cherwell-software-announce-strategic-collaboration-to-automate-the-detection-and-resolution-of-it-issues/
+	
+	/news/fixstream-launches-industrys-first-visual-artificial-intelligence-platform-to-predict-business-application-issues-across-hybrid-it/
+
+	/news/fixstream-selected-as-a-2017-red-herring-top-100-global-company/
+
+	/news/fixstream-and-centurylink-accelerate-migration-to-hybrid-cloud/
+
+	/news/fixstream-and-evotek-partner-to-accelerate-adoption-of-hybrid-it/
+
+	/news/fixstream-chosen-as-a-2017-red-herring-top-100-north-america-winner
+   
+	/news/fixstream-named-a-cool-vendor-by-gartner
+
+	/news/fixstream-selected-as-finalist-in-the-2016-red-herring-top-100-north-america-award
+
+	/news/fixstream-one-of-10-sdn-startups-driving-innovation
+
+	/news/fixstream-mentioned-in-gartner-magic-quadrant
+
+	/news/fixstream-shares-vision-for-converged-analytics-and-visualization-platforms-in-the-business
+
+	/news/bishnu-nayak-joins-forbes-technology-council
+
+	/news/hundreds-of-it-stars-join-fixstream-and-partners-for-star-wars-world-premiere
+
+	/news/hundreds-of-silicon-valley-it-leaders-join-fixstream-for-star-wars-world-premier
+
+	/news/fixstream-selected-as-top20-most-promising-sdn-companies
+
+	/news/information-week-interview-with-sameer-padhye
+
+	/news/fixstream-wins-best-of-interop-award-for-cloud-virtualization
+
+	/news/fixstream-chosen-for-intech50-recognition
+
+     --}}
+
+
+
+
+
+
+
+
+
+
+
+

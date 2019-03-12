@@ -1,0 +1,16 @@
+@import 'core';
+@import 'date';
+
+$mod: 'single-news';
+.section-#{$mod} {
+	text-align: left;
+}
+.#{$mod} {
+	&__header {
+		margin: 0.55rem 0;
+	}
+	&__link {}
+	&__excerpt {
+		margin-bottom: 1rem;
+	}
+}
