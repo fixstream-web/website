@@ -6,11 +6,51 @@ $mod: 'single-news';
 	text-align: left;
 }
 .#{$mod} {
+	$margin: 1.7rem;
+	$border-width: 20px;
+	&__header,
+	&__excerpt,
+	&__source {
+		border-left: $border-width solid $gray-5;
+	}
 	&__header {
 		margin: 0.55rem 0;
+		padding-left: 9.5rem;
 	}
-	&__link {}
 	&__excerpt {
-		margin-bottom: 1rem;
+    	padding-left: $margin;
+	}
+	&__source {
+		padding-left: $margin;
+		color: $blue;
+		display: inline-block;
+	}
+	&__excerpt,
+	&__source {
+		margin-top: -0.75rem;
+    	padding-top: 1.3rem;
+	}
+	&__button {
+		margin-top: 1rem;
+	}
+	&__date {
+		margin-top: 0;
+		& + span {
+			margin-top: 0.7rem;
+		}
+	}
+	&__float {
+		float: left;
+		margin: 0 $margin 1.3rem 0;
+		padding: $margin;
+		background: $gray-5;
+		.#{$mod}__link {
+			color: $orange;
+		}
+	}	
+	&__cite {
+		display: block;
+		line-height: 1.15;
+		@extend .date;
 	}
 }

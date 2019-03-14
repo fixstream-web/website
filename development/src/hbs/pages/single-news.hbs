@@ -10,14 +10,34 @@
     {{#embed "modules/section" name="single-news"}}
 	{{#content "contents" mode="append"}}
   
-  	<span class="date single-news__date"><?php echo get_the_date('M j, Y') ?></span>
+  	<div class="single-news__float">
+	  	<span class="date single-news__date"><?php echo get_the_date('M j, Y') ?></span>
+
+	  	<?php if (get_field('press_release_publisher') || get_field('press_release_phone') || get_field('press_release_email')): ?>
+		<span class="single-news__cite">For Media Inquiries:</span>
+		<?php endif; ?>
+
+		<?php if (get_field('press_release_publisher')): ?>
+		<span class="single-news__cite single-news__publisher"><?php echo the_field('press_release_publisher') ?></span>
+		<?php endif; ?>
+		<?php if (get_field('press_release_phone')): ?>
+		<a class="single-news__cite single-news__link single-news__phone" href="tel:<?php echo the_field('press_release_phone'); ?>"><?php echo the_field('press_release_phone') ?></a>
+		<?php endif; ?>
+		<?php if (get_field('press_release_email')): ?>
+		<a class="single-news__cite single-news__link single-news__email" href="mailto:<?php echo the_field('press_release_email') ?>"><?php echo the_field('press_release_email') ?></a>
+		<?php endif; ?>
+	</div>
 	<h1 class="single-news__header"><?php the_title(); ?></h1>
     <?php if (get_the_excerpt()): ?>
     <blockquote class="single-news__excerpt"><?php echo get_the_excerpt() ?></blockquote>
      <?php endif; ?>
 
+     <?php if (get_field('external_press_release') == "Yes"): ?>
+     <a href="<?php echo the_field('press_release_source') ?>" class="single-news__source" target="_blank">Full Source<span class="icon-inline icon-circle-right"></span></a>
+     <?php endif; ?>
+
      <?php if (get_field('press_release_doc')): ?>
-     <a href="<?php echo the_field('press_release_doc') ?>" class="button single-news__link">Download the press release</a>
+     <a href="<?php echo the_field('press_release_doc') ?>" class="button single-news__button">Download the press release</a>
      <?php endif; ?>
      {{!-- **TODO: Handle else when there's no doc --}}
 	{{/content}}

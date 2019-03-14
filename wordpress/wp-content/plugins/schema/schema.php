@@ -5,7 +5,7 @@
  * Description: The next generation of Structured Data.
  * Author: Hesham
  * Author URI: http://zebida.com
- * Version: 1.7.4
+ * Version: 1.7.5
  * Text Domain: schema-wp
  * Domain Path: languages
  *
@@ -31,7 +31,6 @@
 if ( ! defined( 'ABSPATH' ) ) exit;
 
 if ( ! class_exists( 'Schema_WP' ) ) :
-
 /**
  * Main Schema_WP Class
  *
@@ -51,7 +50,7 @@ final class Schema_WP {
 	 *
 	 * @since 1.0
 	 */
-	private $version = '1.7.4';
+	private $version = '1.7.5';
 
 	/**
 	 * The settings instance variable
@@ -83,9 +82,14 @@ final class Schema_WP {
 	 * @return Schema_WP
 	 */
 	public static function instance() {
+		
 		if ( ! isset( self::$instance ) && ! ( self::$instance instanceof SCHEMA_WP ) ) {
 			self::$instance = new SCHEMA_WP;
-
+			
+			if ( class_exists( 'Schema_Premium' ) ) {
+				return self::$instance;
+			}
+			
 			if( version_compare( PHP_VERSION, '5.4', '<' ) ) {
 
 				add_action( 'admin_notices', array( 'SCHEMA_WP', 'below_php_version_notice' ) );
@@ -142,7 +146,7 @@ final class Schema_WP {
 	public function below_php_version_notice() {
 		echo '<div class="error"><p>' . __( 'Your version of PHP is below the minimum version of PHP required by Schema plugin. Please contact your host and request that your version be upgraded to 5.4 or later.', 'schema-wp' ) . '</p></div>';
 	}
-
+	
 	/**
 	 * Setup plugin constants
 	 *
@@ -343,6 +347,7 @@ endif; // End if class_exists check
  * @return Schema_WP The one true Schema_WP Instance
  */
 function schema_wp() {
+	
 	return Schema_WP::instance();
 }
 schema_wp();

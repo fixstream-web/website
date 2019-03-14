@@ -3,9 +3,9 @@ Contributors: hishaman, schemapress
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NGVUBT2QXN7YL
 Tags: schema, schema.org, json, json-ld, google, seo, structured data, markup, search engine, search, rich snippets, breadcrumbs, social, post, page, plugin, wordpress, content, article, news, search results, site name, knowledge graph, social, social profiles, keywords, meta-tags, metadata, tags, categories, optimize, ranking, search engine optimization, search engines, serp, sitelinks, google sitelinks, sitelinks search box, google sitelinks search box, semantic, structured, canonical, custom post types, post type, title, terms, media, images, thumb, featured, url, video, video markup, video object, VideoObject, video schema, audio object, AudioObject, audio schema, audio, sameAs, about, contact, amp, mobile, taxonomy
 Requires at least: 4.0
-Tested up to: 5.0.3
+Tested up to: 5.1
 Requires PHP: 5.4
-Stable tag: 1.7.4
+Stable tag: 1.7.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -200,6 +200,9 @@ Yes, Schema plugin will detect AMP plugin and output a more complete and valid s
 
 = 1.7.5 =
 * Fix: PHP Fatal error when truncating long headlines.
+* Fix: PHP warning when parse HTML5-code, added a better error suppression.
+* Tweak: Added a discount code for Schema Premium message.
+* Update: Pumped tested WordPress version to 5.1 release.
 
 = 1.7.4 = 
 * Fix: Activating plugin creates unwanted two menu items (Post, Page).
