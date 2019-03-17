@@ -109,17 +109,17 @@
 			<div class="section-content">
 		<div class="single-team__profile">
 			<img class="single-team__image" src="https://via.placeholder.com/750x750" />
-			<ul class="single-team__social">
-				<li class="single-team__icon"></li>
-				<li class="single-team__icon"></li>
-				<li class="single-team__icon"></li>
-			</ul>
 		</div>
 		<div class="single-team__content">
 			<h1 class="single-team__header">
 				<span class="single-team__name"><?php the_title(); ?></span>
 				<span class="single-team__title"><?php the_field('job_title'); ?><?php if( get_field('company') ): ?> at <?php the_field('company'); ?><?php endif; ?></span>
 			</h1>
+			<ul class="single-team__social">
+				<li class="single-team__icon"></li>
+				<li class="single-team__icon"></li>
+				<li class="single-team__icon"></li>
+			</ul>
 			<?php the_content(); ?>
 		</div>
 			</div>

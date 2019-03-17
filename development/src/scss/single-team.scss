@@ -21,8 +21,8 @@ $mod: 'single-team';
 	}
 	&__social {
 		display: flex;
-		margin-top: #{$margin-social * 0.7};
-		justify-content: center;
+		justify-content: flex-start;
+		margin-bottom: 0.5rem;
 	}
 	&__icon {
 		$size: 2.4rem;
@@ -45,7 +45,7 @@ $mod: 'single-team';
 		display: block;
 	}
 	&__title {
-		margin-bottom: 0.7rem;
+		margin-bottom: 0.6rem;
 		font-size: 1.4rem;
 	}
 }

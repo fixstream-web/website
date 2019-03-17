@@ -134,7 +134,7 @@
 						<img class="leadership-photo" src="https://via.placeholder.com/200x200" />
 						<div class="leadership-info">
 							<a class="leadership-link" href="<?php echo get_permalink(); ?>">
-								<h3 class="leadership-header"><?php the_title(); ?></h3>
+								<h3 class="leadership-header"><?php the_title(); ?><span class="icon-inline icon-circle-right"></span></h3>
 							</a>
 							<span class="leadership-title"><?php the_field('job_title'); ?></span>
 						</div>
@@ -154,7 +154,7 @@
 						<img class="leadership-photo" src="https://via.placeholder.com/200x200" />
 						<div class="leadership-info">
 							<a class="leadership-link" href="<?php echo get_permalink(); ?>">
-								<h3 class="leadership-header"><?php the_title(); ?></h3>
+								<h3 class="leadership-header"><?php the_title(); ?><span class="icon-inline icon-circle-right"></span></h3>
 							</a>
 							<span class="leadership-title"><?php the_field('job_title'); ?></span>
 							<?php if( get_field('company') ): ?>
@@ -232,7 +232,7 @@
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 			<li class="item item--frameless item--33 events-item">
 				<a class="events-link" href="<?php echo get_permalink(); ?>">
-					<h3 class="events-header"><?php the_title(); ?></h3>
+					<h3 class="events-header"><?php the_title(); ?><span class="icon-inline icon-circle-right"></span></h3>
 				</a>
 				<?php if( get_field('location_or_booth') ): ?>
 				<p class="events-location"><?php echo the_field('location_or_booth'); ?></p>

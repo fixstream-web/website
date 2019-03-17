@@ -132,12 +132,12 @@
 			if($post_query->have_posts() ) {
 			  while($post_query->have_posts() ) {
 			    $post_query->the_post(); ?>
-
-			    <li class="item item--frameless item--50 blog-archive__item">
+				<li class="item item--frameless item--50 blog-archive__item">
 					<span class="date blog-archive__date"><?php echo get_the_date('M j, Y') ?></span>
 					<a class="blog-archive__link" href="<?php echo get_permalink(); ?>">
-						<h2 class="blog-archive__header"><?php the_title(); ?></h2>
+						<h2 class="blog-archive__header"><?php the_title(); ?><span class="icon-inline icon-circle-right"></span></h2>
 					</a>
+					
 					
 					<?php $post = get_field('attribution');
 					if( $post ): ?>
@@ -145,9 +145,7 @@
 						<h3 class="blog-archive__author">By <?php the_title(); ?></h3>
 						<?php wp_reset_postdata(); ?>
 					<?php endif; ?>
-				</li>
-
-		<?php }
+				</li>		<?php }
 		} ?>
 		</ul>
 		<aside class="blog-archive__aside">
