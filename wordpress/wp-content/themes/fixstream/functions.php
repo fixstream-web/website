@@ -250,6 +250,13 @@ function makeSingleCategory($id) {
 
 
 
+update_option( 'thumbnail_size_w', 200 );
+update_option( 'thumbnail_size_h', 200 );
+update_option( 'thumbnail_crop', 0 );
+update_option( 'medium_size_w', 200 );
+update_option( 'medium_size_h', 200 );
+update_option( 'large_size_w', 200 );
+update_option( 'large_size_h', 200 );
 
 
 
