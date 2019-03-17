@@ -1,19 +1,11 @@
 <!DOCTYPE html>
 <html class="no-js">
 <head>
-	<title>Fixstream | Broadcom</title>
-	<meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in tincidunt neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis elit sed eros viverra interdum.">
-	<meta property="og:title" content="test og title">
-	<meta name="twitter:title" content="test twitter title">
-	<meta property="og:url" content="http://localhost:8888">
-	<meta property="og:site_name" content="Fixstream"/>
-	<meta property="og:locale" content="en_US">
-	<meta property="og:type" content="website">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<?php wp_head(); ?>
-	<link rel="stylesheet" href="/wp-content/themes/fixstream/css/customers/broadcom.css">
+	<link rel="stylesheet" href="/wp-content/themes/fixstream/css/single-team.css">
 	<script type="text/javascript" src="/wp-content/themes/fixstream/js/head.js" rel="preload" as="script"></script></head>
-<body class="page-customers page-customers-broadcom">
+<body class="page-single-team">
 	<header class="globalheader">
 		<div class="globalheader__navbar">
 		<a class="globalheader__link" href="/">
@@ -26,11 +18,11 @@
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/platform">Platform</a>
 						<input type="checkbox"
-							   id="subnavToggle-63"
+							   id="subnavToggle-48"
 							   class="globalnav__subnav-toggle hidden"
 							   name="platform"
 							   
-							    /><label class="globalnav__subnav-button" for="subnavToggle-63">+</label>						<ul class="globalnav__subnav">
+							    /><label class="globalnav__subnav-button" for="subnavToggle-48">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/agent-less-auto-discovery">Agent-less Auto Discovery
 							</a>
@@ -51,11 +43,11 @@
 							<a class="globalnav__link" href="/platform/ecosystem">Ecosystem
 							</a>
 		        		<input type="checkbox"
-		        			   id="subnavToggle-64"
+		        			   id="subnavToggle-49"
 		        			   class="globalnav__subnav-toggle hidden"
 		        			   name="ecosystem"
 		        			   
-		        			    /><label class="globalnav__subnav-button" for="subnavToggle-64">+</label>								<ul class="globalnav__subnav">
+		        			    /><label class="globalnav__subnav-button" for="subnavToggle-49">+</label>								<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/platform/ecosystem/oracle">Oracle
 							</a>
@@ -73,11 +65,11 @@
 				<li class="globalnav__item with-subnav">
 					<a class="globalnav__link" href="/customers">Customers</a>
 						<input type="checkbox"
-							   id="subnavToggle-65"
+							   id="subnavToggle-50"
 							   class="globalnav__subnav-toggle hidden"
 							   name="customers"
 							   
-							    /><label class="globalnav__subnav-button" for="subnavToggle-65">+</label>						<ul class="globalnav__subnav">
+							    /><label class="globalnav__subnav-button" for="subnavToggle-50">+</label>						<ul class="globalnav__subnav">
 						<li class="globalnav__item">
 							<a class="globalnav__link" href="/customers/broadcom">Broadcom
 							</a>
@@ -108,15 +100,32 @@
 				<li class="globalnav__free-trial"><a class="button button-small" href="/free-trial">Free Trial</a></li>
 			</ul>
 		</nav>
-		</div>
-		<div class="pageheader">
-			<h1 class="pageheader-headline">Broadcom</h1>
-		</div>
-		
-	</header>
+
+	</header>		
 	<main>
-		 
-		
+		<article>
+			    
+<section class="section section-single-team page-single-team">
+			<div class="section-content">
+		<div class="single-team__profile">
+			<img class="single-team__image" src="https://via.placeholder.com/750x750" />
+			<ul class="single-team__social">
+				<li class="single-team__icon"></li>
+				<li class="single-team__icon"></li>
+				<li class="single-team__icon"></li>
+			</ul>
+		</div>
+		<div class="single-team__content">
+			<h1 class="single-team__header">
+				<span class="single-team__name"><?php the_title(); ?></span>
+				<span class="single-team__title"><?php the_field('job_title'); ?><?php if( get_field('company') ): ?> at <?php the_field('company'); ?><?php endif; ?></span>
+			</h1>
+			<?php the_content(); ?>
+		</div>
+			</div>
+		</section>
+
+		</article>
 	</main>
 	<footer class="globalfooter">
 		<nav class="globalfooter__nav">
@@ -201,3 +210,6 @@
 	<script type="text/javascript" src='https://crm.zoho.com/crm/javascript/zcga.js'></script>
 </body>
 </html>
+
+
+    

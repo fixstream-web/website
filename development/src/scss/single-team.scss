@@ -1,0 +1,51 @@
+@import 'core';
+
+$mod: 'single-team';
+.section-#{$mod} {
+	text-align: left;
+	.section-content {
+		display: flex;
+		justify-content: space-between;
+		align-items: start;
+	}
+}
+
+.#{$mod} {
+	$margin-social: 0.75rem;
+	&__profile {
+		flex-grow: 0;
+		flex-shrink: 0;
+		position: sticky;
+		top: 6.5rem;
+		flex-basis: 30%;
+	}
+	&__social {
+		display: flex;
+		margin-top: #{$margin-social * 0.7};
+		justify-content: center;
+	}
+	&__icon {
+		$size: 2.4rem;
+		height: $size;
+		width: $size;
+		margin-right: $margin-social;
+		@include show;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	&__image {}
+	&__content {
+		flex-basis: 66%;
+		flex-grow: 0;
+		flex-shrink: 0;
+	}
+	&__name,
+	&__title {
+		display: block;
+	}
+	&__title {
+		margin-bottom: 0.7rem;
+		font-size: 1.4rem;
+	}
+}

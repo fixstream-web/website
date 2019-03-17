@@ -279,6 +279,10 @@
 				"type": "wp-template",
 				"name": "single-news"
 			},
+			"single-team" : {
+				"type": "wp-template",
+				"name": "single-team"
+			},
 			"category": {
 				"type": "wp-template",
 				"name": "category",

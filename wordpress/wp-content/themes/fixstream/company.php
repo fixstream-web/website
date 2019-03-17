@@ -159,8 +159,8 @@
 							<span class="leadership-title"><?php the_field('job_title'); ?></span>
 							<?php if( get_field('company') ): ?>
 							<span class="leadership-company">at <?php the_field('company'); ?></span>
+							<?php endif; ?>
 						</div>
-						<?php endif; ?>
 					</li>
 					<?php endwhile;?>
 				</ul>
